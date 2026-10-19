@@ -1,4 +1,13 @@
-# Response to the round-3 review
+# Review responses — rounds 3 and 4
+
+This file answers both review rounds in order: round 3 (reject in current form, nine fatal
+flaws) then round 4 (major revision, seven concerns and thirteen internal
+inconsistencies). Each section states the reviewer's requirement, what was done, and what
+the revision does not fix. A round-5 housecleaning pass is recorded at the end.
+
+---
+
+# Round 3 — response
 
 **Decision addressed:** "Reject in its current form. Major restructuring required before
 resubmission."
@@ -285,7 +294,7 @@ intervals.
 
 ---
 
-# Response to the round-4 review
+# Round 4 — response
 
 **Decision addressed:** "Major revision. The paper is unusually candid about its limits...
 The problem is that the headline claim is framed more strongly than the paper's own
@@ -415,7 +424,7 @@ the family level or drop the heatmap; independent coder, n ≥ 50, third-party a
 
 **Done (as disclosure, not as new bounds).** §5.7 now states that the 15 uninspected
 firings are identifiable from the released audit output and inspectable "in hours, not a
-re-design---a resubmission should either inspect them or say why not"; the non-author
+re-design" (the trailing resubmission clause was dropped in the round-5 housecleaning); the non-author
 re-read is described as feasible for the authors today (full texts in hand) and stated as
 the required next test. The 38/48 non-specificity reading is already in §4.7/§5.7 and is
 kept. The audit remains a disclosure; no false bound is claimed.
@@ -496,3 +505,37 @@ conditions; frame abstract/conclusion as exploratory.
   round-4 numbers appended
 - `manuscript.pdf` — rebuilt (tectonic, 61 pp., clean; Tables 8–9 before references; no
   mojibake)
+
+---
+
+# Round 5 — housecleaning (editorial pass, no review round)
+
+**Scope.** A housecleaning pass over the manuscript and repository: file naming,
+readability, and removal of references to superseded versions of the paper. No numbers,
+codes, or claims were changed; every statistic in the manuscript is untouched.
+
+- **Files renamed.** The four peer-review documents at the repository root (mixed naming
+  schemes, one with spaces) moved to `reviews/` as `round1_structured_review.docx`
+  (+ its PDF twin), `round1_strengths_weaknesses_review.docx` and `round2_review.docx`.
+  The Habeeb et al. (2026) PDF, previously a hundred-character filename with double
+  spaces, is now `habeeb2026_dual_role_digital_twins.pdf`. `README.md` layout updated.
+- **References to earlier versions removed from the manuscript.** "An earlier draft
+  asserted the opposite direction" (§4.3), "earlier drafts conflated them" (§5.6),
+  "circulated in earlier drafts … we now treat" (§8.2), "we can no longer claim" (§6.5),
+  "we therefore withdraw the earlier claim" (§8.5), and the resubmission-process clause
+  in §5.7 — all rephrased in the present tense so the paper stands alone; the substance
+  of every disclosure is unchanged.
+- **Abstract rewritten for flow.** Reorganised into four paragraphs (question, corpus,
+  findings with reliability, twin-position and lifecycle); the misclassification
+  interval, previously stated twice, now appears once; all figures and caveats retained.
+- **Cross-reference and typesetting hygiene.** Hardcoded "Section 1.1", "Section 1"
+  (twice) and "Section 6.2" replaced by `\ref`s to newly labelled subsections; "3x3" and
+  "8x" typeset as maths; LaTeX quote style fixed in §6.4; three `\par\vspace` spacing
+  hacks removed.
+- **Supporting docs.** This file restructured with per-round headers; `PAPER_PLAN.md`'s
+  two stacked revision notes merged into one revision-history block; `README.md` status
+  line and 24/469 wording de-versionised; `SEARCH_PROVENANCE.md` wording aligned with the
+  manuscript's present-tense probe statement.
+
+Files changed: `manuscript.tex`, `README.md`, `REVIEW_RESPONSE.md`, `PAPER_PLAN.md`,
+`SEARCH_PROVENANCE.md`, plus the five renames (git mv).

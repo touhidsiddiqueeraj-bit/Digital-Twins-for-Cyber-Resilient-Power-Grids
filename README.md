@@ -13,8 +13,8 @@ threats — or the twin itself — as an attack target.
 - **Corpus:** 100 studies (2020–2026), a declared non-probabilistic top-100 ranking of 492
   eligible records screened from 1,287 unique OpenAlex core-query records;
   83 coded at full text, 17 at abstract level
-- **Status:** revised after a fourth review round (see `REVIEW_RESPONSE.md`); author list is
-  a placeholder pending finalisation
+- **Status:** revised through four review rounds; point-by-point responses in
+  `REVIEW_RESPONSE.md`. Author list is a placeholder pending finalisation
 
 ---
 
@@ -30,8 +30,9 @@ threats — or the twin itself — as an attack target.
 | Studies from **2025–2026** | 76% (the realised ranking is recency-dominant: record IDs 1–45 are all 2026, 40/100 records have zero citations) |
 
 AI-threat engagement by vector (score ≥1): adversarial ML 24, poisoning 19, evasion 9,
-LLM 4, agentic 2. The earlier abstract-level screening figure (24/469, 5.1%) is now
-treated as an unreproducible working number from an unpreserved scan, not evidence.
+LLM 4, agentic 2. The abstract-level screening figure (24/469, 5.1%) is an
+unreproducible working number from an unpreserved scan; the manuscript reports it as
+such, not as evidence.
 
 Two coders (both authors of the review) coded a blind sample of 20 of the 83 full-text
 records (24%): κ = 0.60 (bootstrap 95% CI 0.20–0.90) for "any engagement", κ = 0.14
@@ -71,9 +72,10 @@ digital_twin_grid_cybersecurity_papers.csv   screened corpus with abstracts
 doi_verification.csv             DOI verification log
 venue_index.csv / prisma_flow.txt            PRISMA flow inputs
 SEARCH_PROVENANCE.md             search-provenance gap manifest (required artifacts)
-REVIEW_RESPONSE.md               round-3 review response: every point → action taken
+REVIEW_RESPONSE.md               point-by-point responses to the round-3 and round-4 reviews
 *_proposal.pdf/.pptx             research proposal
-Peer_Review_Report*.pdf, peerreview*.docx    peer review materials
+habeeb2026_dual_role_digital_twins.pdf      Habeeb et al. (2026), the closest prior review
+reviews/                         peer review materials (rounds 1–2, consistently named)
 gen_bib.py                       bibliography helper
 ```
 
@@ -116,7 +118,7 @@ Requires a LaTeX distribution with `elsarticle` (TeX Live / MiKTeX), or `tectoni
 
 ```bash
 pdflatex manuscript.tex
-bibtex manuscript          # required: manuscript.bbl is no longer committed
+bibtex manuscript          # required: manuscript.bbl is generated at build time and not committed
 pdflatex manuscript.tex
 pdflatex manuscript.tex
 

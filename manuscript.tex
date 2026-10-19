@@ -38,41 +38,41 @@ Digital twins are becoming a reference architecture for monitoring, protecting a
 controlling modern power grids, and machine learning is being adopted inside those twins
 quickly. We ask whether the security literature that names a grid digital twin and a
 security term engages AI-enabled threats---and the twin itself---as an attack target, or
-uses AI defensively and leaves it at that. The analysis is exploratory: the hypothesis
-was formed from early reading of the same corpus, and there is no external baseline for
-what the engagement share should be.
-From twelve OpenAlex core queries we screened 1{,}287 unique records and retained a
-\emph{ranked} top-100 subset (2020--2026) under a non-probabilistic rule favouring
-relevance, citations and recency; 83 studies were coded at full text across 46 fields and
-17 at abstract level. Four further adversarial-AI probe queries widened the candidate pool
-to roughly 2{,}000 records; the released record does not establish whether probe-only
-records entered the retained corpus, so prevalence figures describe this corpus, not the
-wider literature.
-Machine learning is used in 70 of 83 full-text studies---for detection in 55; forecasting
-(12) and control (3) are not security functions. 35 of 83 (42\%) engage any AI-enabled
-threat and 11 (13\%) engage one substantively; within the 29 security-primary,
-non-review, detection-ML studies, 16 (55\%) engage any and 6 (21\%) substantively.
-Any-level engagement is therefore majority in the core subsets, and the load-bearing
-finding is its shallowness: ``any'' can mean fewer than two sentences, the substantive
-count sits on the weakest-agreement collapse ($\kappa = 0.14$), and the misclassification
-interval (21--51 of 83, roughly 25--61\%) includes both minority and majority readings.
-As coded, no grid study treats the twin itself as the adversary's objective (the single
-strict \emph{target} record is a vehicle-twin review outside the grid domain) and 56 of
-83 name an attack on the twin's data path or its learned components, treating the twin as
-a protected asset rather than a studied target; both are descriptive observations of this
-coding, and two abstract-only nuclear-sector records that do attack twin interfaces and
-twin ML models (R91, R92) bound the claim from outside the coded frame. Threat coverage,
-as coded, concentrates at operation (66/83; lifecycle $\kappa = 0.32$, AC1 0.54; the
-weakest field in the study is \texttt{attack\_surface\_named}, $\kappa = 0.14$, AC1 0.31).
-In a 20-record double-coded sample (24\% of the full-text records; both coders are
-authors of this review), agreement was $\kappa = 0.60$ (bootstrap 95\% CI 0.20--0.90)
-for any engagement, $\kappa = 0.14$ ($-0.23$ to $0.64$) for substantive engagement, and
-Gwet's AC1 $= 0.50$ on the three-level scale (weighted $\kappa$ 0.43--0.44);
-a misclassification sensitivity anchored on the second coder's coding leaves the headline
-near-unchanged (36 of 83, 95\% CI 21--51), an interval that includes both minority and
-majority readings. We close with a five-item research agenda in
-which every item is tied to the gap it addresses, the evidence that would confirm it,
-and the evidence that would disconfirm it.
+uses AI defensively and leaves it at that. The analysis is exploratory: the hypothesis was
+formed from early reading of the same corpus, and there is no external baseline for what
+the engagement share should be.
+Twelve OpenAlex core queries yielded 1{,}287 unique records, of which 492 passed a
+three-term eligibility screen; a declared non-probabilistic ranking (relevance, citations,
+recency) then retained a top-100 subset for 2020--2026. Eighty-three studies were coded at
+full text across 46 fields and 17 at abstract level only. Four further adversarial-AI
+probe queries widened the candidate pool to roughly 2{,}000 records, but the released
+record does not establish whether probe-only records entered the retained corpus; every
+figure below therefore describes this corpus, not the wider literature.
+Machine learning is used in 70 of the 83 full-text studies---for detection in 55;
+forecasting (12) and control (3) are not security functions. 35 of 83 (42\%) engage an
+AI-enabled threat at any level and 11 (13\%) engage one substantively; within the 29
+security-primary, non-review, detection-ML studies, 16 (55\%) engage any and 6 (21\%)
+substantively. Any-level engagement is thus majority in the core subsets, and the
+load-bearing finding is its shallowness: ``any'' can mean fewer than two sentences, and
+the substantive count sits on the weakest-agreement collapse ($\kappa = 0.14$). In a
+20-record double-coded sample (24\% of the full-text records; both coders are authors of
+this review), agreement was $\kappa = 0.60$ (bootstrap 95\% CI 0.20--0.90) on any
+engagement, $\kappa = 0.14$ ($-0.23$ to $0.64$) on substantive engagement, and moderate
+on the three-level scale (weighted $\kappa$ 0.43--0.44, Gwet's AC1 0.50). Anchoring
+instead on the second coder's coding leaves the headline near-unchanged at 36 of 83
+(95\% CI 21--51, roughly 25--61\%), an interval that includes both minority and majority
+readings.
+As coded, no grid study treats the twin itself as the adversary's objective: the single
+strict \emph{target} record is a vehicle-twin review outside the grid domain, while two
+abstract-only nuclear-sector records that do attack twin interfaces and twin ML models
+(R91, R92) bound the claim from outside the coded frame. 56 of 83 name an attack on the
+twin's data path or its learned components---largely classical communication
+threats---treating the twin as a protected asset rather than a studied target; these too
+are descriptive observations of this coding. Threat coverage, as coded, concentrates at
+operation (66/83; lifecycle $\kappa = 0.32$, AC1 0.54). The weakest field in the study is
+\texttt{attack\_surface\_named} ($\kappa = 0.14$, AC1 0.31). We close with a five-item
+research agenda in which every item is tied to the gap it addresses, the evidence that
+would confirm it, and the evidence that would disconfirm it.
 \end{abstract}
 
 \begin{keyword}
@@ -104,7 +104,7 @@ represented in any figure here.
 
 Early reading suggested a specific, testable asymmetry: grid digital-twin security research
 uses AI as a defensive tool far more often than it engages AI, or the twin, as an attack
-target. The hypothesis was formed from early reading of part of the same corpus, before
+target. The hypothesis was formed from part of the same corpus, before
 coding began and with no pre-specified confirmation threshold; the analysis is therefore
 exploratory. Two further limits on what it can show should be stated at the outset.
 First, ``uses ML for detection'' and ``engages an AI-enabled threat'' are different
@@ -117,7 +117,7 @@ comparison is confounded by selection (Section~\ref{sec:method}).
 This review quantifies that asymmetry across a screened corpus and turns it into a research
 agenda. It is a theory-testing structured review, not an empirical deployment study.
 
-\subsection{Positioning against prior reviews}
+\subsection{Positioning against prior reviews}\label{sec:positioning}
 
 The closest work, and the reason this review had to be repositioned, is Habeeb, Weli and
 Almaliki's 2026 PRISMA review of ``Dual-Role Digital Twins'' in cyber-physical security
@@ -263,7 +263,7 @@ queries, which is why we added the four adversarial-AI probes.
 Our codebook's threat vocabulary was designed before we read their review, according to
 the dated codebook and design log in the repository---a claim that cannot be verified
 from this text alone. The review's \emph{positioning}, by contrast, was revised after
-reading their work (Section~1.1): the framing changed, the vocabulary did not. We state
+reading their work (Section~\ref{sec:positioning}): the framing changed, the vocabulary did not. We state
 both facts separately and withdraw any stronger independence claim than that. Table~\ref{tab:bridge} maps each of their five attack vectors onto our vocabulary
 terms. The mapping shows \emph{vocabulary-level coverage only}: every one of their vectors is
 expressible in our closed vocabulary. It is not evidence that the corpus deals with the
@@ -332,7 +332,7 @@ alternatives (a narrative review) would hide the selection rule rather than expo
 The protocol was fixed before extraction, with the codebook revisions noted below. The
 review is theory-testing in intent: the asymmetry stated in the introduction is the
 hypothesis, and the retained 100 studies are the corpus on which it is explored---with no
-pre-specified confirmation threshold, as Section~1 states.
+pre-specified confirmation threshold, as the introduction states.
 
 \subsection{Search strategy}
 
@@ -384,9 +384,7 @@ exactly (IDs 1--45 are all 2026, and within every year block citations descend w
 see Appendix~A), 40 of the 100 retained records have zero citations at retrieval, and
 76\% of the corpus is from 2025--26. The realised rule is therefore recency-dominant
 with citations as a tie-breaker, and it under-represents foundational 2020--2023 work
-rather than over-representing established, cited work; an earlier draft asserted the
-opposite direction for the citation component, an assumption contradicted by the corpus's
-own composition. The rule does favour reviews (36\% of the retained corpus). Because the
+rather than over-representing established, cited work. The rule does favour reviews (36\% of the retained corpus). Because the
 rule is not a random sample, every
 prevalence figure in Section~\ref{sec:results} is a statement about the retained 100 studies
 and should not be read as an estimate of the wider literature; the corpus's 76\% share of
@@ -978,12 +976,12 @@ than a claim about the literature.
 
 \label{sec:agreement}
 Table~\ref{tab:reliability} reports agreement on the 20-record sample (24\% of the 83
-full-text records). On \texttt{ai\_threat\_overall}, the 3x3 counts are (rows coder 1, columns coder 2):
+full-text records). On \texttt{ai\_threat\_overall}, the $3\times3$ counts are (rows coder 1, columns coder 2):
 0: 9, 1, 1; 1: 1, 3, 1; 2: 1, 2, 1. The count behind the headline, 35/83, rests on the
 ``any engagement vs.\ none'' collapse: coder 1 has 9 of 20, coder 2 has 9 of 20, agreement
 16/20 ($\kappa$ = 0.60, PABAK 0.60, bootstrap 95\% CI 0.20--0.90). The three-class
-$\kappa$ is 0.41 (PABAK 0.48)---these are different statistics for different questions, and
-earlier drafts conflated them. On the three-level scale itself, the ordinal statistics are
+$\kappa$ is 0.41 (PABAK 0.48); these are different statistics for different questions. On
+the three-level scale itself, the ordinal statistics are
 linear weighted $\kappa = 0.43$ (bootstrap 95\% CI 0.08--0.74), quadratic weighted
 $\kappa = 0.44$ (0.03--0.80) and Gwet's AC1 $= 0.50$ (0.18--0.80): chance-corrected
 agreement on the ordinal scale is moderate under every statistic we computed, and the
@@ -998,8 +996,8 @@ The disagreement on ``any engagement'' is symmetric (2 each way), but four disag
 cannot distinguish coder bias from noise, and symmetry is not evidence of accuracy: the
 interval on the difference includes under- and over-counting of the same magnitude. The
 headline supported by the reliability data is the 35/83 any, not the 11/83 substantive,
-which is fragile. This paragraph is a post-hoc reading of the 3x3 once we saw it, and is
-flagged as such.\par\vspace{0.5em}
+which is fragile. This reading is post hoc---formed after seeing the $3\times3$ table---and
+is flagged as such.
 
 To quantify what the misclassification does to the headline, we propagate the sample error
 matrix to the corpus under the assumption that coder 2's coding is the gold standard: the
@@ -1067,7 +1065,7 @@ than a coder problem, and as a reason not to quote $\kappa$ alone on this sample
 \caption{Inter-coder agreement on the blind sample ($n=20$ of the 83 full-text records).
 $\kappa$ is reported where interpretable; PABAK uses the codebook's category count per
 field; AC1 is Gwet's first-order agreement coefficient (prevalence-robust, computed on
-the same 3x3 or nominal tables); ``bias'' is the largest between-coder difference in
+the same $3\times3$ or nominal tables); ``bias'' is the largest between-coder difference in
 category marginals (proportion of 20); $\dagger$ marks near-constant fields (modal
 category $\ge 90$\% in coder 1) where $\kappa$ is not interpretable and percentage
 agreement is reported instead. Bootstrap 95\% CIs for headline fields are in the text.}
@@ -1140,8 +1138,7 @@ future work. The remaining 15 weak firings were \emph{not} individually inspecte
 reported here as uninspected; their unexamined status is part of the audit's limit, not an
 oversight we claim to have covered. We note plainly that this limit is cheap to remove:
 the 15 records are identifiable from the released audit output, and inspecting them is a
-reading task of hours, not a re-design---a resubmission should either inspect them or say
-why not. No codes were changed.
+reading task of hours, not a re-design. No codes were changed.
 
 What this audit licenses is therefore narrow: the false-negative channel is disclosed, not
 bounded. The design that would bound it is an independent full-text re-read of a random
@@ -1186,7 +1183,7 @@ detectors' own failure modes substantively. We state the finding as an asymmetry
 not of rate: no temporal claim is supported by a recency-weighted ranked corpus, and there
 is no external baseline for how deep engagement should be.
 
-\subsection{The twin as a target: strict count zero, loose tiers two-thirds}
+\subsection{The twin as a target: strict count zero, loose tiers two-thirds}\label{sec:targettiers}
 
 No grid study in this corpus treats the twin as the adversary's objective; the single strict
 \emph{target} record \cite{ref59} concerns vehicle twins and falls outside the grid domain.
@@ -1229,22 +1226,22 @@ studies (45\%) are reviews against 34 of 83 (41\%) in the full-text corpus, so r
 authorship is not over-represented, but bridge studies are (3 of 11 against 8 of 83 full-text records, 2 more in the abstract-only set).
 The honest reading is that reviews have the length and the licence to survey AI threats, while
 primary papers have neither. Document length is a clear confound and these numbers should not
-be read as evidence that 'only reviewers care.' Also, the abstract-versus-full-text comparison
+be read as evidence that ``only reviewers care''. The abstract-versus-full-text comparison
 in Section~\ref{sec:audit} is not like-for-like (24/469 comes from a wider query set and a
 different threshold than 35/83) and should be read as an illustration of screening loss rather
-than an 8x correction factor.
+than an 8$\times$ correction factor.
 
 \subsection{Positioning against the prior review}
 
 Relative to Habeeb et al.\ \cite{habeeb2026}, our contribution is a grid-side probe of a
 narrower instance of one of their axes, with a published corpus, a closed vocabulary, and
-reported reliability; full scope alignment is in Section 6.2. Table
+reported reliability; full scope alignment is in Section~\ref{sec:targettiers}. Table
 \ref{tab:bridge} shows that our independent vocabulary covers all five of their vectors, so the
 comparison is not competing but additive. Two caveats are structural, not rhetorical. First,
 their search string has no specific attack-side operator, so records enter only through
 security terms; the same is true of our twelve core queries, and our four adversarial-AI
-probes were added precisely because of that shared blind spot. We can no longer claim the
-probes as a completed defence, however: the released record does not establish that
+probes were added precisely because of that shared blind spot. The probes cannot be
+claimed as a completed defence, however: the released record does not establish that
 probe-only records entered the retained corpus (Section~\ref{sec:method}), so the shallow
 engagement we measure may be partly a retrieval artefact of the core vocabulary, and the
 asymmetry could be weaker in the un-retrieved attack-side literature than in this corpus.
@@ -1354,10 +1351,10 @@ the construct remains softer than the threat-vocabulary fields.
 \subsection{Internal validity and screening}
 Screening on title and abstract is imperfect. A working figure from an earlier abstract-level
 scan---an AI-threat term in the abstract of 24 of 469 records (5.1\%) against the retained
-corpus's 35 of 83 (42.2\%) at full text---circulated in earlier drafts, but the per-record
-artifact of that scan was not preserved, its relation to the roughly 700 probe-added
-candidates is not established, and we now treat it as an unreproducible working number
-rather than evidence (Section~\ref{sec:ai-threats}). Its 5\% hit rate, if it means anything,
+corpus's 35 of 83 (42.2\%) at full text---was not preserved at the per-record level; its
+relation to the roughly 700 probe-added candidates is not established, and it is treated
+as an unreproducible working number rather than evidence (Section~\ref{sec:ai-threats}).
+Its 5\% hit rate, if it means anything,
 suggests the probe queries were largely non-specific.
 
 \subsection{Reliability}
@@ -1376,7 +1373,8 @@ the protocol was `fixed'---all of which limit how strongly the review answers it
 Because the corpus is a ranked subset, no prevalence figure here estimates the wider
 literature, and no sampling-theory interval (Wilson or otherwise) is reported; the
 misclassification sensitivity of Section~\ref{sec:agreement} is the only interval we attach
-to the headline.\par\vspace{0.5em}
+to the headline.
+
 Seventeen of the 100 records were available only as abstracts; this is an access limitation
 of the authors, not a property of the literature, and those records are listed with DOIs
 (Appendix~A) so readers can check what is missing. The 17 are not a random subset: an
@@ -1395,10 +1393,10 @@ The core grid-security vocabulary does not retrieve attack-side work; the four a
 probes were added to widen the candidate pool (approximately 2,000 records), but the released
 record does not establish that probe-only records entered the screened set or the final 100,
 and the query strings and per-record provenance were not preserved in the released package.
-We therefore withdraw the earlier claim that the probes make the asymmetry robust to
-retrieval bias: on the released evidence, the corpus derives from the core
-grid-security vocabulary alone, which is precisely the retrieval bias the probes were meant
-to fix, and the asymmetry may be overstated in the un-retrieved attack-side literature. The
+The probes therefore provide no retrieval-bias defence: on the released evidence, the
+corpus derives from the core grid-security vocabulary alone---precisely the retrieval bias
+the probes were meant to fix---and the asymmetry may be overstated in the un-retrieved
+attack-side literature. The
 repository's provenance manifest (`SEARCH\_PROVENANCE.md') states the artifacts whose release
 would resolve this (query strings, run dates, per-record provenance, and a re-run of the
 headline on the probe-only subset); until then, the corpus should be read as a bounded
@@ -1426,10 +1424,10 @@ risk-of-bias or venue-quality appraisal was performed; the venue-type filter is 
 peer-review certification, which is why Section~\ref{sec:evidence} reports a stricter
 peer-review-filtered sensitivity (58 records, excluding the Zenodo deposits, the GSC
 Online Press title and the IRJMETS title) alongside the full-corpus figures, and why
-readers should weight venue quality into any claim reproduced from this review. The claim in Section~1 is restricted to
+readers should weight venue quality into any claim reproduced from this review. The claim in the introduction is restricted to
 the intersection of `digital twin' and `cybersecurity' in power grids; substantial 
 adversarial-ML work on grid state estimation lies outside that intersection and is not covered
-by the headline numbers.\par\vspace{1em}
+by the headline numbers.
 
 \section{Conclusion}\label{sec:conclusion}
 

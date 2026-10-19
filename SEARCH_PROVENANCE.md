@@ -26,8 +26,7 @@ literature. If no probe-only record entered the retained corpus, the corpus deri
 the core vocabulary alone — which is exactly the retrieval bias the probes were meant to
 fix — and the measured asymmetry may be overstated relative to the un-retrieved
 attack-side literature. The manuscript (Methods §4.2, Discussion §6.5, Threats to
-Validity §8.5) states this and withdraws the earlier claim that the probes make the
-result robust.
+Validity §8.5) states this and makes no retrieval-bias defence for the probes.
 
 ## Artifacts that must be released to resolve it
 
