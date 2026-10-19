@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Round-7 verification + new sensitivities.
+"""Verification and sensitivity analyses.
 
-Computes every data-dependent quantity the round-7 review rests on:
+Computes the data-dependent quantities behind the manuscript's sensitivity
+sections:
   1. Parse analysis/evidence/broadscan.txt -> strong/weak firing classification,
      identify the 15 weak-only firings (and the 10 non-firing negatives).
   2. Core-subset concentration: all 16 any-engagers among the 41 security-primary
@@ -17,7 +18,7 @@ import os
 import re
 from collections import Counter
 
-ROOT = "/home/z/my-project/repo"
+ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 AN = os.path.join(ROOT, "analysis")
 
 STRONG = {"poison/backdoor", "model-manip", "model-compromise", "evasion"}

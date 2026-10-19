@@ -15,7 +15,7 @@ import os
 import re
 import subprocess
 
-ROOT = "/mnt/drive2/newpaper"
+ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 AN = os.path.join(ROOT, "analysis")
 
 # Deliberately broader than the codebook: these are phrases that can only mean

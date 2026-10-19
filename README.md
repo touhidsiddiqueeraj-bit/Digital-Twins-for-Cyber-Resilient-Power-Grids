@@ -16,8 +16,7 @@ by the coding instrument.
 - **Corpus:** 100 studies (2020–2026), a declared non-probabilistic top-100 ranking of 492
   eligible records screened from 1,287 unique OpenAlex core-query records;
   83 coded at full text, 17 at abstract level
-- **Status:** revised through five review rounds (3–7); point-by-point responses in
-  `REVIEW_RESPONSE.md`. Author list is a placeholder pending finalisation
+- **Status:** manuscript complete; author list is a placeholder pending finalisation
 
 ---
 
@@ -28,16 +27,16 @@ by the coding instrument.
 | ML used (full text) | 70 / 83 — **for detection in 55** (forecasting 12, control 3 are not security functions) |
 | Engage **any** AI-enabled threat | 35 / 83 (42.2%); a majority in the core subsets (16/29, 30/55) — but the corpus was retrieved with defensive vocabulary, so rates describe the defensively-framed literature only |
 | Engage an AI threat **substantively** | 11 / 83 (13.3%) — on the weakest coder collapse (κ = 0.14, 1 of 6 positives doubly agreed) and a threshold that partly proxies document length (0/14 conference papers clear it): **depth is not reliably measured by this instrument**; the misclassification interval 21–51 of 83 spans minority and majority readings |
-| Twin as the adversary's **objective** (strict) | **0 grid studies** — a domain-scoped descriptive observation: 1 non-grid vehicle record; 56/83 name interface or model threats in a defender frame (tool is the near-constant default, 75/83); and the two read nuclear-domain records (R91, R92 — `analysis/R7_READBACK.md`) do attack twin interfaces and twin ML models, so the unqualified claim is gone |
+| Twin as the adversary's **objective** (strict) | **0 grid studies** — a domain-scoped descriptive observation: 1 non-grid vehicle record; 56/83 name interface or model threats in a defender frame (tool is the near-constant default, 75/83); and the two read nuclear-domain records (R91, R92 — `analysis/READBACK.md`) do attack twin interfaces and twin ML models, so the unqualified claim is gone |
 | Research concentrated at **operation** stage | 66 / 83 (lifecycle κ = 0.32, AC1 0.54 — descriptive only; the single design-phase record is out-of-domain) |
 | Studies from **2025–2026** | 76% — a recency-heavy corpus profile (IDs 1–45 all 2026, 40/100 zero-citation; per-record counts in Appendix A's Cit. column). Which ranking component dominated is not recoverable from the released record; the clean test needs the year distribution of the 492 eligible vs the retained 100 |
 
 AI-threat engagement by vector (score ≥1): adversarial ML 24, poisoning 19, evasion 9,
-LLM 4, agentic 2. The previously quoted abstract-level figure (24/469) was an
-unreproducible working number from an unpreserved scan and has been deleted from the
-manuscript. Round-7 readbacks (15 weak audit firings inspected; seeded 12-record sample
-of the 48 negatives re-read; R91/R92 obtained and read) are documented in
-`analysis/R7_READBACK.md`; no substantive false negative was found, and the readback
+LLM 4, agentic 2. The abstract-level screening figure (24/469) from an unpreserved
+probe-relevance scan is an unreproducible working number and is not used in the
+manuscript. The post-hoc readback audit (15 weak audit firings inspected; seeded 12-record
+sample of the 48 negatives re-read; R91/R92 obtained and read) is documented in
+`analysis/READBACK.md`; no substantive false negative was found, and the readback
 upper bound for any-level engagement is 37/83 (44.6%).
 
 Two coders (both authors of the review) coded a blind sample of 20 of the 83 full-text
@@ -55,35 +54,32 @@ misclassification sensitivity anchored on the second coder puts the headline at 
 ## Repository layout
 
 ```
-PAPER_PLAN.md                    paper plan: research questions, contributions, timeline, traps
 manuscript.tex                   LaTeX source (elsarticle, IJCIP)
 manuscript.pdf                   compiled manuscript
 appendix_corpus.tex              Appendix A: all 100 studies, with Cit. column (gen_appendix.py)
-included.bib                     bibliography (101 entries)
+included.bib                     bibliography (107 entries)
 highlights.txt                   Elsevier highlights
 figures/                         5 figures (PDF + PNG, 300 dpi) and make_figures.py
 analysis/
   RESULTS.md                     headline numbers derived from the extraction matrix
   codebook.md                    coding manual — authoritative field definitions
   CODING_INSTRUCTIONS.md         standalone second-coder brief
-  COMPETING_REVIEWS.md           novelty check and repositioning decision
+  COMPETING_REVIEWS.md           novelty check against the closest prior review
   extraction_matrix.csv          the matrix — sole source of every table number
   doi_verification_all.csv       Crossref/DataCite verification of all DOIs
   build_matrix.py                rebuilds the matrix + reliability sample from source CSVs
   verify_all_dois.py             verifies every DOI against Crossref, then DataCite
   reliability/                   agreement stats, coder sheets, disagreement log
   evidence/                      extracted evidence digests
-  R7_READBACK.md                 round-7 readbacks: 15 weak firings, negatives sample, R91/R92 coding
-  round7_stats.py                round-7 sensitivities (cited/uncited, venue-length, overlaps)
+  READBACK.md                    post-hoc readback audit: 15 weak firings, negatives sample, R91/R92 coding
+  sensitivities.py               sensitivity analyses (cited/uncited, venue-length, overlaps)
 downloads_manifest.csv           retrieval manifest (query set, run dates, outcomes)
 digital_twin_grid_cybersecurity_papers.csv   screened corpus with abstracts
 doi_verification.csv             DOI verification log
 venue_index.csv / prisma_flow.txt            PRISMA flow inputs
 SEARCH_PROVENANCE.md             search-provenance gap manifest (required artifacts)
-REVIEW_RESPONSE.md               point-by-point responses to the round-3–7 reviews
 *_proposal.pdf/.pptx             research proposal
 habeeb2026_dual_role_digital_twins.pdf      Habeeb et al. (2026), the closest prior review
-reviews/                         peer review materials (rounds 1–2, consistently named)
 gen_bib.py                       bibliography helper
 gen_appendix.py                  Appendix A generator; self-checks the ID-order claims
 ```
@@ -163,8 +159,8 @@ count, plus looser tiers) complementing Habeeb, Weli & Almaliki's (2026) review 
   (non-random) top-100 subset of 492 eligible records. Prevalence figures describe the
   corpus, not the literature. The title and methods say so.
 - **Probe provenance is unresolved.** The four adversarial-AI probe queries widened the
-  candidate pool but cannot be shown to have contributed to the retained 100; the claim
-  that they make the result robust to retrieval bias is withdrawn. See
+  candidate pool but cannot be shown to have contributed to the retained 100, so no
+  retrieval-bias robustness claim is made for them. See
   [`SEARCH_PROVENANCE.md`](SEARCH_PROVENANCE.md) for the gap and the required artifacts.
 - Full-text claims rest on **83/100** records (17 are abstract-only) — never cite "100"
   for full-text numbers. The 17% is an access limitation of the authors, not a

@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
-"""Round-4 reliability additions: weighted kappa, Gwet's AC1 (all fields), and
+"""Ordinal reliability statistics: weighted kappa, Gwet's AC1 (all fields), and
 family-level threat-vocabulary agreement, computed from the frozen coder sheets.
 
-Usage: python3 analysis/reliability_round4.py
+Usage: python3 analysis/reliability_ordinal.py
 
 Sources:
   - analysis/coder1_codes.csv          (frozen pre-adjudication coder-1 codes, n=100)
   - analysis/reliability/coder2_sheet.csv (blind coder-2 codes, n=20)
 
 Outputs (stdout): the statistics quoted in manuscript Section 5.6 and Table 5
-(AC1 column), so every number added in the round-4 revision is reproducible.
+(AC1 column), so every reliability number is reproducible.
 """
 import csv
 import os

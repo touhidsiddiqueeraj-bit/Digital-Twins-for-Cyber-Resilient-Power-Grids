@@ -20,8 +20,8 @@ Full-text records only (n=83). Scale 0 = not addressed, 1 = mentioned/peripheral
 - Papers with **no** engagement (score 0): **48/83 = 57.8%**
 
 Abstract-only records (n=17) cannot be coded on these fields; the 17 excluded records are
-reported as a limitation, and the abstract-level screening figure (24/469 = 5.1%) was
-computed over the wider relevant set, not this corpus.
+reported as a limitation. (An abstract-level screening figure, 24/469, from an
+unpreserved wider-set scan is not used in the manuscript.)
 
 - Non-grid rows flagged in notes (fraud, vehicle and generic-ICS cases): 4
 
@@ -59,7 +59,7 @@ shift here is a finding about screening, not a coding error, and must be reporte
 
 Twin-as-target or both, i.e. the tension the framing addresses: **1/83 = 1.2%**
 
-## Lifecycle stage (full text n=83) — the competitor's first named gap
+## Lifecycle stage (full text n=83) — a gap named in the closest prior review
 
 - design: 1
 - multi: 12
@@ -131,9 +131,9 @@ Operation-only share: **79.5%**; design or commissioning addressed at all: **1**
 
 ---
 
-## Round-3 revision additions (2026-10-19)
+## Sensitivity analyses (2026-10-19)
 
-### Matched denominators (Flaw 3 fix)
+### Matched denominators
 
 | Subset (full text) | n | any AI-threat | substantive |
 |---|---|---|---|
@@ -159,7 +159,7 @@ Operation-only share: **79.5%**; design or commissioning addressed at all: **1**
 | 2025 | 27 | 23 | 15 | 6 |
 | 2026 | 37 | 35 | 18 | 4 |
 
-### Tiered twin counts (Flaw 4 fix, full text n=83)
+### Tiered twin counts (full text n=83)
 
 | Tier | Records |
 |---|---|
@@ -170,7 +170,7 @@ Operation-only share: **79.5%**; design or commissioning addressed at all: **1**
 | Twin as protected asset (tool) | 75 (51 also name an attack channel) |
 | attack_surface_named = yes | 55 (66.3%; κ = 0.14, PABAK 0.20) |
 
-### Strict-grid-scope sensitivity (Flaw 9 fix)
+### Strict-grid-scope sensitivity
 
 - Tier A exclusions (outside power-grid on strict reading): ids 18, 59, 69, 97 → n=79:
   ML 67, detection 52, any 33 (41.8%), substantive 10 (12.7%), strict target 0.
@@ -178,7 +178,7 @@ Operation-only share: **79.5%**; design or commissioning addressed at all: **1**
   n=76: ML 65, detection 50, any 32 (42.1%), substantive 10 (13.2%), strict target 0.
 - Direction of the asymmetry robust to scope; magnitude moves ≤1.5 points.
 
-### Reliability additions (Flaw 6 fix)
+### Reliability statistics (PABAK, bias, bootstrap CIs)
 
 PABAK and bias index (max between-coder marginal difference) computed from the frozen
 coder sheets; bootstrap 95% CIs (10k resamples):
@@ -194,7 +194,7 @@ coder sheets; bootstrap 95% CIs (10k resamples):
 
 Sample frame: 20 of the 83 full-text records (24%), not 20% of 100.
 
-### Misclassification sensitivity (Flaw 7 fix, replaces Wilson intervals)
+### Misclassification sensitivity (replaces Wilson intervals)
 
 Coder-2-as-gold-standard propagation: P(C2 engaged|C1 engaged)=7/9, P(C2 engaged|C1
 zero)=2/11 → expected 35×7/9 + 48×2/11 ≈ **36 of 83 (43.3%)**, bootstrap 95% CI
@@ -215,9 +215,9 @@ validation.
   substantive LLM cases.
 
 
-## Round-4 additions (2026-10-19) — recomputed from the frozen coder sheets
+## Ordinal and family-level reliability (2026-10-19) — recomputed from the frozen coder sheets
 
-Reproduce with `python3 analysis/reliability_round4.py`.
+Reproduce with `python3 analysis/reliability_ordinal.py`.
 
 - **Ordinal agreement on ai_threat_overall (3x3: rows C1, cols C2 = [9,1,1],[1,3,1],[1,2,1]):**
   unweighted kappa 0.41; linear weighted kappa 0.43 (boot 95% CI 0.08-0.74);
@@ -258,19 +258,19 @@ Reproduce with `python3 analysis/reliability_round4.py`.
   R25/R36/R75 Cyrillic author names transliterated; R75 affiliation fragments removed;
   R79 title apostrophe normalised; R32 comma-separated authors parsed.
 - **24/469 (5.1%) figure:** from an unpreserved scan; relation to the ~700 probe-added
-  candidates not established; **deleted from the manuscript in round 7** rather than
+  candidates not established; **excluded from the manuscript** rather than
   discussed as evidence.
 
-## Round-7 additions (2026-10-19)
+## Post-hoc readback audit and quality sensitivities (2026-10-19)
 
 - **Readback of the 15 weak audit firings** (author, post hoc, windows+abstracts;
-  `analysis/R7_READBACK.md`): 13 cleared, 2 borderline score-1 candidates (R21 red-team
+  `analysis/READBACK.md`): 13 cleared, 2 borderline score-1 candidates (R21 red-team
   RL agents; R100 closing sentence on DL-enhanced attacks). Upper bound if both
   re-scored: 37/83 (44.6%) any. No substantive false negative.
 - **Seeded sample of the 48 negatives** (seed 7; n=12: R9, R10, R13, R19, R48, R62,
   R65, R79, R81, R85, R89, R93): 12/12 confirmed at zero. Two generic twin-as-object
   one-liners found (R48, R88) — undeveloped, non-AI, set aside by the strict rule.
-- **R91/R92 read and post-hoc coded** (`analysis/R7_READBACK.md`): both *both*-role,
+- **R91/R92 read and post-hoc coded** (`analysis/READBACK.md`): both *both*-role,
   nuclear domain; R91 attacks the twin itself (SSRF -> exfiltration -> offline twin
   replica -> deception of twin control; 5G jamming); R92 constructs multi-rate
   hyperparameter attacks on the twin's ML models. Not merged into the frozen matrix.

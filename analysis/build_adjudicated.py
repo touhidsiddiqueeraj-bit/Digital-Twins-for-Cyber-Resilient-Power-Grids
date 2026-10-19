@@ -10,7 +10,7 @@ to the controlled vocabulary (its raw disagreement was mostly alias/format).
 import csv
 import os
 
-AN = "/mnt/drive2/newpaper/analysis"
+AN = os.path.join(os.path.dirname(os.path.abspath(__file__)))
 FIELDS = ["id", "stance", "stance_confidence", "security_primary", "dt_type",
           "grid_domain", "twin_role", "attack_surface_named", "lifecycle_stage",
           "threat_models_named", "adversary_adaptive", "threat_model_explicit",

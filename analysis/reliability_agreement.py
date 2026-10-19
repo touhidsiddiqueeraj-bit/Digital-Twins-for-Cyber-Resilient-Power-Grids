@@ -11,7 +11,8 @@ import csv
 import os
 from itertools import combinations
 
-AN = "/mnt/drive2/newpaper/analysis/reliability"
+ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+AN = os.path.join(ROOT, "analysis", "reliability")
 
 # field -> kind
 NOMINAL = [
@@ -71,7 +72,7 @@ def setscore(a, b):
 
 def main():
     # coder1_sheet.csv is the blank template; C1's codes are in coder1_codes.csv.
-    c1 = load("/mnt/drive2/newpaper/analysis/coder1_codes.csv")
+    c1 = load(os.path.normpath(os.path.join(AN, "..", "coder1_codes.csv")))
     c2 = load(os.path.join(AN, "coder2_sheet.csv"))
     ids = sorted(set(c1) & set(c2), key=int)
     assert len(ids) == 20, f"expected 20 shared ids, got {len(ids)}"

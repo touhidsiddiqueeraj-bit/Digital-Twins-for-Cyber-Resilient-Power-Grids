@@ -1,7 +1,7 @@
-# Round-7 readback: the three "feasible now" inspections, done
+# Post-hoc readback audit: three author inspections of the released artifacts
 
-This file documents three inspections that earlier revisions of the manuscript stated as
-required future work, and that a reviewer correctly noted are feasible now. All three were
+This file documents three post-hoc inspections, each feasible with the artifacts in hand
+and conducted to probe the audit channels the manuscript flags. All three were
 conducted on 2026-10-19 by a single author of the review, post hoc, with the coded values
 known to the reader. They are **not** independent re-coding: they are author readbacks of
 released artifacts (stored abstracts + the released full-text keyword windows in
@@ -13,7 +13,7 @@ released artifacts (stored abstracts + the released full-text keyword windows in
 The broad-net audit of the 48 records coded `ai_threat_overall = 0` fired at least one
 family on 38 records: 23 strong firings (individually inspected at audit time) and
 **15 weak-only firings** (ids 3, 7, 10, 11, 13, 18, 21, 25, 39, 45, 63, 77, 80, 88, 100)
-that were previously reported as uninspected. All 15 were now read, window by window,
+that were not individually inspected at audit time. All 15 were read, window by window,
 from the released `broadscan.txt` output, with the stored abstract alongside.
 
 **Result: no substantive (score-2) false negative; at most two score-1 (any-level)

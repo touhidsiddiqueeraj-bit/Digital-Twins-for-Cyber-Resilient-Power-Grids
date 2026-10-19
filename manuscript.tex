@@ -127,9 +127,12 @@ study.
 
 \subsection{Positioning against prior reviews}\label{sec:positioning}
 
-The closest work, and the reason this review had to be repositioned, is Habeeb, Weli and
-Almaliki's 2026 PRISMA review of ``Dual-Role Digital Twins'' in cyber-physical security
-\cite{habeeb2026}. Their contribution is real and prior: they name the dual role---the twin as
+The closest prior works are Habeeb, Weli and Almaliki's 2026 PRISMA review of ``Dual-Role
+Digital Twins'' in cyber-physical security \cite{habeeb2026} and, appearing concurrently
+and independently of this review, Ogiesoba-Eguakun and Rath's systematic review of
+cyber-resilient digital-twin architectures for smart grids \cite{ogiesoba2026};
+Table~\ref{tab:priorreviews} positions this review against both and against the wider
+survey literature. Habeeb et al.'s contribution is real and prior: they name the dual role---the twin as
 both an expanded attack surface and a defence enabler---and set out four research directions
 around it. Their corpus is 20 studies, gathered with a query that has no specific attack operator,
 and spread across manufacturing, healthcare, IIoT, smart city and water management, with the
@@ -143,7 +146,8 @@ looser tiers (the twin as an attacked data path or model, and the twin as a prot
 because the strict-objective tier alone cannot speak to the broader attack-surface axis.
 In other words, they build the theory; we report a lower bound on its narrowest grid
 manifestation, not a test of the full axis. Section~\ref{sec:related} sets out the mapping in full, including the five attack vectors their
-review identifies and our corpus's coverage of them.
+review identifies and our corpus's coverage of them, and compares this review's design with
+the wider family of prior surveys (Table~\ref{tab:priorreviews}).
 
 \subsection{Contributions}
 
@@ -274,10 +278,10 @@ queries, which is why we added the four adversarial-AI probes.
 
 Our codebook's threat vocabulary was designed before we read their review, according to
 the dated codebook and design log in the repository---a claim that cannot be verified
-from this text alone. The review's \emph{positioning}, by contrast, was revised after
-reading their work (Section~\ref{sec:positioning}): the framing changed, the vocabulary
-did not. We state both facts separately and withdraw any stronger independence claim
-than that. A vocabulary-level mapping from our threat terms onto their five attack
+from this text alone. The review's \emph{positioning}, by contrast, was developed in
+engagement with their work (Section~\ref{sec:positioning}): the framing took its
+final shape against theirs, the vocabulary did not change. We state both facts
+separately and make no stronger independence claim than that. A vocabulary-level mapping from our threat terms onto their five attack
 vectors exists---every one of their vectors is expressible in our closed vocabulary,
 and our vocabulary's LLM-specific (4 records) and agentic (2) constructs fall outside
 their five vectors altogether---but the mapping is a single-author judgment that was
@@ -302,6 +306,117 @@ attack-side measurement: we do not merely note that AI threats matter, we count 
 corpus engages them and find that any-level engagement is common---majority in the core
 subsets---while substantive engagement is the minority case (11 of 83 full-text records).
 The finding is one of depth, not of presence versus absence.
+
+\subsection{Comparison with prior reviews of digital-twin security}\label{sec:priorcompare}
+
+Three further families of prior reviews bear on this review's question, and
+Table~\ref{tab:priorreviews} states the design comparison across all of them. General
+surveys of digital-twin security \cite{alcaraz2022,mun2025} map the threat landscape
+and countermeasures for the twin paradigm across cyber-physical domains: Alcaraz and
+Lopez classify threats to the twinning layer and the countermeasures against them for
+Industry 4.0 systems, and Mun et al.\ extend the threat-and-requirements mapping with
+security requirements and trust dimensions. These surveys describe what threatens a
+twin and how to defend one; they do not measure how often the studies of any particular
+sector engage each threat. A second family treats the twin as the security
+\emph{instrument}: El-Hajj et al.\ \cite{elhajj2024} systematically review digital twins
+used to enhance Industry 4.0 security and classify that literature by sector, twin
+purpose and enabling technology---the defensive half of the dual role. A third family
+surveys energy-sector twins with security as one topic among several: Heluany and
+Gkioulos \cite{heluany2024} review 81 studies of digital twins for power generation and
+distribution and observe that security research ``often presents the digital twin as an
+additional layer of protection, yet rarely investigates the security of the digital twin
+by itself''; Barreto and Aoki \cite{barreto2025} review 74 publications on power-system
+twins, with cybersecurity one of seven application areas. The two closest reviews are
+the dual-role review \cite{habeeb2026} discussed above and in
+Section~\ref{sec:positioning}, and the concurrent, independent systematic review of
+cyber-resilient twin architectures for smart grids by Ogiesoba-Eguakun and Rath
+\cite{ogiesoba2026}, which synthesises attack modelling, detection, mitigation and
+secure control across 149 publications.
+
+What no review in Table~\ref{tab:priorreviews} reports is a per-study measurement of
+attack-side engagement: whether each underlying study treats the twin or its learned
+components as an attack object, at what depth, against which threats, and how reliably
+two readers would agree on the answer. Nor do they attach agreement statistics to
+their own syntheses (Heluany and Gkioulos cross-check 10\% of included and 5\% of
+excluded papers, without agreement coefficients), condition their conclusions on their
+retrieval designs, or carry uncertainty intervals on their coding instruments. This
+review supplies exactly that measurement layer at grid scale: a per-study stance
+coding, a tiered twin-role measurement, a 0--2 depth-of-engagement scale per AI-threat
+vector, field-by-field reliability with misclassification propagation to the headline,
+a strict-scope and venue-filter sensitivity battery, and a research agenda whose items
+each carry disconfirming evidence. The comparison in the table is deliberately one of
+design scope and measurement layer, not of merit: each prior review does work this
+review does not attempt, and the facts the comparison rests on---query designs, corpus
+sizes, the presence or absence of engagement quantification and reliability
+reporting---are stated in the cited works themselves. Corpus sizes are additionally not
+directly comparable across review designs (a PRISMA-screened included set, a
+ProKnow-C portfolio and a declared ranked subset answer different questions); the
+Habeeb et al.\ row rests on a full-text reading of that review, the other rows on the
+published records as cited.
+
+\begin{table*}[tp]
+\centering
+\caption{Design comparison with prior reviews of digital-twin security. ``Adds'' states
+what this review contributes relative to each prior review; it is a statement of
+differential scope, not of relative quality. Corpus sizes are not directly comparable
+across review designs (PRISMA inclusion, ProKnow-C portfolio, ranked subset) and are
+listed as each review reports them. The Habeeb et al.\ row rests on a full-text
+reading of that review; the other rows rest on the cited works' published records.}
+\label{tab:priorreviews}
+\footnotesize
+\begin{tabular}{@{}p{2.9cm}p{5.3cm}p{6.3cm}@{}}
+\toprule
+Prior review (venue, year) & Design: method, corpus, focus & What this review adds \\
+\midrule
+Habeeb, Weli \& Almaliki 2026 (\emph{Digital Twin}) &
+PRISMA 2020; 20 studies (2019--2025); four databases; cross-sector CPS
+(grid $\approx$ 1 study); dual-role framework with a defensive-quadrant taxonomy;
+query without attack-side operators &
+Operationalises the attack axis their framework names: per-study stance and tiered
+twin-role coding on a grid corpus five times larger; quantified, depth-tiered
+AI-threat engagement; field-by-field reliability; retrieval-bias conditioning \\
+\addlinespace
+Alcaraz \& Lopez 2022 (IEEE Commun.\ Surveys Tuts.) &
+Narrative survey of threats and countermeasures for the twin paradigm, Industry 4.0
+CPS; no per-study corpus coding; window closes 2022 &
+Per-study measurement on a grid corpus; AI-era vectors (LLM-specific, agentic) that
+postdate their window, coded and counted; reliability statistics for the coding \\
+\addlinespace
+Mun et al.\ 2025 (IEEE Access) &
+Survey of twin security threats, requirements and trust dimensions across domains;
+not a sector-specific corpus measurement &
+Grid-specific engagement measurement with depth tiers, evidence-quality accounting
+(baselines, metrics, code/data release) and a falsifiable agenda \\
+\addlinespace
+El-Hajj et al.\ 2024 (Security and Privacy) &
+Systematic review of twins as security \emph{assets} for Industry 4.0, classified by
+sector, purpose and enabling technology; the defensive half of the dual role &
+Measures the other half: whether the underlying literature treats the twin as an
+attack object, and how deeply, with reliability and uncertainty attached \\
+\addlinespace
+Heluany \& Gkioulos 2024 (Int.\ J.\ Inf.\ Secur.) &
+SLR; 81 studies; twins for power generation and distribution; security one challenge
+among several; informal 10\%/5\% cross-checks, no agreement coefficients &
+Turns their qualitative observation---that the security of the digital twin ``by
+itself'' is rarely investigated---into a counted, tiered measurement with $\kappa$,
+PABAK, AC1 and confidence intervals \\
+\addlinespace
+Barreto \& Aoki 2025 (Energies) &
+ProKnow-C; 74 publications (2017--2025); power-system twin state of the art;
+cybersecurity one of seven application areas &
+Security as the object of measurement: closed threat vocabulary, per-study lifecycle
+coding, engagement depth, and code/data-release accounting \\
+\addlinespace
+Ogiesoba-Eguakun \& Rath 2026 (Electronics) &
+Systematic review; 149 publications; smart-grid cyber-resilient twin architectures
+(attack modelling, detection, mitigation, secure control); thematic synthesis;
+concurrent with and independent of this review &
+Per-study stance and depth-of-engagement coding with reliability statistics,
+retrieval conditioning and misclassification intervals; their architectural
+synthesis and this review's measurement layer are complementary \\
+\bottomrule
+\end{tabular}
+\end{table*}
 
 \section{Methodology}\label{sec:method}
 
@@ -333,13 +448,13 @@ how many of the 492 eligible, or of the retained 100, are retrievable only throu
 probes. The retrieval-bias defence that the probes were designed to provide therefore
 cannot be made from these data, and we do not make it (Section~\ref{sec:validity}, Search
 bias). Releasing the query strings, the run dates and the per-record provenance is a
-precondition for resolving this. Two artifacts now exist in the repository: a provenance
+precondition for resolving this. The repository carries two artifacts on this point: a provenance
 manifest (`SEARCH\_PROVENANCE.md`) stating exactly what must be released, and a dated
 snapshot (`analysis/search\_snapshot\_2026-10-19/`) containing \emph{reconstructed}
 query strings (the originals were not preserved) together with a second-database
 (Crossref) run of each string on 2026-10-19. The original strings themselves remain a
-required artifact, and OpenAlex re-runs attempted on 2026-10-19---twice, the second
-during this revision---were blocked both times by the API's shared-IP budget limit. What
+required artifact, and OpenAlex re-runs attempted twice on 2026-10-19 were blocked both
+times by the API's shared-IP budget limit. What
 this means for the results is stated here rather than only in
 Section~\ref{sec:validity}: the corpus derives from defensive-vocabulary retrieval, so
 any attack-side rate measured on it---including the RQ3 headline---is conditional on
@@ -431,7 +546,7 @@ finding; the affected records are listed with DOIs so readers can see exactly wh
 (Appendix~A). The 17 are not a random subset of the corpus, and the loss is not neutral for
 the headline: an abstract-level reading of the 17 (title plus abstract) codes 15 as \emph{tool}
 and the two exceptions---R91 and R92, Spirito et al., OSTI/Idaho National Laboratory reports
-on nuclear reactors---as attack-side work. Both were obtained and read during this revision:
+on nuclear reactors---as attack-side work. Both were obtained and read:
 R91 in full text (48 pages, retrieved from the INL digital library; the OSTI full-text
 endpoint was unreachable from our environment) and R92 from its extended report abstract
 on OSTI (two full-text retrieval attempts failed). R91 analyses attack scenarios against
@@ -442,7 +557,7 @@ throttling the output from the power supplies'')---while R92 constructs multi-ra
 hyperparameter attacks on the twin's ML models, with an event-triggered
 predictive-control response demonstrated in simulation. A post-hoc, single-author
 reading codes both as \emph{both}-role records (attack side and countermeasures; the
-per-record coding is released as \texttt{R7\_READBACK.md} in the repository's
+per-record coding is released as \texttt{READBACK.md} in the repository's
 \texttt{analysis/} directory); neither is merged
 into the frozen matrix, and neither is a grid-domain record. The strict-target null
 below therefore carries its ``grid-domain'' qualifier on read evidence, not only on
@@ -471,7 +586,7 @@ requires that the twin be the adversary's objective rather than an asset to be p
 \emph{both} $= 0$ is therefore definitional: a paper cannot score \emph{both} without stating
 the tension, and we report that zero as a statement about \emph{explicit articulation}, not
 as evidence that dual-role practice is absent. The category is attainable---the two
-nuclear-domain records read during this revision (R91, R92) both read as \emph{both}
+nuclear-domain records (R91, R92) both read as \emph{both}
 (Section~\ref{sec:method} on extraction)---so the zero among the 83 grid-frame full texts
 is a statement about this corpus, not about the category. The strict \emph{target} rule is likewise one
 end of a tiered measurement: in a security setting an asset that needs protecting is an
@@ -540,8 +655,8 @@ positive control recovers only 7 of the 11 substantive positives, and its recall
 mentioned-only (score-1) engagement---the harder case, covering 24 of the 35 engaged
 records---was never measured. Of the 48 negatives, 38 fired the broad net and 23 fired a
 strong family; the 23 strong firings were individually inspected at audit time, and the
-15 weak-only firings were inspected during this revision by an author reading the released
-audit windows and stored abstracts (post hoc, single-reader; Section~\ref{sec:audit}).
+15 weak-only firings were inspected by an author reading the released audit windows and
+stored abstracts (post hoc, single-reader; Section~\ref{sec:audit}).
 A seeded 12-record sample of the 48 negatives was re-read the same way. The audit is
 retained as a disclosure of the false-negative channel, not as a bound on it; the design
 that would bound it---an independent full-text re-read of a random sample of the 48
@@ -1205,9 +1320,9 @@ not an ML detector, and R15 concerns a SCADA supervisor with AI detection stated
 future work.
 
 The 15 weak-only firings (ids 3, 7, 10, 11, 13, 18, 21, 25, 39, 45, 63, 77, 80, 88, 100)
-were subsequently inspected, during this revision, by an author reading the released audit
+were subsequently inspected by an author reading the released audit
 windows alongside the stored abstracts---post hoc, single-reader, coded values known to the
-reader, with the per-record adjudication released as \texttt{R7\_READBACK.md} in the
+reader, with the per-record adjudication released as \texttt{READBACK.md} in the
 repository's \texttt{analysis/} directory.
 Thirteen are cleared on their face: acronym lists, classical adversary prose (APT groups,
 MITM, FDI, Stuxnet, BlackEnergy), defensive capability claims, related-work AI mentions,
@@ -1223,11 +1338,11 @@ sample of the 48 negatives (R9, R10, R13, R19, R48, R62, R65, R79, R81, R85, R89
 was re-read the same way: all 12 confirmed at zero, the typical clearance being classical
 FDI/MITM/DoS prose, incident history, or defensive claims, and two records (R79, R89)
 having fired no family at all in the full-text scan. No codes were changed by either
-readback.
+re-reading.
 
-What this audit licenses is therefore narrow, and slightly wider than before the two
-readbacks: the false-negative channel is disclosed and now partially inspected, not
-bounded. The readbacks are author-conducted and abstract-plus-window level, so they
+What this audit licenses is therefore narrow: the false-negative channel is disclosed
+and partially inspected, not bounded. The re-readings are author-conducted and
+abstract-plus-window level, so they
 cannot replace the design that would bound the channel---an independent full-text re-read
 of a random sample of the 48 negatives by a coder outside the author team, with a
 miss-rate estimate and confidence interval propagated to the 35/83 figure. That re-read
@@ -1282,11 +1397,11 @@ cannot be excluded: that shallow engagement partly reflects the corpus's paper q
 No grid study in this corpus treats the twin as the adversary's objective; the single strict
 \emph{target} record (R59) concerns vehicle twins and falls outside the grid domain.
 This null is presented as a descriptive observation of the coding, not as a finding about
-the field, for three reasons that are now stronger than in earlier revisions. First, the
+the field, for three reasons. First, the
 codebook's strict rule makes a zero the expected result in a security setting (an asset
 that needs protecting is an asset an adversary may attack), and the \emph{tool} category
-is a near-constant default (75 of 83). Second, the corpus's own nuclear-domain records,
-read during this revision, demonstrate that the strict categories are attainable and
+is a near-constant default (75 of 83). Second, the corpus's own nuclear-domain records
+demonstrate that the strict categories are attainable and
 attained outside the grid frame: R91's attack scenarios against the twin's digital and
 communication sections (exfiltration and offline replication of a cloud twin; deception
 of the twin's autonomous control; 5G jamming that starves the twin) and R92's constructed
@@ -1345,7 +1460,8 @@ narrower instance of one of their axes, with a published corpus, a closed vocabu
 reported reliability; full scope alignment is in Section~\ref{sec:targettiers}. Our
 closed vocabulary covers all five of their vectors (the mapping is released as a
 repository artifact and is not presented as evidence; Section~\ref{sec:related}), so the
-comparison is not competing but additive. Two caveats are structural, not rhetorical. First,
+comparison is not competing but additive, and the same holds for the wider family of
+prior reviews (Table~\ref{tab:priorreviews}). Two caveats are structural, not rhetorical. First,
 their search string has no specific attack-side operator, so records enter only through
 security terms; the same is true of our twelve core queries, and our four adversarial-AI
 probes were added precisely because of that shared blind spot. The probes cannot be
@@ -1452,7 +1568,8 @@ its expected impact from this corpus, and we do not.
 \begin{table*}[t]
 \centering
 \caption{Research agenda: gap, direction, the validation each item demands, and the evidence
-that would disconfirm it.}
+that would disconfirm it. P1 and P5 carry the dual-use and responsible-disclosure
+obligations stated in the text.}
 \label{tab:agenda}
 \small
 \begin{tabular}{@{}p{0.5cm}p{3.3cm}p{4.1cm}p{4.5cm}@{}}
@@ -1512,8 +1629,8 @@ Seventeen of the 100 records were available only as abstracts; this is an access
 of the authors, not a property of the literature, and those records are listed with DOIs
 (Appendix~A) so readers can check what is missing. The 17 are not a random subset: an
 abstract-level reading codes 15 as \emph{tool} and two (R91, R92, both nuclear-domain
-OSTI/INL reports) as twin-directed attack work; both were read during this revision
-(R91 in full text, R92 from its extended abstract) and both attack twin interfaces and
+OSTI/INL reports) as twin-directed attack work; both were read (R91 in full text, R92 from its extended
+abstract) and both attack twin interfaces and
 twin ML models (Section~\ref{sec:method}), so the strict-target null carries its
 ``grid-domain'' qualifier on read evidence, not just on abstract labels. One
 corpus DOI does not resolve (R18, which lies within the reliability sample) and three
@@ -1544,8 +1661,8 @@ the most plausibly under-represented segment in this corpus, whatever the rule t
 produced it. A dated snapshot with reconstructed query strings and a second-database
 (Crossref) run has been archived (`analysis/search\_snapshot\_2026-10-19/'); the original
 strings and per-record provenance remain the required artifacts. OpenAlex re-runs were
-attempted twice on 2026-10-19 (the second during this revision) and blocked both times by
-the shared-IP budget; re-running the search with logged queries, and ideally a second
+attempted twice on 2026-10-19 and blocked both times by the
+shared-IP budget; re-running the search with logged queries, and ideally a second
 database, is a prerequisite for any attack-side claim---not future polish---and the
 provenance manifest records it as such.
 
@@ -1618,7 +1735,7 @@ data and therefore show stability, not independent replication---and to a miscla
 sensitivity anchored on the second coder (36 of 83, 95\% CI 21--51), whose anchoring is
 circular and whose interval spans minority and majority readings. They are not tested by
 the adjudication, whose tie-break defaults to the primary coder; the false-negative
-channel is now partially inspected (15 weak audit firings read; a seeded 12-record sample
+channel is partially inspected (15 weak audit firings read; a seeded 12-record sample
 of the negatives re-read; no substantive false negative found), though not bounded.
 The closest prior
 review names the dual role; this review measures only the narrowest, strict-objective instance
@@ -1652,9 +1769,9 @@ are available in the reproducibility package accompanying this review (repositor
 at submission). Appendix~A lists all 100 included studies in the paper itself;
 the search-provenance manifest (\texttt{SEARCH\_PROVENANCE.md}) and the dated search snapshot
 (\texttt{analysis/search\_snapshot\_2026-10-19/}) record the query-level artifacts released
-and those that remain outstanding, as Section~\ref{sec:validity} discloses. The round-7
-readbacks (15 weak audit firings, the 12-record negatives sample, and the R91/R92 post-hoc
-coding) are released as \texttt{R7\_READBACK.md} in the \texttt{analysis/} directory;
+and those that remain outstanding, as Section~\ref{sec:validity} discloses. The post-hoc
+readback audit (15 weak audit firings, the 12-record negatives sample, and the R91/R92
+coding) is released as \texttt{READBACK.md} in the \texttt{analysis/} directory;
 the R91 full text is a publicly
 accessible INL/OSTI report cited by DOI and is not redistributed with the package.
 
