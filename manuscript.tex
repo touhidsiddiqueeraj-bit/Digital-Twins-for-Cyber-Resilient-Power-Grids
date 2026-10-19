@@ -39,20 +39,23 @@ Digital twins are becoming the reference architecture for monitoring, protecting
 controlling modern power grids, and artificial intelligence (AI) is being adopted inside
 those twins at speed. We review whether the security literature treats AI as a defensive
 tool faster than it models AI-enabled threats, or the twin itself, as an attack target.
-Following PRISMA 2020 style, we screened 1,287 unique OpenAlex records and retained
-100 studies on digital twins for power-grid cybersecurity (2020--2026); 83 were coded
+Following PRISMA 2020 style, we screened 1,287 unique OpenAlex records, widened by four
+adversarial-AI probe queries to a candidate pool of roughly 2,000, and retained 100
+studies on digital twins for power-grid cybersecurity (2020--2026); 83 were coded
 at full text across 46 fields and 17 at abstract level. The review is restricted to
 power-grid papers that name a digital twin and a security term.
 AI is used defensively in 70 of 83 full-text studies, while 35/83 (42.2\%) engage any
-AI-enabled threat and 11/83 (13.3\%) engage one substantively; 48 (57.8\%) do not engage at all.
-The twin itself is treated as an attack target in at most one study under a strict
-codebook definition (a vehicle-twin review). Threat coverage, as coded, concentrates
-at operation (66/83), with one design-phase study and none at commissioning ($\kappa =
-0.32$).
-Two coders agreed on 35/83 at $\kappa=0.60$ for ``any engagement'' and one of six at
-$\kappa=0.14$ for ``substantive'' engagement; the results are bounds, not population
-estimates. We close with a five-item research agenda in which every item is tied to
-the gap it addresses and the evidence that would confirm it.
+AI-enabled threat and 11/83 (13.3\%) engage one substantively; 48 (57.8\%) do not engage
+at all. The twin itself is treated as an attack target in at most one study under a
+strict codebook definition (a vehicle-twin review); the count under a looser
+asset-under-protection definition is uncomputed. Threat coverage, as coded, concentrates
+at operation (66/83; lifecycle-stage coder agreement $\kappa = 0.32$), with one
+design-phase study and none at commissioning. In a 20\% blind sample, two coders agreed
+on any-versus-none engagement at $\kappa = 0.60$ (16/20) and on substantive-versus-not
+at $\kappa = 0.14$ (one shared substantive label of six); the corpus-level figures are
+therefore bounds, not population estimates. We close with a five-item research agenda
+in which every item is tied to the gap it addresses and the evidence that would confirm
+it.
 \end{abstract}
 
 \begin{keyword}
@@ -172,7 +175,7 @@ reachable on a real deployment, and vice versa.
 
 \subsection{Cyber threats to grids and to twins}
 
-The classical grid threat model is adversarial and studied: false data injection against state
+The classical grid threat model is adversarial and well studied: false data injection against state
 estimation, replay, denial of service, man-in-the-middle on telemetry links, false command
 injection, and supply-chain compromise \cite{ref1,ref3}. These are conventional cyber-physical
 attacks and are well represented in the corpus (Section~\ref{sec:threats}).
@@ -215,11 +218,13 @@ to enter through the security and defence terms. The same limitation applies to 
 queries, which is why we added the four adversarial-AI probes.
 
 \subsection{The bridge: their vectors, our vocabulary}
+\label{sec:bridge}
 
 Our codebook's threat vocabulary was designed independently, before we read their paper. The threat vocabulary, defined and reported in Section~\ref{sec:threats}, predates this paper.
 Table~\ref{tab:bridge} shows that our
 vocabulary covers all five of their attack vectors and adds terms that their query does not name, hence could not have returned directly: adversarial machine learning (24), LLM threats (4), agentic automation
-(2), reverse pathway (10), evasion (11), and a separate supply-chain term (19), in part because
+(2), reverse pathway (10), model evasion as a broad threat term (11; the stricter AI-specific
+field \texttt{ai\_evasion} counts 9), and a separate supply-chain term (19), in part because
 their corpus is small and not grid-focused and in part because their query has no specific
 attack-by-name operator.
 
@@ -270,21 +275,25 @@ We searched OpenAlex with twelve core queries combining a digital-twin term, a g
 and a security term, yielding 1{,}287 unique records after de-duplication. We then ran four
 additional adversarial-AI probes---combining digital-twin and grid terms with adversarial
 machine learning, poisoning, evasion, and large-language-model terms---which raised the
-candidate pool to approximately 2{,}000. The probes exist because the core grid-security
-vocabulary is not expected to retrieve the attack-side literature, and we wanted the asymmetry
-result to be robust to that retrieval bias.
+candidate pool to approximately 2{,}000. The corpus was frozen on 16 October 2026; that date
+is the search cutoff, and no record published or indexed afterwards was considered. The
+probes exist because the core grid-security vocabulary is not expected to retrieve the
+attack-side literature, and we wanted the asymmetry result to be robust to that retrieval
+bias.
 
 \subsection{Selection and inclusion}
 
-We screened on title and abstract and applied the eligibility rule in Section~\ref{sec:method}. The eligible set
+We screened on title and abstract and applied the eligibility rule stated in
+Section~\ref{sec:screening}. The eligible set
 (492 records) was then narrowed to 100 by a non-probabilistic rule combining OpenAlex
 relevance score, citation count, and recency, with the final cut at rank 100. The released notebook reports per-query membership for the candidate pool (approximately 2,000 records
 retrieved by four adversarial-AI probe queries), but probe-only membership among the retained 100 is not summarised in it (for an honest reading,
 treat the probe share as zero unless shown); see Section~\ref{sec:validity}, Search bias. Because the rule is not a random sample,
 every prevalence figure in Section~\ref{sec:results} is a statement about the retained 100
-studies and should not be read as an estimate of the wider literature. Wilson 95\% intervals are shown for the Section 5.4 figures; elsewhere, small denominators bound all percentages.
+studies and should not be read as an estimate of the wider literature. Wilson 95\% intervals are shown for the Section~\ref{sec:ai-threats} figures; elsewhere, small denominators bound all percentages.
 
 \subsection{Screening}
+\label{sec:screening}
 
 Screening was title-and-abstract. A record was eligible if its title or abstract contained at
 least one digital-twin term, at least one grid or power or energy term, and at least one cyber
@@ -312,8 +321,11 @@ reproducible from the coded excerpts and DOIs, which are released.
 
 Of the 100 records, 83 were available in full text and coded in full; 17 were available only as
 abstracts and were coded at abstract level only. All abstract-only fields that require full text are treated as
-missing, not as zero, throughout. The 17\% unobtainable rate and its direction are reported as a
-reproducibility finding in Section~\ref{sec:validity}.
+missing, not as zero, throughout. The 17\% unobtainability rate is
+reported as a reproducibility finding in Section~\ref{sec:validity}. Where the results
+sections cite a corpus record (e.g.\ \cite{ref59}), the bracketed number resolves to that
+record's own bibliographic entry; corpus record IDs used in tables are record numbers in the
+released extraction matrix.
 
 \subsection{Codebook}
 
@@ -330,6 +342,9 @@ extraction. The revisions are logged in the repository and are load-bearing:
   \item \textbf{R6} fixes evaluation-method precedence (\textit{hardware-in-the-loop} $>$
   testbed $>$ simulation) and maps surveys to \emph{concept} maturity.
 \end{itemize}
+
+All five revisions were applied retrospectively to all 100 records, not only to records
+coded after each revision.
 
 The \texttt{twin\_role} field requires positive evidence. \emph{both} needs explicit coverage of
 the defensive and attack-target roles \emph{and} of the tension between them; \emph{target}
@@ -387,7 +402,9 @@ sheets, the reliability script, and the figure script are released as a reproduc
 Table~\ref{tab:denom} summarises the denominators behind the headline figures.
 \begin{table}[t]
 \centering
-\caption{Denominators used in this review.}
+\caption{Denominators used in this review. The retained corpus, full-text and
+abstract-only rows are corpus subsets; the remaining rows are subsets of the 83
+full-text records.}
 \label{tab:denom}
 \small
 \begin{tabular}{@{}lr@{}}
@@ -397,12 +414,15 @@ Subset & $n$ \\
 Retained corpus & 100 \\
 Full-text records & 83 \\
 Abstract-only records & 17 \\
-ML-used studies & 70 \\
-Non-review studies & 49 \\
-Journal articles & 62 \\
+ML-used studies (full text) & 70 \\
+Non-review studies (full text) & 49 \\
+Journal articles (full text) & 62 \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+The 62 journal articles are the full-text journal articles: 67 corpus journal articles
+minus the five available only as abstracts.
 
 \subsection{Corpus profile (RQ1, descriptive)}
 
@@ -410,7 +430,8 @@ The corpus is 100 studies: 67 journal articles, 17 conference papers, 5 theses, 
 reports, and 3 book chapters. Publication is recent and accelerating: 1 study from 2020, 5 from
 2021, 2 from 2022, 8 from 2023, 8 from 2024, 31 from 2025, and 45 from 2026; 76\% of the corpus
 appeared in 2025 or 2026 (Figure~\ref{fig:yearvenue}a). The leading publishers are MDPI (17),
-Elsevier (12) and IEEE (8). Table~\ref{tab:profile} gives the profile.
+Elsevier (12) and IEEE (8); 42 records carry no publisher label in the source metadata.
+Table~\ref{tab:profile} gives the profile.
 
 \begin{figure*}[t]
 \centering
@@ -463,7 +484,7 @@ adversarial 11, review 23---confirming that keyword-level stance labelling is un
 reading is necessary (Figure~\ref{fig:stance}b).
 
 The sharper result is \texttt{twin\_role}, coded on the 83 full-text records: the twin is treated
-as a defensive \emph{tool} in 75, as an attack \emph{target} in exactly 1, as \emph{both} in 0,
+as \emph{tool} in 75, as an attack \emph{target} in exactly 1 (Wilson 95\% interval 0--7\%), as \emph{both} in 0,
 and is \emph{unclear} in 7. No paper in the corpus articulates the dual role that Habeeb et al.\
 name \cite{habeeb2026}, and only one \cite{ref59} treats the twin as something to be attacked.
 This is the first half of the asymmetry.
@@ -523,7 +544,7 @@ Threat coverage is concentrated almost entirely at the operation phase.
 Figure~\ref{fig:threatlife} crosses the threat vocabulary with \texttt{lifecycle\_stage}. The
 design and commissioning columns are effectively empty---one design-phase study \cite{ref97} and
 none at commissioning---while the operation column is dense. Across the corpus, lifecycle is
-operation in 66 of 83 studies (79.5\%), \emph{multi} in 12, unclear in 4, design in 1, and
+operation in 66 of 83 studies (79.5\%, Wilson 95\% interval 70--87\%), \emph{multi} in 12, unclear in 4, design in 1, and
 commissioning in 0, as coded. Read as single labels, security work concentrates where the twin runs at deployment, not where it is built.
 
 \begin{figure*}[t]
@@ -535,8 +556,9 @@ $\kappa = 0.32$.}
 \label{fig:threatlife}
 \end{figure*}
 
-Threat models are also thin. An explicit, stated threat model appears in 19 of 83 studies, and an
-adaptive adversary is modelled in 10---so the corpus mostly names threats without committing to
+Threat models are also thin. An explicit, stated threat model appears in 19 of 83 studies
+(Wilson 95\% interval 15--33\%), and an adaptive adversary is modelled in 10 (7--21\%)---so the
+corpus mostly names threats without committing to
 an attacker model, which is precisely the weakness that makes attack-side claims hard to test.
 
 \subsection{Engagement with AI-enabled threats (RQ3)}
@@ -568,12 +590,15 @@ common than substantive (score 2) for every engaged vector except LLM threats (2
 2 substantive, a tie on a base of 4) and agentic threats (1 mentioned, 1 substantive, a tie
 on a base of 2). Second, the two deepest engagements are reviews \cite{ref16,ref50}; on the review authorship question
 the substantive set has 5 reviews (45\%) against 34 (41\%) in the full-text base, i.e. no over-
-representation; both counts are small and the difference is unsupported by any test.
+representation; both counts are small and the difference is not statistically significant
+(Fisher exact test, $p = 1.0$).
 
-The abstract-level screening figure is worth stating against this. Over a supplementary 469-record probe pool, an AI-enabled threat appears in the abstract in 24 records
-(5.1\%), while the full-text corpus reads 35 of 83 (42.2\%). The two figures are not
-like-for-like; they are quoted together as an illustration of how much screening losses can
-differ, not as a measured correction factor.
+How much title-and-abstract screening loses on this question cannot be quantified from the
+released record: an earlier abstract-level reading of a supplementary probe pool is not part
+of the released corpus, and its denominator is therefore undefined here. What can be said is
+directional. Engagement codes are assigned on full-text evidence, and records available only
+as abstracts could not be scored at all, so abstract-only screening of this literature should
+be expected to under-count AI-threat engagement relative to full-text coding.
 
 Table~\ref{tab:substantive} lists the eleven substantive studies. Nine are journal articles (all 2025--26), one is a thesis \cite{ref74} and one a preprint
 \cite{ref94} (2022); five carry the
@@ -625,8 +650,9 @@ simulation 33, qualitative 28, testbed 10, conceptual 5, mixed 5, and hardware-i
 validated in only 3. Baselines are reported in 41 of 83 studies and quantitative metrics in 43,
 while limitations are stated in 67. Code is released in 3 of 83 studies and data in 16. The
 evidence base is, in short, prototyping-heavy and release-light. A venue-quality sensitivity
-(restricting to the 62 journal articles) leaves the asymmetry intact (26/62 any; 9/62 substantive;
-36/62 none; 58/62 tool; twin targeted by one), though it discards roughly a quarter of the corpus.
+(restricting to the 62 full-text journal articles) leaves the asymmetry intact (26/62 any; 9/62 substantive;
+36/62 none; 58/62 tool; twin targeted by one), though it discards 21 of the 83 full-text
+records.
 Restricting the denominators to the 49 non-review studies leaves the engagement result similar
 (20/49 any versus 35/83) but not the baseline result: baselines rise from 41/83 (49\%) to 37/49
 (76\%), and metrics from 43/83 (52\%) to 40/49 (82\%). Code and data remain low in both cases.
@@ -674,7 +700,7 @@ problem rather than a coder problem: coder~1 tends to assign the default categor
 this is a default-category artefact, it depresses $\kappa$ without indicating a substantive
 disagreement.
 
-\begin{table*}[t]
+\begin{table}[!htbp]
 \centering
 \caption{Inter-coder agreement on the 20\% blind sample ($n=20$). $\kappa$ is reported where
 interpretable; $\dagger$ marks near-constant fields (modal category $\ge 90$\% in coder 1)
@@ -715,11 +741,11 @@ limitations\_stated & 70 & $\dagger$ \\
 \midrule
 \multicolumn{3}{@{}l}{\textit{Multi-label fields (set metrics)}} \\
 threat\_models\_named & 5 & Jaccard 0.43 \\
-ml\_family & 20 & Jaccard 0.42 \\
+ml\_family & 20 & Jaccard 0.30 (0.42 norm.) \\
 threat\_count & 10 & mean $|\Delta|$ 1.80 \\
 \bottomrule
 \end{tabular}
-\end{table*}
+\end{table}
 
 \subsection{False-negative audit}
 
@@ -776,7 +802,7 @@ for attack-surface engagement is, on these definitions, all but absent.
 The result with the longest reach in the data, if it holds, is the lifecycle concentration:
 66 of 83 studies are coded at the operation phase, one at design, none at commissioning. Two
 caveats apply. First, the field carries our lowest inter-coder agreement ($\kappa = 0.32$), and
-coder 1, who coded 80\% of the corpus, defaults to `operation'; the 12 studies coded `multi'
+coder 1, who was the sole coder for 80 of the 100 records, defaults to `operation'; the 12 studies coded `multi'
 may contain design or commissioning activity that the single label suppresses. Second, the score
 records the phase a study 
 \emph{targets}, not the phases it necessarily 
@@ -788,19 +814,18 @@ built, not that no design-phase security work exists.
 
 The two deepest engagements are reviews \cite{ref16,ref50}; 5 of the 11 substantive 
 studies (45\%) are reviews against 34 of 83 (41\%) in the full-text corpus, so review 
-authorship is not over-represented, but bridge studies are (3 of 11 against 8 of 83 full-text records, 2 more in the abstract-only set).
+authorship is not over-represented (Fisher exact test, $p = 1.0$), but bridge studies are
+more prevalent (3 of 11 against 8 of 83 full-text records, 2 more in the abstract-only set;
+Fisher exact test, $p = 0.12$, not significant at this $n$).
 The honest reading is that reviews have the length and the licence to survey AI threats, while
 primary papers have neither. Document length is a clear confound and these numbers should not
-be read as evidence that 'only reviewers care.' Also, the abstract-versus-full-text comparison
-in Section~\ref{sec:audit} is not like-for-like (24/469 comes from a wider query set and a
-different threshold than 35/83) and should be read as an illustration of screening loss rather
-than an 8x correction factor.
+be read as evidence that 'only reviewers care.'
 
 \subsection{Positioning against the prior review}
 
 Relative to Habeeb et al.\ \cite{habeeb2026}, our contribution is a grid-side probe of a
 narrower instance of one of their axes, with a published corpus, a closed vocabulary, and
-reported reliability; full scope alignment is in Section 6.2. Table
+reported reliability; full scope alignment is in Section~\ref{sec:bridge}. Table
 \ref{tab:bridge} shows that our independent vocabulary covers all five of their vectors, so the
 comparison is not competing but additive. Two caveats are structural, not rhetorical. First,
 their search string has no specific attack-side operator, so records enter only through
@@ -851,7 +876,7 @@ A low attack-side count does not mean grids are undefended; it means the publish
 not modelled these attacks. We cannot estimate either the probability of an AI-enabled attack or
 its expected impact from this corpus, and we do not.
 
-\begin{table*}[t]
+\begin{table}[!htbp]
 \centering
 \caption{Research agenda: gap, direction, and the validation each item demands.}
 \label{tab:agenda}
@@ -867,7 +892,7 @@ P4 & Poisoning 19, evasion 9 vs detection 55 & Defend learned components & Poiso
 P5 & Code 3/83 (3/49 non-review), data 16/83 & Release artifacts & Third party reruns unaided \\
 \bottomrule
 \end{tabular}
-\end{table*}
+\end{table}
 
 \section{Threats to validity}\label{sec:validity}
 
@@ -878,11 +903,13 @@ eleven-family net, and by the conservative \texttt{twin\_role} rule, but the con
 softer than the threat-vocabulary fields.
 
 \subsection{Internal validity and screening}
-Screening on title and abstract is imperfect: in the probes built into this study, an
-AI-threat term appears in the abstract in 24 of 469 (5.1\%) records, whereas the retained
-full-text corpus reads 35 of 83 (42.2\%). The two figures use different query sets and
-different screening thresholds, so they are an illustration of screening loss, not a like-for-like
-comparison, and the 'order of magnitude' distance between them should not be quoted.
+Screening on title and abstract is imperfect, and for this corpus the loss is unquantified:
+AI-threat engagement was scored on full text, the 17 abstract-only records could not be
+scored on it at all, and the supplementary probe pool behind an earlier abstract-level reading
+is not part of the released record, so no like-for-like comparison is offered. The direction
+of the effect is clear---engagement signals frequently live in the body of a paper rather than
+its abstract---so abstract-level screening of this literature should be read as a lower bound
+on engagement.
 
 \subsection{Reliability}
 Agreement on headline fields is moderate, not strong (\texttt{ai\_threat\_overall} $\kappa = 0.41$;
@@ -891,9 +918,10 @@ and is declared. The exact magnitude of the asymmetry should therefore be read w
 reliability table, not in isolation.
 
 \subsection{External validity and coverage}
-PRISMA compliance is partial: one database, no stated search date in the text, no registered
+PRISMA compliance is partial: one database, no registered
 protocol and five codebook revisions after the protocol was `fixed'---all of which limit how
-strongly the review answers the protocol hypothesis.\par\vspace{0.5em}
+strongly the review answers the protocol hypothesis. The search cutoff is stated in
+Section~\ref{sec:method} (the corpus freeze date of 16 October 2026).\par\vspace{0.5em}
 Seventeen of the 100 records were available only as abstracts, hence the corpus has a 17\%
 non-full-text rate; those records are listed with DOIs so readers can check what is missing. One
 corpus DOI does not resolve (record 18, which lies within the reliability sample) and three
@@ -903,7 +931,8 @@ Crossref in 18 of 54 cases and were corrected in favour of the registry.
 \subsection{Search bias}
 The core grid-security vocabulary does not retrieve attack-side work; the four adversarial-AI
 probes were added to widen the candidate pool (approximately 2,000 records), and the
-released files do not yet separate probe-only membership in the final 100; this is a gap in
+released dataset does not carry per-record query provenance, so probe-only membership among
+the retained 100 cannot be computed post hoc; this is a gap in
 the record. Even with
 them, engagement is shallow, so the asymmetry is not merely a retrieval artefact---but the corpus
 should still be read as a bounded sample rather than a census. The recency component of the
@@ -934,7 +963,8 @@ Grid digital-twin security has adopted AI as a defensive tool far faster than it
 AI---or the twin itself---as an attack target. Across a screened corpus of 100 studies,
 76\% published in 2025--26, AI is defensive in 70 of 83 full-text studies while 35 engage any AI-enabled threat and 11 engage
 one substantively; the twin is an explicit attack
-target in exactly one study. Coverage is dominated by the operation phase (66 of 83 coded as such, on a field with
+target in exactly one study under the strict codebook definition (a vehicle-twin review; the
+count under a looser asset-under-protection definition is uncomputed). Coverage is dominated by the operation phase (66 of 83 coded as such, on a field with
 $\kappa = 0.32$); at most, one study is coded at design and none at commissioning, and threat
 models are thin (explicit in 19/83).
 These directions are robust to adjudication and to a two-lexicon false-negative audit, though the
@@ -945,10 +975,11 @@ justifies it and the evidence that would close it.
 
 \section*{Highlights}
 \begin{itemize}
-  \item 100-study PRISMA-2020-style corpus on digital twins for power-grid cybersecurity (2020--2026).
-  \item 70/83 defensive, 35/83 engage an AI-enabled threat, 11/83 substantively (fragile, post-hoc); the twin is an explicit target in at most one study (a vehicle-twin review).
-  \item Coverage, as coded: 66/83 at operation, 1 at design, 0 at commissioning.
-  \item Five-item agenda, each tied to its gap and its validating evidence.
+  \item 100-study review of digital twins for power-grid cybersecurity, 2020--2026.
+  \item AI is defensive in 70/83; 35/83 engage an AI threat; 11/83 substantively (fragile).
+  \item Only one study treats the twin itself as an attack target (strict definition).
+  \item Coverage: 66/83 at operation, 1 at design, 0 at commissioning, as coded.
+  \item Five-item agenda: each item names its gap and the evidence that would close it.
 \end{itemize}
 
 \section*{Declaration of competing interest}

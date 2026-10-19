@@ -1,6 +1,6 @@
 Highlights
-- 100-study PRISMA corpus on digital twins for power-grid cybersecurity, 2020-2026.
-- AI is defensive in 70 of 83 studies; 35 of 83 (32-53%) engage any AI-enabled threat, 11 substantively (fragile).
-- Only one study treats the digital twin itself as an explicit attack target.
-- Coverage sits at 66 of 83 at operation, one at design, none at commissioning (as coded).
-- Five-item agenda: each names its gap and the evidence that would close it.
+- 100-study review of digital twins for power-grid cybersecurity, 2020-2026.
+- AI is defensive in 70/83; 35/83 engage an AI threat; 11/83 substantively (fragile).
+- Only one study treats the twin itself as an attack target (strict definition).
+- Coverage: 66/83 at operation, 1 at design, 0 at commissioning, as coded.
+- Five-item agenda: each item names its gap and the evidence that would close it.

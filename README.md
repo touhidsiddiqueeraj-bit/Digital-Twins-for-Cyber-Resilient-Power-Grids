@@ -27,9 +27,11 @@ AI-enabled threats — or the twin itself — as an attack target.
 | Studies from **2025–2026** | 76% |
 
 AI-threat engagement by vector (score ≥1): adversarial ML 24, poisoning 19, evasion 9,
-LLM 4, agentic 2. The abstract-only screening figure (5.1%) under-counted engagement by
-roughly a factor of eight relative to full-text coding — reported in the paper as a
-methodological validity finding.
+LLM 4, agentic 2. The earlier abstract-level screening figure (24/469 = 5.1%) was
+removed from the manuscript: its probe-pool denominator is not part of the released
+record, so it supported no quantified comparison. The manuscript now states only the
+directional point — abstract-level screening under-counts engagement relative to
+full-text coding.
 
 Two coders coded a stratified 20% blind sample: κ = 0.60 for "any engagement",
 κ = 0.14 for "substantive" engagement (results are stated as bounds, not population
@@ -72,10 +74,9 @@ gen_bib.py                       bibliography helper
 ## Reproducing the analysis
 
 All scripts are plain Python 3 with no CLI arguments; most depend only on the standard
-library (`figures/make_figures.py` additionally needs `matplotlib`).
-
-> **Note:** scripts hard-code `ROOT = "/mnt/drive2/newpaper"`. Run them from that path
-> or edit the `ROOT` constant at the top of each script.
+library (`figures/make_figures.py` additionally needs `matplotlib`). Scripts auto-detect
+the repository root from their own location, so they run from any working directory;
+set `DTGRID_ROOT` to override the root if you relocate the data.
 
 ```bash
 # 1. Verify every DOI against Crossref, then DataCite

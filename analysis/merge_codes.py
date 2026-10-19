@@ -12,7 +12,8 @@ import csv
 import glob
 import os
 
-ROOT = "/mnt/drive2/newpaper"
+ROOT = os.environ.get("DTGRID_ROOT") or os.path.abspath(
+    os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir))
 AN = os.path.join(ROOT, "analysis")
 
 FIELDS = ["id", "stance", "stance_confidence", "security_primary", "dt_type",

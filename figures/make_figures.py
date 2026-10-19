@@ -2,7 +2,8 @@
 """Generate the five manuscript figures from extraction_matrix.csv.
 
 300 dpi, PDF (vector) + PNG (for review). Elsevier column widths: single 90 mm,
-double 190 mm. Every number is read from the matrix; nothing is hard-coded.
+double 190 mm. Figures 2-5 read every number from the matrix; Figure 1 reproduces
+the frozen screening counts recorded in prisma_flow.txt.
 """
 import csv
 import collections
@@ -13,7 +14,8 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 
-ROOT = "/mnt/drive2/newpaper"
+ROOT = os.environ.get("DTGRID_ROOT") or os.path.abspath(
+    os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir))
 OUT = os.path.join(ROOT, "figures")
 os.makedirs(OUT, exist_ok=True)
 
@@ -103,7 +105,7 @@ def fig3_stance():
     a1.legend(fontsize=7)
     a1.tick_params(axis="x", rotation=20)
 
-    seed = {"adversarial": 11, "defensive": 42, "bridge": 9, "review": 23, "enabling": 15}
+    seed = collections.Counter(r["stance_seed_from_openalex_screening"] for r in rows)
     coded = collections.Counter(r["stance"] for r in rows)
     x = range(len(order))
     a2.bar([i - 0.2 for i in x], [seed[s] for s in order], width=0.4, color=GREY, label="screening seed")

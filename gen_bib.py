@@ -3,7 +3,7 @@
 import csv
 import os
 
-ROOT = "/mnt/drive2/newpaper"
+ROOT = os.environ.get("DTGRID_ROOT") or os.path.dirname(os.path.abspath(__file__))
 rows = list(csv.DictReader(open(os.path.join(ROOT, "analysis", "extraction_matrix.csv"), encoding="utf-8")))
 
 SPECIAL = {"&": r"\&", "%": r"\%", "#": r"\#", "_": r"\_"}

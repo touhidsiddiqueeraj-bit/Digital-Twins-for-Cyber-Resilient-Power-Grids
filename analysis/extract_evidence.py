@@ -13,7 +13,8 @@ import os
 import re
 import subprocess
 
-ROOT = "/mnt/drive2/newpaper"
+ROOT = os.environ.get("DTGRID_ROOT") or os.path.abspath(
+    os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir))
 AN = os.path.join(ROOT, "analysis")
 EV = os.path.join(AN, "evidence")
 
