@@ -33,8 +33,11 @@ Validity §8.5) states this and makes no retrieval-bias defence for the probes.
 1. **The 16 query strings** (12 core + 4 probes), verbatim, in OpenAlex syntax.
    *Partial (2026-10-19):* reconstructed strings are archived in
    `analysis/search_snapshot_2026-10-19/` together with a dated Crossref
-   (second-database) run of each; the **originals** remain unreleased. An OpenAlex
-   re-run was attempted on 2026-10-19 and blocked by the shared-IP API budget.
+   (second-database) run of each; the **originals** remain unreleased. OpenAlex re-runs
+   were attempted **twice** on 2026-10-19 (the second during the round-7 revision) and
+   blocked both times by the shared-IP API budget (`Rate limit exceeded — insufficient
+   budget`). Re-running the search with logged queries remains the prerequisite for any
+   attack-side claim.
 2. **Run dates** for each query, and the OpenAlex snapshot semantics (citation counts
    and relevance scores are date-dependent).
 3. **Per-record query provenance**: for every record in the candidate pool (≈2,000),
@@ -67,10 +70,25 @@ export needed to do this.
 
 None of these files carries per-record query provenance.
 
-## Related figure with the same provenance problem
+## Related figure with the same provenance problem (deleted)
 
 The abstract-level screening figure quoted in earlier drafts ("24 of 469 records,
 5.1%") derives from an earlier probe-relevance scan whose **per-record artifact was not
 preserved**. Its relation to the ≈700 probe-added candidates is not established in the
-released record, and the manuscript (§5.5, §8.2) now treats it as an unreproducible
-working number rather than evidence.
+released record. Following the round-7 review, the figure and the speculation attached
+to it have been **deleted from the manuscript entirely** rather than discussed as if it
+were evidence; no per-record abstract-level screening artifact survives.
+
+## Full-text retrieval attempts for R91 and R92 (2026-10-19, round 7)
+
+- **R91** (Spirito, Ly & Veretennikov 2023, INL/RPT-23-75113, DOI 10.2172/2337610):
+  the OSTI full-text endpoint (`osti.gov/servlets/purl/2337610`) was unreachable from
+  this environment (connection failure on direct fetch; fetch layer also failed on the
+  PDF). The full text (48 pp.) was retrieved from the INL digital library
+  (`inldigitallibrary.inl.gov/sites/sti/sti/Sort_74726.pdf`) and read; coding in
+  `analysis/R7_READBACK.md`. The PDF is not redistributed with the package.
+- **R92** (Spirito, Zhang & Hossain 2023, INL/RPT-23-75114, DOI 10.2172/2331253):
+  two full-text retrieval attempts failed (OSTI purl unreachable; no mirror found via
+  the INL library or Semantic Scholar, both of which point back to OSTI). The report's
+  extended abstract was obtained from the OSTI record and read; the coding rests on it
+  and is disclosed as abstract-based wherever used.

@@ -1,8 +1,9 @@
-# Review responses — rounds 3 to 6
+# Review responses — rounds 3 to 7
 
 This file answers each review round in order: round 3 (reject in current form, nine fatal
 flaws), round 4 (major revision, seven concerns and thirteen internal inconsistencies),
-round 5 (housecleaning) and round 6 (consistency review). Each section states the
+round 5 (housecleaning), round 6 (consistency review) and round 7 (instrument, retrieval,
+and the cheap fixes). Each section states the
 reviewer's requirement, what was done, and what the revision does not fix.
 
 ---
@@ -616,3 +617,141 @@ replace [18, 19] with R55/R62; cut the abstract; enforce the IJCIP highlights li
 `manuscript.tex`, `appendix_corpus.tex` (regenerated), `figures/*` (regenerated),
 `highlights.txt`, `README.md`, `PAPER_PLAN.md`, `REVIEW_RESPONSE.md` (this section),
 `analysis/RESULTS.md`; new `gen_appendix.py` (committed generator).
+
+
+---
+
+# Round 7 — response (instrument, retrieval, and the cheap fixes)
+
+**Decision addressed:** seven major issues (shallowness on the weakest instrument; the
+attack-side null near-guaranteed by retrieval; twin-as-target definitional; hypothesis
+divergence; corpus quality; compounding design weaknesses; cheap fixes disclosed instead
+of done) plus minor issues (record mix-up, citation scheme, background citations, the
+24/469 figure, duplicate threat fields, the single-author Table 1, dual use, caveat
+repetition, formatting).
+
+## What was done
+
+### The three "feasible now" inspections were done, not described
+
+* **The 15 weak audit firings were read.** All 15 weak-only firings of the broad net
+  (ids 3, 7, 10, 11, 13, 18, 21, 25, 39, 45, 63, 77, 80, 88, 100) were inspected from the
+  released audit windows plus stored abstracts (author-conducted, post hoc,
+  single-reader; per-record adjudication in `analysis/R7_READBACK.md`). 13 cleared
+  (acronyms, classical adversary prose, defensive claims, related-work mentions,
+  twin-synthesised training data, one future-work GAN plan). 2 borderline score-1
+  candidates flagged, not re-scored: R21 (red-team RL agents) and R100 (closing sentence
+  on deep-learning-enhanced attacks). Upper bound if both flipped: 37/83 (44.6%); no
+  substantive false negative.
+* **A seeded 12-record sample of the 48 negatives was re-read** (R9, R10, R13, R19, R48,
+  R62, R65, R79, R81, R85, R89, R93): all 12 confirmed at zero on the assembled evidence.
+  Two generic twin-as-object one-liners surfaced (R48, R88) and are now reported in
+  Section 5.3 as language the strict rule deliberately sets aside.
+* **R91 and R92 were obtained and read.** R91's full text (48 pp.) was retrieved from the
+  INL digital library (the OSTI purl endpoint is unreachable from this environment); R92's
+  extended report abstract was retrieved from the OSTI record (two full-text attempts
+  failed). R91 analyses attack scenarios against the twin itself (SSRF exploitation and
+  offline replication of a cloud twin; deception of the twin's autonomous control; 5G
+  jamming starving the twin); R92 constructs multi-rate hyperparameter attacks on the
+  twin's ML models with an event-triggered predictive-control response. Post-hoc
+  single-author coding: both read as *both*-role records; neither merged into the frozen
+  matrix. Consequences: the unqualified "no study treats the twin as the adversary's
+  objective" is now domain-scoped in the text; *both* = 0 is stated as attainable-but-
+  absent rather than definitional-only; P1 is reframed as a transfer question with
+  nuclear-domain counterexamples and non-transfer conditions.
+
+### Issue-by-issue
+
+1. **Shallowness on the least reliable measurement.** The headline is restated as the
+   reviewer's alternative: "any-level engagement is common; depth is not reliably
+   measured here" (abstract, Section 5.4, Section 6.1, conclusion). The sentence-count
+   threshold is disclosed as partly a document-length proxy in the methods, with its
+   empirical signature (0/14 conference papers clear the substantive tier against 9/62
+   journal, 1/4 preprint, 1/1 thesis) reported at first use.
+2. **Retrieval design.** The conditional is now stated in the methods where the search is
+   described, not only in validity: rates measured on this corpus describe the
+   defensively-framed literature only. A second dated OpenAlex attempt was made (blocked
+   again; recorded in `SEARCH_PROVENANCE.md`); the re-run is called a prerequisite, not
+   future polish. The 492-pool year-distribution test remains blocked on the unreleased
+   export.
+3. **Twin-as-target definitional.** Tier 2 relabelled "Interface or model threat named,
+   defender-framed" (it was "attack channel", which overstated); *tool* disclosed as the
+   near-constant default (75/83, 90%); the R48/R88 one-liners reported; the R91/R92 read
+   (above) turns the null into a domain-scoped statement and P1 into a transfer question
+   that states why nuclear-domain results may not transfer to grids.
+4. **Hypothesis divergence.** The introduction now states plainly that the original
+   asymmetry was not supported and the framing was revised post hoc; the paper is
+   retitled ("A Structured Corpus Review of AI Use, Threat Engagement, and Measurement
+   Limits") to name the measurement delivered rather than the asymmetry promised.
+5. **Corpus quality.** New sensitivities: R69-exclusion (11->10 of 82 substantive; core
+   6->5 of 28) with R69 flagged at every use (unattributed, IRJMETS, out-of-scope,
+   substantive exemplar); citation split (cited 18/50 any, 5/50 substantive; uncited
+   17/33, 6/33 — the uncited engage more, which softens without removing the
+   quality-artefact concern); the quality-vs-field alternative interpretation stated in
+   Sections 6.1 and 8.7. Coding all 492 at abstract level remains impossible from the
+   released record (export not preserved).
+6. **Design weaknesses.** The denominators section now states the subsets are nested
+   re-slices, not replications, and that all 16 any-engagers among the 41 security-primary
+   non-review studies fall inside the 29-study core (the core is where engagement lives
+   by construction; defined during analysis, not pre-registered). The misclassification
+   propagation is called circular (coder 2 as gold cannot validate the coding; anchoring
+   on coder 1 reproduces 35/83 by construction; the 21-51 interval spans minority and
+   majority readings). Repeated caveats were consolidated with pointers to
+   Section 8.
+7. **Cheap fixes.** Done as above; the independent non-author re-read remains the stated
+   requirement for bounding the false-negative channel.
+
+### Minor issues
+
+* Record mix-up fixed: the anonymous-authorship record is R69 (the text wrongly
+  attributed it via a citation key that rendered as a numbered reference to Zaidi/R18);
+  Section 8.7 now identifies R69 by ID, flags it at every use, and gives the exclusion
+  sensitivity.
+* Citation scheme unified: all corpus records are cited as R<ID> in the running text
+  (164 uses); bracketed [n] citations now refer only to non-corpus background
+  literature; a footnote in Section 1 states the scheme; Table 7's mapping column and
+  the Appendix A DOI column (which truncated) were removed — Appendix A keeps ID,
+  first author, year, venue, type, citations, full-text flag, and points to the
+  reference list for full entries.
+* Foundational background citations added and Crossref-verified (Section 1-2): Ukraine
+  2015/16 incident report (E-ISAC/SANS), false data injection (Liu, Ning and Reiter
+  2011; Liang et al. 2017), the digital-twin concept (Glaessgen and Stargel 2012;
+  Grieves 2014; Tao et al. 2019), adversarial ML (Szegedy et al. 2014; Goodfellow et
+  al. 2015; Biggio and Roli 2018). The "substantial adversarial-ML work lies outside"
+  claim now cites that literature.
+* The unreproducible 24/469 figure is deleted from all three sections, along with the
+  probe-noise speculation; Section 8.2 now discloses the screening-loss gap as
+  unmeasured.
+* Duplicate threat fields unified: the poisoning/evasion/prompt overlap between
+  `threat_models_named` and the `ai_*` fields is quantified (22 named vs 19
+  ai-engaged; 11 vs 9; 1 vs 4) at the head of Section 5.4; the `ai_*` fields are
+  declared the operative measurement; the residual named-but-not-engaged records are
+  identified (R64, R68, R87; R15, R51) as classical usages.
+* The single-author vector-mapping table (Table 1) is cut from the paper and released
+  as the repository artifact `analysis/VECTOR_MAPPING.md`; contributions and Section 3.2
+  updated accordingly.
+* Dual use: a "Dual use and responsible disclosure" paragraph follows the agenda,
+  stating testbed-only evaluation, coordinated disclosure, and constrained release of
+  attack generators.
+* Formatting: P1-P5 restructured as wrapping run-in paragraphs (the description labels
+  truncated in the margin; this was the P5-heading artefact); the "engage-ment"
+  hard hyphen fixed; Appendix A table rebuilt without the truncating DOI column; the
+  long single-author search-string display and several long `\texttt` paths now break
+  instead of overflowing (a global break-after-underscore and emergency-stretch were
+  added; the only remaining overfull boxes are the auto-generated preprint footer and
+  one 1.8pt box).
+
+## What this revision does not fix
+
+* The original OpenAlex query strings, run dates, and the 492-record export remain
+  unreleased; the clean selection test (492 vs 100 year distribution) remains blocked.
+  OpenAlex was attempted twice on 2026-10-19 and blocked both times by the shared-IP
+  budget; a Crossref snapshot with reconstructed strings exists
+  (`analysis/search_snapshot_2026-10-19/`).
+* An independent (non-author) coder, an n>=50 reliability sample, and a third-party
+  adjudicator remain required for quoting the substantive count without its interval.
+* The negatives readback is author-conducted and abstract-plus-window level; the
+  full-text independent re-read with a propagated miss-rate remains future work.
+* R92's full text could not be retrieved from this environment (two attempts); its
+  coding rests on the report's own extended abstract, which is unusually detailed, and
+  the basis is disclosed wherever the coding is used.

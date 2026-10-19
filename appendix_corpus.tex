@@ -2,10 +2,10 @@
 
 Table~\ref{tab:corpus} lists every record in the retained corpus, so that the
 included-study set is visible in the paper itself and not only in the released
-data. IDs are corpus record numbers, cited in the running text as R$<$ID$>$ to keep
-them distinct from bracketed reference numbers [n]; the ID also doubles as the
-bibliography key (\texttt{ref$<$ID$>$}), and the \emph{Ref.}\ column of
-Table~\ref{tab:substantive} gives the mapping for the substantive studies. The IDs
+data. Citation scheme: IDs are corpus record numbers, cited in the running text as
+R$<$ID$>$; each record's full bibliographic entry appears in the reference list under
+the key \texttt{ref$<$ID$>$} (with DOI where one exists), so no separate mapping
+between the two schemes is needed. The IDs
 are a display order---year descending, and within each year block citations
 descending (IDs 1--45 are all 2026)---as the Cit.\ column shows. That ordering is
 a property of the export, not evidence about the selection rule that retained
@@ -17,121 +17,124 @@ artifact in the search-provenance manifest (Section~\ref{sec:method}).
 were coded at abstract level, with full-text fields treated as missing.
 R18, R59, R69 and R97 fall outside the strict grid scope of
 Section~\ref{sec:ai-threats}; R34, R68 and R84 are the borderline cases there.
+R69 carries unattributed authorship (Section~\ref{sec:validity}).
 
-\begin{longtable}{@{}r p{5.6cm} p{3.4cm} r r p{2.9cm}@{}}
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}r p{5.9cm} p{4.4cm} r r@{}}
 \caption{The retained corpus ($n=100$). IDs are a display order: year
 descending, citations descending within each year block (Cit.\ column).
-Citation counts are as retrieved at selection.}\label{tab:corpus}\\
+Citation counts are as retrieved at selection. DOIs are in the reference-list
+entries (keys \texttt{ref$<$ID$>$}).}\label{tab:corpus}\\
 \toprule
-ID & Study (first author) & Venue (type) & Cit. & FT & DOI \\
+ID & Study (first author) & Venue (type) & Cit. & FT \\
 \midrule
 \endfirsthead
-\multicolumn{6}{l}{\emph{Table~\ref{tab:corpus} continued}}\\
+\multicolumn{5}{l}{\emph{Table~\ref{tab:corpus} continued}}\\
 \toprule
-ID & Study (first author) & Venue (type) & Cit. & FT & DOI \\
+ID & Study (first author) & Venue (type) & Cit. & FT \\
 \midrule
 \endhead
 \bottomrule
 \endfoot
 \endlastfoot
-1 & Bo Nørregaard Jørgensen (2026) & Applied Sciences (journal) & 21 & Y & 10.3390/app16020981 \\
-2 & N Subramanian (2026) & Energy Reports (journal) & 8 & Y & 10.1016/j.egyr.2026.109218 \\
-3 & Muhammed Cavus (2026) & Renewable and Sustainable Energy Reviews (journal) & 7 & Y & 10.1016/j.rser.2026.116947 \\
-4 & Deepthi Pilakkat (2026) & IEEE Access (journal) & 6 & Y & 10.1109/access.2026.3674387 \\
-5 & Ehsan Naderi (2026) & Electronics (journal) & 4 & Y & 10.3390/electronics15091894 \\
-6 & Binastya Anggara Sekti (2026) & Advances in computational intelligence ... (chapter) & 4 & -- & 10.4018/979-8-3373-4159-0.ch009 \\
-7 & Nagarajan Munusamy (2026) & Global Energy Interconnection (journal) & 4 & Y & 10.1016/j.gloei.2026.01.002 \\
-8 & Giuseppe Loseto (2026) & IEEE Sensors Journal (journal) & 4 & -- & 10.1109/jsen.2026.3675872 \\
-9 & Saad Khan (2026) & IEEE Access (journal) & 3 & Y & 10.1109/access.2026.3659724 \\
-10 & Matteo Repetto (2026) & Applied Cybersecurity \& Internet Gover... (journal) & 1 & Y & 10.60097/acig/221493 \\
-11 & Anant Upadhiyay (2026) & Discover Internet of Things (journal) & 1 & Y & 10.1007/s43926-026-00386-8 \\
-12 & Francisca Ezulike (2026) & International Conference on Cyber Warfa... (conf.) & 1 & Y & 10.34190/iccws.21.1.4467 \\
-13 & Ismail Erkek (2026) & International Journal of Information Se... (journal) & 1 & Y & 10.1007/s10207-026-01274-6 \\
-14 & Syed Saad Ali (2026) & International Journal of Innovations in... (journal) & 0 & Y & 10.33411/ijist/1995 \\
-15 & Roberto Ciavarella (2026) & Electricity (journal) & 0 & Y & 10.3390/electricity7030085 \\
-16 & Reham Abdullah Sanad Alsbua (2026) & Energies (journal) & 0 & Y & 10.3390/en19153643 \\
-17 & Hao Zhang (2026) & Sustainable Energy Technologies and Ass... (journal) & 0 & Y & 10.1016/j.seta.2026.105246 \\
-18 & Syed Mehzeyar Ali Zaidi (2026) & Journal of Engineering and Computationa... (journal) & 0 & Y & 10.63544/qcr0y085 \\
-19 & Shameem Hasan (2026) & Energy Conversion and Management X (journal) & 0 & Y & 10.1016/j.ecmx.2026.102107 \\
-20 & Aravind Kumar Karpoorapu (2026) & Zenodo (CERN European Organization for ... (chapter) & 0 & Y & 10.5281/zenodo.22763194 \\
-21 & Yue Wang (2026) & Systems (journal) & 0 & Y & 10.3390/systems14101271 \\
-22 & Igor Vitalievich Kotenko (2026) & Informatics and Automation (journal) & 0 & Y & 10.15622/ia.25.3.8 \\
-23 & S. Rayhan Kabir (2026) & Applied Sciences (journal) & 0 & Y & 10.3390/app16157655 \\
-24 & Osasumwen Cedric Ogiesoba-Eguakun (2026) & Electronics (journal) & 0 & Y & 10.3390/electronics15204701 \\
-25 & Oleg V. Trubienko (2026) & Russian Technological Journal (journal) & 0 & Y & 10.32362/2500-316x-2026-14-5-41-54 \\
-26 & Paroma Chatterjee (2026) & West Virginia University (thesis) (thesis) & 0 & -- & 10.33915/etd.13429 \\
-27 & Kanchan Yadav (2026) & 2026 IEEE 4th Int. Conf. on Power Elect... (conf.) & 0 & -- & 10.1109/parc68365.2026.11453523 \\
-28 & Jennifer Ikeoluwa Ade-moomiyo (2026) & International Journal of Innovative Tec... (journal) & 0 & Y & 10.35940/ijitee.k1309.15111026 \\
-29 & GHOREISHI, MOHAMMAD (2026) & IRIS Research product catalog (Sapienza... (thesis) & 0 & -- & --- \\
-30 & Safa Mohamed (2026) & Zenodo (CERN European Organization for ... (journal) & 0 & Y & 10.5281/zenodo.19999925 \\
-31 & Franco Fernando Yanine (2026) & Sustainability (journal) & 0 & Y & 10.3390/su18178724 \\
-32 & Subiksha GD, Anusha C, Deno Star A (2026) & Zenodo (CERN European Organization for ... (journal) & 0 & Y & 10.5281/zenodo.19666287 \\
-33 & Syed Kousar Niasi K (2026) & Preprints.org (preprint) & 0 & Y & 10.20944/preprints202601.0392.v1 \\
-34 & Mehtab Alam (2026) & Frontiers in Mechanical Engineering (journal) & 0 & Y & 10.3389/fmech.2026.1926649 \\
-35 & Fahad Khan (2026) & International Journal of Advanced Research (journal) & 0 & Y & 10.21474/ijar01/24257 \\
-36 & Vladyslav Pliuhin (2026) & Lighting Engineering \& Power Engineering (journal) & 0 & Y & 10.33042/2079-424x.2026.65.1.06 \\
-37 & Allen Antony (2026) & Hogskolan Ihalmstad (Halmstad University) (thesis) & 0 & -- & --- \\
-38 & Narendra Kumar (2026) & International Journal of Digitalization (journal) & 0 & Y & 10.20508/rrhh1109 \\
-39 & Zornitsa B. Yordanova (2026) & Resilient Cities and Structures (journal) & 0 & Y & 10.1016/j.rcns.2026.09.003 \\
-40 & Akram AL-DHAFARI (2026) & AI and Digital Twins Under Siege (Wiley) (chapter) & 0 & -- & 10.1002/9781394474325.ch14 \\
-41 & Somayeh Soroush (2026) & Electronics (journal) & 0 & Y & 10.3390/electronics15194522 \\
-42 & Peng Xiao (2026) & Ingegneria Sismica (journal) & 0 & -- & 10.65102/is2026854 \\
-43 & Akriti . (2026) & International Journal of Artificial Int... (journal) & 0 & Y & 10.51483/ijaiml.6.9s.2026.1975-1984 \\
-44 & Kabiru Alani Hassan (2026) & Journal of Multi-Disciplinary Engineeri... (journal) & 0 & Y & --- \\
-45 & Emmanuel Emenike Ezeoba (2026) & Advances in Machine Learning \& Artific... (journal) & 0 & Y & 10.33140/amlai.07.03.03 \\
-46 & T. A. Rajaperumal (2025) & Energy Informatics (journal) & 118 & Y & 10.1186/s42162-024-00461-w \\
-47 & Sohel Rana (2025) & American Journal of Advanced Technology... (journal) & 87 & Y & 10.63125/4p25x993 \\
-48 & Herman Zahid (2025) & Results in Engineering (journal) & 30 & Y & 10.1016/j.rineng.2025.105850 \\
-49 & Ali Sayghe (2025) & Sensors (journal) & 29 & Y & 10.3390/s25164963 \\
-50 & Yaser Mike Banad (2025) & Energy Conversion and Management X (journal) & 23 & Y & 10.1016/j.ecmx.2025.101329 \\
-51 & Hind Lakhal (2025) & IEEE Access (journal) & 22 & Y & 10.1109/access.2025.3623834 \\
-52 & Muhammed Cavus (2025) & Energies (journal) & 19 & Y & 10.3390/en18174599 \\
-53 & Reza Hemmati (2025) & Energy Conversion and Management (journal) & 18 & -- & 10.1016/j.enconman.2025.120728 \\
-54 & Bo Li (2025) & Energies (journal) & 15 & Y & 10.3390/en18123145 \\
-55 & Samuel Abiodun Oyedotun (2025) & Journal of Science Research and Reviews (journal) & 14 & Y & 10.70882/josrar.2025.v2i3.76 \\
-56 & Kwabena Addo (2025) & Energies (journal) & 11 & Y & 10.3390/en18215593 \\
-57 & Ernest Fiko Morgan (2025) & Energies (journal) & 10 & Y & 10.3390/en18226048 \\
-58 & Nabeel A. Y. Al-Qirim (2025) & International Journal of Engineering Bu... (journal) & 6 & Y & 10.1177/18479790251328183 \\
-59 & Uzair Muzamil Shah (2025) & Smart Cities (journal) & 5 & Y & 10.3390/smartcities8050142 \\
-60 & Pradeep Chintale (2025) & Auerbach Publications eBooks (chapter) & 3 & -- & 10.1201/9781003500391-7 \\
-61 & Evgenii Sergeevich Mityakov (2025) & Computational nanotechnology (journal) & 2 & -- & 10.33693/2313-223x-2025-12-4-116-123 \\
-62 & Mansi Girdhar (2025) & IEEE Access (journal) & 2 & Y & 10.1109/access.2025.3648339 \\
-63 & He Jian Wu (2025) & Preprints.org (preprint) & 2 & Y & 10.20944/preprints202506.0030.v1 \\
-64 & Ghiulnar - Yelda Cherim (2025) & International Symposium on Advanced Top... (conf.) & 1 & Y & 10.1109/atee66006.2025.11299884 \\
-65 & Pedro Barros (2025) & World Journal of Advanced Research and ... (journal) & 1 & Y & 10.30574/wjarr.2025.26.3.2233 \\
-66 & Muhammad Arbab Khan (2025) & Global Power, Energy and Communication ... (conf.) & 1 & Y & 10.1109/gpecom65896.2025.11061955 \\
-67 & Samir Thapa (2025) & IEEE International Conference on Electr... (conf.) & 1 & Y & 10.1109/eit64391.2025.11103680 \\
-68 & Vita Santa Barletta (2025) & Biannual Conference of the Italian SIGC... (conf.) & 1 & Y & 10.1145/3750069.3750102 \\
-69 & Unattributed (2025) & International Research Journal of Moder... (journal) & 0 & Y & 10.56726/irjmets81350 \\
-70 & Li, Jin (2025) & Espace ETS (ETS) (report) & 0 & Y & 10.82417/cc0h-fz32 \\
-71 & Saif Ali (2025) & Euro vantage journal of artificial inte... (journal) & 0 & Y & 10.65923/avg24p53 \\
-72 & Dalila Anseri (2025) & 2025 4th Int. Conf. on Theoretical and ... (conf.) & 0 & -- & 10.1109/ictaacs69003.2025.11399437 \\
-73 & Bilal Khan (2025) & International Conference on Electrical,... (conf.) & 0 & Y & 10.1109/icecce67514.2025.11258064 \\
-74 & Mansi Girdhar (2025) & Deep Blue (University of Michigan) (thesis) & 0 & Y & 10.7302/25171 \\
-75 & Artem I. Zemtsov (2025) & Gylym zane bilim (journal) & 0 & Y & 10.52578/2305-9397-2025-3-5-328-336 \\
-76 & Abraham Ayodeji Abayomi (2025) & International Journal of Scientific Res... (journal) & 0 & Y & 10.32628/cseit251234 \\
-77 & Opy Das (2024) & Energy Conversion and Management X (journal) & 107 & Y & 10.1016/j.ecmx.2024.100715 \\
-78 & Anurag Kumar Srivastava (2024) & IEEE Power and Energy Magazine (journal) & 23 & -- & 10.1109/mpe.2023.3325196 \\
-79 & Nabeel A. Y. Al-Qirim (2024) & IEEE Open Journal of the Communications... (journal) & 12 & Y & 10.1109/ojcoms.2024.3502544 \\
-80 & Baza Somda (2024) & International Conference on Intelligent... (conf.) & 7 & Y & 10.1109/isap63260.2024.10744374 \\
-81 & Timotius Oentung (2024) & Resilience Week (RWS) (conf.) & 5 & Y & 10.1109/rws62797.2024.10799445 \\
-82 & Tommaso Zoppi (2024) & IEEE Pacific Rim International Symposiu... (conf.) & 3 & Y & 10.1109/prdc63035.2024.00039 \\
-83 & Abdulmueen Alrashide (2024) & Proceedings of the Annual Conference of... (conf.) & 1 & Y & 10.1109/iecon55916.2024.10905313 \\
-84 & Masoud Amirrezai (2024) & IEEE Industrial Electronics Society Ann... (conf.) & 1 & Y & 10.1109/oncon62778.2024.10931409 \\
-85 & Prabhat Kumar (2023) & Solar Energy (journal) & 101 & Y & 10.1016/j.solener.2023.111921 \\
-86 & Mansoor Ali (2023) & IEEE Transactions on Information Forens... (journal) & 91 & Y & 10.1109/tifs.2023.3305916 \\
-87 & Erdal Irmak (2023) & Energies (journal) & 67 & Y & 10.3390/en16124590 \\
-88 & Omer Sen (2023) & IEEE International Conference on Commun... (conf.) & 13 & Y & 10.1109/smartgridcomm57358.2023.10333871 \\
-89 & Gholamreza Nasiri (2023) & Machines (journal) & 12 & Y & 10.3390/machines11030392 \\
-90 & Luka V. Strezoski (2023) & Energija Ekonomija Ekologija (journal) & 4 & Y & 10.46793/eee23-4.01s \\
-91 & Christopher M. Spirito (2023) & Idaho National Laboratory / OSTI (report) (report) & 1 & -- & 10.2172/2337610 \\
-92 & Christopher M. Spirito (2023) & Idaho National Laboratory / OSTI (report) (report) & 1 & -- & 10.2172/2331253 \\
-93 & Md. Mhamud Hussen Sifat (2022) & Energy and AI (journal) & 174 & Y & 10.1016/j.egyai.2022.100213 \\
-94 & Tianming Zheng (2022) & arXiv (Cornell University) (preprint) & 12 & Y & 10.48550/arxiv.2205.11783 \\
-95 & William Danilczyk (2021) & North American Power Symposium (NAPS) (conf.) & 79 & -- & 10.1109/naps50074.2021.9449682 \\
-96 & Amardeep Balasaheb Shitole (2021) & IEEE International Conference on Smart ... (conf.) & 12 & Y & 10.1109/stpec52385.2021.9718616 \\
-97 & Yun Guo (2021) & International Conference on Power Syste... (conf.) & 11 & Y & 10.1109/powercon53785.2021.9697764 \\
-98 & Nandha Kumar Kandasamy (2021) & arXiv (Cornell University) (preprint) & 9 & Y & 10.48550/arxiv.2105.04260 \\
-99 & Ahmed Aly Saad Ahmed (2021) & Florida International University (thesis) (thesis) & 2 & -- & 10.25148/etd.fidc009671 \\
-100 & Ahmed Saad (2020) & IEEE Transactions on Smart Grid (journal) & 238 & Y & 10.1109/tsg.2020.3000958 \\
+1 & Bo Nørregaard Jørgensen (2026) & Applied Sciences (journal) & 21 & Y \\
+2 & N Subramanian (2026) & Energy Reports (journal) & 8 & Y \\
+3 & Muhammed Cavus (2026) & Renewable and Sustainable Energy Reviews (journal) & 7 & Y \\
+4 & Deepthi Pilakkat (2026) & IEEE Access (journal) & 6 & Y \\
+5 & Ehsan Naderi (2026) & Electronics (journal) & 4 & Y \\
+6 & Binastya Anggara Sekti (2026) & Advances in computational intelligence and roboti... (chapter) & 4 & -- \\
+7 & Nagarajan Munusamy (2026) & Global Energy Interconnection (journal) & 4 & Y \\
+8 & Giuseppe Loseto (2026) & IEEE Sensors Journal (journal) & 4 & -- \\
+9 & Saad Khan (2026) & IEEE Access (journal) & 3 & Y \\
+10 & Matteo Repetto (2026) & Applied Cybersecurity \& Internet Governance (journal) & 1 & Y \\
+11 & Anant Upadhiyay (2026) & Discover Internet of Things (journal) & 1 & Y \\
+12 & Francisca Ezulike (2026) & International Conference on Cyber Warfare and Sec... (conf.) & 1 & Y \\
+13 & Ismail Erkek (2026) & International Journal of Information Security (journal) & 1 & Y \\
+14 & Syed Saad Ali (2026) & International Journal of Innovations in Science a... (journal) & 0 & Y \\
+15 & Roberto Ciavarella (2026) & Electricity (journal) & 0 & Y \\
+16 & Reham Abdullah Sanad Alsbua (2026) & Energies (journal) & 0 & Y \\
+17 & Hao Zhang (2026) & Sustainable Energy Technologies and Assessments (journal) & 0 & Y \\
+18 & Syed Mehzeyar Ali Zaidi (2026) & Journal of Engineering and Computational Intellig... (journal) & 0 & Y \\
+19 & Shameem Hasan (2026) & Energy Conversion and Management X (journal) & 0 & Y \\
+20 & Aravind Kumar Karpoorapu (2026) & Zenodo (CERN European Organization for Nuclear Re... (chapter) & 0 & Y \\
+21 & Yue Wang (2026) & Systems (journal) & 0 & Y \\
+22 & Igor Vitalievich Kotenko (2026) & Informatics and Automation (journal) & 0 & Y \\
+23 & S. Rayhan Kabir (2026) & Applied Sciences (journal) & 0 & Y \\
+24 & Osasumwen Cedric Ogiesoba-Eguakun (2026) & Electronics (journal) & 0 & Y \\
+25 & Oleg V. Trubienko (2026) & Russian Technological Journal (journal) & 0 & Y \\
+26 & Paroma Chatterjee (2026) & West Virginia University (thesis) (thesis) & 0 & -- \\
+27 & Kanchan Yadav (2026) & 2026 IEEE 4th Int. Conf. on Power Electronics \& ... (conf.) & 0 & -- \\
+28 & Jennifer Ikeoluwa Ade-moomiyo (2026) & International Journal of Innovative Technology an... (journal) & 0 & Y \\
+29 & GHOREISHI, MOHAMMAD (2026) & IRIS Research product catalog (Sapienza Universit... (thesis) & 0 & -- \\
+30 & Safa Mohamed (2026) & Zenodo (CERN European Organization for Nuclear Re... (journal) & 0 & Y \\
+31 & Franco Fernando Yanine (2026) & Sustainability (journal) & 0 & Y \\
+32 & Subiksha GD, Anusha C, Deno Star A (2026) & Zenodo (CERN European Organization for Nuclear Re... (journal) & 0 & Y \\
+33 & Syed Kousar Niasi K (2026) & Preprints.org (preprint) & 0 & Y \\
+34 & Mehtab Alam (2026) & Frontiers in Mechanical Engineering (journal) & 0 & Y \\
+35 & Fahad Khan (2026) & International Journal of Advanced Research (journal) & 0 & Y \\
+36 & Vladyslav Pliuhin (2026) & Lighting Engineering \& Power Engineering (journal) & 0 & Y \\
+37 & Allen Antony (2026) & Hogskolan Ihalmstad (Halmstad University) (thesis) & 0 & -- \\
+38 & Narendra Kumar (2026) & International Journal of Digitalization (journal) & 0 & Y \\
+39 & Zornitsa B. Yordanova (2026) & Resilient Cities and Structures (journal) & 0 & Y \\
+40 & Akram AL-DHAFARI (2026) & AI and Digital Twins Under Siege (Wiley) (chapter) & 0 & -- \\
+41 & Somayeh Soroush (2026) & Electronics (journal) & 0 & Y \\
+42 & Peng Xiao (2026) & Ingegneria Sismica (journal) & 0 & -- \\
+43 & Akriti . (2026) & International Journal of Artificial Intelligence ... (journal) & 0 & Y \\
+44 & Kabiru Alani Hassan (2026) & Journal of Multi-Disciplinary Engineering Reviews... (journal) & 0 & Y \\
+45 & Emmanuel Emenike Ezeoba (2026) & Advances in Machine Learning \& Artificial Intell... (journal) & 0 & Y \\
+46 & T. A. Rajaperumal (2025) & Energy Informatics (journal) & 118 & Y \\
+47 & Sohel Rana (2025) & American Journal of Advanced Technology and Engin... (journal) & 87 & Y \\
+48 & Herman Zahid (2025) & Results in Engineering (journal) & 30 & Y \\
+49 & Ali Sayghe (2025) & Sensors (journal) & 29 & Y \\
+50 & Yaser Mike Banad (2025) & Energy Conversion and Management X (journal) & 23 & Y \\
+51 & Hind Lakhal (2025) & IEEE Access (journal) & 22 & Y \\
+52 & Muhammed Cavus (2025) & Energies (journal) & 19 & Y \\
+53 & Reza Hemmati (2025) & Energy Conversion and Management (journal) & 18 & -- \\
+54 & Bo Li (2025) & Energies (journal) & 15 & Y \\
+55 & Samuel Abiodun Oyedotun (2025) & Journal of Science Research and Reviews (journal) & 14 & Y \\
+56 & Kwabena Addo (2025) & Energies (journal) & 11 & Y \\
+57 & Ernest Fiko Morgan (2025) & Energies (journal) & 10 & Y \\
+58 & Nabeel A. Y. Al-Qirim (2025) & International Journal of Engineering Business Man... (journal) & 6 & Y \\
+59 & Uzair Muzamil Shah (2025) & Smart Cities (journal) & 5 & Y \\
+60 & Pradeep Chintale (2025) & Auerbach Publications eBooks (chapter) & 3 & -- \\
+61 & Evgenii Sergeevich Mityakov (2025) & Computational nanotechnology (journal) & 2 & -- \\
+62 & Mansi Girdhar (2025) & IEEE Access (journal) & 2 & Y \\
+63 & He Jian Wu (2025) & Preprints.org (preprint) & 2 & Y \\
+64 & Ghiulnar - Yelda Cherim (2025) & International Symposium on Advanced Topics in Ele... (conf.) & 1 & Y \\
+65 & Pedro Barros (2025) & World Journal of Advanced Research and Reviews (journal) & 1 & Y \\
+66 & Muhammad Arbab Khan (2025) & Global Power, Energy and Communication Conference (conf.) & 1 & Y \\
+67 & Samir Thapa (2025) & IEEE International Conference on Electro Informat... (conf.) & 1 & Y \\
+68 & Vita Santa Barletta (2025) & Biannual Conference of the Italian SIGCHI Chapter... (conf.) & 1 & Y \\
+69 & Unattributed (2025) & International Research Journal of Modernization i... (journal) & 0 & Y \\
+70 & Li, Jin (2025) & Espace ETS (ETS) (report) & 0 & Y \\
+71 & Saif Ali (2025) & Euro vantage journal of artificial intelligence (journal) & 0 & Y \\
+72 & Dalila Anseri (2025) & 2025 4th Int. Conf. on Theoretical and Applicativ... (conf.) & 0 & -- \\
+73 & Bilal Khan (2025) & International Conference on Electrical, Communica... (conf.) & 0 & Y \\
+74 & Mansi Girdhar (2025) & Deep Blue (University of Michigan) (thesis) & 0 & Y \\
+75 & Artem I. Zemtsov (2025) & Gylym zane bilim (journal) & 0 & Y \\
+76 & Abraham Ayodeji Abayomi (2025) & International Journal of Scientific Research in C... (journal) & 0 & Y \\
+77 & Opy Das (2024) & Energy Conversion and Management X (journal) & 107 & Y \\
+78 & Anurag Kumar Srivastava (2024) & IEEE Power and Energy Magazine (journal) & 23 & -- \\
+79 & Nabeel A. Y. Al-Qirim (2024) & IEEE Open Journal of the Communications Society (journal) & 12 & Y \\
+80 & Baza Somda (2024) & International Conference on Intelligent Systems A... (conf.) & 7 & Y \\
+81 & Timotius Oentung (2024) & Resilience Week (RWS) (conf.) & 5 & Y \\
+82 & Tommaso Zoppi (2024) & IEEE Pacific Rim International Symposium on Depen... (conf.) & 3 & Y \\
+83 & Abdulmueen Alrashide (2024) & Proceedings of the Annual Conference of the IEEE ... (conf.) & 1 & Y \\
+84 & Masoud Amirrezai (2024) & IEEE Industrial Electronics Society Annual On-Lin... (conf.) & 1 & Y \\
+85 & Prabhat Kumar (2023) & Solar Energy (journal) & 101 & Y \\
+86 & Mansoor Ali (2023) & IEEE Transactions on Information Forensics and Se... (journal) & 91 & Y \\
+87 & Erdal Irmak (2023) & Energies (journal) & 67 & Y \\
+88 & Omer Sen (2023) & IEEE International Conference on Communications, ... (conf.) & 13 & Y \\
+89 & Gholamreza Nasiri (2023) & Machines (journal) & 12 & Y \\
+90 & Luka V. Strezoski (2023) & Energija Ekonomija Ekologija (journal) & 4 & Y \\
+91 & Christopher M. Spirito (2023) & Idaho National Laboratory / OSTI (report) (report) & 1 & -- \\
+92 & Christopher M. Spirito (2023) & Idaho National Laboratory / OSTI (report) (report) & 1 & -- \\
+93 & Md. Mhamud Hussen Sifat (2022) & Energy and AI (journal) & 174 & Y \\
+94 & Tianming Zheng (2022) & arXiv (Cornell University) (preprint) & 12 & Y \\
+95 & William Danilczyk (2021) & North American Power Symposium (NAPS) (conf.) & 79 & -- \\
+96 & Amardeep Balasaheb Shitole (2021) & IEEE International Conference on Smart Technologi... (conf.) & 12 & Y \\
+97 & Yun Guo (2021) & International Conference on Power System Technolo... (conf.) & 11 & Y \\
+98 & Nandha Kumar Kandasamy (2021) & arXiv (Cornell University) (preprint) & 9 & Y \\
+99 & Ahmed Aly Saad Ahmed (2021) & Florida International University (thesis) (thesis) & 2 & -- \\
+100 & Ahmed Saad (2020) & IEEE Transactions on Smart Grid (journal) & 238 & Y \\
 \end{longtable}

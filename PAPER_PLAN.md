@@ -27,6 +27,23 @@ Last updated: 2026-10-19
 > `gen_appendix.py`); the abstract was cut to 249 words with reliability statistics moved
 > to §5.7; highlights now follow the IJCIP 85-character rule.
 >
+> The round-7 revision (2026-10-19) did the "feasible now" inspections instead of
+> describing them: the 15 weak audit firings were read (13 cleared, 2 borderline
+> score-1 candidates, upper bound 37/83), a seeded 12-record sample of the 48 negatives
+> was re-read (12/12 confirmed), and R91/R92 were obtained and read (R91 in full text
+> from the INL library, R92 from its extended OSTI abstract; both read as *both*-role,
+> released as `analysis/R7_READBACK.md`). The headline was restated to what the
+> instrument supports (any-level engagement common; depth not reliably measured — the
+> substantive threshold partly proxies document length, 0/14 conference papers clear
+> it); the original asymmetry hypothesis is stated plainly as not supported and the
+> paper retitled ("AI Use, Threat Engagement, and Measurement Limits"); the twin-as-
+> target tier was relabelled defender-framed; P1 became a transfer question against the
+> nuclear-domain counterexamples; R69 is flagged at every use with exclusion
+> sensitivities; the 24/469 figure was deleted; Table 1 (single-author mapping) was cut;
+> the citation scheme was unified to R-notation for corpus records; foundational
+> background references were added; and a dual-use/responsible-disclosure paragraph now
+> accompanies the agenda.
+>
 > This file is kept as the historical planning record; see `REVIEW_RESPONSE.md` for the
 > point-by-point changes.
 

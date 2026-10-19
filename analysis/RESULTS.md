@@ -258,4 +258,36 @@ Reproduce with `python3 analysis/reliability_round4.py`.
   R25/R36/R75 Cyrillic author names transliterated; R75 affiliation fragments removed;
   R79 title apostrophe normalised; R32 comma-separated authors parsed.
 - **24/469 (5.1%) figure:** from an unpreserved scan; relation to the ~700 probe-added
-  candidates not established; treated as an unreproducible working number.
+  candidates not established; **deleted from the manuscript in round 7** rather than
+  discussed as evidence.
+
+## Round-7 additions (2026-10-19)
+
+- **Readback of the 15 weak audit firings** (author, post hoc, windows+abstracts;
+  `analysis/R7_READBACK.md`): 13 cleared, 2 borderline score-1 candidates (R21 red-team
+  RL agents; R100 closing sentence on DL-enhanced attacks). Upper bound if both
+  re-scored: 37/83 (44.6%) any. No substantive false negative.
+- **Seeded sample of the 48 negatives** (seed 7; n=12: R9, R10, R13, R19, R48, R62,
+  R65, R79, R81, R85, R89, R93): 12/12 confirmed at zero. Two generic twin-as-object
+  one-liners found (R48, R88) — undeveloped, non-AI, set aside by the strict rule.
+- **R91/R92 read and post-hoc coded** (`analysis/R7_READBACK.md`): both *both*-role,
+  nuclear domain; R91 attacks the twin itself (SSRF -> exfiltration -> offline twin
+  replica -> deception of twin control; 5G jamming); R92 constructs multi-rate
+  hyperparameter attacks on the twin's ML models. Not merged into the frozen matrix.
+- **Document-length proxy for the substantive tier:** substantive by venue type =
+  journal 9/62, preprint 1/4, thesis 1/1, conference 0/14.
+- **R69 exclusion sensitivity:** substantive 11/83 -> 10/82; core 6/29 -> 5/28.
+  R69 = unattributed authorship, IRJMETS, outside strict grid scope.
+- **Citation split (full text, n=83):** cited>0 (n=50): any 18 (36.0%), subst 5 (10.0%);
+  cited=0 (n=33): any 17 (51.5%), subst 6 (18.2%). The uncited engage more.
+- **Concentration:** all 16 any-engagers among the 41 security-primary non-review
+  studies fall inside the 29-study detection-ML core.
+- **threat_models_named vs ai_* overlap:** poisoning named 22 / ai>=1 19 (named-but-not-
+  engaged: R64, R68, R87); evasion 11 / 9 (R15, R51); prompt 1 / ai_llm>=1 4. The ai_*
+  fields are the operative measurement.
+- **Foundational background references added (Crossref-verified):** Liu/Ning/Reiter
+  2011 (10.1145/1952982.1952995); Liang et al. 2017 (10.1109/TSG.2015.2495133);
+  Glaessgen & Stargel 2012 (10.2514/6.2012-1818); Grieves 2014 (white paper); Tao et al.
+  2019 (10.1109/TII.2018.2873186); Szegedy et al. 2014 (arXiv:1312.6199); Goodfellow
+  et al. 2015 (arXiv:1412.6572); Biggio & Roli 2018 (10.1016/j.patcog.2018.07.023);
+  E-ISAC/SANS 2016 (Ukraine report).

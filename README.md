@@ -1,11 +1,14 @@
 # Digital Twins for Cyber-Resilient Power Grids
 
-**A Structured Corpus Review of Defensive and Attack-Side AI, with a Research Agenda**
+**A Structured Corpus Review of AI Use, Threat Engagement, and Measurement Limits**
 
 Code, data, and manuscript for a structured literature review (PRISMA-flow reporting on a
-ranked corpus — not a PRISMA systematic review) examining whether grid digital-twin
-security research uses AI as a defensive tool more often than it engages AI-enabled
-threats — or the twin itself — as an attack target.
+ranked corpus — not a PRISMA systematic review) measuring how grid digital-twin security
+research uses AI defensively and engages AI-enabled threats — and the twin itself — as
+attack objects. The original asymmetry hypothesis (defensive use common, attack-side
+engagement rare) was not supported; the review reports the narrower, instrument-bounded
+finding: any-level engagement is common in this corpus, and depth is not reliably measured
+by the coding instrument.
 
 - **Type:** structured literature review + research agenda (not an empirical study; not a
   registered systematic review — one database, ranked top-100 subset)
@@ -13,7 +16,7 @@ threats — or the twin itself — as an attack target.
 - **Corpus:** 100 studies (2020–2026), a declared non-probabilistic top-100 ranking of 492
   eligible records screened from 1,287 unique OpenAlex core-query records;
   83 coded at full text, 17 at abstract level
-- **Status:** revised through four review rounds; point-by-point responses in
+- **Status:** revised through five review rounds (3–7); point-by-point responses in
   `REVIEW_RESPONSE.md`. Author list is a placeholder pending finalisation
 
 ---
@@ -23,16 +26,19 @@ threats — or the twin itself — as an attack target.
 | Finding | Number |
 |---|---|
 | ML used (full text) | 70 / 83 — **for detection in 55** (forecasting 12, control 3 are not security functions) |
-| Engage **any** AI-enabled threat | 35 / 83 (42.2%); **a majority in the core subsets** — 16/29 (55%) security-primary non-review detection-ML, 30/55 detection-ML — so the finding is shallowness, not absence |
-| Engage an AI threat **substantively** | 11 / 83 (13.3%) — the load-bearing number, on the weakest collapse (κ = 0.14); misclassification interval 21–51 of 83 (≈25–61%) includes majority readings |
-| Twin as the adversary's **objective** (strict) | **0 grid studies** — a descriptive observation of the coding, not a field finding; 1 non-grid vehicle record; 56/83 name an attack channel (largely classical communication threats); two abstract-only nuclear-domain records (R91, R92, openly hosted on OSTI) do attack twin interfaces and twin ML models |
+| Engage **any** AI-enabled threat | 35 / 83 (42.2%); a majority in the core subsets (16/29, 30/55) — but the corpus was retrieved with defensive vocabulary, so rates describe the defensively-framed literature only |
+| Engage an AI threat **substantively** | 11 / 83 (13.3%) — on the weakest coder collapse (κ = 0.14, 1 of 6 positives doubly agreed) and a threshold that partly proxies document length (0/14 conference papers clear it): **depth is not reliably measured by this instrument**; the misclassification interval 21–51 of 83 spans minority and majority readings |
+| Twin as the adversary's **objective** (strict) | **0 grid studies** — a domain-scoped descriptive observation: 1 non-grid vehicle record; 56/83 name interface or model threats in a defender frame (tool is the near-constant default, 75/83); and the two read nuclear-domain records (R91, R92 — `analysis/R7_READBACK.md`) do attack twin interfaces and twin ML models, so the unqualified claim is gone |
 | Research concentrated at **operation** stage | 66 / 83 (lifecycle κ = 0.32, AC1 0.54 — descriptive only; the single design-phase record is out-of-domain) |
 | Studies from **2025–2026** | 76% — a recency-heavy corpus profile (IDs 1–45 all 2026, 40/100 zero-citation; per-record counts in Appendix A's Cit. column). Which ranking component dominated is not recoverable from the released record; the clean test needs the year distribution of the 492 eligible vs the retained 100 |
 
 AI-threat engagement by vector (score ≥1): adversarial ML 24, poisoning 19, evasion 9,
-LLM 4, agentic 2. The abstract-level screening figure (24/469, 5.1%) is an
-unreproducible working number from an unpreserved scan; the manuscript reports it as
-such, not as evidence.
+LLM 4, agentic 2. The previously quoted abstract-level figure (24/469) was an
+unreproducible working number from an unpreserved scan and has been deleted from the
+manuscript. Round-7 readbacks (15 weak audit firings inspected; seeded 12-record sample
+of the 48 negatives re-read; R91/R92 obtained and read) are documented in
+`analysis/R7_READBACK.md`; no substantive false negative was found, and the readback
+upper bound for any-level engagement is 37/83 (44.6%).
 
 Two coders (both authors of the review) coded a blind sample of 20 of the 83 full-text
 records (24%): κ = 0.60 (bootstrap 95% CI 0.20–0.90) for "any engagement", κ = 0.14
@@ -67,12 +73,14 @@ analysis/
   verify_all_dois.py             verifies every DOI against Crossref, then DataCite
   reliability/                   agreement stats, coder sheets, disagreement log
   evidence/                      extracted evidence digests
+  R7_READBACK.md                 round-7 readbacks: 15 weak firings, negatives sample, R91/R92 coding
+  round7_stats.py                round-7 sensitivities (cited/uncited, venue-length, overlaps)
 downloads_manifest.csv           retrieval manifest (query set, run dates, outcomes)
 digital_twin_grid_cybersecurity_papers.csv   screened corpus with abstracts
 doi_verification.csv             DOI verification log
 venue_index.csv / prisma_flow.txt            PRISMA flow inputs
 SEARCH_PROVENANCE.md             search-provenance gap manifest (required artifacts)
-REVIEW_RESPONSE.md               point-by-point responses to the round-3–6 reviews
+REVIEW_RESPONSE.md               point-by-point responses to the round-3–7 reviews
 *_proposal.pdf/.pptx             research proposal
 habeeb2026_dual_role_digital_twins.pdf      Habeeb et al. (2026), the closest prior review
 reviews/                         peer review materials (rounds 1–2, consistently named)
