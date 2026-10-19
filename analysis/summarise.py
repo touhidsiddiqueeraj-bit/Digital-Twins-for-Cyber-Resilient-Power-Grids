@@ -53,8 +53,9 @@ w(f"- Papers engaging **substantively** (score 2): **{d.get('2',0)}/{len(ft)} = 
 w(f"- Papers with **no** engagement (score 0): **{d.get('0',0)}/{len(ft)} = {100*d.get('0',0)/len(ft):.1f}%**")
 w("")
 w("Abstract-only records (n=%d) cannot be coded on these fields; the 17 excluded records are" % len(ab))
-w("reported as a limitation, and the abstract-level screening figure (24/469 = 5.1%) was")
-w("computed over the wider relevant set, not this corpus.")
+w("reported as a limitation. The abstract-level screening figure quoted in earlier drafts")
+w("(24/469 = 5.1%) came from an unpreserved scan; treat it as an unreproducible working")
+w("number, not evidence (see SEARCH_PROVENANCE.md).")
 w("")
 w(f"- Non-grid rows flagged in notes (fraud, vehicle and generic-ICS cases): "
   f"{sum(1 for r in rows if 'boundary' in r['notes'].lower() or 'corpus membership' in r['notes'].lower())}")

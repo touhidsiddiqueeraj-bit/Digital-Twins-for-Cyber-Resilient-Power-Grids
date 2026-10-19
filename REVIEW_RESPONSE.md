@@ -282,3 +282,217 @@ intervals.
 - `analysis/*.py`, `figures/make_figures.py` — hard-coded `/mnt/drive2/newpaper` ROOTs
   made repository-relative
 - `manuscript.pdf` — rebuilt (tectonic, 56 pp., clean)
+
+---
+
+# Response to the round-4 review
+
+**Decision addressed:** "Major revision. The paper is unusually candid about its limits...
+The problem is that the headline claim is framed more strongly than the paper's own
+evidence allows, and several design choices make the key nulls close to guaranteed."
+
+**What was done.** This round is a framing-and-consistency revision built on verified
+recomputation. Every number added below was recomputed from the released coder sheets and
+extraction matrix (`analysis/reliability_round4.py`), every venue/author correction was
+verified against Crossref or OSTI on 2026-10-19, and the rebuilt `manuscript.pdf` (61 pp.)
+compiles cleanly. The reviewer's bottom line is adopted as the paper's stated contribution:
+*the defensible finding is a transparent, small-sample measurement that AI-threat
+engagement in grid digital-twin security papers is mostly shallow; the twin-as-target and
+lifecycle results are descriptive observations of the coding, not findings about the
+field.*
+
+## Major concern 1 — the "asymmetry" headline
+
+**Required:** stop saying "minority engagement"/"rarely" at the any level; make the
+substantive count the load-bearing number with its κ = 0.14 fragility; note the
+misclassification interval (21–51 of 83, ≈25–61%) straddles 50%; acknowledge the missing
+baseline and the same-corpus hypothesis.
+
+**Done.**
+- Abstract, §5.5, §6.1 and the conclusion now state it directly: any-level engagement is
+  **majority** in the core subsets (16/29 = 55%; 30/55 = 55%); what is minority is
+  *substantive* engagement; "any" can mean fewer than two sentences; the substantive count
+  is load-bearing and sits on the weakest collapse (κ = 0.14); the 21–51 interval
+  includes both minority and majority readings of the any-level share.
+- §1 adds: "uses ML for detection" and "engages an AI-enabled threat" are different
+  constructs, so there is no normative baseline; the hypothesis came from the same corpus;
+  the claim is one of emphasis *and depth*, not rate. The abstract opens with the
+  exploratory framing to match §1.
+- §3.3's "rarely, and rarely substantively" is replaced by "any-level engagement is
+  common---majority in the core subsets---while substantive engagement is the minority
+  case"; §6.1's "large defensive apparatus ... rarely studies" is rewritten as a
+  within-corpus statement with "rarely examine ... substantively."
+
+## Major concern 2 — definitional null and overreaching loose tier
+
+**Required:** present the strict-target zero as expected-by-design; relabel the 56/83 tier;
+note that the only strict-target and only design-phase records are out-of-domain.
+
+**Done.**
+- §5.4, Table 3's caption, §6.2 and the conclusion now label the tier counts **descriptive
+  observations of the coding, not findings about the field**; §6.2 states that the
+  codebook's strict rule makes zero the expected result in a security setting.
+- The 56/83 tier is qualified in §5.4, Table 3 and §6.2: the interface threats (MITM,
+  replay, false command, reverse pathway) are classical grid-communication attacks that
+  any twin-based defender would name; the tier measures threat-*naming*, not that the
+  twin's surface is the study's analytical object.
+- §5.4 and §6.3 now state that the single strict-target record (R59) and the single
+  design-phase record (R97) are both outside the grid domain, so both headline zeros rest
+  on out-of-scope records; within a strict grid scope no record is coded at design.
+
+## Major concern 3 — prevalence support and the selection-bias story
+
+**Required:** reconcile §4.3 with §8.5 and the corpus composition; say whether ID equals
+rank; archive query strings; add a second database; code the 492.
+
+**Done (partially, with the remainder specified).**
+- **The internal contradiction is fixed and its direction established from data:** record
+  IDs *are* the retained rank order (verified: IDs 1–45 are all 2026 and citations descend
+  within every year block; 40/100 records have zero citations). §4.3 and §8.5 now say the
+  same thing: the three ranking components pull in opposite directions and the realised
+  rule is **recency-dominant with citations as a tie-breaker**, so foundational 2020–2023
+  work is under-represented; the earlier draft's "favours established, cited work" is
+  retracted as contradicted by the corpus's own composition. Appendix A's caption and
+  intro disclose the ID-order semantics.
+- **Strings archived, second database added:** `analysis/search_snapshot_2026-10-19/`
+  contains 16 *reconstructed* query strings (12 core + 4 probes, clearly marked as
+  reconstructions because the originals were not preserved), a dated Crossref
+  (second-database) run of each string with the top-100 results per query, and a README
+  stating exactly what the snapshot is and is not. An OpenAlex re-run was **attempted** on
+  2026-10-19 and blocked by the shared-IP API budget ("Insufficient budget ... resets at
+  midnight UTC"); this is disclosed in §4.2 rather than glossed.
+- **Coding the 492:** not possible from the released package (the 492-record export is not
+  in the repository; SEARCH_PROVENANCE.md item 4 specifies it as the required artifact).
+  The upgrade path remains stated, not asserted.
+
+## Major concern 4 — the abstract-only exclusion falls on the attack side
+
+**Required:** obtain R91/R92 (OSTI, openly hosted) or code twin_role from abstracts and
+report a sensitivity analysis; the 17 missing records are not random.
+
+**Done: abstract-level coding + sensitivity analysis.**
+- Both OSTI records were retrieved at abstract level (OSTI biblio pages for
+  10.2172/2337610 and 10.2172/2331253). R91 is an attack-surface analysis *with attack
+  demonstration* on the twin's sensor/instrumentation interface; R92 develops a response
+  strategy against **hyperparameter attacks on the twin's own ML models**. Both are
+  nuclear-domain (advanced reactors / NPP), i.e. outside the strict grid scope.
+- §4.5 now reports the abstract-level twin_role coding of all 17: 15 read as *tool*; the
+  two exceptions (R91, R92) read as attack-side work in which the twin's interface and the
+  twin's ML models are the object of the attack. The strict-target null now carries an
+  explicit "grid-domain, full-text" qualifier wherever it is quoted (abstract, §5.4, §6.2,
+  §8.4, conclusion), and §8.4 states that the 17 are not a random subset.
+- Full-text retrieval: a direct download was attempted and timed out from this
+  environment; the manuscript states that these full texts are openly hosted and that
+  retrieving and coding them is required before the null is quoted without the qualifier.
+
+## Major concern 5 — reliability design too thin
+
+**Required:** weighted κ or Gwet's AC1 on the 3-level scale; report threat vocabulary at
+the family level or drop the heatmap; independent coder, n ≥ 50, third-party adjudicator.
+
+**Done (statistics added; design upgrades specified as preconditions).**
+- **Ordinal statistics computed and reported** (§5.6, abstract, Table 5): linear weighted
+  κ = 0.43 (bootstrap 95% CI 0.08–0.74), quadratic weighted κ = 0.44 (0.03–0.80), Gwet's
+  AC1 = 0.50 (0.18–0.80) on the 3×3 for `ai_threat_overall`. An **AC1 column was added to
+  Table 5 for every field**. §5.6 states the positive classes are thin (each coder: ~9/20
+  engaged, 3–4 substantive), so neither κ nor AC1 on the substantive class can be stable.
+- **Family-level threat agreement computed and reported** (§5.6): interface family 17/20
+  (κ = 0.70), classical family 17/20 (85%, κ = 0.32, prevalence-depressed), learned-model
+  family 14/20 (κ = 0.37). Tables 1/2 and Figure 4 are now to be read at the family level;
+  per-term counts are indicative only. The heatmap is retained *with* this instruction
+  rather than dropped.
+- **Design upgrades:** §5.6 now names an independent (non-author) coder, n ≥ 50 enriched
+  for engaged records, and a third-party adjudicator as **preconditions for quoting the
+  substantive count without its interval** — stated as required work, not achieved. These
+  cannot be conjured from the released data; the frozen pre-adjudication sheets remain the
+  honest artifact.
+- All new statistics are reproducible via `analysis/reliability_round4.py`.
+
+## Major concern 6 — the false-negative audit does not bound the risk
+
+**Required:** acknowledge the 15 uninspected weak firings are cheap to fix; the broad net's
+38/48 firing rate shows non-specificity; a blind non-author re-read is feasible now.
+
+**Done (as disclosure, not as new bounds).** §5.7 now states that the 15 uninspected
+firings are identifiable from the released audit output and inspectable "in hours, not a
+re-design---a resubmission should either inspect them or say why not"; the non-author
+re-read is described as feasible for the authors today (full texts in hand) and stated as
+the required next test. The 38/48 non-specificity reading is already in §4.7/§5.7 and is
+kept. The audit remains a disclosure; no false bound is claimed.
+
+## Major concern 7 — discussion and agenda overreach
+
+**Required:** mark §6.6 and the "large defensive apparatus" sentence as not coded
+evidence; flag P2's weak field; make P5 AI-specific; caveat the disconfirmation
+conditions; frame abstract/conclusion as exploratory.
+
+**Done.**
+- §6.1's apparatus sentence is now explicitly within-corpus and depth-framed (see
+  concern 1); §6.6 already carried "author readings, not coded evidence" and keeps it.
+- P2 now says the gap is "a coding observation first and a field observation only
+  provisionally" and quotes κ = 0.32, AC1 0.54.
+- P5 is retitled "Release the learned models, training data and attack generators, not
+  just simulation scripts" (title, body and Table 6 row).
+- The agenda's intro adds the requested caveat: "primary studies already do this" can be
+  revealed by better retrieval as easily as by new science, because the corpus has a
+  documented retrieval gap; the same note closes the conclusion.
+- Abstract and conclusion now open with the exploratory framing matching §1.
+
+## Internal inconsistencies — all fixed
+
+| Issue | Fix |
+|---|---|
+| lifecycle "lowest interpretable agreement" vs `attack_surface_named` κ = 0.14 | Reworded everywhere (abstract, §5.4, §6.3, highlights, conclusion): `attack_surface_named` is the weakest field **on both statistics** (κ 0.14, AC1 0.31); lifecycle is reported as moderate (κ 0.32, AC1 0.54) with no "lowest" claim — on AC1, eval_method (0.38) and maturity (0.41) are in fact lower |
+| §5.5 "never exceeds 22% in any year" vs 2022 = 1/2 | Now: in years with ≥5 records (2024–26) substantive engagement never exceeds 22%; 2022 (1/2, 50%) is named as uninterpretable on its denominator |
+| §5.5 "ML near-universal from 2022" vs 2023 = 4/6 | Now: ML use is 86%+ from 2024; 2023 is 4 of 6 |
+| "half the substantive LLM cases (2 of 4)" mixes levels | Now: one of the two substantive LLM cases sits in [50], the other in [16]; at any level 3 of 4 LLM-engaged records are reviews |
+| R69 out-of-scope, no strict-scope sensitivity for the 29-subset | Added (§5.5): strict scope inside the core subset removes R18 and R69 → 27 studies, 15 (55.6%) any, 5 (18.5%) substantive; 25 studies (14 any, 5 substantive) if borderline records are also removed |
+| ~700 probe-added vs "469-record probe pool" | Reconciled by disclosure (§5.5, §8.2): the 24/469 figure comes from an earlier abstract-level scan whose per-record artifact was not preserved; its relation to the ~700 probe-added candidates is not established; it is now treated as an unreproducible working number, and its 5% hit rate is read as evidence the probes were largely non-specific |
+| §1.1 "had to be repositioned" vs §3.2 "designed independently" | §3.2 now separates the two claims: the vocabulary predates reading their review per the dated design log (unverifiable from the text alone); the *positioning* was revised after reading it. The stronger independence claim is withdrawn |
+| "62 journal articles" includes Zenodo/IRJMETS | §5.8 replaces the venue-type filter with a **peer-review-filtered sensitivity**: 62 journal-classified full-text records minus R30, R32 (Zenodo), R65 (GSC Online Press), R69 (IRJMETS) → 58 records: 23/58 (39.7%) any, 8/58 (13.8%) substantive, 35/58 none, 55/58 tool, 1 targeted (the out-of-domain R59). §8.7 notes the venue-type filter is not a peer-review certification; the denominator table gains the 58-row |
+| "[18, 19]" citations vs "records 18, 59..." | Corpus records are now cited as **R18, R59, R69, R97, R30, R32, R34, R65, R68, R84, R91, R92** etc. throughout; Appendix A defines the R-notation and its relation to bibliography keys, and notes that rendered reference numbers do not equal record IDs |
+| "Appendix 9" | Root cause fixed: `\ref` inside the starred appendix section resolved to the section counter. All references now hardcode "Appendix A" |
+| future-work pointer cycles §5.8 ↔ §8 | Cycle broken: §3.7 points to §5.8; §5.8 is self-contained ("stated here as the required next test") and no longer points to §8 |
+| Tables 8–9 float after the references | `\clearpage` added before the bibliography; verified in the rebuilt PDF: Table 8 and Table 9 now render before the reference list |
+| reference hygiene (garbled [44], [54], [85], [91]; "Authors unreported"; affiliation-as-authors [81]; unknown venues) | Fixed at source and in `gen_bib.py`: Cyrillic author names transliterated (R25 Loskutov/Kulikov, R36 Petrenko, R75 initials); affiliation fragments "Zap. Kaz. REC" and "QHSE-AKBARYS" removed from R75 (Crossref-verified author list); curly apostrophe normalised (R79 "Network's"); `USDOE` dropped from R91/R92 author lists; comma-separated author lists parsed (R32 now has its authors); venues verified via Crossref/OSTI for R26 (West Virginia University), R27 (IEEE PARC 2026), R40 (Wiley, *AI and Digital Twins Under Siege*; reclassified report → book chapter, profile counts updated 3 reports/4 chapters), R72 (ICTAACS 2025), R91/R92 (Idaho National Laboratory/OSTI), R99 (Florida International University). The only remaining "Authors unreported" is R69 (IRJMETS), which is genuinely unattributed. The regenerated `included.bib` renders without mojibake (verified in the PDF) |
+
+## What this revision does not fix (and says so in the manuscript)
+
+1. **The original 16 OpenAlex query strings and per-record provenance** — not in the
+   released record; reconstructed strings + dated Crossref snapshot archived instead;
+   OpenAlex re-run attempted and blocked by the shared-IP budget.
+2. **Coding the 492 eligible records or a random sample of them** — the 492-record export
+   is not in the package; specified as the required artifact in `SEARCH_PROVENANCE.md`.
+3. **An independent coder, a ≥50-record enriched sample, a third-party adjudicator, and
+   the blind non-author re-read of the 48 negatives** — require human coders and the
+   non-redistributable full texts; stated as preconditions/required next tests, not
+   claimed as done.
+4. **Full-text coding of R91/R92** — abstract-level coding and sensitivity analysis
+   provided; retrieval attempted, timed out from this environment; the reports are openly
+   hosted and the manuscript says the coding must be completed before the strict-target
+   null is quoted unqualified.
+
+## Files changed this round
+
+- `manuscript.tex` — abstract, §1, §3.2, §3.3, §4.2, §4.3, §4.5, §5.2, §5.4, §5.5, §5.6
+  (weighted κ, AC1, family-level agreement, design preconditions), §5.7, §5.8
+  (peer-review-filtered sensitivity), §6.1–§6.3, §7 (P2, P5, disconfirmation caveat),
+  §8.2, §8.4, §8.5, §8.7, conclusion, highlights, R-notation, Appendix-A references,
+  float flush
+- `appendix_corpus.tex` — R-notation, ID-order disclosure, verified venues for R26, R27,
+  R40, R72, R91, R92, R99
+- `analysis/reliability_round4.py` — **new**, reproduces every statistic added this round
+- `analysis/search_snapshot_2026-10-19/` — **new**, reconstructed strings + dated Crossref
+  second-database snapshot (16 query CSVs + `queries.json` + README)
+- `gen_bib.py` — Cyrillic transliteration, curly-quote/dotless-ı mapping, org-token
+  filter, comma-separated author parsing, type-label deduplication
+- `included.bib` — regenerated (clean rendering verified)
+- `analysis/extraction_matrix.csv`, `digital_twin_grid_cybersecurity_papers.csv` —
+  Crossref/OSTI-verified author and venue corrections (R25, R26, R27, R36, R40, R72, R75,
+  R79, R91, R92, R99) and R40 venue_type report → book_chapter; **no codes were changed**
+- `highlights.txt`, `README.md` — reframed to the shallowness finding
+- `SEARCH_PROVENANCE.md` — snapshot reference and 24/469 provenance note
+- `analysis/RESULTS.md`, `analysis/summarise.py` — 469 figure marked as unpreserved;
+  round-4 numbers appended
+- `manuscript.pdf` — rebuilt (tectonic, 61 pp., clean; Tables 8–9 before references; no
+  mojibake)

@@ -1,0 +1,101 @@
+doi,title,container,type,year
+10.12688/digitaltwin.17734.1,Data-driven modeling in digital twin for power system anomaly detection,Digital Twin,journal-article,2024
+10.20944/preprints202507.0172.v2,Digital Twin-Driven Intrusion Detection for Industrial SCADA: A Cyber-Physical Case Study,,posted-content,2025
+10.20944/preprints202507.0172.v1,Digital Twin-Driven Intrusion Detection for Industrial SCADA: A Cyber-Physical Case Study,,posted-content,2025
+10.1038/s41598-026-58750-1,FL-TWIN: a unified federated learning system for intrusion detection with digital twins modelling,Scientific Reports,journal-article,2026
+10.1109/rws62797.2024.10799445,A Protocol-Agnostic DER Intrusion Detection System using an IEEE 1547-Enabled Digital Twin,2024 Resilience Week (RWS),proceedings-article,2024
+10.36227/techrxiv.170475326.65758197/v1,Enhancing Network Intrusion Detection: An AutoML Pipeline with Efficient Digital Twin Synchronization,,posted-content,2024
+10.14445/22315381/ijett-v73i11p112,"A Multi-Model Digital Twin-Based Intrusion Detection System: Integrating Autoencoder, DNN, and Anomaly Detection for Robust Cyber Threat Identification",International Journal of Engineering Trends and Technology,journal-article,2025
+10.1109/pesgm48719.2022.9916964,The use of digital twin for timing intrusion detection in synchrophasor systems,2022 IEEE Power &amp; Energy Society General Meeting (PESGM),proceedings-article,2022
+10.1109/lnet.2025.3606789,IDS-Twin: Digital Twin-Based Intrusion Detection Systems for Wireless Networks,IEEE Networking Letters,journal-article,2025
+10.3390/s25164963,Digital Twin-Driven Intrusion Detection for Industrial SCADA: A Cyber-Physical Case Study,Sensors,journal-article,2025
+10.1007/978-981-97-8612-1_2,Digital Twin Architecture of High-Speed Train Traction Power Supply System,Digital Twin Operation and Maintenance for Traction Power Supply System of High-speed Train,book-chapter,2024
+10.1007/978-981-97-8612-1_3,Digital Twin Modeling of High-Speed Train Traction Power Supply System,Digital Twin Operation and Maintenance for Traction Power Supply System of High-speed Train,book-chapter,2024
+10.21956/digitaltwin.19016.r29131,Peer Review Report For: Data-driven modeling in digital twin for power system anomaly detection [version 1; peer review: 4 approved with reservations],,peer-review,2025
+10.21956/digitaltwin.19016.r28523,Peer Review Report For: Data-driven modeling in digital twin for power system anomaly detection [version 1; peer review: 4 approved with reservations],,peer-review,2024
+10.1109/iacis61494.2024.10721930,Digital Twin-Driven Intrusion Detection for IoT and Cyber-Physical System,2024 International Conference on Intelligent Algorithms for Computational Intelligence Systems (IACIS),proceedings-article,2024
+10.21956/digitaltwin.19016.r28524,Peer Review Report For: Data-driven modeling in digital twin for power system anomaly detection [version 1; peer review: 4 approved with reservations],,peer-review,2024
+10.21956/digitaltwin.19016.r28122,Peer Review Report For: Data-driven modeling in digital twin for power system anomaly detection [version 1; peer review: 4 approved with reservations],,peer-review,2024
+10.1007/s11227-025-08044-6,An intrusion detection system for Internet of Vehicles based on digital twin,The Journal of Supercomputing,journal-article,2025
+10.1109/isctrkiye61151.2023.10336137,Security through Digital Twin-Based Intrusion Detection: A SWaT Dataset Analysis,2023 16th International Conference on Information Security and Cryptology (ISCTürkiye),proceedings-article,2023
+10.1007/978-981-97-8612-1_6,Digital Twin Operation and Maintenance Technology of High-Speed Train Traction Power Supply System,Digital Twin Operation and Maintenance for Traction Power Supply System of High-speed Train,book-chapter,2024
+10.2172/3005470,A Protocol-Agnostic DER Intrusion Detection System using an IEEE 1547-Enabled Digital Twin,,report,2024
+10.1109/cisct57197.2023.10351382,Feature Selection in Wireless Intrusion Detection System for Evil Twin Attack Detection,2023 3rd International Conference on Innovative Sustainable Computational Technologies (CISCT),proceedings-article,2023
+10.1109/dasc52595.2021.9594321,Enhancing the Security of Unmanned Aerial Systems using Digital-Twin Technology and Intrusion Detection,2021 IEEE/AIAA 40th Digital Avionics Systems Conference (DASC),proceedings-article,2021
+10.5772/15271,Intrusion Detection System and Artificial Intelligent,Intrusion Detection Systems,book-chapter,2011
+10.1016/b978-0-443-36664-2.00012-5,Fault detection in modern power systems,Digital Twin Technology and Smart Grid,book-chapter,2026
+10.1109/bigdata62323.2024.10825899,"Data-Aided Intrusion Detection Systems: Leveraging AI, Blockchain and Digital Twin Technology",2024 IEEE International Conference on Big Data (BigData),proceedings-article,2024
+10.21203/rs.3.rs-3214924/v1,Twin chain: A Blockchain based Federated Learning Intrusion Detection System usingOptimized Backpropagation based Neural Network for Edge Assisted IoT Networks,,posted-content,2023
+10.1109/icit46573.2021.9453553,Prototyping intrusion detection in an industrial cloud-native digital twin,2021 22nd IEEE International Conference on Industrial Technology (ICIT),proceedings-article,2021
+10.1049/gtd2.12670,Digital twin‐based online tools for electric power communication system training: Online digital twin power communication system,"IET Generation, Transmission &amp; Distribution",journal-article,2022
+10.1049/gtd2.12779,Front Cover: Digital twin‐based online tools for electric power communication system training: Online digital twin power communication system,"IET Generation, Transmission &amp; Distribution",journal-article,2023
+10.1049/cp.2020.0049,Machine learning based anomaly-based intrusion detection system in a full digital substation,15th International Conference on Developments in Power System Protection (DPSP 2020),proceedings-article,2020
+10.14357/08696527200106,INFORMATION ARCHITECTURE OF THE POWER SYSTEM DIGITAL TWIN,Systems and Means of Informatics,journal-article,2020
+10.56781/ijsret.2023.2.1.0020,A novel intrusion detection system based on deep learning and random forest for digital twin on IOT platform,International Journal of Scholarly Research in Engineering and Technology,journal-article,2023
+10.2139/ssrn.6223740,Subject: Submission to Applied Energy — Hybrid AI–Digital Twin Power System Simulation Platform,,posted-content,2026
+10.1002/9781119463474.ch9,Ship Smart System Design (S3D) and Digital Twin,VFD Challenges for Shipboard Electrical Power System Design,other,2019
+10.1109/globecom52923.2024.10901067,Digital twin-based Intrusion Detection in Smart Grid : A Multi-kernel Knowledge Replay Approach,GLOBECOM 2024 - 2024 IEEE Global Communications Conference,proceedings-article,2024
+10.1080/27525783.2026.2622705,Digital twin for early-stage fault detection in a hybrid manufacturing cell,Digital Twin,journal-article,2026
+10.1109/iconscept66142.2025.11436605,Adaptive Edge Intrusion Prevention via Quantum Neural Networks and Digital Twin Simulation,"2025 International Conference on Signal Processing, Computation, Electronics, Power and Telecommunication (IConSCEPT)",proceedings-article,2025
+10.1016/b978-0-443-36664-2.00033-2,Digital Twin computing for power grids,Digital Twin Technology and Smart Grid,book-chapter,2026
+10.5772/14516,An Agent Based Intrusion Detection System with Internal Security,Intrusion Detection Systems,book-chapter,2011
+10.1016/b978-0-443-36664-2.00009-5,Machine learning for power system restoration,Digital Twin Technology and Smart Grid,book-chapter,2026
+10.1109/powercon60995.2024.10870562,Analysis of Digital Twin Implementation Technologies for Power Distribution Systems,2024 IEEE International Conference on Power System Technology (PowerCon),proceedings-article,2024
+10.46647/icetetas025,"Hybrid Deep Learning–Based Network Intrusion Detection Using ConvLSTM, Spiking Neural Networks and Digital Twin Architecture",Research Digest on Engineering Management and Social Innovations,journal-article,2026
+10.1109/icce70609.2026.11658485,Active Digital Twin Verification for Robust Federated Learning in IoT Intrusion Detection,2026 Eleventh International Conference on Communications and Electronics (ICCE),proceedings-article,2026
+10.1109/ficloud70576.2026.00016,Explainable and Adaptive Intrusion Detection in Digital Twin Environments,2026 13th International Conference on Future Internet of Things and Cloud (FiCloud),proceedings-article,2026
+10.1016/j.epsr.2026.113087,Interpretable intelligent intrusion detection systems for cybersecurity in smart digital substations,Electric Power Systems Research,journal-article,2026
+10.1109/ojvt.2026.3694672,Trust-Aware Intrusion Detection Framework for AI-Augmented Vehicular Digital Twin,IEEE Open Journal of Vehicular Technology,journal-article,2026
+10.1109/epe61521.2024.10559515,Power System Dynamic Model as a Digital Twin,2024 24th International Scientific Conference on Electric Power Engineering (EPE),proceedings-article,2024
+10.1109/ucom67224.2025.11337218,A Data-Driven Wireless Intrusion Detection Framework Based on Digital Twin,2025 3rd International Conference on Ubiquitous Communication (Ucom),proceedings-article,2025
+10.1109/ictc66702.2025.11387808,Digital Twin-Driven Federated Learning for Intrusion Detection under Simulated Adversarial Conditions,2025 16th International Conference on Information and Communication Technology Convergence (ICTC),proceedings-article,2025
+10.1109/tsmc.2023.3292110/mm1,A Novel Wrapped Feature Selection Framework for Developing Power System Intrusion Detection Based on Machine Learning Methods_supp1-3292110.docx,,component,
+10.1109/cieec58067.2023.10167284,Application of digital twin system in power transformer fault detection,2023 IEEE 6th International Electrical and Energy Conference (CIEEC),proceedings-article,2023
+10.12688/digitaltwin.17599.3,The development of a digital twin concept system,Digital Twin,journal-article,2025
+10.1080/17517575.2026.2660128,Metaverse-aware intrusion detection system for digital twin-based enterprise systems using entropy-aware sparse attention transformer,Enterprise Information Systems,journal-article,2026
+10.1109/icdim.2007.369351,An Intelligent and Expert Mining Intrusion Detection and Response System,2006 1st International Conference on Digital Information Management,proceedings-article,2007
+10.1109/smartworld-uic-atc-scalcom-digitaltwin-pricomp-metaverse56740.2022.00224,An intrusion detection system based on multiple interpretation methods,"2022 IEEE Smartworld, Ubiquitous Intelligence &amp; Computing, Scalable Computing &amp; Communications, Digital Twin, Pr",proceedings-article,2022
+10.36227/techrxiv.171262841.10624701/v1,Intrusion Detection for Power System Security by Ensemble Learning with Auxiliary Classifier and Feature Selection,,posted-content,2024
+10.1007/978-1-4842-6591-8_1,What is an Intrusion Detection System (IDS),Designing a Machine Learning Intrusion Detection System,book-chapter,2020
+10.2139/ssrn.5146155,A COMPARATIVE STUDY BETWEEN INTRUSION DETECTION SYSTEM AND INTRUSION PREVENTION SYSTEM,,posted-content,2025
+10.1016/j.segan.2025.102069,Raw measurement supervised learning transformer for anomaly detection of power system digital twin updates,"Sustainable Energy, Grids and Networks",journal-article,2026
+10.12688/digitaltwin.17695.1,Digital twin-driven intelligent maintenance decision-making system and key-enabling technologies for nuclear power equipment,Digital Twin,journal-article,2022
+10.31274/rtd-180817-112,A hybrid intrusion detection system,,dissertation,
+10.2139/ssrn.5146165,IMPORTANCE OF INTRUSION DETECTION SYSTEM ON DIFFERENT INTRUSION ATTACKS,,posted-content,2025
+10.1109/raeeucci67649.2026.11504921,A Privacy-Preserving Self-Adaptive Federated Intrusion Detection Framework for Digital Twin Environments,"2026 International Conference on Recent Advances in Electrical, Electronics, Ubiquitous Communication, and Computational",proceedings-article,2026
+10.1109/acpee48638.2020.9136196,SoC-based Digital Twin of Power System Simulation,2020 5th Asia Conference on Power and Electrical Engineering (ACPEE),proceedings-article,2020
+10.1109/dsd51259.2020.00096,Intrusion Detection for SOME/IP: Challenges and Opportunities,2020 23rd Euromicro Conference on Digital System Design (DSD),proceedings-article,2020
+10.4156/jdcta.vol3.issue1.janakiraman,ACO based Distributed Intrusion Detection System,International Journal of Digital Content Technology and its Applications,journal-article,2009
+10.2139/ssrn.5393469,Subgraph Generation Applied to Electrical Power System Digital Twin Frameworks,,posted-content,2025
+10.2139/ssrn.6293656,A Digital-Twin-Assisted Multi-Level Framework for EV scheduling in a Coupled power -transportation system,,posted-content,2026
+10.2139/ssrn.6620290,A Digital-Twin-Assisted Multi-Level Framework for EV scheduling in a Coupled power-transportation system,,posted-content,2026
+10.1007/978-981-97-8612-1,Digital Twin Operation and Maintenance for Traction Power Supply System of High-speed Train,,book,2025
+10.1109/cine.2015.35,Intrusion Detection System for Power-Aware OLSR,2015 International Conference on Computational Intelligence and Networks,proceedings-article,2015
+10.1007/978-3-031-58523-4_6,DT-AXYOLOV5: An Efficient Digital Twin–Assisted Deep-Learning-Based Blockchain Framework for Patient Discomfort Detection in Smart Healthcare System,Transforming Industry using Digital Twin Technology,book-chapter,2024
+10.1109/tits.2026.3669369,CATwin-IDS: Context-Aware Intrusion Detection System for Both In-Vehicle and External-Vehicle Networks via Digital Twin,IEEE Transactions on Intelligent Transportation Systems,journal-article,2026
+10.1109/tpwrs.2012.2224144,Real-time intrusion detection in power system operations,IEEE Transactions on Power Systems,journal-article,2013
+10.1002/cpe.8334,<scp>TwinSec</scp>‐<scp>IDS</scp>: An Enhanced Intrusion Detection System in <scp>SDN</scp>‐Digital‐Twin‐Based Industrial Cyber‐Physical Systems,Concurrency and Computation: Practice and Experience,journal-article,2024
+10.31979/etd.hs6r-uquj,Twin Anomaly Detection System,,dissertation,
+10.55248/gengpi.6.0625.2271,Digital Twin-Enabled Smart Energy Management System for Forecasting and Virtualized Monitoring: Sustainable Power Consumption in Smart Cities,International Journal of Research Publication and Reviews,journal-article,2025
+10.3724/sp.j.1087.2013.00426,Application of multi-class classification algorithm based on twin support vector machine in intrusion detection,Journal of Computer Applications,journal-article,2013
+10.1109/icdscnc62492.2024.10939345,Enhancing Intrusion Detection Systems with Digital Twin Technology for Cyber-Physical Security,"2024 International Conference on Distributed Systems, Computer Networks and Cybersecurity (ICDSCNC)",proceedings-article,2024
+10.1002/9781394257003.ch13,Power Energy System Consumption Analysis in Urban Railway by Digital Twin Method,Simulation Techniques of Digital Twin in Real‐Time Applications,other,2024
+10.1109/naps.2017.8107186,A cyber-defensive industrial control system with redundancy and intrusion detection,2017 North American Power Symposium (NAPS),proceedings-article,2017
+10.1117/12.3110582,A multiscale intrusion detection model for new electricity system,Second International Conference on New Power System and Power Electronics (NPSPE 2025),proceedings-article,2026
+10.5772/15450,A Sustainable Component of Intrusion Detection System using Survival Architecture on Mobile Agent,Intrusion Detection Systems,book-chapter,2011
+10.31436/ijpcc.v11i1.530,Digital Twin-Based Evaluation of Vehicular Controller Area Network Intrusion Detection Systems,International Journal on Perceptive and Cognitive Computing,journal-article,2025
+10.3724/sp.j.1087.2008.01130,Blind intrusion detection algorithm based on digital whiff,Journal of Computer Applications,journal-article,2008
+10.2991/isaeece-16.2016.62,An Intrusion Detection System Based on Big Data for Power System,"Proceedings of the 2016 International Symposium on Advances in Electrical, Electronics and Computer Engineering",proceedings-article,2016
+10.1080/27525783.2025.2493074,Review on the establishment and application of digital twin model for infrared optical-mechanical system,Digital Twin,journal-article,2025
+10.1038/s41598-026-42041-w,A zero-trust digital twin framework for privacy-preserving multi-dataset intrusion detection in industrial IoT with lightweight blockchain auditing,Scientific Reports,journal-article,2026
+10.1109/ikt62039.2023.10433057,AI-based Secure Intrusion Detection Framework for Digital Twin-enabled Critical Infrastructure,2023 14th International Conference on Information and Knowledge Technology (IKT),proceedings-article,2023
+10.1201/b16390-21,Intrusion Detection System Architecture for Wireless Sensor Network,The State of the Art in Intrusion Prevention and Detection,book-chapter,2014
+10.20944/preprints202307.2143.v1,Intelligent Location Method and System for Power System Oscillation Sources Based on Digital Twin,,posted-content,2023
+10.1109/smartgridcomm65349.2025.11204643,Fed-AttentionGrid: Digital Twin-Assisted Attention-based Federated Learning for Intrusion Detection in Smart Grids,"2025 IEEE International Conference on Communications, Control, and Computing Technologies for Smart Grids (SmartGridComm",proceedings-article,2025
+10.1007/978-1-4842-6591-8_4,Network Intrusion Detection Data,Designing a Machine Learning Intrusion Detection System,book-chapter,2020
+10.1520/d8218-20,Standard Guide for Intrusion Detection System (IDS),,standard,
+10.31979/etd.9at2-yu5x,Intrusion Detection And Prevention System,,dissertation,
+10.66816/pr6583795,Digital Twin: Visualizing the Future of the Power Grid,,posted-content,2026
+10.21203/rs.3.rs-10525787/v1,"Digital Twin for Industrial Exhaust Heat Recovery System: Thermodynamic Sizing, Fault Detection and Techno-economic Validation in Bahrain",,posted-content,2026
+10.1109/dasc.2017.8102146,Development and testing of an intrusion detection system for unmanned aerial systems,2017 IEEE/AIAA 36th Digital Avionics Systems Conference (DASC),proceedings-article,2017
+10.1109/smartworld-uic-atc-scalcom-digitaltwin-pricomp-metaverse56740.2022.00293,Intrusion Detection System for In-vehicle Networks with Incremental Learning Based on Cloud-Edge Collaborative Architecture*,"2022 IEEE Smartworld, Ubiquitous Intelligence &amp; Computing, Scalable Computing &amp; Communications, Digital Twin, Pr",proceedings-article,2022

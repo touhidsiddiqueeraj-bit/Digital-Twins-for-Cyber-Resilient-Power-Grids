@@ -1,0 +1,103 @@
+{
+  "run_date": "2026-10-19",
+  "database": "Crossref (api.crossref.org/works)",
+  "status": "RECONSTRUCTED strings; originals not preserved",
+  "queries": [
+    {
+      "id": "core-01",
+      "string": "\"digital twin\" \"power grid\" cybersecurity",
+      "crossref_total_results": 3435521,
+      "archived_top_n": 100
+    },
+    {
+      "id": "core-02",
+      "string": "\"digital twin\" \"power grid\" \"cyber attack\"",
+      "crossref_total_results": 3588385,
+      "archived_top_n": 100
+    },
+    {
+      "id": "core-03",
+      "string": "\"digital twin\" \"power grid\" \"intrusion detection\"",
+      "crossref_total_results": 4916436,
+      "archived_top_n": 100
+    },
+    {
+      "id": "core-04",
+      "string": "\"digital twin\" \"smart grid\" cybersecurity",
+      "crossref_total_results": 2170501,
+      "archived_top_n": 100
+    },
+    {
+      "id": "core-05",
+      "string": "\"digital twin\" \"smart grid\" \"cyber attack\"",
+      "crossref_total_results": 2321495,
+      "archived_top_n": 100
+    },
+    {
+      "id": "core-06",
+      "string": "\"digital twin\" \"smart grid\" \"intrusion detection\"",
+      "crossref_total_results": 3649720,
+      "archived_top_n": 100
+    },
+    {
+      "id": "core-07",
+      "string": "\"digital twin\" \"power system\" cybersecurity",
+      "crossref_total_results": 6612056,
+      "archived_top_n": 100
+    },
+    {
+      "id": "core-08",
+      "string": "\"digital twin\" \"power system\" \"cyber attack\"",
+      "crossref_total_results": 6753073,
+      "archived_top_n": 100
+    },
+    {
+      "id": "core-09",
+      "string": "\"digital twin\" \"power system\" \"intrusion detection\"",
+      "crossref_total_results": 8013309,
+      "archived_top_n": 100
+    },
+    {
+      "id": "core-10",
+      "string": "\"digital twin\" \"energy system\" cybersecurity",
+      "crossref_total_results": 7426468,
+      "archived_top_n": 100
+    },
+    {
+      "id": "core-11",
+      "string": "\"digital twin\" \"energy system\" \"cyber attack\"",
+      "crossref_total_results": 7568562,
+      "archived_top_n": 100
+    },
+    {
+      "id": "core-12",
+      "string": "\"digital twin\" \"energy system\" \"intrusion detection\"",
+      "crossref_total_results": 8826378,
+      "archived_top_n": 100
+    },
+    {
+      "id": "probe-01",
+      "string": "\"digital twin\" \"smart grid\" \"adversarial machine learning\"",
+      "crossref_total_results": 5071314,
+      "archived_top_n": 100
+    },
+    {
+      "id": "probe-02",
+      "string": "\"digital twin\" \"power grid\" \"data poisoning\"",
+      "crossref_total_results": 6375047,
+      "archived_top_n": 100
+    },
+    {
+      "id": "probe-03",
+      "string": "\"digital twin\" \"power system\" \"adversarial examples\"",
+      "crossref_total_results": 6684078,
+      "archived_top_n": 100
+    },
+    {
+      "id": "probe-04",
+      "string": "\"digital twin\" \"smart grid\" \"large language model\"",
+      "crossref_total_results": 7202679,
+      "archived_top_n": 100
+    }
+  ]
+}

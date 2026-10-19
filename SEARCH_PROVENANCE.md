@@ -32,6 +32,10 @@ result robust.
 ## Artifacts that must be released to resolve it
 
 1. **The 16 query strings** (12 core + 4 probes), verbatim, in OpenAlex syntax.
+   *Partial (2026-10-19):* reconstructed strings are archived in
+   `analysis/search_snapshot_2026-10-19/` together with a dated Crossref
+   (second-database) run of each; the **originals** remain unreleased. An OpenAlex
+   re-run was attempted on 2026-10-19 and blocked by the shared-IP API budget.
 2. **Run dates** for each query, and the OpenAlex snapshot semantics (citation counts
    and relevance scores are date-dependent).
 3. **Per-record query provenance**: for every record in the candidate pool (≈2,000),
@@ -63,3 +67,11 @@ export needed to do this.
 | `paywalled_dois.csv`, `free_blocked_download_links.csv` | non-retrieved full texts | none |
 
 None of these files carries per-record query provenance.
+
+## Related figure with the same provenance problem
+
+The abstract-level screening figure quoted in earlier drafts ("24 of 469 records,
+5.1%") derives from an earlier probe-relevance scan whose **per-record artifact was not
+preserved**. Its relation to the ≈700 probe-added candidates is not established in the
+released record, and the manuscript (§5.5, §8.2) now treats it as an unreproducible
+working number rather than evidence.

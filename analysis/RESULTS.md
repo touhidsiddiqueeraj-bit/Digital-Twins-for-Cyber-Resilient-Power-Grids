@@ -213,3 +213,45 @@ validation.
 - ai_evasion=2: only id 50. ai_agentic=2: only id 50. ai_llm=2: ids 16, 50.
   → one review (id 50) supplies every substantive evasion and agentic case and half the
   substantive LLM cases.
+
+
+## Round-4 additions (2026-10-19) — recomputed from the frozen coder sheets
+
+Reproduce with `python3 analysis/reliability_round4.py`.
+
+- **Ordinal agreement on ai_threat_overall (3x3: rows C1, cols C2 = [9,1,1],[1,3,1],[1,2,1]):**
+  unweighted kappa 0.41; linear weighted kappa 0.43 (boot 95% CI 0.08-0.74);
+  quadratic weighted kappa 0.44 (0.03-0.80); Gwet AC1 0.50 (0.18-0.80).
+- **AC1 per field** (Table 5 AC1 column): baseline_compared 0.90, twin_role 0.94,
+  ai_poisoning 0.88, threat_model_explicit 0.85, metrics_reported 0.72,
+  security_primary 0.77, ml_used 0.77, ml_role 0.64, stance 0.51, dt_type 0.72,
+  grid_domain 0.61, ai_adv_ml 0.59, maturity 0.41, ai_threat_overall 0.50,
+  ai_evasion 0.69, eval_method 0.38, lifecycle_stage 0.54, attack_surface_named 0.31
+  (lowest on both statistics), code_available 1.00, ai_agentic 0.95, ai_llm 0.89,
+  data_available 0.84, stance_confidence 0.60, limitations_stated 0.60.
+- **Family-level threat-vocabulary agreement (n=20):** interface family
+  (mitm/replay/reverse_pathway/false_command) 17/20, kappa 0.70; classical family
+  (dos/fdi/malware/physical/insider/supply_chain/hardware/other) 17/20 (85%), kappa 0.32
+  (prevalence-depressed); learned-model family (poisoning/evasion/prompt) 14/20,
+  kappa 0.37 (coder 2 named fewer).
+- **Strict-scope sensitivity inside the 29-study core subset:** removing R18 and R69
+  leaves 27 studies — 15/27 (55.6%) any, 5/27 (18.5%) substantive; removing the
+  borderline records too leaves 25 — 14 any, 5 substantive.
+- **Peer-review-filtered venue sensitivity:** 62 journal-classified full-text records
+  minus R30, R32 (Zenodo), R65 (GSC Online Press), R69 (IRJMETS) = 58 records —
+  23/58 (39.7%) any, 8/58 (13.8%) substantive, 35/58 none, 55/58 tool, 1 target
+  (R59, out-of-domain).
+- **ID = rank order, verified:** IDs 1-45 are all 2026; within every year block
+  cited_by descends with ID; 40/100 records have zero citations. The realised ranking
+  is recency-dominant with citations as a tie-breaker.
+- **Abstract-level twin_role for the 17 abstract-only records:** 15 tool; R91 and R92
+  (Spirito et al., OSTI/INL, nuclear domain) read as attack-side work on the twin's
+  interface (R91) and the twin's ML models (R92).
+- **Venue/author corrections (Crossref/OSTI-verified, 2026-10-19):** R26 West Virginia
+  University; R27 IEEE PARC 2026; R40 Wiley book chapter (venue_type report ->
+  book_chapter; corpus profile now 3 reports / 4 book chapters); R72 ICTAACS 2025;
+  R91/R92 Idaho National Laboratory / OSTI; R99 Florida International University;
+  R25/R36/R75 Cyrillic author names transliterated; R75 affiliation fragments removed;
+  R79 title apostrophe normalised; R32 comma-separated authors parsed.
+- **24/469 (5.1%) figure:** from an unpreserved scan; relation to the ~700 probe-added
+  candidates not established; treated as an unreproducible working number.

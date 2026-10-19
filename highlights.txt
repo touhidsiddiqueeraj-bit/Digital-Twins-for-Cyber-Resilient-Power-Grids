@@ -1,6 +1,6 @@
 Highlights
-- Structured review of a ranked 100-study corpus on digital twins for power-grid cybersecurity, 2020-2026.
-- Machine learning is used in 70 of 83 full-text studies, for detection in 55; 35 of 83 engage any AI-enabled threat, 11 substantively.
-- No grid study treats the digital twin itself as the adversary's objective; 56 of 83 name an attack channel on the twin's data path or models, almost always as something to protect.
-- Coverage, as coded, sits at 66 of 83 at operation, one at design, none at commissioning (field agreement kappa 0.32).
-- Five-item agenda: each names its gap, the evidence that would close it, and the evidence that would disconfirm it.
+- Structured, exploratory review of a ranked 100-study corpus on digital twins for power-grid cybersecurity, 2020-2026; figures describe the corpus, not the literature.
+- ML is used in 70/83 full-text studies (detection in 55); any-level AI-threat engagement is majority in the core subsets (16/29, 30/55) but mostly shallow - 11/83 substantively, on the weakest collapse (kappa 0.14), with an interval (21-51 of 83) that includes majority readings.
+- As coded (a descriptive observation, not a field finding): no grid study treats the twin as the adversary's objective; 56/83 name an attack channel on the twin's data path or models - largely classical communication threats - almost always as something to protect; two abstract-only nuclear-domain records (R91, R92) do attack twin interfaces and twin ML models.
+- Coverage, as coded: 66/83 at operation, 1 at design (out-of-domain), 0 at commissioning (lifecycle kappa 0.32, AC1 0.54; weakest field: attack_surface_named, kappa 0.14).
+- Five-item agenda, each item tied to its gap, its validating evidence, and the evidence that would disconfirm it.

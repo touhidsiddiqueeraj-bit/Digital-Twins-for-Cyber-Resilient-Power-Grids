@@ -2,14 +2,22 @@
 
 Table~\ref{tab:corpus} lists every record in the retained corpus, so that the
 included-study set is visible in the paper itself and not only in the released
-data. IDs are corpus record numbers and double as bibliography keys
-(\texttt{ref$<$ID$>$}). ``FT'' marks the 83 records coded at full text; the 17
-abstract-only records were coded at abstract level, with full-text fields treated
-as missing. Records 18, 59, 69 and 97 fall outside the strict grid scope of
-Section~\ref{sec:ai-threats}; records 34, 68 and 84 are the borderline cases there.
+data. IDs are corpus record numbers, cited in the running text as R$<$ID$>$ to keep
+them distinct from bracketed reference numbers [n]; the ID also doubles as the
+bibliography key (\texttt{ref$<$ID$>$}), and the \emph{Ref.}\ column of
+Table~\ref{tab:substantive} gives the mapping for the substantive studies. The IDs
+follow the retained rank order of the selection rule: year descending, and within
+each year block citations descending (IDs 1--45 are all 2026), so the ID order is
+effectively a recency ordering---a property of the realised ranking, not of the
+literature (Section~\ref{sec:method}). ``FT'' marks the 83 records coded at full
+text; the 17 abstract-only records were coded at abstract level, with full-text
+fields treated as missing. R18, R59, R69 and R97 fall outside the strict grid scope of
+Section~\ref{sec:ai-threats}; R34, R68 and R84 are the borderline cases there.
 
 \begin{longtable}{@{}r p{5.6cm} p{3.4cm} r p{2.9cm}@{}}
-\caption{The retained corpus ($n=100$).}\label{tab:corpus}\\
+\caption{The retained corpus ($n=100$). IDs follow the retained rank order (year
+descending, citations descending within year), i.e.\ the ID order is effectively a
+recency ordering.}\label{tab:corpus}\\
 \toprule
 ID & Study (first author) & Venue (type) & FT & DOI \\
 \midrule
@@ -47,8 +55,8 @@ ID & Study (first author) & Venue (type) & FT & DOI \\
 23 & S. Rayhan Kabir (2026) & Applied Sciences (journal) & Y & 10.3390/app16157655 \\
 24 & Osasumwen Cedric Ogiesoba-Eguakun (2026) & Electronics (journal) & Y & 10.3390/electronics15204701 \\
 25 & Oleg V. Trubienko (2026) & Russian Technological Journal (journal) & Y & 10.32362/2500-316x-2026-14-5-41-54 \\
-26 & Paroma Chatterjee (2026) & unknown-venue (thesis) & -- & 10.33915/etd.13429 \\
-27 & Kanchan Yadav (2026) & unknown-venue (conf.) & -- & 10.1109/parc68365.2026.11453523 \\
+26 & Paroma Chatterjee (2026) & West Virginia University (thesis) & -- & 10.33915/etd.13429 \\
+27 & Kanchan Yadav (2026) & IEEE PARC 2026 (conf.) & -- & 10.1109/parc68365.2026.11453523 \\
 28 & Jennifer Ikeoluwa Ade-moomiyo (2026) & International Journal of Innovative Tec... (journal) & Y & 10.35940/ijitee.k1309.15111026 \\
 29 & GHOREISHI, MOHAMMAD (2026) & IRIS Research product catalog (Sapienza... (thesis) & -- & --- \\
 30 & Safa Mohamed (2026) & Zenodo (CERN European Organization for ... (journal) & Y & 10.5281/zenodo.19999925 \\
@@ -61,7 +69,7 @@ ID & Study (first author) & Venue (type) & FT & DOI \\
 37 & Allen Antony (2026) & Hogskolan Ihalmstad (Halmstad University) (thesis) & -- & --- \\
 38 & Narendra Kumar (2026) & International Journal of Digitalization (journal) & Y & 10.20508/rrhh1109 \\
 39 & Zornitsa B. Yordanova (2026) & Resilient Cities and Structures (journal) & Y & 10.1016/j.rcns.2026.09.003 \\
-40 & Akram AL-DHAFARI (2026) & unknown-venue (report) & -- & 10.1002/9781394474325.ch14 \\
+40 & Akram AL-DHAFARI (2026) & AI and Digital Twins Under Siege, Wiley (chapter) & -- & 10.1002/9781394474325.ch14 \\
 41 & Somayeh Soroush (2026) & Electronics (journal) & Y & 10.3390/electronics15194522 \\
 42 & Peng Xiao (2026) & Ingegneria Sismica (journal) & -- & 10.65102/is2026854 \\
 43 & Akriti . (2026) & International Journal of Artificial Int... (journal) & Y & 10.51483/ijaiml.6.9s.2026.1975-1984 \\
@@ -93,7 +101,7 @@ ID & Study (first author) & Venue (type) & FT & DOI \\
 69 & Unattributed (2025) & International Research Journal of Moder... (journal) & Y & 10.56726/irjmets81350 \\
 70 & Li, Jin (2025) & Espace ETS (ETS) (report) & Y & 10.82417/cc0h-fz32 \\
 71 & Saif Ali (2025) & Euro vantage journal of artificial inte... (journal) & Y & 10.65923/avg24p53 \\
-72 & Dalila Anseri (2025) & unknown-venue (conf.) & -- & 10.1109/ictaacs69003.2025.11399437 \\
+72 & Dalila Anseri (2025) & ICTAACS 2025 (conf.) & -- & 10.1109/ictaacs69003.2025.11399437 \\
 73 & Bilal Khan (2025) & International Conference on Electrical,... (conf.) & Y & 10.1109/icecce67514.2025.11258064 \\
 74 & Mansi Girdhar (2025) & Deep Blue (University of Michigan) (thesis) & Y & 10.7302/25171 \\
 75 & Artem I. Zemtsov (2025) & Gylym zane bilim (journal) & Y & 10.52578/2305-9397-2025-3-5-328-336 \\
@@ -112,14 +120,14 @@ ID & Study (first author) & Venue (type) & FT & DOI \\
 88 & Omer Sen (2023) & IEEE International Conference on Commun... (conf.) & Y & 10.1109/smartgridcomm57358.2023.10333871 \\
 89 & Gholamreza Nasiri (2023) & Machines (journal) & Y & 10.3390/machines11030392 \\
 90 & Luka V. Strezoski (2023) & Energija Ekonomija Ekologija (journal) & Y & 10.46793/eee23-4.01s \\
-91 & Christopher M. Spirito (2023) & unknown-venue (report) & -- & 10.2172/2337610 \\
-92 & Christopher M. Spirito (2023) & unknown-venue (report) & -- & 10.2172/2331253 \\
+91 & Christopher M. Spirito (2023) & Idaho Natl.\ Laboratory / OSTI (report) & -- & 10.2172/2337610 \\
+92 & Christopher M. Spirito (2023) & Idaho Natl.\ Laboratory / OSTI (report) & -- & 10.2172/2331253 \\
 93 & Md. Mhamud Hussen Sifat (2022) & Energy and AI (journal) & Y & 10.1016/j.egyai.2022.100213 \\
 94 & Tianming Zheng (2022) & arXiv (Cornell University) (preprint) & Y & 10.48550/arxiv.2205.11783 \\
 95 & William Danilczyk (2021) & North American Power Symposium (NAPS) (conf.) & -- & 10.1109/naps50074.2021.9449682 \\
 96 & Amardeep Balasaheb Shitole (2021) & IEEE International Conference on Smart ... (conf.) & Y & 10.1109/stpec52385.2021.9718616 \\
 97 & Yun Guo (2021) & International Conference on Power Syste... (conf.) & Y & 10.1109/powercon53785.2021.9697764 \\
 98 & Nandha Kumar Kandasamy (2021) & arXiv (Cornell University) (preprint) & Y & 10.48550/arxiv.2105.04260 \\
-99 & Ahmed Aly Saad Ahmed (2021) & unknown-venue (thesis) & -- & 10.25148/etd.fidc009671 \\
+99 & Ahmed Aly Saad Ahmed (2021) & Florida International University (thesis) & -- & 10.25148/etd.fidc009671 \\
 100 & Ahmed Saad (2020) & IEEE Transactions on Smart Grid (journal) & Y & 10.1109/tsg.2020.3000958 \\
 \end{longtable}

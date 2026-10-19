@@ -10,6 +10,18 @@ Last updated: 2026-10-16
 > re-derived with matched denominators, tiered twin counts, strict-scope sensitivity
 > analysis, PABAK/bias reliability statistics, and a misclassification sensitivity in
 > place of Wilson intervals. See `REVIEW_RESPONSE.md` for the point-by-point changes.
+> **Round-4 revision note (2026-10-19).** The fourth review round re-framed the headline:
+> any-level engagement is majority in the core subsets, so the defensible finding is that
+> engagement is *common but shallow* (substantive 11/83, on the weakest collapse, with a
+> 21-51 interval that includes majority readings); twin-as-target and lifecycle results
+> are now presented as descriptive observations of the coding, not field findings.
+> Reliability reporting gained weighted kappa, Gwet's AC1 (all fields) and family-level
+> threat agreement; the venue sensitivity became a peer-review filter (n=58); R-notation
+> (R<n>) separates corpus IDs from reference numbers; reference-list mojibake and
+> affiliation-as-author entries were fixed at source (Crossref/OSTI-verified); a dated
+> search snapshot with reconstructed query strings and a Crossref second-database run is
+> archived under `analysis/search_snapshot_2026-10-19/`. See `REVIEW_RESPONSE.md`.
+
 > This file is kept as the historical planning record.
 
 ---

@@ -13,7 +13,7 @@ threats — or the twin itself — as an attack target.
 - **Corpus:** 100 studies (2020–2026), a declared non-probabilistic top-100 ranking of 492
   eligible records screened from 1,287 unique OpenAlex core-query records;
   83 coded at full text, 17 at abstract level
-- **Status:** revised after a third review round (see `REVIEW_RESPONSE.md`); author list is
+- **Status:** revised after a fourth review round (see `REVIEW_RESPONSE.md`); author list is
   a placeholder pending finalisation
 
 ---
@@ -23,19 +23,22 @@ threats — or the twin itself — as an attack target.
 | Finding | Number |
 |---|---|
 | ML used (full text) | 70 / 83 — **for detection in 55** (forecasting 12, control 3 are not security functions) |
-| Engage **any** AI-enabled threat | 35 / 83 (42.2%); within the 29 security-primary, non-review, detection-ML studies: 16 (55%) |
-| Engage an AI threat **substantively** | 11 / 83 (13.3%; fragile, κ = 0.14) |
-| Twin as the adversary's **objective** (strict) | **0 grid studies** (1 non-grid vehicle record); 56/83 name an attack channel on the twin's data path or models |
-| Research concentrated at **operation** stage | 66 / 83 (field agreement κ = 0.32 — descriptive only) |
-| Studies from **2025–2026** | 76% (partly a selection artefact of the recency-weighted ranking) |
+| Engage **any** AI-enabled threat | 35 / 83 (42.2%); **a majority in the core subsets** — 16/29 (55%) security-primary non-review detection-ML, 30/55 detection-ML — so the finding is shallowness, not absence |
+| Engage an AI threat **substantively** | 11 / 83 (13.3%) — the load-bearing number, on the weakest collapse (κ = 0.14); misclassification interval 21–51 of 83 (≈25–61%) includes majority readings |
+| Twin as the adversary's **objective** (strict) | **0 grid studies** — a descriptive observation of the coding, not a field finding; 1 non-grid vehicle record; 56/83 name an attack channel (largely classical communication threats); two abstract-only nuclear-domain records (R91, R92, openly hosted on OSTI) do attack twin interfaces and twin ML models |
+| Research concentrated at **operation** stage | 66 / 83 (lifecycle κ = 0.32, AC1 0.54 — descriptive only; the single design-phase record is out-of-domain) |
+| Studies from **2025–2026** | 76% (the realised ranking is recency-dominant: record IDs 1–45 are all 2026, 40/100 records have zero citations) |
 
 AI-threat engagement by vector (score ≥1): adversarial ML 24, poisoning 19, evasion 9,
-LLM 4, agentic 2. The abstract-only screening figure (5.1%) is quoted in the paper only as
-an illustration of screening loss, not a correction factor.
+LLM 4, agentic 2. The earlier abstract-level screening figure (24/469, 5.1%) is now
+treated as an unreproducible working number from an unpreserved scan, not evidence.
 
 Two coders (both authors of the review) coded a blind sample of 20 of the 83 full-text
 records (24%): κ = 0.60 (bootstrap 95% CI 0.20–0.90) for "any engagement", κ = 0.14
-(−0.23–0.64) for "substantive"; PABAK and bias indices are reported per field. A
+(−0.23–0.64) for "substantive", linear weighted κ = 0.43 and Gwet's AC1 = 0.50 on the
+three-level scale, plus PABAK, bias indices and a per-field AC1 column. Family-level
+threat-vocabulary agreement (interface κ = 0.70, classical 85%, learned-model κ = 0.37)
+replaces exact-set matching as the quotable vocabulary statistic. A
 misclassification sensitivity anchored on the second coder puts the headline at 36/83
 (95% CI 21–51). Full per-field agreement statistics:
 [`analysis/reliability/AGREEMENT.md`](analysis/reliability/AGREEMENT.md).
