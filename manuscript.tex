@@ -46,27 +46,27 @@ Review of AI Use, Threat Engagement, and Measurement Limits}
   country={Bangladesh}}
 
 \begin{abstract}
-Digital twins are becoming a reference architecture for modern power grids, with machine
-learning inside them. We ask whether literature naming a grid digital twin and a
-security term engages AI-enabled threats---and the twin itself---as an attack target, or
-stops at defensive use. The hypothesis came from early reading of this corpus; in its
-original form---defensive use common, attack-side engagement rare---it was not supported,
-and the framing was revised post hoc to a question of depth.
+Digital twins with machine learning inside are becoming a reference architecture
+for modern power grids. Does literature naming a grid digital twin and a security term
+engage AI-enabled threats---and the twin itself---as an attack target, or stop at
+defence? The hypothesis came from early corpus reading, proved unsupported in its
+original form, and was revised post hoc to a question of depth.
 Twelve OpenAlex queries yielded 1{,}287 records (492 eligible); a declared
-non-probabilistic ranking retained 100, 83 coded at full text across 46 fields.
-Every figure describes this corpus, not the wider literature.
-Machine learning is used in 70 of 83---detection in 55; 35 (42\%) engage an AI-enabled
-threat at any level, 11 (13\%) substantively; in the 29-study security-primary
-detection-ML core, 16 (55\%) engage any, 6 (21\%) substantively. Retrieval ran on
-defensive vocabulary, so these rates describe the defensively-framed literature only. The
-defensible conclusion: any-level engagement is common, depth is not reliably
-measured here---``any'' can mean under two sentences, the substantive tier sits on the
-weakest coder agreement, and its threshold partly proxies document length.
-As coded, no grid study treats the twin itself as the adversary's objective; two read
-nuclear-domain records (R91, R92) attack twin interfaces and ML models, bounding it
-from outside; 56 of 83 name classical threats on the twin's data path---surfaces to
-protect, not studied targets. A five-item agenda ties each item to its gap, disconfirming
-evidence, and dual-use obligations.
+non-random ranking retained 100, 83 coded at full text.
+Every figure describes this corpus---a bounded ranked sample, not a census, retrieved
+on defensive vocabulary---so only the defensively-framed literature.
+Machine learning is used in 70 of 83 (detection 55); 35 (42\%) engage any
+AI-enabled threat, 11 (13\%) substantively (strict grid scope: 33 and 10 of 79);
+the 29-study detection-ML core: 16 (55\%) and 6 (21\%). Any-level engagement is
+common; depth is not reliably measured---``any'' can mean under two sentences, and
+the substantive threshold rests on weak agreement and partly proxies document
+length. As coded---descriptive observations, not findings about the
+field---no grid study treats the twin itself as the adversary's objective; the
+both-role zero is definitional, and one-sentence target claims are set aside.
+Two read nuclear-domain records (R91, R92) attack twin interfaces and ML models;
+56 of 83 (54 of 79) name classical threats on the twin's data path---surfaces to
+protect, not studied targets. A five-item agenda ties each item to its gap,
+disconfirming evidence and dual-use obligations.
 \end{abstract}
 
 \begin{keyword}
@@ -160,11 +160,17 @@ review identifies and our corpus's coverage of them.
   intervals, PABAK and bias indices, including the fields where agreement is only fair
   (Section~\ref{sec:reliability}).
   \item The headline measurement, with matched denominators: machine learning is used in
-  70/83 full-text studies (detection in 55); 35/83 engage any AI-enabled threat and 11/83
-  engage one substantively; within the 29 security-primary, non-review, detection-ML
+  70/83 full-text studies (detection in 55); 35/83 engage any AI-enabled threat and
+  11/83 engage one substantively (under the strict grid scope: 33/79 and 10/79);
+  within the 29 security-primary, non-review, detection-ML
   studies the figures are 16/29 and 6/29. No grid study treats the twin as the
   adversary's objective; 56/83 name an interface or model threat in a defender frame
-  (Section~\ref{sec:ai-threats}).
+  (Section~\ref{sec:ai-threats}). The twin-position figures are descriptive
+  observations of this coding, not findings about the field: the strict-target rule
+  is one end of a tiered measurement, the both-role category requires explicit
+  articulation of the tension between the roles (so its zero is definitional), and
+  one-sentence target claims (R48, R88) are deliberately set aside
+  (Sections~\ref{sec:stance} and~\ref{sec:method}).
   \item A vocabulary-level mapping from our threat terms to the five attack vectors of
   Habeeb et al.\ \cite{habeeb2026}, released as a repository artifact
   rather than presented as evidence: it is a
@@ -212,6 +218,11 @@ bidirectionality, and asset specificity. Grid applications span state estimation
 observability, protection and control, fault and attack diagnosis, asset-health monitoring, and
 training and planning (R16, R24, R50).
 
+A terminology note belongs with the definition. `Digital twin' has largely superseded
+`CPS model' and `HIL simulation' in recent grids literature, so papers that functionally
+twin a grid without using the phrase are out of scope of the search, despite carrying
+relevant threat models; the search requires the term to be named (Section~\ref{sec:method}).
+
 The maturity of grid twins varies widely. Some reported twins are conceptual architectures with
 no implementation; many are prototypes demonstrated on simulation or testbed data; a small
 number report validation against real grid assets (R54, R74). This maturity gradient
@@ -247,12 +258,10 @@ cyber-physical attack that happens to be detected by an AI method. These two dir
 different implications (an AI-wielded attack changes the adversary; an attack on an AI
 component changes the victim), and the headline construct \emph{combines} them. The coding
 does not separate the two directions per record; Section~\ref{sec:ai-threats} reports a
-notes-based separation for the substantive studies and flags the lumping as a construct
+notes-based separation for the substantive studies, a coded direction field over all
+engaged records (round 8; \texttt{analysis/reliability/round8\_ai\_readback\_codes.csv}),
+and flags the lumping as a construct
 limitation (Section~\ref{sec:validity}).
-
-A brief terminology note. `Digital twin' has largely superseded `CPS model' and `HIL simulation'
-in recent grids literature, so papers that functionally twin a grid without using the phrase are
-out of scope of the search, despite carrying relevant threat models.
 
 \section{Related work and positioning}\label{sec:related}
 
@@ -326,27 +335,44 @@ machine learning, poisoning, evasion, and large-language-model terms---which rai
 candidate pool to approximately 2{,}000. The probes exist because the core grid-security
 vocabulary is not expected to retrieve the attack-side literature.
 
-What the released record does \emph{not} establish is the probes' effect on the corpus. The
-screened set of 1{,}287 records derives from the twelve core queries; per-record query
-provenance for the probe-added records (roughly 700) was not retained, so we cannot report
-how many of the 492 eligible, or of the retained 100, are retrievable only through the
-probes. The retrieval-bias defence that the probes were designed to provide therefore
-cannot be made from these data, and we do not make it (Section~\ref{sec:validity}, Search
-bias). Releasing the query strings, the run dates and the per-record provenance is a
-precondition for resolving this. Two artifacts now exist in the repository: a provenance
-manifest (`SEARCH\_PROVENANCE.md`) stating exactly what must be released, and a dated
-snapshot (`analysis/search\_snapshot\_2026-10-19/`) containing \emph{reconstructed}
-query strings (the originals were not preserved) together with a second-database
-(Crossref) run of each string on 2026-10-19. The original strings themselves remain a
-required artifact, and OpenAlex re-runs attempted on 2026-10-19---twice, the second
-during this revision---were blocked both times by the API's shared-IP budget limit. What
-this means for the results is stated here rather than only in
-Section~\ref{sec:validity}: the corpus derives from defensive-vocabulary retrieval, so
-any attack-side rate measured on it---including the RQ3 headline---is conditional on
-that retrieval design and says nothing about the attack-side literature the queries do
-not retrieve (Section~\ref{sec:validity}, Search bias).
+The probes' effect on the corpus, however, could not be established from the released
+record: per-record query provenance for the probe-added records (roughly 700) was not
+retained, and the original query strings were not preserved. Two artifacts close part of
+that gap (a provenance manifest, \texttt{SEARCH\_PROVENANCE.md}, and a dated snapshot,
+\texttt{analysis/search\_snapshot\_2026-10-19/}), and this revision adds the re-execution
+that the manifest called for, in the only medium available: a third OpenAlex re-run was
+attempted on 2026-10-19 and blocked again by the shared-IP budget limit, so the sixteen
+reconstructed strings were re-executed against Crossref to a depth of 1{,}000 results per
+query. From that dated reconstruction the probe question is now answerable, with its
+limits stated. Per-record query provenance for the retained 100 was rebuilt two ways
+(\texttt{analysis/search\_snapshot\_2026-10-19/round8/}): by matching each record against
+the sixteen top-1{,}000 result lists, and by re-executing each query's phrase components
+against each record's own title, abstract, and released full-text keyword windows.
+Both ways agree: \emph{at most one retained record (R50) is retrievable only through the
+probes}, and none is under the more generous text-level variant. The probe-only subset of
+the full-text corpus therefore has $n \le 1$ and cannot move the headline (Section~\ref{sec:ai-threats}
+re-runs it); the corpus is, on this evidence, a core-vocabulary corpus.
 
-\subsection{Selection and inclusion}
+The reconstruction also establishes a screening status for the probe-added channel, in
+the same dated second-database sense: the four probe lists contain 1{,}484 records that
+no core list returned, of which 14 pass the three-term eligibility rule of
+Section~\ref{sec:selection}---and \emph{none} of the 14 carries adversarial-AI
+vocabulary. The 396 probe-added records that do carry such vocabulary fail eligibility
+in the title/abstract: only 59 of them name a digital twin at all, and only 4 name a
+digital twin together with a grid term. The original OpenAlex screening status of the
+$\sim$700 probe-added records remains unrecoverable; what the reconstruction shows is
+structural, and stronger than the original question. The review's eligibility rule is
+itself an attack-side filter: attack-side literature that does not already
+self-describe as digital-twin plus grid plus security cannot enter the corpus by
+construction, whichever queries retrieve it.
+
+The conditioning that follows is stated here and carried through the paper: the corpus
+derives from defensive-vocabulary retrieval, so any attack-side rate measured on
+it---including the RQ3 headline---is conditional on that retrieval design and says
+nothing about the attack-side literature the design cannot see
+(Section~\ref{sec:validity}, Search bias).
+
+\subsection{Selection and inclusion}\label{sec:selection}
 
 We screened the 1{,}287 core-query records on title and abstract. A record was eligible if
 its title or abstract contained at least one digital-twin term, at least one grid, power or
@@ -366,24 +392,36 @@ listed there with their identifiers.
 The eligible set was then narrowed to 100 by a non-probabilistic rule combining OpenAlex
 relevance score, citation count, and recency, with the final cut at rank 100. This ranking
 is a \emph{selection} step, not an eligibility criterion. Its components pull in opposite
-directions---citations favour older, established work; recency favours new work---but
-which component dominated the realised cut cannot be established from the released
-record, and the corpus's ID ordering does not speak to it. The IDs are best read as a
-display order: year descending, and within each year block citations descending (IDs
-1--45 are all 2026; per-record citation counts are given in the Cit.\ column of
-Appendix~A). That pattern is compatible with a composite rule followed by this sort,
-and with a purely year-first rule only if the 492 eligible records contained at most 76
-records from 2025--26, which the released record cannot check; the ID ordering therefore
-carries no information about the selection rule. The clean test is the year distribution
-of the 492 eligible records against the retained 100, which would show directly which
-years the cut discarded. The 492-record export was not preserved; the provenance
-manifest lists its release as a required artifact, so the test cannot be run on the
-released record (Section~\ref{sec:validity}, Search bias). What the released record does
-establish is the realised corpus's profile: 40 of the 100 retained records have zero
-citations at retrieval, 76\% of the corpus is from 2025--26, and 24 of the 100 are from
-2020--2024. The corpus is therefore recency-heavy; we report that profile and make no
-claim about which component produced it. The profile does favour reviews (36\% of the
-retained corpus). Because the retained subset is not a random sample, every prevalence
+directions---citations favour older, established work; recency favours new work---and
+which component dominated the realised cut cannot be established for the original pool,
+because the 492-record export was not preserved. What the revision releases instead is a
+three-part substitute for verification (\texttt{analysis/search\_snapshot\_2026-10-19/round8/}).
+First, a ranking manifest of the realised corpus
+(\texttt{retained100\_ranking\_manifest.csv}): per retained record, its OpenAlex relevance
+score and citation count as retrieved, plus its year. The manifest verifies the
+display-order claim mechanically---year descending, citations descending within each
+year block, and 40 of 100 records with zero citations (cross-checkable against the Cit.\
+column of Appendix~A)---so the surviving ranking components are now inspectable even
+though the original composite weights are not. Second, a dated re-execution of the whole
+pipeline on Crossref: the twelve core queries' top-1{,}000 lists merged and
+de-duplicated (5{,}179 records), screened with the same three-term rule (192 eligible,
+35 of them retained-corpus records), ranked by a documented composite (best relevance
+rank, then citations, then year) and cut at 100
+(\texttt{core\_eligible\_export.csv}). Third, the year-distribution comparison between
+eligible pool and retained corpus that the earlier revision stated as the clean test:
+the reconstructed eligible pool is itself recency-heavy (66.7\% of records from 2025
+onward), against the retained corpus's 76\% from 2025--26, so the cut amplified, but did
+not manufacture, the corpus's recency profile; re-executing the composite cut today
+retains 27 of the original 100. The reconstruction is a second-database proxy run on a
+different date, not the original 492 records; full-text coding of a fresh eligible frame
+remains the upgrade path the provenance manifest records.
+
+What the released record does establish is the realised corpus's profile: 40 of the 100
+retained records have zero citations at retrieval (Appendix~A, Cit.\ column), 76\% of
+the corpus is from 2025--26, and 24 of the 100 are from 2020--2024. The corpus is
+therefore recency-heavy, and the profile favours reviews (36\% of the retained corpus);
+we report that profile and make no claim about which ranking component produced it.
+Because the retained subset is not a random sample, every prevalence
 figure in Section~\ref{sec:results} is a statement about the retained 100 studies and
 should not be read as an estimate of the wider literature; the corpus's 76\% share of
 2025--26 records is partly an artefact of the selection, not a finding about the field.
@@ -398,19 +436,23 @@ the 1{,}287 core-query records were excluded for missing at least one of the thr
 (digital twin; grid, power or energy; cyber or security), leaving 492 eligible records.
 Inclusion then ranked the eligible set by relevance, citation count, and recency, and
 retained the top 100, as declared in the selection step above. Figure~\ref{fig:prisma} is
-the flow. The flow reports the core-query pipeline; the approximately 700 probe-added
-records are shown at identification but their screening status is not established in the
-released record, as Section~\ref{sec:method} discloses.
+the flow. The flow reports the core-query pipeline; the original OpenAlex screening status
+of the approximately 700 probe-added records is not established in the released record, but
+the dated Crossref reconstruction of the probe-added channel (1{,}484 candidates, 14
+eligible, none with adversarial-AI vocabulary) is released with the snapshot and reported
+in Section~\ref{sec:method} (Search strategy).
 
 \begin{figure*}[t]
 \centering
 \includegraphics[width=0.86\textwidth]{fig1_prisma}
 \caption{PRISMA-style flow. The 1{,}287 screened records derive from the twelve core
 queries; the four adversarial-AI probes added roughly 700 candidate records whose
-screening status is not established in the released record (Section~\ref{sec:method}).
-The top-100 cut is a declared non-probabilistic selection step, not an eligibility
-criterion. Eighty-three records are coded at full text and 17 at abstract level only,
-because their full text was not obtained.}
+original OpenAlex screening status is not established in the released record. A dated
+Crossref reconstruction of the probe-added channel (1{,}484 candidates, 14 eligible, none
+carrying adversarial-AI vocabulary) is released with the snapshot
+(Section~\ref{sec:method}, Search strategy). The top-100 cut is a declared
+non-probabilistic selection step, not an eligibility criterion. Eighty-three records are
+coded at full text and 17 at abstract level only, because their full text was not obtained.}
 \label{fig:prisma}
 \end{figure*}
 
@@ -431,7 +473,7 @@ finding; the affected records are listed with DOIs so readers can see exactly wh
 (Appendix~A). The 17 are not a random subset of the corpus, and the loss is not neutral for
 the headline: an abstract-level reading of the 17 (title plus abstract) codes 15 as \emph{tool}
 and the two exceptions---R91 and R92, Spirito et al., OSTI/Idaho National Laboratory reports
-on nuclear reactors---as attack-side work. Both were obtained and read during this revision:
+on nuclear reactors---as attack-side work. Both were obtained and read during the round-7 revision:
 R91 in full text (48 pages, retrieved from the INL digital library; the OSTI full-text
 endpoint was unreachable from our environment) and R92 from its extended report abstract
 on OSTI (two full-text retrieval attempts failed). R91 analyses attack scenarios against
@@ -471,7 +513,7 @@ requires that the twin be the adversary's objective rather than an asset to be p
 \emph{both} $= 0$ is therefore definitional: a paper cannot score \emph{both} without stating
 the tension, and we report that zero as a statement about \emph{explicit articulation}, not
 as evidence that dual-role practice is absent. The category is attainable---the two
-nuclear-domain records read during this revision (R91, R92) both read as \emph{both}
+nuclear-domain records read during the round-7 revision (R91, R92) both read as \emph{both}
 (Section~\ref{sec:method} on extraction)---so the zero among the 83 grid-frame full texts
 is a statement about this corpus, not about the category. The strict \emph{target} rule is likewise one
 end of a tiered measurement: in a security setting an asset that needs protecting is an
@@ -495,7 +537,10 @@ thesis to clear ``a section dedicated to it'', so depth comparisons across venue
 conflate engagement with length. The corpus shows the expected signature---substantive
 engagement in 9 of 62 journal articles, 1 of 4 preprints and 1 of 1 thesis, but 0 of 14
 conference papers (Section~\ref{sec:ai-threats})---and the depth claim is qualified
-accordingly wherever it is made. \texttt{ai\_threat\_overall} is 1 if any vector is 1 or 2, and 2 if any vector
+accordingly wherever it is made. Because page counts are not carried in the released
+record, the within-format re-scoring of Section~\ref{sec:ai-threats} is the available
+length adjustment: it re-reports the substantive count within each venue format instead
+of across them. \texttt{ai\_threat\_overall} is 1 if any vector is 1 or 2, and 2 if any vector
 is 2. Both coders coded the scale independently; per-vector agreement is reported in
 Section~\ref{sec:agreement}.
 
@@ -515,6 +560,25 @@ $\kappa$ is undefined. With $n = 20$, the large-sample standard error of $\kappa
 order of 0.2--0.3 even for the better fields; cells in Table~\ref{tab:reliability} are
 point estimates, and a stable ranking of field difficulty is not achievable from this
 sample.
+
+The design fix this review has repeatedly stated as required---an independent non-author
+coder, a sample of at least 50 records enriched for engaged cases, a third-party
+adjudicator, and an independent full-text re-read of the negatives with a miss-rate
+estimate---is now pre-specified and released as
+\texttt{analysis/reliability\_protocol\_round8.md}, with its staffing pending. This
+revision executes the part that does not require human coders: an independent
+\emph{automated} readback of all 83 full-text records by a reader outside the author team
+(a large-language-model instrument), coded record by record from a released evidence dump
+(title, abstract, and the same full-text keyword windows the extraction used), before any
+join with coder 1's values; the per-record codes, quoted bases, and the joined comparison
+are released (\texttt{analysis/reliability/round8\_ai\_readback\_codes.csv},
+\texttt{round8\_readback\_joined.csv}). The readback is a census, so it meets the
+enrichment requirement by construction (all 35 engaged records are included). It is a
+check with a different failure mode, not a substitute for the commissioned human check:
+it shares the extraction's window evidence, so it cannot catch what window selection
+missed, and window evidence cannot confirm the substantive tier's ``section dedicated to
+it''. Its results are reported in Sections~\ref{sec:agreement} and~\ref{sec:audit} and
+consolidated in Section~\ref{sec:validity}.
 
 \subsection{Adjudication}
 
@@ -540,13 +604,17 @@ positive control recovers only 7 of the 11 substantive positives, and its recall
 mentioned-only (score-1) engagement---the harder case, covering 24 of the 35 engaged
 records---was never measured. Of the 48 negatives, 38 fired the broad net and 23 fired a
 strong family; the 23 strong firings were individually inspected at audit time, and the
-15 weak-only firings were inspected during this revision by an author reading the released
+15 weak-only firings were inspected in the round-7 revision by an author reading the released
 audit windows and stored abstracts (post hoc, single-reader; Section~\ref{sec:audit}).
-A seeded 12-record sample of the 48 negatives was re-read the same way. The audit is
-retained as a disclosure of the false-negative channel, not as a bound on it; the design
-that would bound it---an independent full-text re-read of a random sample of the 48
-negatives by a coder outside the author team---is stated as required future work in
-Section~\ref{sec:audit}.
+A seeded 12-record sample of the 48 negatives was re-read the same way. This revision adds
+a stronger, independent version of that readback: the automated round-8 reader
+(Section~\ref{sec:reliability}) re-read \emph{all} 48 negatives from the same released
+evidence, blind to the coded values during the pass, flagging two score-1 candidates and
+no substantive candidate (Section~\ref{sec:audit} reports the miss-rate estimate). The
+audit is retained as a disclosure of the false-negative channel, not as a bound on it;
+the design that would bound it---an independent full-text re-read by a coder outside the
+author team, pre-specified in \texttt{analysis/reliability\_protocol\_round8.md}---remains
+required future work in Section~\ref{sec:audit}.
 
 \subsection{Verification and reproducibility}
 
@@ -694,29 +762,34 @@ uncertainty.
 
 \begin{table}[t]
 \centering
-\caption{Tiered measurement of the twin's position relative to the attack (full text,
-$n=83$). The middle tier means the record names at least one interface threat
+\caption{Tiered measurement of the twin's position relative to the attack, with the
+strict grid-scope equivalents (removing R18, R59, R69, R97) matched field for field. The
+middle tier means the record names at least one interface threat
 (\texttt{mitm}, \texttt{replay}, \texttt{reverse\_pathway}, \texttt{false\_command}; 44
 records) or model threat (\texttt{poisoning}, \texttt{evasion}, \texttt{prompt}; 27
 records; 15 records name both kinds). The interface threats are classical
 grid-communication attacks, so the tier records defender-framed threat-naming that bears
 on the twin's data path, not that the twin is the study's analytical object. \emph{tool}
 is the coders' near-constant default (75 of 83). The tiers are descriptive
-observations of this coding, not findings about the field.}
+observations of this coding, not findings about the field; the both-role zero is
+codebook-definitional (explicit articulation required), and one-sentence target
+claims (R48, R88) are set aside by the strict rule. Interpretation: the twin is
+almost always the protected asset; the one strict-target record is out of grid scope,
+so the grid-domain target count is zero under both denominators.}
 \label{tab:twintiers}
 \small
-\begin{tabular}{@{}lr@{}}
+\begin{tabular}{@{}lrr@{}}
 \toprule
-Tier & Records \\
+Tier & All ($n{=}83$) & Strict ($n{=}79$) \\
 \midrule
-Twin as adversary's objective (strict \texttt{target}) & 1 \\
-\quad of which grid-domain & 0 \\
-Interface or model threat named, defender-framed & 56 \\
-Twin as protected asset (\texttt{tool}; near-constant default) & 75 \\
-\quad of which also name an interface or model threat & 51 \\
-Twin position unclear & 7 \\
+Twin as adversary's objective (strict \texttt{target}) & 1 & 0 \\
+\quad of which grid-domain & 0 & 0 \\
+Interface or model threat named, defender-framed & 56 & 54 \\
+Twin as protected asset (\texttt{tool}; near-constant default) & 75 & 74 \\
+\quad of which also name an interface or model threat & 51 & 50 \\
+Twin position unclear & 7 & 5 \\
 \midrule
-\texttt{attack\_surface\_named} = yes ($\kappa=0.14$) & 55 \\
+\texttt{attack\_surface\_named} = yes ($\kappa=0.14$) & 55 & 52 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -799,8 +872,7 @@ physical-protection risk analysis outside the power-grid domain (R97), so within
 grid scope no record at all is coded at design. Third, the maintenance and decommissioning
 columns are empty as well, and no record is coded at either stage: the codebook permits
 both values, so the emptiness is a finding of the coding, on a field of moderate agreement
-($\kappa = 0.32$, PABAK 0.59, AC1 0.54---not the study's weakest field; that is
-\texttt{attack\_surface\_named}, $\kappa = 0.14$, AC1 0.31). Across the corpus, lifecycle is
+whose statistics are consolidated in Section~\ref{sec:validity} (Reliability). Across the corpus, lifecycle is
 operation in 66 of 83 studies (79.5\%), \emph{multi} in 12, unclear in 4, design in 1, and
 commissioning in 0, as coded. Read as single labels, security work concentrates where the twin runs at deployment, not where it is built.
 
@@ -811,7 +883,9 @@ commissioning in 0, as coded. Read as single labels, security work concentrates 
 commissioning columns are a coding outcome, not a census of practice; the field's agreement is
 $\kappa = 0.32$ (PABAK 0.59). The single design-phase record names only an out-of-vocabulary
 threat (\texttt{other}), so no vocabulary row registers in the design column. No record is
-coded at maintenance or decommissioning.}
+coded at maintenance or decommissioning. Interpretation: security work concentrates where
+the twin runs, not where it is built; the design-side emptiness is the actionable gap, and
+it is a coding observation on a moderate-agreement field rather than a census result.}
 \label{fig:threatlife}
 \end{figure*}
 
@@ -835,25 +909,28 @@ residual named-but-not-engaged records (poisoning: R64, R68, R87; evasion: R15, 
 classical usages---ARP poisoning, the SolarWinds incident as a data-poisoning example,
 evasion of non-ML supervisors.
 This is the headline, reported with matched denominators. Machine learning is used in 70 of
-the 83 full-text studies; its dominant role is detection (55), followed by forecasting (12),
+the 83 full-text studies (67 of 79 under the strict grid scope, 84.8\%); its dominant role is
+detection (55; 52 strict-scope), followed by forecasting (12),
 none (13), and control (3). Forecasting and control are not security functions, so the
 security-relevant defensive figure is 55/83 (66\%), not 70/83. Across the same 83 records,
 35 (42.2\%) engage at least one AI-enabled threat at any level, 11 (13.3\%) engage one
-substantively, and 48 (57.8\%) do not engage at all (Figure~\ref{fig:aithreats}). All 35
+substantively (strict grid scope: 33 of 79, 41.8\%, and 10 of 79, 12.7\%), and 48 (57.8\%)
+do not engage at all (Figure~\ref{fig:aithreats}). All 35
 engaged studies are among the 70 that use machine learning at all, and 30 of the 55
 (55\%) detection-ML studies engage an AI threat---a majority---so the non-engagement among
 ML-using studies is 35 of 70 (50\%) rather than a zero/one split. The defensible reading
 of these numbers is the one the instrument supports: \emph{any-level engagement is common
 in this corpus, and depth is not reliably measured here}. Three reasons, stated once here
-and detailed in Sections~\ref{sec:agreement} and~\ref{sec:validity}. (i) ``Any'' can
+and consolidated in Section~\ref{sec:validity}. (i) ``Any'' can
 mean fewer than two sentences. (ii) The substantive tier is coded on the weakest collapse
-in the study ($\kappa = 0.14$, with only 1 of 6 positives agreed by both coders).
+in the study ($\kappa = 0.14$ on the substantive-vs-not collapse; Section~\ref{sec:agreement}).
 (iii) The substantive threshold is partly a document-length proxy---0 of 14 conference
-papers clear it, against 9 of 62 journal articles, 1 of 4 preprints and 1 of 1 thesis---so
-``depth'' is confounded with venue format even within the non-review set. And one
+papers clear it, against 9 of 62 journal articles, 1 of 4 preprints and 1 of 1 thesis; the
+within-format re-scoring below reports the substantive count per venue format. And one
 condition frames everything: the corpus was retrieved by defensive vocabulary
-(Section~\ref{sec:method}), so these rates describe the defensively-framed literature,
-not the attack-side literature the queries do not retrieve.
+(Section~\ref{sec:method}), and the round-8 reconstruction shows the probe channel
+contributed at most one record, so these rates describe a core-vocabulary corpus, not the
+attack-side literature the design cannot see.
 
 Three denominator restrictions probe it. Restricting to the 49 non-review studies: 20 of
 49 (41\%) engage any, 6 of 49 substantively. Restricting to the 41 security-primary,
@@ -888,7 +965,9 @@ denominators. We draw no temporal conclusion from any of these cells.
 \caption{Year-wise profile of full-text records ($n=83$). ML = \texttt{ml\_used} = yes;
 ``any'' = engages at least one AI-enabled threat; ``subst.'' = substantive. Corpus years
 are shaped by the non-random selection rule, so these are descriptive counts, not a
-temporal estimate.}
+temporal estimate. Interpretation: ML use is near-universal from 2024 onward while
+substantive engagement stays minority in every interpretable year, so nothing in the
+year-wise cells suggests the depth gap is closing.}
 \label{tab:yearwise}
 \small
 \begin{tabular}{@{}lrrrr@{}}
@@ -909,16 +988,33 @@ Year & $n$ & ML & any & subst. \\
 Per vector, at any/substantive level: adversarial machine learning 24/8, data or model
 poisoning 19/7, evasion 9/1, LLM-specific 4/2, and agentic attack automation 2/1.
 
-The construct behind these counts combines two directions that should be reported
-separately: attacks \emph{on} AI components and attacks \emph{wielded with} AI. The coding
-does not separate them per record. A notes-based reading of the eleven substantive studies
-classifies four as attack generation with AI (adversarial-ML or GAN synthesis of attacks;
-R22, R49, R57 and R69---the last of unattributed authorship in a low-tier venue and
-outside the strict grid scope, flagged again in Section~\ref{sec:validity}), five as
-attacks on learned components (poisoning, evasion or prompt-level risks; R16, R17, R24,
-R54, R74), and two as both (R50, R94); the any-engagement count of 35 mixes the two
-directions in unknown proportions. The headline is therefore an engagement figure, not an
-attack-type figure.
+The construct behind these counts combines two directions that the review promised to
+separate: attacks \emph{on} AI components and attacks \emph{wielded with} AI. Round 8
+promotes the split to a coded field: the independent round-8 reader
+(Section~\ref{sec:reliability}) classified every engaged record from the released
+evidence, with the per-record basis quotes released
+(\texttt{analysis/reliability/round8\_ai\_readback\_codes.csv}). The field is post hoc,
+single-reader, window-evidence-based, and deliberately not merged into the frozen matrix;
+it is a reading of the released record, not a second extraction. Of the 35 any-level
+engaged records, 25 acknowledge or construct attacks \emph{on} AI components
+(vulnerabilities of learned models: poisoning, evasion, prompt-level and adversarial
+risks to detectors, forecasters and controllers), 6 wield AI \emph{with} hostile intent
+(R2, R49, R57, R64, R69, R84: GAN/adversarial-ML attack generation, AI-driven
+reconnaissance, RL-generated attack data), 2 contain both directions (R20, R22), and
+2 are unclear from the surviving evidence (R33, R56). Of the 11 substantive studies, 7
+are on-component, 3 are attack generation (R49, R57, R69---the last flagged in
+Section~\ref{sec:validity} for unattributed authorship, low-tier venue and
+out-of-scope status), and 1 is both (R22). An earlier notes-based reading of the same
+eleven, from the full texts, had classified 5 on / 4 with / 2 both; the readings differ
+on R22 (both by window evidence, generation-dominant by full text) and on R50 and R94
+(both directions by full text, on-component in the windows that survive), and agree on
+the material point. Per vector, the coded direction runs: adversarial-ML engagement
+(24 any) splits 16 on / 4 with / 2 both / 2 unclear; poisoning (19) 16 on / 1 with /
+2 both; evasion (9) 6 on / 2 with / 1 both; LLM-specific (4) 3 on / 1 both; agentic
+(2) 1 on / 1 both. The headline is therefore still an engagement figure, but the
+direction mixture is no longer unknown: attacks on AI components dominate the any-level
+count (25 of 35), and attacks wielded with AI are the minority direction (6 of 35; 3 of
+them substantive), concentrated in attack-generation work.
 
 A strict-scope sensitivity addresses the breadth of the grid term. Excluding the four
 records outside the power-grid domain on a strict reading (R18, R59, R69, R97: a
@@ -934,11 +1030,40 @@ substantive (and 25 studies, 14 any and 5 substantive, if the borderline records
 removed). The asymmetry's direction is robust to scope; its magnitude moves by at most
 about one and a half points on the any-level share.
 
+The probe-only subset that the retrieval analysis requires cannot carry a different
+headline, and the re-run shows why: in the dated reconstruction
+(Section~\ref{sec:method}, Search strategy) the probe-only subset of the full-text corpus
+contains at most one record (R50), which engages substantively (1 of 1). There is nothing
+else to re-run on; the 35/83 figure is a figure about core-retrievable records. The
+retrieval conditioning of Section~\ref{sec:method} is thereby sharpened rather than
+softened---the probes did not inject an attack-side sample into the corpus, because they
+did not measurably enter it at all.
+
+Within-format re-scoring addresses the length confound directly
+(Section~\ref{sec:method}, Scoring). Restricting the substantive count to the dominant
+format: 9 of 62 journal articles (14.5\%) engage substantively, 1 of 4 preprints, 1 of 1
+thesis, 0 of 14 conference papers. Within non-review journal articles alone: 5 of 33
+(15.2\%) substantive and 14 of 33 (42.4\%) any, against 0 of 13 substantive among
+non-review conference papers. Neither journal-versus-conference contrast separates the
+formats on these denominators (Fisher exact: substantive $p = 0.142$; any $p = 0.455$;
+within non-review, substantive $p = 0.173$), so the 0/14 conference figure is compatible
+both with absent depth and with a format that structurally lacks room for ``a section
+dedicated to it''. The length-adjusted statement is therefore: \emph{substantive engagement
+is minority within the dominant format} (9 of 62 journal articles, 14.5\%), so the
+shallow-engagement reading does not depend on mixing venue formats; the 11/83 count
+itself is not length-adjustable from the released record, because page counts are not
+carried, and the conference-format cells should not be read as depth measurements at
+all. Table~\ref{tab:substantive} lists the eleven substantive studies with their venue
+types.
+
 \begin{figure*}[t]
 \centering
 \includegraphics[width=0.82\textwidth]{fig5_ai_threats}
 \caption{Engagement with AI-enabled threats (full text, $n=83$). Scale: 0 not addressed,
-1 mentioned or peripheral, 2 substantive. The bar labels give engaged (substantive) counts.}
+1 mentioned or peripheral, 2 substantive. The bar labels give engaged (substantive) counts.
+Interpretation: for every vector, mentioned-only engagement outweighs substantive
+engagement, and the deepest engagements sit in reviews---the corpus names AI threats far
+more often than it treats them.}
 \label{fig:aithreats}
 \end{figure*}
 
@@ -1034,6 +1159,25 @@ are not a peer-review certification---and no indexing-based filter was applied; 
 should weight venue quality into any figure reproduced from this review. Code and data
 remain low in every denominator.
 
+To let RQ4 speak to evidence quality with more than venue type, this revision adds a
+light, declared, per-record appraisal built only from already-coded fields---not a
+formal risk-of-bias instrument, but a stated signal count that any reader can recompute
+(released as \texttt{analysis/quality\_appraisal\_round8.csv}). For each of the 49
+non-review, full-text studies we count four binary signals: peer-review venue flag (not
+Zenodo, GSC Online Press or IRJMETS), cited at least once at retrieval, comparative
+evaluation (baselines or quantitative metrics reported), and a reproducibility artifact
+(code or data released). The distribution is {0: 1, 1: 3, 2: 15, 3: 23, 4: 7}: most
+primary studies are mid-quality on these signals, and only 7 of 49 carry all four.
+Engagement by tier runs the same way as the citation split: among the 30 studies with
+three or four signals, 11 (37\%) engage any AI-enabled threat and 2 (7\%) substantively,
+against 3 of 4 (75\%) and 1 of 4 (25\%) in the one-to-zero-signal tier---a tier of four
+records whose substantive case is R69, the IRJMETS cyber-fraud study already flagged at
+every use. The appraisal therefore quantifies, rather than merely asserting, the
+confound that quality and engagement do not travel together in this corpus: the
+highest-signal studies engage \emph{least}, so shallow engagement is not an artefact of
+weak records alone, and the RQ4 evidence base should be read as prototyping-heavy,
+release-light, and only moderately signalled even before engagement is considered.
+
 Grid domains are dominated by studies that span multiple domains (\emph{multi}, 47). Where a
 single domain is named: distribution 11, unclear 7, EV charging 6, microgrid 6, transmission 5,
 and substation 1. Among the 29 records naming a single domain, transmission (5) trails
@@ -1070,16 +1214,39 @@ which is fragile. This reading is post hoc---formed after seeing the $3\times3$ 
 is flagged as such.
 
 To quantify what the misclassification does to the headline, we propagate the sample error
-matrix to the corpus under the assumption that coder 2's coding is the gold standard: the
-coder-1-engaged records stay engaged with probability $7/9$, and the coder-1-zero records
-flip to engaged with probability $2/11$, giving an expected $35 \times 7/9 + 48 \times
-2/11 \approx 36$ of 83 (43.3\%; bootstrap 95\% CI 21--51). The anchoring is a choice,
-and the choice is circular: coder 2 is a co-author of this review, so treating coder 2
-as gold cannot validate the coding, and anchoring on coder 1 instead would reproduce
-35/83 by construction. The interval 21--51 spans minority and majority readings of the
-any-level share, so it is best read not as a confidence statement but as a demonstration
-that the observed error structure is compatible with both---which is the honest bound on
-this instrument.
+matrix to the corpus, anchoring on coder 2 as a provisional gold standard. Under that
+anchoring, coder-1-engaged records stay engaged with probability $7/9$, and coder-1-zero
+records flip to engaged with probability $2/11$, giving an expected $35 \times 7/9 +
+48 \times 2/11 \approx 36$ of 83 (43.3\%; bootstrap 95\% CI 21--51). The anchoring is a
+choice, and the choice is circular: coder 2 is a co-author of this review, so treating
+coder 2 as gold cannot validate the coding, and anchoring on coder 1 instead would
+reproduce 35/83 by construction. The interval 21--51 spans minority and majority readings
+of the any-level share. It is therefore best read not as a confidence statement but as a
+demonstration that the observed error structure is compatible with both---which is the
+honest bound on this instrument.
+
+The round-8 independent readback (Section~\ref{sec:reliability}) gives the headline a
+third reading over the full 83-record frame, with its limits declared. On the
+any-engagement collapse, the independent reader agrees with coder 1 on 79 of 83 records
+(95.2\%, $\kappa = 0.90$, PABAK 0.90); on the three-level scale, agreement is 78 of 83
+($\kappa = 0.89$); on the substantive collapse, 82 of 83 ($\kappa = 0.95$, but with the
+same prevalence inflation that always accompanies a 13\%-positive class, so the number
+should not be quoted alone). The five disagreements are informative in themselves:
+two are score-1 records the independent reader would not count because their engagement
+is a declared future plan rather than a treatment (R32, R66); two are zero-coded records
+whose single one-line acknowledgments the reader would count (R44, R100, the same pair
+the round-7 author readback had flagged); and one is a suspected substantive (R55,
+whose windows show adversarial-attack simulation used to test its detectors, but which
+the coding places at score 1). On the original 20-record sample the independent reader
+agrees with coder 2 exactly as coder 1 does (16/20, $\kappa = 0.60$), so the automated
+reading sits at the same distance from both human coders. Agreement this high is
+partly mechanical---the readback shares the extraction's keyword-window evidence base,
+so it tests judgment on the windows, not window selection---and the informative content
+is not the $\kappa$ but the disagreements and the negatives census, both of which bound
+the any-level headline from outside the author team. The negatives census is reported
+with the audit (Section~\ref{sec:audit}); the commissioned human protocol, which reads
+full texts rather than windows, remains released and pending
+(\texttt{analysis/reliability\_protocol\_round8.md}).
 
 Fields with substantial
 agreement include \texttt{baseline\_compared} ($\kappa = 0.90$), \texttt{twin\_role} (0.77),
@@ -1109,11 +1276,13 @@ near-constant, $\kappa$ is undefined and we report percentage agreement instead:
 
 We report these numbers because they bound the result. The headline's core count---whether a
 study engages any AI-enabled threat---is coded at moderate agreement (0.60 on the collapse
-that produces it), so the 35/83 figure carries real uncertainty. What this design cannot
-deliver---an independent (non-author) coder, a sample of at least 50 enriched for engaged
-records, and a third-party adjudicator whose tie-break does not default to coder 1---is
-consolidated with the study's other design limits in Section~\ref{sec:validity} and
-stated there as required work rather than as achieved. The asymmetry's \emph{direction}
+that produces it), so the 35/83 figure carries real uncertainty; the round-8 readback
+bounds the judgment channel from outside the author team but inherits the window
+evidence, so it cannot replace the commissioned human check---an independent (non-author)
+coder on full texts, a sample of at least 50 enriched for engaged
+records, and a third-party adjudicator whose tie-break does not default to coder 1---which
+is consolidated with the study's other design limits in Section~\ref{sec:validity} and
+stated there as required work. The asymmetry's \emph{direction}
 is supported on every denominator and scope restriction we report; its \emph{exact
 magnitude} should be quoted with the interval above.
 
@@ -1136,7 +1305,10 @@ field; AC1 is Gwet's first-order agreement coefficient (prevalence-robust, compu
 the same $3\times3$ or nominal tables); ``bias'' is the largest between-coder difference in
 category marginals (proportion of 20); $\dagger$ marks near-constant fields (modal
 category $\ge 90$\% in coder 1) where $\kappa$ is not interpretable and percentage
-agreement is reported instead. Bootstrap 95\% CIs for headline fields are in the text.}
+agreement is reported instead. Bootstrap 95\% CIs for headline fields are in the text.
+Interpretation: the fields the headline needs most (\texttt{ai\_threat\_overall},
+\texttt{attack\_surface\_named}) sit at the bottom of the $\kappa$ ranking, so the
+headline is quoted with the misclassification interval rather than as a point estimate.}
 \label{tab:reliability}
 \small
 \begin{tabular}{@{}lccccc@{}}
@@ -1205,7 +1377,7 @@ not an ML detector, and R15 concerns a SCADA supervisor with AI detection stated
 future work.
 
 The 15 weak-only firings (ids 3, 7, 10, 11, 13, 18, 21, 25, 39, 45, 63, 77, 80, 88, 100)
-were subsequently inspected, during this revision, by an author reading the released audit
+were subsequently inspected, in the round-7 revision, by an author reading the released audit
 windows alongside the stored abstracts---post hoc, single-reader, coded values known to the
 reader, with the per-record adjudication released as \texttt{R7\_READBACK.md} in the
 repository's \texttt{analysis/} directory.
@@ -1225,15 +1397,26 @@ FDI/MITM/DoS prose, incident history, or defensive claims, and two records (R79,
 having fired no family at all in the full-text scan. No codes were changed by either
 readback.
 
-What this audit licenses is therefore narrow, and slightly wider than before the two
-readbacks: the false-negative channel is disclosed and now partially inspected, not
-bounded. The readbacks are author-conducted and abstract-plus-window level, so they
-cannot replace the design that would bound the channel---an independent full-text re-read
-of a random sample of the 48 negatives by a coder outside the author team, with a
-miss-rate estimate and confidence interval propagated to the 35/83 figure. That re-read
-remains feasible for the authors (the full texts are in hand) and is stated here as the
-required next test; it cannot be reconstructed from the released keyword digests alone,
-because the full texts are not redistributable with the package.
+What this audit licenses is therefore narrow, and round 8 widens it by one further step:
+the false-negative channel is disclosed, partially inspected by the authors, and now also
+censused by an independent reader outside the author team. The round-8 readback
+(Section~\ref{sec:reliability}) re-read all 48 negatives---not a sample---from the same
+released window-plus-abstract evidence, and confirms 46 at zero while flagging two
+score-1 candidates: R100, as the author readback had, and R44, whose one-line ``future
+threats such as AI-driven reconnaissance'' the independent reader counts as an
+AI-wielded-attack acknowledgment. No substantive false negative was found. The
+miss-rate estimate for the any-level headline is therefore 2 of 48 (4.2\%; Wilson 95\%
+CI 1.2--14.0\%), which propagates to at most 37 of 83 (44.6\%) if both candidates were
+re-scored. R21 remains the marginal third case (independent reader: 0, flagged
+borderline). Two limits keep this a bound-from-outside rather than a closure: the
+readback inherits the window evidence, so it cannot see what window selection discarded;
+and it is an automated reader, not the commissioned human one. The design that would
+close the channel---an independent full-text re-read by a coder outside the author
+team, pre-specified with sample sizes and failure conditions in
+\texttt{analysis/reliability\_protocol\_round8.md}---remains feasible for the authors
+(the full texts are in hand) and is stated here as the required next test; it cannot be
+reconstructed from the released keyword digests alone, because the full texts are not
+redistributable with the package.
 
 \subsection{Adjudication outcome}
 
@@ -1259,7 +1442,8 @@ the figures are 16 any (55\%, a majority) and 6 substantive (21\%). The central 
 therefore \emph{not} that attack-side engagement is absent or even rare at the any level;
 it is that \emph{any-level engagement is common in this corpus while depth is not reliably
 measured by this instrument}: the substantive tier is minority on every denominator, on
-the study's weakest collapse, on a threshold that partly proxies document length, and
+the study's weakest collapse, on a threshold that partly proxies document length (and is
+minority within the dominant format too, 9 of 62 journal articles), and
 under a misclassification interval that includes both minority and majority readings of
 the any-level share. Its stability rests on the denominator and
 scope restrictions of Section~\ref{sec:ai-threats} and on the misclassification
@@ -1267,15 +1451,20 @@ sensitivity of Section~\ref{sec:agreement}, which re-slice the same coded data a
 therefore show stability rather than independent replication; the adjudication and the
 keyword audit can test nothing here (Sections~\ref{sec:audit}
 and~\ref{sec:agreement}). Read
-within this corpus---and only this corpus, retrieved by defensive vocabulary---the
+within this corpus---and only this corpus, retrieved by defensive vocabulary with the
+probe channel contributing at most one record (Section~\ref{sec:method})---the
 defensive side has built a substantial
 apparatus of learned detectors, while the studies building it rarely examine those
-detectors' own failure modes substantively. We state the finding as an asymmetry of depth,
+detectors' own failure modes substantively. The coded direction field sharpens the same
+reading (Section~\ref{sec:ai-threats}): 25 of the 35 engaged records acknowledge
+attacks \emph{on} AI components, and only 6 wield AI for attack generation, so even the
+engagement that exists is mostly defender-framed vulnerability acknowledgment. We state the finding as an asymmetry of depth,
 not of rate: no temporal claim is supported by a ranked, non-random corpus, and there
 is no external baseline for how deep engagement should be. One alternative reading
 cannot be excluded: that shallow engagement partly reflects the corpus's paper quality
 (Section~\ref{sec:validity}) rather than the field---though the cited subset engages
-\emph{less} than the uncited one, which softens that concern without removing it.
+\emph{less} than the uncited one, and the highest-quality primary tier engages least
+of all (Section~\ref{sec:evidence}), which softens that concern without removing it.
 
 \subsection{The twin as a target: strict count zero, loose tiers two-thirds}\label{sec:targettiers}
 
@@ -1286,7 +1475,7 @@ the field, for three reasons that are now stronger than in earlier revisions. Fi
 codebook's strict rule makes a zero the expected result in a security setting (an asset
 that needs protecting is an asset an adversary may attack), and the \emph{tool} category
 is a near-constant default (75 of 83). Second, the corpus's own nuclear-domain records,
-read during this revision, demonstrate that the strict categories are attainable and
+read during the round-7 revision, demonstrate that the strict categories are attainable and
 attained outside the grid frame: R91's attack scenarios against the twin's digital and
 communication sections (exfiltration and offline replication of a cloud twin; deception
 of the twin's autonomous control; 5G jamming that starves the twin) and R92's constructed
@@ -1333,9 +1522,13 @@ studies (45\%) are reviews against 34 of 83 (41\%) in the full-text corpus, so r
 authorship is not over-represented, but bridge studies are (3 of 11 against 8 of 83 full-text records, 2 more in the abstract-only set).
 The honest reading is that reviews have the length and the licence to survey AI threats, while
 primary papers have neither. Document length is a clear confound at both ends: it inflates
-the substantive tier's accessibility for long formats---0 of 14 conference papers clear the
-threshold, against 9 of 62 journal articles, 1 of 4 preprints and the single thesis
-(Section~\ref{sec:method})---and these numbers should not be read as evidence that ``only
+the substantive tier's accessibility for long formats. The within-format re-scoring of
+Section~\ref{sec:ai-threats} is the available control: within journal articles alone the
+substantive share is 9 of 62 (14.5\%), and 5 of 33 among non-review journal articles, so
+the shallow-engagement reading survives inside the dominant format, while the 0 of 14
+conference papers supports no depth comparison at all---it is compatible both with
+absent depth and with a format that cannot clear a ``dedicated section'' bar (Fisher
+exact, $p = 0.142$, n.s.). These numbers should not be read as evidence that ``only
 reviewers care''.
 
 \subsection{Positioning against the prior review}
@@ -1348,13 +1541,16 @@ repository artifact and is not presented as evidence; Section~\ref{sec:related})
 comparison is not competing but additive. Two caveats are structural, not rhetorical. First,
 their search string has no specific attack-side operator, so records enter only through
 security terms; the same is true of our twelve core queries, and our four adversarial-AI
-probes were added precisely because of that shared blind spot. The probes cannot be
-claimed as a completed defence, however: the released record does not establish that
-probe-only records entered the retained corpus (Section~\ref{sec:method}), so the shallow
-engagement we measure may be partly a retrieval artefact of the core vocabulary, and the
-asymmetry could be weaker in the un-retrieved attack-side literature than in this corpus.
-Resolving that requires releasing per-record query provenance and re-running the headline on
-the probe-only subset---the concrete step recorded in the repository's provenance manifest.
+probes were added precisely because of that shared blind spot. The probes still cannot be
+claimed as a defence, but the reason is now established rather than assumed: the round-8
+reconstruction of per-record query provenance shows the probe channel contributed at most
+one record to the retained corpus (R50; Section~\ref{sec:method}, Search strategy), and the
+headline re-run on the probe-only subset is therefore a re-run on a single record. The
+shallow engagement we measure is thus not an artefact of probe membership---it is a
+measurement of the core-vocabulary corpus, and the asymmetry could still be weaker in the
+un-retrieved attack-side literature than in this corpus, exactly because the eligibility
+rule filters attack-side work that does not already name a digital twin and a grid
+(Section~\ref{sec:method}). The conditioning, not the probe, is the operative limit.
 Second, their corpus spans manufacturing, healthcare, water and smart city, where
 the digital twin's role differs from the grid's bidirectional, safety-critical loop; grid
 conclusions should not be generalised from it, nor it from us.
@@ -1452,29 +1648,43 @@ its expected impact from this corpus, and we do not.
 \begin{table*}[t]
 \centering
 \caption{Research agenda: gap, direction, the validation each item demands, and the evidence
-that would disconfirm it.}
+that would disconfirm it. P1 and P5 carry the dual-use and responsible-disclosure
+obligations stated with the agenda (Section~\ref{sec:agenda}, closing paragraph).}
 \label{tab:agenda}
 \small
 \begin{tabular}{@{}p{0.5cm}p{3.3cm}p{4.1cm}p{4.5cm}@{}}
 \toprule
 \# & Gap (evidence) & Direction & Confirm / disconfirm \\
 \midrule
-P1 & Strict target 0 (grid); 56/83 defender-framed threats; nuclear R91/R92 counterexamples & Twin-directed attack analysis for grids & Reproducible twin-directed attack, released code / grid studies already doing so \\
+P1 & Strict target 0 (grid); 56/83 defender-framed threats; nuclear R91/R92 counterexamples & Twin-directed attack analysis for grids (dual-use: Section~\ref{sec:agenda}) & Reproducible twin-directed attack, released code / grid studies already doing so \\
 P2 & Operation 66/83 ($\kappa=0.32$); design 1, commissioning 0 & Measure, then extend, lifecycle coverage & Pre-deployment trust boundaries tested / re-measurement shows coding artefact \\
 P3 & Explicit threat model 19/83, adaptive 10/83 vs detection-ML 55/83 & Adaptive threat models for learned twin components & Attacker knowledge/capability/objective stated and tested / primary studies already doing so \\
 P4 & Poisoning 19, evasion 9 (subst.\ 7, 1) vs detection 55 & Defend learned components & Robust detectors under reactive attack / robust detectors already demonstrated \\
-P5 & Code 3/83 (3/49 non-review), data 16/83 & Release learned models, training data, attack generators & Third party reruns unaided / corpus stays release-light \\
+P5 & Code 3/83 (3/49 non-review), data 16/83 & Release learned models, training data, attack generators (dual-use: Section~\ref{sec:agenda}) & Third party reruns unaided / corpus stays release-light \\
 \bottomrule
 \end{tabular}
 \end{table*}
 
 \section{Threats to validity}\label{sec:validity}
 
+Five validity threads recur through this review---the retrieval bias, the ranked
+cut, the coder agreement on the headline fields, the document-length confound in the
+substantive threshold, and the misclassification interval on the any-level share. This
+section is their consolidated home: each is stated once, here, and every earlier mention
+(Sections~\ref{sec:method}, \ref{sec:ai-threats}, \ref{sec:agreement}, \ref{sec:audit},
+\ref{sec:discussion}) is a forward pointer, not a second statement. Readers who quote any
+figure from Section~\ref{sec:results} should read the matching subsection below alongside
+it.
+
 \subsection{Construct validity}
 ``AI-enabled threat'' is a construct with two distinct directions lumped together: attacks
-\emph{on} AI components and attacks \emph{wielded with} AI. The coding does not separate them
-per record, so the headline 35/83 is an engagement figure, not an attack-type figure
-(Section~\ref{sec:ai-threats} reports the notes-based split for the substantive studies). The
+\emph{on} AI components and attacks \emph{wielded with} AI. The original coding did not
+separate them per record, so the headline 35/83 is an engagement figure, not an
+attack-type figure; the round-8 direction field
+(Section~\ref{sec:ai-threats}; \texttt{analysis/reliability/round8\_ai\_readback\_codes.csv})
+split the 35 into 25 on-component, 6 AI-wielded, 2 both and 2 unclear, and is itself a
+post-hoc, single-reader, window-evidence field---a disclosure of the mixture, not a
+double-coded construct. The
 false-negative audit shows a strict lexicon misses
 some positives (7/11 recovery), and shares the extraction's keyword blind spot, so it
 discloses rather than bounds the false-negative channel. We mitigated by human coding with
@@ -1489,13 +1699,27 @@ abstract-level screening survives, so the gap is disclosed rather than measured.
 where full-text coding was impossible.
 
 \subsection{Reliability}
-Agreement on the headline fields is moderate, not strong: the any-engagement collapse that
-produces 35/83 is $\kappa = 0.60$ (bootstrap 95\% CI 0.20--0.90; the three-class $\kappa$ is
-0.41); \texttt{attack\_surface\_named} is 0.14 (PABAK 0.20). Both coders are authors of this
-review, the sample is 20 of 83 full-text records, and coder-1 precedence in adjudication is a
-declared limitation that makes adjudication uninformative about the headline. The exact
-magnitude of the asymmetry should therefore be read with the misclassification sensitivity
-(36 of 83, 95\% CI 21--51), not in isolation.
+Agreement on the headline fields is moderate, not strong. The any-engagement collapse that
+produces 35/83 is $\kappa = 0.60$ on the 20-record sample (bootstrap 95\% CI 0.20--0.90;
+three-class $\kappa$ 0.41); the substantive-vs-not collapse is the study's weakest, $\kappa =
+0.14$ (only 1 of 6 positives agreed by both coders); and
+\texttt{attack\_surface\_named}, the most direct field behind the middle twin tier, is 0.14
+(PABAK 0.20). Both coders are authors of this review, the sample is 20 of 83 full-text
+records, and coder-1 precedence in adjudication is a declared limitation that makes
+adjudication uninformative about the headline. Propagating the sample error matrix anchors
+an expected 36 of 83 (95\% CI 21--51) on coder 2---an anchoring whose circularity
+(Section~\ref{sec:agreement}) is why the interval is read as a compatibility statement, not a
+confidence statement: it spans minority and majority readings of the any-level share. Two
+independent checks now bound the judgment channel from outside the author team: the
+round-8 automated census of all 83 records agrees with coder 1 on 79 of 83 on the
+any-collapse, with five informative disagreements and a negatives miss-rate of 2/48
+(4.2\%, Wilson 95\% CI 1.2--14.0; Sections~\ref{sec:agreement}, \ref{sec:audit}); and the
+commissioned human protocol---independent non-author coder, $\ge$50 records enriched for
+engaged cases, third-party adjudicator, full-text negatives re-read with a propagated
+miss-rate---is pre-specified and released
+(\texttt{analysis/reliability\_protocol\_round8.md}) with its execution pending. Until that
+protocol runs, the exact magnitude of the asymmetry should be read with the intervals
+above, not in isolation.
 
 \subsection{External validity and coverage}
 This is not a PRISMA-systematic review: one database, original run dates not preserved (the
@@ -1512,7 +1736,7 @@ Seventeen of the 100 records were available only as abstracts; this is an access
 of the authors, not a property of the literature, and those records are listed with DOIs
 (Appendix~A) so readers can check what is missing. The 17 are not a random subset: an
 abstract-level reading codes 15 as \emph{tool} and two (R91, R92, both nuclear-domain
-OSTI/INL reports) as twin-directed attack work; both were read during this revision
+OSTI/INL reports) as twin-directed attack work; both were read during the round-7 revision
 (R91 in full text, R92 from its extended abstract) and both attack twin interfaces and
 twin ML models (Section~\ref{sec:method}), so the strict-target null carries its
 ``grid-domain'' qualifier on read evidence, not just on abstract labels. One
@@ -1523,31 +1747,34 @@ admits adjacent domains; the strict-scope sensitivity (Section~\ref{sec:ai-threa
 headline moves by at most about one and a half percentage points under the strictest reading.
 
 \subsection{Search bias}
-The core grid-security vocabulary does not retrieve attack-side work; the four adversarial-AI
-probes were added to widen the candidate pool (approximately 2,000 records), but the released
-record does not establish that probe-only records entered the screened set or the final 100,
-and the query strings and per-record provenance were not preserved in the released package.
-The probes therefore provide no retrieval-bias defence: on the released evidence, the
-corpus derives from the core grid-security vocabulary alone---precisely the retrieval bias
-the probes were meant to fix---and the asymmetry may be overstated in the un-retrieved
-attack-side literature. The
-repository's provenance manifest (`SEARCH\_PROVENANCE.md') states the artifacts whose release
-would resolve this (query strings, run dates, per-record provenance, and a re-run of the
-headline on the probe-only subset); until then, the corpus should be read as a bounded
-sample, not a census. The three ranking components pull in opposite directions, and which
-dominated the realised cut is not recoverable from the released record
-(Section~\ref{sec:method}); the comparison that would establish it---the year distribution
-of the 492 eligible records against the retained 100---requires the candidate-pool export
-listed in the provenance manifest. What is established is the corpus's own profile: only
-16 of 100 records are from 2020--2023, so foundational attack-side work from those years is
-the most plausibly under-represented segment in this corpus, whatever the rule that
-produced it. A dated snapshot with reconstructed query strings and a second-database
-(Crossref) run has been archived (`analysis/search\_snapshot\_2026-10-19/'); the original
-strings and per-record provenance remain the required artifacts. OpenAlex re-runs were
-attempted twice on 2026-10-19 (the second during this revision) and blocked both times by
-the shared-IP budget; re-running the search with logged queries, and ideally a second
-database, is a prerequisite for any attack-side claim---not future polish---and the
-provenance manifest records it as such.
+The core grid-security vocabulary does not retrieve attack-side work, and the round-8
+reconstruction quantifies what that means end to end. Three facts are now established on a
+dated second-database re-execution (Crossref, 2026-10-19, top-1{,}000 per query;
+Section~\ref{sec:method}). First, the probe channel contributed at most one record (R50)
+to the retained corpus, so the corpus derives from the core vocabulary alone---precisely
+the retrieval bias the probes were meant to fix---and the headline is a measurement of
+that core-vocabulary corpus. Second, the eligibility rule is itself an attack-side
+filter: none of the 396 probe-retrieved records carrying adversarial-AI vocabulary passes
+the three-term rule, because attack-side work that does not already self-describe as
+digital-twin plus grid plus security cannot enter by construction. Third, the asymmetry
+may therefore be overstated in the un-retrieved attack-side literature, and no re-scoring
+inside this corpus can test that; only a re-run with logged queries on OpenAlex (or a
+second database with attack-side operators) can. The original query strings, run dates
+and per-record OpenAlex provenance remain unreleased artifacts: OpenAlex re-runs were
+attempted three times on 2026-10-19 (twice in round 7, once in this round-8 revision) and blocked each time by
+the shared-IP budget; the reconstruction in
+\texttt{analysis/search\_snapshot\_2026-10-19/round8/} is the released substitute, and
+the provenance manifest (\texttt{SEARCH\_PROVENANCE.md}) records what it substitutes for.
+The three ranking components pull in opposite directions, and which dominated the
+realised cut is not recoverable for the original pool; the ranking manifest and the dated
+re-execution of the cut (Section~\ref{sec:selection}) make the rule inspectable and
+re-executable on a dated pool, not on the original 492. What is established is the
+corpus's own profile: only 16 of 100 records are from 2020--2023, so foundational
+attack-side work from those years is the most plausibly under-represented segment in
+this corpus, whatever the rule that produced it. Until the original strings and
+per-record provenance are recovered, the corpus should be read as a bounded, ranked
+sample with a declared, quantified retrieval gap---not a census, and not a proxy for the
+attack-side literature its design cannot see.
 
 \subsection{Researcher degrees of freedom}
 Five codebook revisions during extraction are a real degree of freedom. They are logged, dated,
@@ -1558,7 +1785,8 @@ released frozen alongside the adjudicated matrix.
 \subsection{Quality appraisal, venue quality and scope}
 One retained record (R69) carries unattributed authorship in a low-tier venue (IRJMETS),
 lies outside the strict grid scope, and is simultaneously one of the eleven substantive
-studies and one of the four AI-attack-generation exemplars---a combination that is exactly
+studies and one of the six AI-wielded-direction records in the round-8 direction
+field---a combination that is exactly
 why the venue sensitivity and DOI verification passes were necessary, and why R69 is
 flagged at every use: excluding it alone moves the substantive count to 10 of 82 (5 of 28
 in the core subset) without changing any direction (Section~\ref{sec:ai-threats}).
@@ -1567,17 +1795,22 @@ papers, 5 theses, 4 preprints, 3
 reports and 4 book chapters, drawn from venues of varying
 strictness (including IRJMETS and
 GSC Online Press, and two Zenodo deposits classified as journal articles); 40 of the 100
-had zero citations at retrieval and 36 of 100 carry the \emph{review} stance. No formal
-risk-of-bias or venue-quality appraisal was performed; the venue-type filter is not a
+had zero citations at retrieval (Appendix~A, Cit.\ column) and 36 of 100 carry the \emph{review} stance. No formal
+risk-of-bias or venue-quality appraisal was performed; the light, declared four-signal
+appraisal of Section~\ref{sec:evidence} (peer-review venue flag, cited, comparative
+evaluation, code-or-data released; released as
+\texttt{analysis/quality\_appraisal\_round8.csv}) is a signal count over already-coded
+fields, not a risk-of-bias instrument, and the venue-type filter is not a
 peer-review certification, which is why Section~\ref{sec:evidence} reports a stricter
 peer-review-filtered sensitivity (58 records, excluding the Zenodo deposits, the GSC
 Online Press title and the IRJMETS title) alongside the full-corpus figures, and why
 readers should weight venue quality into any claim reproduced from this review. The
 honest consequence is that shallow engagement may partly reflect corpus quality rather
-than the field: the corpus is recency-heavy, citation-light and review-heavy, and while
-the cited subset actually engages \emph{less} than the uncited one
-(Section~\ref{sec:ai-threats})---which softens the concern without removing it---no
-available filter cleanly separates paper quality from field behaviour. The claim in the
+than the field: the corpus is recency-heavy, citation-light and review-heavy, and the
+cited subset and the highest-quality primary tier both engage \emph{less} than the rest
+(Sections~\ref{sec:ai-threats}, \ref{sec:evidence})---which softens the concern without
+removing it, since no available filter cleanly separates paper quality from field
+behaviour. The claim in the
 introduction is restricted to
 the intersection of `digital twin' and `cybersecurity' in power grids; substantial
 adversarial-ML work on grid state estimation lies outside that intersection---the
@@ -1592,23 +1825,31 @@ Read as an exploratory, corpus-level measurement, the review's defensible findin
 while \emph{depth} is not reliably measured by the instrument used here. Across a ranked
 corpus of 100 studies (a declared non-probabilistic subset of 492 eligible records, so
 every figure describes the corpus, not the literature; its 76\% share of 2025--26 records
-is partly a selection artefact, and its retrieval vocabulary was defensive), machine
-learning is used in 70 of 83 full-text studies---for detection in 55---while 35 engage
-any AI-enabled threat (a majority, 16/29 and 30/55, in the core detection-ML subsets), 11
+is partly a selection artefact, and its retrieval vocabulary was defensive---the round-8
+reconstruction shows the probe channel contributed at most one record), machine
+learning is used in 70 of 83 full-text studies---for detection in 55 (strict grid scope:
+67 and 52 of 79)---while 35 engage
+any AI-enabled threat (a majority, 16/29 and 30/55, in the core detection-ML subsets; 33 of
+79 under strict scope), 11
 substantively---on the weakest coder collapse, under a threshold that partly proxies
-document length, and with a misclassification interval (21--51 of 83) that includes both
-minority and majority readings of the any-level share. The asymmetry the review set out
+document length (minority within the dominant format too, 9 of 62 journal articles), and
+with a misclassification interval (21--51 of 83) that includes both
+minority and majority readings of the any-level share; an independent round-8 readback of
+all 83 records confirms the any-level figure within a 2/48 miss-rate (Wilson 95\% CI
+1.2--14.0\%). The coded direction field shows the engagement that exists is mostly
+defender-framed: 25 of the 35 engaged records acknowledge attacks on AI components and
+only 6 wield AI for attack generation. The asymmetry the review set out
 to test was, in its original form, not supported; what survives is the narrower statement
 above, and the title reflects it. As coded---and this is a
 descriptive observation of the coding, not a finding about the field---no grid study
-treats the twin as the adversary's objective; 56 of 83 name classical
+treats the twin as the adversary's objective; 54 of 79 under strict scope name classical
 interface or model threats bearing on
 the twin's data path or learned components, almost
 always as something to protect; and two read
 nuclear-domain records (R91, R92) that do attack twin interfaces and twin ML models bound
 that null from outside the grid domain, turning P1 into a transfer question rather than a
 first-contact claim. Coverage, as coded, is dominated by the operation phase (66 of 83;
-lifecycle $\kappa = 0.32$, AC1 0.54); the single design-phase record is outside the grid domain,
+the single design-phase record is outside the grid domain,
 none are coded at commissioning or maintenance, and threat models are thin (explicit in
 19/83).
 
@@ -1617,9 +1858,11 @@ strict grid scope and a peer-review venue filter)---which are re-slices of the s
 data and therefore show stability, not independent replication---and to a misclassification
 sensitivity anchored on the second coder (36 of 83, 95\% CI 21--51), whose anchoring is
 circular and whose interval spans minority and majority readings. They are not tested by
-the adjudication, whose tie-break defaults to the primary coder; the false-negative
-channel is now partially inspected (15 weak audit firings read; a seeded 12-record sample
-of the negatives re-read; no substantive false negative found), though not bounded.
+the adjudication, whose tie-break defaults to the primary coder. The false-negative
+channel is now partially inspected by the authors and censused by an independent round-8
+reader (48 negatives read; two score-1 candidates, no substantive miss; miss-rate 4.2\%,
+95\% CI 1.2--14.0\%), though not bounded by the commissioned human full-text re-read, which
+is released as a protocol and pending.
 The closest prior
 review names the dual role; this review measures only the narrowest, strict-objective instance
 of its attack-surface axis at grid scale and finds that instance empty in the grid domain,
@@ -1637,9 +1880,9 @@ of twin-directed attack work are stated alongside it.
 % including spaces. highlights.txt mirrors these strings verbatim.
 \begin{itemize}
   \item Structured review of a ranked 100-study corpus; figures describe the corpus alone
-  \item ML in 70/83 (detection 55); any-level engagement common, depth not reliably measured
+  \item ML in 70/83 (detection 55); engagement common at any level, depth not reliable
   \item No grid study targets the twin itself; read nuclear records R91/R92 do
-  \item Coverage concentrates at operation (66/83); design and commissioning near-empty
+  \item Any-level engagement is mostly attacks on AI components (25/35), not AI-wielded
   \item Five-item agenda: each item tied to its gap, disconfirming evidence, dual-use limits
 \end{itemize}
 
@@ -1651,11 +1894,18 @@ All extraction data, the codebook, the coder sheets, the reliability script and 
 are available in the reproducibility package accompanying this review (repository link supplied
 at submission). Appendix~A lists all 100 included studies in the paper itself;
 the search-provenance manifest (\texttt{SEARCH\_PROVENANCE.md}) and the dated search snapshot
-(\texttt{analysis/search\_snapshot\_2026-10-19/}) record the query-level artifacts released
+(\texttt{analysis/search\_snapshot\_2026-10-19/}, including the round-8 provenance
+reconstruction in \texttt{round8/}) record the query-level artifacts released
 and those that remain outstanding, as Section~\ref{sec:validity} discloses. The round-7
 readbacks (15 weak audit firings, the 12-record negatives sample, and the R91/R92 post-hoc
 coding) are released as \texttt{R7\_READBACK.md} in the \texttt{analysis/} directory;
-the R91 full text is a publicly
+the round-8 artifacts are released alongside them: the independent readback codes and
+joined comparison (\texttt{analysis/reliability/round8\_ai\_readback\_codes.csv},
+\texttt{round8\_readback\_joined.csv}), the pre-specified human reliability protocol
+(\texttt{analysis/reliability\_protocol\_round8.md}), the coded direction field, the
+quality-appraisal signals (\texttt{analysis/quality\_appraisal\_round8.csv}), and the
+retrieval-provenance reconstruction, ranking manifest and eligible-export reconstruction
+of \texttt{analysis/search\_snapshot\_2026-10-19/round8/}. The R91 full text is a publicly
 accessible INL/OSTI report cited by DOI and is not redistributed with the package.
 
 \section*{CRediT authorship contribution statement}

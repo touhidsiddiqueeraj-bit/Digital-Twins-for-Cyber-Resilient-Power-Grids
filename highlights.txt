@@ -1,6 +1,6 @@
 Highlights
 - Structured review of a ranked 100-study corpus; figures describe the corpus alone
-- ML in 70/83 (detection 55); any-level engagement common, depth not reliably measured
+- ML in 70/83 (detection 55); engagement common at any level, depth not reliable
 - No grid study targets the twin itself; read nuclear records R91/R92 do
-- Coverage concentrates at operation (66/83); design and commissioning near-empty
+- Any-level engagement is mostly attacks on AI components (25/35), not AI-wielded
 - Five-item agenda: each item tied to its gap, disconfirming evidence, dual-use limits

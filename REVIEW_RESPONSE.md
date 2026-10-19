@@ -755,3 +755,226 @@ repetition, formatting).
 * R92's full text could not be retrieved from this environment (two attempts); its
   coding rests on the report's own extended abstract, which is unusually detailed, and
   the basis is disclosed wherever the coding is used.
+
+---
+
+# Round 8 — response (retrieval bias resolved by reconstruction; reliability, scope, and quality checks executed)
+
+**Decision addressed:** ten review items (resolve or fully disclose the retrieval bias;
+move scope caveats to the abstract; fix the non-reproducible selection rule; add an
+independent reliability check; test the substantive threshold against venue format;
+separate attacks-on-AI from attacks-with-AI in the coded data; quote strict-scope
+equivalents; make definitional nulls explicit at first mention; add a structured
+quality/venue appraisal; consolidate the repeated validity discussion) plus six minor
+edits.
+
+## What was done
+
+### Item 1 — retrieval bias: resolved by dated reconstruction, with the original provenance still declared unrecoverable
+
+A third OpenAlex re-run was attempted on 2026-10-19 and blocked again by the shared-IP
+budget. The sixteen reconstructed query strings were therefore re-executed against
+Crossref to a depth of 1,000 results per query (16 calls, archived per query in
+`analysis/search_snapshot_2026-10-19/round8/top1000/`), and per-record query provenance
+was rebuilt two ways:
+
+* **List match:** each retained record matched against the sixteen top-1,000 lists
+  (`round8/provenance_retained100.csv`). 49 of 100 records match at least one list; only
+  **R50** is probe-only.
+* **Text-level re-execution:** each query's phrase components re-run against each
+  record's own title, abstract, and released full-text keyword windows
+  (`round8/retrievability_textlevel.csv`, variants A and B). Variant A (title+abstract):
+  only R50 is probe-only; variant B (with windows): none is.
+
+**Both reconstructions agree: at most one retained record (R50) is probe-only, so the
+probe channel demonstrably did not shape the corpus.** The headline re-run on the
+probe-only subset is a re-run on a single record (R50, substantive, 1/1); the 35/83
+figure is a measurement of core-retrievable records. This sharpens, not softens, the
+conditioning: the corpus is a core-vocabulary corpus, and the attack-side rate remains
+conditional on that retrieval design.
+
+**The screening status of the probe-added channel is now established on the same dated
+reconstruction** (`round8/probe_added_screening.csv`,
+`round8/probe_added_term_breakdown.csv`): 1,484 probe-added candidates, 304 with
+abstracts; **14 pass the three-term eligibility rule, and none of the 14 carries
+adversarial-AI vocabulary**. The 396 probe-added records that do carry such vocabulary
+fail eligibility in title/abstract — only 59 name a digital twin at all, only 4 name a
+digital twin with a grid term, only 8 with a security term. **The eligibility rule, not
+just the query, is the attack-side filter**: attack-side work that does not already
+self-describe as digital-twin + grid + security cannot enter the corpus by construction.
+The original OpenAlex strings, run dates and per-record provenance remain unrecoverable
+and remain declared as required artifacts in `SEARCH_PROVENANCE.md` (status updated to
+"partially resolved by dated reconstruction").
+
+Sections 4.2 (rewritten), 4.4, Figure 1, 5.5, 6.5 and 8.5 (rewritten) carry the new
+evidence; the abstract carries the defensive-retrieval conditioning as one of its two
+scoping sentences.
+
+### Item 2 — scope caveats moved into the abstract
+
+The abstract now states, at first use: "Every figure describes this corpus — a bounded
+ranked sample, not a census — retrieved on defensive vocabulary — so only the
+defensively-framed literature", and "As coded — descriptive observations, not findings
+about the field —" before the twin-position results, plus the both-role-zero-definitional
+and one-liner-set-aside qualifiers. The abstract stays within the 250-word limit
+(249 words). The conclusion's scope sentence remains.
+
+### Item 3 — selection rule: released ranking manifest + dated end-to-end re-execution
+
+The original 492-record export is unrecoverable, so the fix is executed as a three-part
+released substitute (Section 4.3 rewritten; all under
+`analysis/search_snapshot_2026-10-19/round8/`):
+
+1. **`retained100_ranking_manifest.csv`** — per retained record: OpenAlex relevance score
+   and citation count as retrieved, plus year. It mechanically verifies the display-order
+   claim (year descending, citations descending within year) and the 40/100
+   zero-citation figure (cross-referenced to the Appendix A Cit. column).
+2. **`core_eligible_export.csv`** — the pipeline re-executed on the dated Crossref pool:
+   12 core top-1,000 lists merged and de-duplicated (5,179), screened with the same
+   three-term rule (192 eligible, 35 retained-corpus records among them), ranked by a
+   documented composite (best relevance rank, then citations, then year), cut at 100.
+   Re-executing the cut today retains 27 of the original 100.
+3. **The year-distribution "clean test", run on the reconstruction**: the eligible pool
+   is itself recency-heavy (66.7% from 2025 onward) against the corpus's 76% from
+   2025–26 — the cut amplified but did not manufacture the recency profile.
+
+Full-text coding of a fresh eligible frame remains the declared upgrade path; the
+manuscript says plainly that the reconstruction is a second-database proxy, not the
+original 492.
+
+### Item 4 — independent reliability check: executed to the extent a non-human instrument allows, and the human protocol pre-specified
+
+* **The paper's own stated fix is now pre-specified as a releasable protocol**
+  (`analysis/reliability_protocol_round8.md`): independent non-author coder, n = 60
+  enriched (all 35 engaged + 25 seeded negatives), third-party adjudicator without a
+  default tie-break, and an independent full-text re-read of a seeded 20-record sample
+  of the 48 negatives with a Wilson miss-rate interval propagated to 35/83 — with
+  analysis plan and pre-stated failure conditions (any-collapse κ < 0.4, miss-rate
+  > 15%). Its staffing is pending; the manuscript says so.
+* **What could be executed now was executed**: an independent automated (LLM) reader —
+  not an author, not the original instrument — coded **all 83 full-text records** (a
+  census, hence ≥50 and enriched by construction) from a released evidence dump (title +
+  abstract + the same full-text keyword windows), record by record, before joining to
+  coder 1's values. Per-record codes and quoted bases:
+  `analysis/reliability/round8_ai_readback_codes.csv`; joined comparison:
+  `round8_readback_joined.csv`.
+* **Results (Section 5.7 new block, Section 5.8 updated):** any-collapse agreement
+  79/83 (95.2%, κ = 0.90, PABAK 0.90); three-level 78/83 (κ = 0.89); the five
+  disagreements are the informative content — R32/R66 (engagement is a declared future
+  plan, not a treatment), R44/R100 (single one-line acknowledgments; R100 is the
+  round-7 flag, R44 is new), R55 (suspected substantive). On the 20-record sample the
+  automated reader agrees with coder 2 exactly as coder 1 does (16/20, κ = 0.60).
+* **Negatives census (all 48, not a random sample):** two score-1 candidates (R44, R100),
+  no substantive miss; **miss-rate 2/48 = 4.2% (Wilson 95% CI 1.2–14.0%)**, propagating
+  to at most 37/83 (44.6%). The manuscript states the two limits plainly: the readback
+  shares the window evidence (it cannot catch window-selection misses) and is not the
+  commissioned human reader.
+
+### Item 5 — substantive threshold vs venue format: within-format re-scoring done
+
+Section 5.5 now reports, per venue format: journals 26/62 any (41.9%), **9/62
+substantive (14.5%)**; conferences 5/14 any, 0/14 substantive; preprints 1/4; thesis 1/1;
+and within non-review journal articles 14/33 any, 5/33 substantive (Fisher exact
+journal-vs-conference: substantive p = 0.142, any p = 0.455; within non-review p =
+0.173 — none significant). The length-adjusted statement replaces the bare count where
+depth is claimed: *substantive engagement is minority within the dominant format* (9/62
+journal articles), so the shallow-engagement reading does not depend on mixing formats;
+the 0/14 conference figure supports no depth comparison at all (compatible with absent
+depth or absent room). Page counts are not in the released record, so no further length
+normalisation is possible; Section 4.7 now says so and points to the within-format
+re-scoring as the available adjustment.
+
+### Item 6 — attacks-on-AI vs attacks-with-AI: promoted to a coded field over all 35 engaged records
+
+The notes-based split (4 with / 5 on / 2 both, substantive only) is replaced as the
+primary reporting by a **coded direction field over all 35 engaged records**
+(`analysis/reliability/round8_ai_readback_codes.csv`, column `my_direction`, with
+per-record basis quotes): **25 on-component, 6 AI-wielded (R2, R49, R57, R64, R69, R84),
+2 both (R20, R22), 2 unclear (R33, R56)**; among the 11 substantive: 7 on / 3 with
+(R49, R57, R69) / 1 both (R22). Per-vector direction cross-tabs are reported in Section
+5.5 (e.g. adversarial-ML 24 = 16 on / 4 with / 2 both / 2 unclear; poisoning 19 = 16 on
+/ 1 with / 2 both). The full-text notes-based reading is retained alongside for the
+substantive set, with the three differences named (R22, R50, R94). The field is declared
+post hoc, single-reader, window-evidence-based, and not merged into the frozen matrix.
+Headline consequence: attacks wielded with AI are the minority direction (6/35; 3
+substantive), and the any-level figure is dominated by defender-framed acknowledgment
+that learned components can be attacked. Sections 2.3, 5.5, 6.1, 8.1 and the
+conclusion/highlights carry it.
+
+### Item 7 — strict-scope equivalents quoted alongside the headline numbers
+
+* Abstract: "35 (42%) engage any AI-enabled threat, 11 (13%) substantively (strict grid
+  scope: 33 and 10 of 79)" and "56 of 83 (54 of 79)".
+* Table 3 (twin tiers): a matched strict-scope column added — target 0, defender-framed
+  naming 54, tool 74 (50 of which name a threat), unclear 5, `attack_surface_named` 52.
+* Section 5.5 headline paragraph: ML 67/79 (84.8%), detection 52/79 alongside 70/83 and
+  55/83; core-subset strict scope (27 records, 15 any, 5 substantive) unchanged.
+* Conclusion: strict-scope values quoted with the headline figures.
+
+R18, R59, R69 and R97 therefore cannot inflate any headline figure without the matched
+value being visible on the same line.
+
+### Item 8 — definitional nulls stated at first mention
+
+The abstract now carries both nulls with their status ("As coded — descriptive
+observations, not findings about the field — … the both-role zero is definitional, and
+one-sentence target claims are set aside"). Contribution 4 (the first body-text
+statement of the numbers) now states the strict-target tier position, the both-role
+definitional zero, and the R48/R88 set-aside, with pointers. Section 5.3's first mention
+already carried the both-role definitional note and the R48/R88 one-liners; Table 3's
+caption now also carries them.
+
+### Item 9 — structured quality/venue appraisal added (light, declared, recomputable)
+
+Section 5.6 gains a declared four-signal appraisal over the 49 primary (non-review,
+full-text) studies — peer-review venue flag, cited, comparative evaluation, code-or-data
+released — built only from already-coded fields and released as
+`analysis/quality_appraisal_round8.csv` (per-record signals; `analysis/round8_stats_all.py`
+recomputes it). Distribution {0: 1, 1: 3, 2: 15, 3: 23, 4: 7}. Engagement by tier: the
+30 studies with ≥3 signals engage 37% any / 7% substantive; the 4 studies with ≤1 signal
+engage 75% / 25%, and their substantive case is R69 (the flagged IRJMETS record). RQ4
+can now speak to evidence quality with numbers rather than venue-type proxies, while
+Section 8.7 keeps the caveat that this is a signal count, not a risk-of-bias instrument.
+
+### Item 10 — validity discussion consolidated; interpretations added
+
+Section 8 opens with a consolidation statement naming the five recurring threads
+(retrieval bias, ranked cut, coder agreement, length confound, misclassification
+interval) and declaring every earlier mention a forward pointer. 8.1 (construct) now
+references the direction field and its single-reader status; 8.3 (reliability) is the
+single consolidated home for κ = 0.60/0.41, κ = 0.14, the 21–51 interval, the round-8
+census and miss-rate, and the pending human protocol; 8.5 (search bias) is rewritten and
+shortened around the three reconstruction findings; 8.7 carries the appraisal. Dense
+parenthetical-statistics runs in Sections 5.4 and 5.7 were replaced by pointers, and
+long sentences in 4.2, 5.7 and 8.5 were split. **One-line interpretations were added
+under Tables 3, 5, 7 and Figures 4, 5** (in the captions, after the statistical notes).
+
+### Minor edits
+
+1. "40 of the 100 had zero citations" is cross-referenced to the Appendix A Cit.\
+   column at both its uses (Sections 4.3 and 8.7).
+2. The "digital twin" vs "CPS model"/"HIL simulation" terminology note moved from the
+   end of Section 2.3 to Section 2.1, immediately after the definition and its three
+   distinguishing properties.
+3. Table 8 (agenda) now cross-references the dual-use/responsible-disclosure paragraph
+   from P1 and P5 (caption note plus in-row pointers).
+4. "Measurement limits" kept in the title.
+5. Longest sentences in 4.2, 5.7 and 8.5 copy-edited and split.
+6. Highlights updated (direction field replaces the lifecycle bullet); `highlights.txt`
+   mirrors verbatim; all bullets ≤ 85 characters.
+
+## What this revision does not fix
+
+* The original OpenAlex query strings, run dates and per-record provenance remain
+  unrecoverable; the round-8 provenance is a dated Crossref reconstruction, declared as
+  such at every use. Only an OpenAlex re-run with an API key (or a second database with
+  attack-side operators) can test the attack-side literature outside this design.
+* The human reliability protocol is specified and released but not executed: staffing an
+  independent non-author coder and third-party adjudicator is outside what a revision
+  can do. The automated census bounds the judgment channel, not the window-selection
+  channel.
+* Full-text coding of the 492-eligible frame (or a fresh dated equivalent) remains the
+  upgrade path for the ranked-sample problem; the Crossref eligible-export
+  reconstruction makes the pipeline re-executable but does not re-code any new record.
+* The 17 abstract-only records remain abstract-only (access limitation, unchanged);
+  R92's coding still rests on its extended abstract, disclosed as such.

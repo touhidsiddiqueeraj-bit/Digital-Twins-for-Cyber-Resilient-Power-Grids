@@ -1,0 +1,1343 @@
+====================================================================================================
+RECORD 1 | journal | 2026 | coded stance: review
+TITLE: Cybersecurity and Resilience of Smart Grids: A Review of Threat Landscape, Incidents, and Emerging Solutions
+ABSTRACT (crossref-full): The digital transformation of electric power systems into smart grids has significantly expanded the cybersecurity risk landscape of the energy sector. While advanced sensing, communication, automation, and data-driven control improve efficiency, flexibility, and renewable energy integration, they also introduce complex cyber–physical interdependencies and new vulnerabilities across interconnected technical and organisational domains. This study adopts a scoping review methodology in accordance with PRISMA-ScR to systematically analyse smart grid cybersecurity from an architecture-aware and re…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=6 "versarial manipulation of training data, known as data poisoning, can subtly bias predictive models and lead to incorrect oper"
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   THREAT poisoning=6 "versarial manipulation of training data, known as data poisoning, can subtly bias predictive models and lead to incorrect oper"
+   ML machine_learning=10 "d traditional network and device vulnerabilities [48]. Machine learning models are increasingly used for l…
+   ML reinforcement=1 "ng algorithms, including supervised, unsupervised, and reinforcement learning approaches, can be trained on no…
+
+====================================================================================================
+RECORD 2 | journal | 2026 | coded stance: enabling
+TITLE: Digital twin applications and case studies in modern power grid management
+ABSTRACT (stored): This research presents a comprehensive overview of case studies and applications of digital twin [DT] technology in modern power grids. The analysis incorporates insights from diverse pilot projects, including a remote microgrid deployment in Alaska, a national-scale transmission network initiative in Singapore and a community-wide decarbonization program in the United Kingdom. Collectively, these...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=1 "olutions Smart grid cybersecurity 99.8% detection of Deepfake DTs, robust security IoT, Monte Carlo, DT IoT, ML, real-time da"
+   ML machine_learning=8 "internet of things [IoT] devices. The incorporation of machine learning-based modeling approaches and conce…
+   ML deep_learning=3 "t, scheduling (Ji et al., 2019), (Wu and Wang, 2021) Deep Learning [DL, incl. LSTM, CNNs] Forecasting, anomaly…
+
+====================================================================================================
+RECORD 3 | journal | 2026 | coded stance: review
+TITLE: Digital twins for hazard-resilient power grids: A systematic review and roadmap
+ABSTRACT (stored): The increasing exposure of modern power systems to climate-induced hazards, cyber threats, and operational uncertainty has intensified the energy trilemma of sustainability, security, and affordability. Rapid decentralisation and digitalisation driven by renewable integration, microgrids, and active demand participation have rendered conventional planning and operational approaches inadequate for ...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=2 "ollowing extreme events. Enabling technologies such as machine learning, edge-cloud computing, blockchain, …
+   ML deep_learning=2 "[38] demonstrated a hybrid DT pipeline that leverages deep learning to enhance short-term load forecasting wit…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [integrity-attack] x3: ...es; improved stability Reduced energy waste; automation Faster recovery; situational awareness Extended asset life; less downtime Data integrity; a…
+
+====================================================================================================
+RECORD 4 | journal | 2026 | coded stance: review
+TITLE: Digital Twins Beyond Monitoring: A Survey on Predictive Control, Cybersecurity, and Storage Integration in PV-Enabled Smart Grids
+ABSTRACT (stored): As the deployment of photovoltaic (PV) systems accelerates globally, the demand for intelligent, real-time energy management solutions has grown. Digital Twin (DT) technology, which creates dynamic, synchronized virtual replicas of physical PV assets, has proven valuable for monitoring and basic control. However, most current DT-PV implementations are confined to data visualization, fault detectio...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML neural=4 "oAP DAQ DER DT EV Artificial Intelligence. Artificial Neural Network. Application Programming Interface. Authenticate…
+   ML cnn=3 "systems, smart grid. ACRONYMS AI ANN API ASCON CGRAs CNN CoAP DAQ DER DT EV Artificial Intelligence. Artificial Neural N…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [integrity-attack] x2: ...nd AI/ML inference on the cloud layer [26], [48]. The architecture also emphasizes actuation mechanisms, embedded processing, and data integrity pr…
+   [model-compromise] x1: ...l. [94] combine blockchain and DTs to guarantee data integrity and traceability, whereas Feng et al. [95] show that the effect of spoofed measureme…
+
+====================================================================================================
+RECORD 5 | journal | 2026 | coded stance: defensive
+TITLE: Quantum-Accelerated Digital Twins for Cyber-Resilient Smart Power Systems Against False Data Injection Cyberattacks Using Bitcoin-Mining-Based Virtual Energy Storage Framework for Voltage Restoration
+ABSTRACT (crossref-full): False data injection (FDI) cyberattacks pose a growing threat to modern power distribution systems in smart cities by manipulating state-estimation processes and provoking covert voltage violations that traditional defense mechanisms fail to detect. Recent industry data indicate that coordinated FDI attacks can distort measurement sets by as little as 3–7%, yet trigger voltage deviations exceeding 10% in vulnerable feeders, resulting in operational instability, unnecessary load curtailments, and elevated outage risk. To address these challenges, this paper proposes a quantum-accelerated digita…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=1 "g-based detectors can also be rendered ineffective via adversarial perturbations or covariate-shift attacks. In contrast, the pr"
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=1 "ing a variational quantum circuit (VQC) that acts as a generative model for offspring distributions. The VQC is parameterized by"
+   ML machine_learning=3 "ods overwhelmingly depend on classical optimization or machine learning models whose performance degrades w…
+   ML deep_learning=1 "Attack Detection Methods: In [9], He et al. proposed a deep-learning mechanism that leveraged historical measu…
+
+====================================================================================================
+RECORD 7 | journal | 2026 | coded stance: review
+TITLE: Empowering the grid: A comprehensive review of vehicle-to-grid technology, digital twins, and intelligent energy systems
+ABSTRACT (stored): • Explains V2G Systems: Breaks down the essential hardware, communication, and energy management parts of Vehicle-to-Grid technology. • Compares Bidirectional Chargers: Analyzes and compares different types of Bidirectional chargers. • Covers Control Methods: Discusses everything from traditional control techniques to advanced AI and machine learning for smarter energy management. • Analyzes Batte...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=8 "arious control methods (from traditional techniques to machine learning approaches), as well as security is…
+   ML neural=2 "are complex and parameters often uncertain. Artiﬁcial Neural Networks (ANN) oﬀer control strategies based on learning…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [adversar*] x1: 
+
+====================================================================================================
+RECORD 9 | journal | 2026 | coded stance: enabling
+TITLE: Fault Detection and Localization in LV Distribution Networks Using Anomaly Detection in Smart Meter Data and Distribution Network Digital Twin
+ABSTRACT (stored): This paper presents a novel data-driven technique for fault detection and localization in low voltage distribution networks (LVDNs). The proposed method leverages smart meter (SM) time series voltage magnitude data and a Distribution Network Digital Twin (DNDT) to address key limitations of traditional approaches, including their reliance on customer trouble calls, the inaccuracy of impedance-base...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=2 "and the need for large, complex training datasets for machine learning (ML)-based fault localization. Volta…
+   ML neural=2 "a half-hourly sampling rate [33], [34]. An Artificial Neural Network (ANN)-based technique using both voltage magnitu…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [model-compromise] x1: ...onents such as a controllable current limiter and a DC circuit breaker. After fault isolation, the DT model analyzes the decay of injected signals …
+   [generative] x1: ...ration. For instance, the author in [5] demonstrated a SM data-driven DT for LVDNs to eliminate reliance on trouble calls. Beyond synthetic data ge…
+
+====================================================================================================
+RECORD 10 | journal | 2026 | coded stance: defensive
+TITLE: A Cybersecurity Digital Twin Architecture for Modelling Threats in Interconnected Systems
+ABSTRACT (crossref-full): The growing digitalisation of industrial and business processes is creating large deployments where Information Technology (IT) and Operational Technology (OT) are tightly interconnected and interdependent. While cybersecurity risks for IT are mostly related to data breaches and service unavailability, OT is far more critical, since it handles physical equipment. In fact, intrusions into cloud infrastructure may directly or indirectly affect critical processes for autonomous driving or energy operations, with high-impact consequences for people’s lives. Additionally, the prevailing interconnec…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=1 "der logic rules), ML (e.g. graph neural networks), and large language models (e.g. multi-scale self attention networks – MSANets"
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=1 "monitoring data with offline simulation and supervised machine learning (ML) for anomaly detection. While n…
+   ML neural=1 "lytical (e.g. first-order logic rules), ML (e.g. graph neural networks), and large language models (e.g. multi-scale …
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [adversar*] x2: 
+   [stealthy] x1: ...ompliance verification, (iii) identification of the existing threats, (iv) anticipation of new attack paths, and (v) detection of stealthy attacks …
+   [llm] x1: ...will be used in the prediction modules, including analytical (e.g. first-order logic rules), ML (e.g. graph neural networks), and large language mo…
+   [unseen-attack] x1: ...chains an attractive pathway for cyberattacks. Cyber threats continue to evolve, and reactive defences remain ineffective against zero-day attacks,…
+
+====================================================================================================
+RECORD 11 | journal | 2026 | coded stance: defensive
+TITLE: Digital twin based sustainable cyber defense framework against advanced persistent threat for wind renewable power plants
+ABSTRACT (stored): The growing digitalization of Industrial IoT and SCADA systems has enhanced operational efficiency but also exposed system to Advanced Persistent Threats (APTs) which pose a direct risk to energy generation. This research proposes a sustainable Digital Twin Based Cyber Defense Framework to enhance the resilience and sustainability of wind renewable power plants. A high-fidelity digital twin model ...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=6 "y, [2] synergized DTs with Knowledge Graphs and hybrid machine learning to create a comprehensive cyber thr…
+   ML deep_learning=3 "hing intensified the use of Machine Learning. (ML) and Deep Learning (DL). Ref. [2] used a hybrid ML framework…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [adversar*] x21: 
+   [stealthy] x7: ...as Supply Chain Compromise (examples include APT group BUCKSHOT) [10], Destructive Wiper Attacks (examples include Lazarus) [11], Stealth Reconnais…
+   [unseen-attack] x5: ...enting continuous learning from new attack patterns that leverages knowledge from post incident log files to improve detection of novel attacks, ad…
+   [generative] x2: ...dustrial Internet of Things (IIoT) another data-driven intrusion detection model was proposed in [18], and to enhance the dataset Generative Advers…
+   [integrity-attack] x1: ...del is exposed to diverse attack behaviours during training while preserving fairness in evaluation (b) Temporal Consistency and Data Integrity: S…
+
+====================================================================================================
+RECORD 12 | conference | 2026 | coded stance: defensive
+TITLE: Cyber-Security in Cyber-Physical Systems and Critical Infrastructure: A Self-Healing Federated Learning Intrusion Detection Framework
+ABSTRACT (crossref-full): Cyber-Physical Systems (CPS) underpin critical infrastructures such as power grids, water treatment facilities, and transportation systems. Their increasing connectivity, combined with legacy physical components and modern digital interfaces, expands the attack surface and exposes CPS to sophisticated cyber threats. The resulting heterogeneous, latency-sensitive environments challenge conventional security mechanisms, while centralized Intrusion Detection Systems (IDS) introduce privacy risks and fail to meet real-time operational constraints. To address these challenges, this paper proposes a…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=2 "ck vectors Zhao et al. (2021) Weak CPS resilience to adversarial attacks Adversarial training of IDS Improved robustness to evas"
+   AITHRT poison=1 "ng concerns raised by Almutairi (2024) regarding model-poisoning susceptibility through the inclusion of gradient compression"
+   AITHRT evasion=1 "s Adversarial training of IDS Improved robustness to evasion attacks Enhanced adversarial resilience Increased training tim"
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=1 "raining Improved detection of minority class attacks GAN-generated data may introduce noise Takahashi et al. (2022) Slo"
+   THREAT poisoning=1 "ng concerns raised by Almutairi (2024) regarding model-poisoning susceptibility through the inclusion of gradient compression"
+   THREAT evasion=1 "s Adversarial training of IDS Improved robustness to evasion attacks Enhanced adversarial resilience Increased training tim"
+   ML neural=2 "024) Difficulty detecting zero-day CPS attacks Graph neural networks (GNNs) with anomaly detection Adaptive GNNbased …
+   ML lstm=21 "ng (MAML) and a self-healing feedback loop. Edge-based LSTM anomaly detectors are collaboratively trained using FedAvg…
+
+====================================================================================================
+RECORD 13 | journal | 2026 | coded stance: defensive
+TITLE: Explainable digital twin–driven ensemble anomaly detection framework for cyber-physical infrastructure security
+ABSTRACT (crossref-full): Abstract Cyber-physical infrastructures require early and trustworthy detection of abnormal behavior caused by cyber intrusions, sensor manipulation, and operational faults. This study proposes an explainable digital twin–driven ensemble anomaly detection framework for cyber-physical infrastructure security. The core of the framework is a physics-informed, hybrid regression-based digital twin that estimates expected nominal system behavior by combining historical operational data with plant-specific process relationships. Deviations between physical measurements and digital twin outputs are tr…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=7 "ing cascading operational damage [2]. In this context, machine learning and statistical anomaly detection a…
+   ML deep_learning=7 "addition, the proposed ensemble is benchmarked against deep learning baselines, including a dense autoencoder …
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [unseen-attack] x2: ...particular, single-class classification and density based approaches have demonstrated strong capability in detecting previously unseen attack vect…
+   [stealthy] x1: ...c stability. Energy systems, industrial automation platforms, and large-scale infrastructure networks are particularly exposed to stealthy cyber in…
+
+====================================================================================================
+RECORD 14 | journal | 2026 | coded stance: review
+TITLE: Review Article: Quantum-AI Convergence for Smart Grid Cybersecurity: A Systematic Review of Emerging Technologies, Threats, and Resilient Architectures
+ABSTRACT (crossref-full): Smart grids have revolutionized the way electricity is generated, transmitted, and consumed by utilizing various technologies, including artificial intelligence, IoT devices, advanced communication networks, and distributed energy resources, which have enhanced the efficiency, reliability, and sustainability of modern power systems. This interconnected ecosystem, however, has multiplied the potential attack surface, and quantum computing poses a new risk to the traditional means of securing encoded data, requiring quantum-resilient security solutions. Many reviews focus on a specific aspect of…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=1 "harvest-nowdecrypt-later attacks, and quantum-enhanced adversarial machine learning, among other aspects of convergence between "
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=21 "major research areas were Artificial Intelligence and Machine Learning (58.3%), Quantum Computing and Quan…
+   ML deep_learning=6 "that could compromise critical infrastructure. Using, deep learning (DL), reinforcement learning (RL), graph n…
+
+====================================================================================================
+RECORD 15 | journal | 2026 | coded stance: adversarial
+TITLE: From Physical Grids to Cyber-Energy Digital Twins: Modeling Power System Components for Cyberattack Assessment
+ABSTRACT (crossref-full): Traditional Digital Twins (DTs) in energy sectors lack cyber-threat awareness, while cybersecurity DTs overlook downstream physical impacts. Loosely coupled co-simulations attempt to bridge this gap but introduce computational lags that mask critical cross-domain vulnerabilities. To address these limitations, this paper proposes a unified, tightly coupled Virtual Digital Twin (VDT) framework that integrates energy systems and cybersecurity domains into a single environment. The methodology models the precise mathematical, thermal, and electrical constraints of key assets to capture cross-domai…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=1 "vading electrical protection routines. This electrical evasion exploits the fundamental operating principles of conventional pr"
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   THREAT evasion=1 "vading electrical protection routines. This electrical evasion exploits the fundamental operating principles of conventional pr"
+   ML transformer=1 "s (≈5.56 h). The core parameters adopted in the Power Transformer model are summarized in Table 1: https://doi.o…
+   ML anomaly_detection=3 "data, hardware-in-the-loop co-simulation, and AI-based anomaly detection will be presented in a subsequent…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [stealthy] x10: ...the safe, risk-free nature of a VDT to bridge these two domains, providing the exact cross-domain baseline needed to observe how stealthy cyber thr…
+   [evasion] x4: ...this attack, short-lived temperature fluctuations occur. Since these oscillations do not exceed safe operational thresholds, they evade detection b…
+   [integrity-attack] x4: ...g points. Within this framework, the proposed research utilizes this layer to investigate the dynamic correlation between logical data integrity an…
+   [adversar*] x3: 
+   [model-manip] x1: ...designed to degrade a medium-voltage to low-voltage (MV/LV) distribution transformer’s insulation through severe power stress. By manipulating the …
+   [model-compromise] x1: ...atic safety interventions, allowing the asset to operate within hazardous temperature ranges. In more detail, the attack directly compromises the M…
+
+====================================================================================================
+RECORD 16 | journal | 2026 | coded stance: review
+TITLE: Artificial Intelligence in Smart Grids and Power-Electronic- Interfaced Microgrids: A Systematic Literature Review of Energy Management, Optimisation, and Cybersecurity
+ABSTRACT (crossref-full): The increasing penetration of distributed energy resources, variable renewable generation, battery energy storage systems, electric vehicles, and power-electronic interfaces is changing the way modern smart grids and microgrids are operated, protected, and controlled. This systematic literature review follows the PRISMA 2020 framework and examines 87 original research papers, complemented by a supplementary synthesis of 18 contextual studies that provide bibliometric, historical, and conceptual perspectives on the evolution of AI in smart grids. The primary studies are organized into six thema…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=20 "tic converter and protection constraints, insufficient adversarial robustness of AI-enabled defense systems, and limited explain"
+   AITHRT poison=6 "vation explains their superior robustness against data poisoning attacks: topological constraints provide implicit regularizat"
+   AITHRT evasion=3 "Overviews & Analysis Adversarial false data injection evasion attack detection [34] Data integrity protection under concept"
+   AITHRT llm=7 "ion-making in safety-critical contexts. Novel risks of large language models in grid operations, including hallucination, prompt"
+   AITHRT agentic=0
+   AITHRT generative=9 "AI algorithms, particularly reinforcement learning and generative models. The year 2025 is represented by nineteen papers identi"
+   THREAT poisoning=6 "vation explains their superior robustness against data poisoning attacks: topological constraints provide implicit regularizat"
+   THREAT evasion=3 "Overviews & Analysis Adversarial false data injection evasion attack detection [34] Data integrity protection under concept"
+   THREAT prompt=2 "ge models in grid operations, including hallucination, prompt injection, and biased recommendations, extend the ethical concern "
+   ML machine_learning=26 "at deep learning, reinforcement learning, and ensemble machine learning are increasingly used for load for…
+   ML deep_learning=33 "mputing, and federated learning. The review shows that deep learning, reinforcement learning, and ensemble ma…
+
+====================================================================================================
+RECORD 17 | journal | 2026 | coded stance: defensive
+TITLE: A data-driven resilience framework for renewable telecom microgrids under cyber–physical attacks
+ABSTRACT (stored): Renewable energy-driven IoT microgrids, such as telecommunication base stations, are increasingly vulnerable to sophisticated cyber–physical attacks due to their deep digitalization. Traditional rule-based intrusion detection systems struggle to differentiate between natural physical non-linearities and stealthy threats, such as sensor data spoofing (Chameleon attacks) and control logic tampering ...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=2 "stem is subjected to highly intelligent, stealthy data poisoning that feeds contradictory semantic data into the controller. C"
+   AITHRT evasion=0
+   AITHRT llm=4 "MAttention), and attention-driven models (Transformer, LLM). To rigorously assess algorithmic robustness and eliminate init"
+   AITHRT agentic=0
+   AITHRT generative=0
+   THREAT poisoning=2 "stem is subjected to highly intelligent, stealthy data poisoning that feeds contradictory semantic data into the controller. C"
+   ML machine_learning=2 "amics of solar and wind generation [15]. Consequently, Machine Learning (ML) approaches, including Support …
+   ML deep_learning=13 "ical resilience Telecom microgrids Intrusion detection Deep learning Cyber–physical attacks Hierarchical cont…
+
+====================================================================================================
+RECORD 18 | journal | 2026 | coded stance: defensive
+TITLE: AI-Powered Cybersecurity: Graph-Based Anomaly Detection in Network Traffic
+ABSTRACT (stored): This paper presents an AI-based cybersecurity model based on anomaly detection of network traffic analysis via graph-based analysis. The proposed model is founded on the graph structures and advanced machine learning techniques that are employed in the identification of advanced patterns of attacks with high accuracy. The results indicate that the detection rate is high at 96 as compared to tradit...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=4 "model is founded on the graph structures and advanced machine learning techniques that are employed in the …
+   ML deep_learning=3 "n about the dynamics of networks [2]. In addition, the deep learning techniques, such as Graph Neural Networks…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [unseen-attack] x1: ...ns are still based on the traditional methods of statistics or signature-based detection and are no longer effective in detecting zero-day attacks …
+
+====================================================================================================
+RECORD 19 | journal | 2026 | coded stance: review
+TITLE: Balancing cybersecurity, wireless charging, and safety: Digital twin-driven techno-economic analysis of electric vehicles
+ABSTRACT (stored): Widespread decarbonization of global transportation necessitates electric vehicles; nevertheless, greater connectivity renders them vulnerable to cybersecurity risks. This study presents the first integrated framework simultaneously addressing cybersecurity, wireless charging safety, techno-economic performance, and environmental sustainability. The critical findings from this study are identified...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=3 "ECU ECDSA EMI EMS ESS XGBoost FWC FL 5G FEA FCHEV GRU GAN GA GHG GWO G2V HSM HTS HEV HOMER IPT ICE IRR IoV IDPS ISO LCOE L"
+   ML machine_learning=3 "er Linear Programming MIP Mixed Integer Programming ML Machine Learning NPC Net Present Cost NPV Net Presen…
+   ML deep_learning=6 "eless lanes) No No No No Yes (DWPT) No No No Yes Yes (Deep learning) Yes (XGBoost) Yes (SEM) Yes Yes (GRU) No …
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [adversar*] x7: 
+   [generative] x6: ...BMS CAOA CO2 CAN CVI COE DC DDoS DoS DQN DRO DSO DWC DWPT E/E EV EVCS EVSE ECU ECDSA EMI EMS ESS XGBoost FWC FL 5G FEA FCHEV GRU GAN GA GHG GWO G2V…
+   [model-compromise] x1: ...ifference between the secured and unsecured operating situations was USD 1,203.75 [4], as demonstrated by XGBoost-based fake data injection detecti…
+   [integrity-attack] x1: ...6 illustrates representative examples of bogus information, Sybil, and timing attacks in vehicular networks. The most challenging data integrity at…
+   [unseen-attack] x1: ...e sensor data, network traffic, and system logs to look for indications of penetration. The IDPS’s capacity to identify novel and zero-day threats …
+
+====================================================================================================
+RECORD 20 | book_chapter | 2026 | coded stance: review
+TITLE: Neural Cyber-Resilience: Deep Learning for Threat Detection and Critical Infrastructure Defense by Aravind Kumar Karpoorapu
+ABSTRACT (stored): The rapid transformation of digital technologies has created unprecedented opportunities for innovation, connectivity, and intelligent automation. At the same time, the growing dependence on interconnected digital systems has significantly expanded the cybersecurity landscape. Critical infrastructure such as power and energy systems, transportation networks, healthcare systems, telecommunications,...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=2 "sarial AI and autonomous cyber defense. Topics include adversarial machine learning, poisoning and evasion attacks, model manipu"
+   AITHRT poison=2 "defense. Topics include adversarial machine learning, poisoning and evasion attacks, model manipulation, deepfake and synthet"
+   AITHRT evasion=2 "cs include adversarial machine learning, poisoning and evasion attacks, model manipulation, deepfake and synthetic-media threat"
+   AITHRT llm=2 "t intelligence, reinforcement learning, Generative AI, Large Language Models, autonomous security operations, and AI-assisted in"
+   AITHRT agentic=3 "yber digital twins, Graph Transformers, multimodal AI, Agentic AI, Edge AI, quantum machine learning, and postquantum security"
+   AITHRT generative=5 "ng, poisoning and evasion attacks, model manipulation, deepfake and synthetic-media threat detection, explainable deep learning,"
+   THREAT poisoning=2 "defense. Topics include adversarial machine learning, poisoning and evasion attacks, model manipulation, deepfake and synthet"
+   THREAT evasion=2 "cs include adversarial machine learning, poisoning and evasion attacks, model manipulation, deepfake and synthetic-media threat"
+   ML machine_learning=7 "st & Senior Software Engineer Artificial Intelligence, Machine Learning & Cybersecurity INDO-CONTINENTAL AC…
+   ML deep_learning=22 "NEURAL CYBER-RESILIENCE DEEP LEARNING FOR THREAT DETECTION AND CRITICAL INFRASTRUCTURE DEFENSE INDO-C"
+
+====================================================================================================
+RECORD 21 | journal | 2026 | coded stance: bridge
+TITLE: A Multi-Agent-Driven Hybrid Digital Twin Framework for Adaptive Cybersecurity Vulnerability Verification in Power Cyber-Physical Systems
+ABSTRACT (crossref-full): Power industrial control systems (ICSs) have evolved into tightly coupled cyber-physical systems, which enlarges the attack surface and makes online vulnerability verification risky for critical infrastructure. Existing software-only simulators usually abstract firmware, industrial protocols, and device-specific behavior, whereas purely physical testbeds are costly and difficult to scale. To address this gap, this paper proposes a multi-agent-driven hybrid digital twin framework for adaptive cybersecurity vulnerability verification in power cyber-physical systems. The core of the framework is …
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=3 "ion and isolation [21]. Recent work combines MASs with large language models, model-based systems engineering, and autonomous ag"
+   AITHRT agentic=2 "on, distributed detection, and coordinated mitigation. Multi-agent attack detection and mitigation methods for distribution auto"
+   AITHRT generative=0
+   ML reinforcement=5 "the twin. To handle the large state-action space, deep reinforcement learning methods such as PPO or SAC can b…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [adversar*] x9: 
+   [llm] x3: ...emonstrate that cross-node information sharing can improve attack localization and isolation [21]. Recent work combines MASs with large language mo…
+   [stealthy] x2: ...n space includes reconnaissance, credential use, protocol probing, exploit execution, lateral movement, command manipulation, and stealth operation…
+
+====================================================================================================
+RECORD 22 | journal | 2026 | coded stance: bridge
+TITLE: Using a Digital Twin for Cyber Threat Detection in Intelligent Power Grid Control Systems
+ABSTRACT (crossref-full): The digital transformation of the energy sector, accompanied by the widespread deployment of smart grids, expands the cyber attack surface and increases the vulnerability of critical infrastructure. Traditional signature-based security systems demonstrate limited effectiveness against emerging threat types, while their verification on operational facilities entails unacceptable risks. This paper presents and experimentally validates an integrated adaptive framework based on a Digital Twin (DT), aimed at enhancing the effectiveness of cyber threat detection in intelligent power grid control sys…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=2 "а основе принципов состязательного машинного обучения (adversarial machine learning) и теории игр. Это позволит генерировать син"
+   AITHRT poison=1 "ого механизма к атакам типа «отравление модели» (Model Poisoning) [69]. Если злоумышленник сможет контролировать часть данных"
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   THREAT poisoning=1 "ого механизма к атакам типа «отравление модели» (Model Poisoning) [69]. Если злоумышленник сможет контролировать часть данных"
+   ML machine_learning=4 "нципов состязательного машинного обучения (adversarial machine learning) и теории игр. Это позволит генерир…
+   ML deep_learning=2 "o A.M., Mera-Navarrete A. Effectiveness of an Adaptive Deep Learning-Based Intrusion Detection System // IEEE …
+
+====================================================================================================
+RECORD 23 | journal | 2026 | coded stance: defensive
+TITLE: SCADA Digital Twin and Cryptographic AMI Cyber-Twin for Smart Grid Security
+ABSTRACT (crossref-full): Smart grids increasingly depend on tightly coupled Supervisory Control and Data Acquisition (SCADA) and Advanced Metering Infrastructure (AMI) infrastructures to enable real-time monitoring, control, and data-driven energy management. Yet, the growing connectivity of 5G/6G-enabled systems expands the cyberattack surface and intensifies risks of SCADA component disruption and AMI data leakage. This study proposes a dual-twin framework (SCADA Digital-Twin with AMI Cyber-Twin) that improves both SCADA vulnerability intelligence and secure AMI-based energy forecasting. We propose a new algorithm t…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=3 "to cyber threats and privacy breaches, especially when adversarial attacks target data confidentiality and model computation. Fe"
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=31 "aph) Digital Twin mechanism with Label-encoded Shallow Machine Learning (DDT-LE-SML) to localize cyberatta…
+   ML deep_learning=3 "recently, the application of machine learning (ML) and deep learning techniques has become prominent for cyber…
+
+====================================================================================================
+RECORD 24 | journal | 2026 | coded stance: review
+TITLE: Cyber-Resilient Digital Twin Architectures for Smart Grids: A Review of Attack Modeling, Detection, Mitigation, and Secure Control Strategies
+ABSTRACT (crossref-full): The digitalization of smart grids has expanded the cyberattack surface of critical energy infrastructure, creating a need for security mechanisms that integrate communication behavior, physical-system dynamics, and resilient control. Digital twins provide a promising foundation for this integration, but existing research remains fragmented across system architectures, threat models, defense methods, and validation environments. The aim of this review is to identify, classify, and critically compare how cyber-resilient DT architectures support the smart-grid cybersecurity lifecycle across DT ar…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=1 "[16]. AI introduces additional vulnerabilities through adversarial attacks. Carefully crafted input perturbations can manipulate"
+   AITHRT poison=11 "arning preserves data locality but introduces privacy, poisoning, and communication concerns, while moving target defense and"
+   AITHRT evasion=0
+   AITHRT llm=3 "ecuring future power systems [6,7]. Recent advances in large language models (LLMs) and generative artificial intelligence (GenA"
+   AITHRT agentic=0
+   AITHRT generative=6 "trol, privacy-preserving intelligence, HIL validation, generative-AI threats, and post-quantum security [9,18]. A complementary "
+   THREAT poisoning=11 "arning preserves data locality but introduces privacy, poisoning, and communication concerns, while moving target defense and"
+   ML machine_learning=8 "ystem resilience [9,12]. Furthermore, integration with machine learning (ML), federated learning (FL), movi…
+   ML deep_learning=9 "n? Objective: Compare physics-based, machine-learning, deep-learning, graph-based, federated, moving-target-de…
+
+====================================================================================================
+RECORD 25 | journal | 2026 | coded stance: defensive
+TITLE: Adaptive analysis of information security threats on a cyber-physical testbed using a digital twin of an energy facility automated process control system
+ABSTRACT (crossref-full): Objectives. The study set out to experimentally verify a proposed approach to adaptive cyber threat analysis for critical information infrastructure facilities using a digital twin of an industrial control system (ICS) for a power facility. Methods. The system-engineering approach involved modeling representative cyber-attack scenarios on a seminatural cyber-physical testbed and generating synthetic multivariate time series telemetry within a digital twin. The threat detection model was then iteratively retrained based on the Random Forest3 ensemble algorithm. Strategies involving direct retra…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=6 "ешающих деревьев для повышения точности предсказаний. [Machine-learning algorithm that uses an ensemble of …
+   ML deep_learning=1 "Karimipour H., Dehghantanha A., Parizi R. An Ensemble Deep Learning-Based Cyber-Attack Detection in Industrial…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [generative] x1: ...dom Forest3 ensemble algorithm. Strategies involving direct retraining on testbed data were compared with those relying solely on synthetic data ge…
+
+====================================================================================================
+RECORD 28 | journal | 2026 | coded stance: review
+TITLE: AI-Enabled Digital Twins for Smart Grids: RealTime Monitoring, Predictive Control, Cybersecurity and Future Research Directions
+ABSTRACT (crossref-full): Digital twin (DT) technology combined with artificial intelligence (AI) is becoming a key enabler for resilient and self-optimising electrical power networks that are increasingly digitalised. A digital twin is a continuously updated virtual representation of a physical grid asset or network that uses real-time sensor, phasor measurement unit (PMU), and Internet of Things (IoT) data to closely mirror its physical counterpart. Digital twins become predictive, prescriptive, and self-healing decision-support systems when machine learning (ML) and deep learning (DL) algorithms are integrated into …
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=1 "uted (non-IID) data across nodes, and vulnerability to poisoning attacks remain open problems that require new algorithms in f"
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   THREAT poisoning=1 "uted (non-IID) data across nodes, and vulnerability to poisoning attacks remain open problems that require new algorithms in f"
+   ML machine_learning=6 "iptive, and self-healing decision-support systems when machine learning (ML) and deep learning (DL) algorit…
+   ML deep_learning=7 "ecision-support systems when machine learning (ML) and deep learning (DL) algorithms are integrated into this …
+
+====================================================================================================
+RECORD 30 | journal | 2026 | coded stance: defensive
+TITLE: Digital Twin Technology for Real-Time Cybersecurity Monitoring in Smart Grid Infrastructure
+ABSTRACT (stored): Smart grid infrastructure represents one of the most critical applications of digital twin technology for cybersecurity, as power grid disruptions can have cascading effects across all sectors of society. This paper presents a real-time cybersecurity monitoring system that leverages digital twin technology specifically designed for smart grid environments. The system maintains synchronized virtual...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=10 "or enhancing the robustness of security models against adversarial attacks. Additional related work includes research on 5G netw"
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=2 "monitoring systems [16]. The comparative assessment of generative models by Mohamed and Alosman [21] provides insights into the "
+   ML machine_learning=11 "tively. The integration of artificial intelligence and machine learning techniques offers promising avenue…
+   ML deep_learning=2 "earch on compressive sensing for massive MIMO [18] and deep learning for MIMO beamforming [17] demonstrates th…
+
+====================================================================================================
+RECORD 31 | journal | 2026 | coded stance: defensive
+TITLE: A Digital-Twin-Enabled Resilience Framework (DTERF) for Machine-Learning-Based Anomaly Detection in High-PV Cyber–Physical Smart Grids
+ABSTRACT (crossref-full): The rapid integration of solar photovoltaic (PV) generation, distributed energy resources, and advanced communication infrastructures is transforming conventional power systems into highly interconnected cyber–physical smart grids. Although this transition improves sustainability and operational flexibility, it also increases grid-management complexity and introduces cyber–physical vulnerabilities, including false data injection attacks, communication failures, equipment degradation, and renewable-induced operational instabilities. This paper presents the Digital-Twin-Enabled Resilience Framew…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=2 "chine learning models themselves may become targets of adversarial attacks, data poisoning, model inversion, or manipulation att"
+   AITHRT poison=5 "become attack targets through adversarial inputs, data poisoning, model manipulation, or corrupted training data. Therefore, f"
+   AITHRT evasion=0
+   AITHRT llm=1 "ration of this manuscript, the author(s) used ChatGPT (GPT-5, OpenAI, https://chatgpt.com/) for the purposes of language ed"
+   AITHRT agentic=0
+   AITHRT generative=0
+   THREAT poisoning=5 "become attack targets through adversarial inputs, data poisoning, model manipulation, or corrupted training data. Therefore, f"
+   ML machine_learning=98 "Digital-Twin-Enabled Resilience Framework (DTERF) for Machine-Learning-Based Anomaly Detection in High-PV …
+   ML deep_learning=16 "s [10]. Supervised, unsupervised, semi-supervised, and deep-learning approaches have been applied to cyber in…
+
+====================================================================================================
+RECORD 32 | journal | 2026 | coded stance: defensive
+TITLE: DiGraph-Enabled Digital Twin with Machine Learning for SCADA Cyber-Attack Flow Analysis in Industry 5.0 Smart Grids
+ABSTRACT (stored): Abstract This paper presents the DT-ML-CAFA (Digital Twin and Machine Learning empowered Cyber Attacking Flow Analysis) model for SCADA-based Industry 5.0 smart grids. A Directed Graph (DiGraph)-based knowledge graph constructs digital twins of SCADA components—IEDs, circuit breakers, network switches, and transmission lines—enabling dynamic visualization of cyber-attack propagation. XGBoost is in...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=1 "serving collaborative model improvement industry-wide Adversarial Robustness Testing Evaluate against adversarially crafted SCAD"
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=4 "arch - April - 2026 DiGraph-Enabled Digital Twin with Machine Learning for SCADA Cyber-Attack Flow Analysis…
+   ML deep_learning=1 "hancements Enhancement Description Expected Benefit Deep Learning Integration Replace/augment XGBoost with LST…
+
+====================================================================================================
+RECORD 33 | preprint | 2026 | coded stance: enabling
+TITLE: Graph Neural Network-Infused Digital Twin Platform with Transfer Learning and Quantum-Safe Protocols for Resilient Power System Control and Markets
+ABSTRACT (crossref-full): This study introduces a pioneering digital twin platform that embeds graph neural networks (GNNs) to replicate power system topologies, where buses function as nodes and transmission lines serves as edges, facilitating precise real-time state estimation and predictive analytics. Transfer learning enables efficient adaptation of pre-trained GNN models from extensive synthetic datasets, such as modified IEEE benchmarks, to operational environments with scarce data, slashing training requirements by approximately 60% while upholding robustness across varied grid configurations from local distribu…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=1 "intermittency, physical line faults, or sophisticated adversarial attacks, often precipitating cascading failures and economic l"
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=1 "ascading failure prediction, outperforming traditional machine learning methods like LSTMs by leveraging me…
+   ML neural=11 "Article Not peer-reviewed version Graph Neural Network-Infused Digital Twin Platform with Transfer Learning and Quan…
+
+====================================================================================================
+RECORD 34 | journal | 2026 | coded stance: defensive
+TITLE: A unified unsupervised deep learning and stride threat modeling framework for multi-domain cyber-physical security in nuclear digital twins
+ABSTRACT (crossref-full): The increasing adoption of Digital Twin (DT) architectures in nuclear power systems has accelerated the convergence of Operational Technology (OT) and Information Technology (IT), exposing critical cyber-physical infrastructure to sophisticated signature-independent attacks that cannot be reliably detected using conventional signature-based Intrusion Detection Systems. Addressing the heterogeneous characteristics of physical process telemetry and industrial network traffic remains a major challenge for developing practical anomaly detection frameworks. This research proposes a unified unsuperv…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=1 "h.2026.1926649 up to 72 h to restart due to Xenon-135 poisoning in the core. This can result in millions of dollars being los"
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=2 "uld be construed as a potential conflict of interest. Generative AI statement The author(s) declared that generative AI was not "
+   THREAT poisoning=1 "h.2026.1926649 up to 72 h to restart due to Xenon-135 poisoning in the core. This can result in millions of dollars being los"
+   ML machine_learning=1 "(Humayed et al., 2017; Kheddar et al., 2023). Previous Machine Learning (ML) methods used many different ty…
+   ML deep_learning=21 "26 PUBLISHED 25 September 2026 A unified unsupervised deep learning and stride threat modeling framework for …
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [adversar*] x3: 
+   [generative] x2: ...onducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest. Generative AI sta…
+   [unseen-attack] x2: ...variability strictly measures training optimization stability rather than true operational reliability against temporal drift or novel attack varia…
+   [poison/backdoor] x1: ...ntiers in Mechanical Engineering 14 frontiersin.org Alam et al. 10.3389/fmech.2026.1926649 up to 72 h to restart due to Xenon-135 poisoning in the …
+
+====================================================================================================
+RECORD 35 | journal | 2026 | coded stance: review
+TITLE: DIGITAL TWIN-BASED SMART GRID MANAGEMENT FRAMEWORK FOR SUSTAINABLE POWER INFRASTRUCTURE DEVELOPMENT IN SAUDI ARABIA
+ABSTRACT (crossref-full): The power industry in Saudi Arabia is undergoing a transformation from a system in which electricity is centrally dispatched and which is based mainly on hydrocarbons to one that is more varied and incorporates utility-scale renewable energy, distributed resources, storage, digital substations, and control systems that demand ever-increasing amounts of data. This change brings with it a management problem because merely expanding the physical grid is not sufficient to guarantee the continuous monitoring, predictive capabilities, coordination between various assets, and the ability to learn ove…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=1 "radigms to emerging technologies with digital twin and large language model-driven intelligence. Energy Conversion and Managemen"
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=4 "ds shows that edge computing, high-resolution sensing, machine learning, distributed energy resources, and …
+   ML reinforcement=2 "stochastic demand, supply, and price conditions, deep reinforcement learning has been used, while digital-twin…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [adversar*] x2: 
+   [model-compromise] x1: ...protected logs, the ability to detect anomalies, and separate safety constraints. A compromised twin should not be able to turn a corrupt model int…
+   [llm] x1: ...ial intelligence and machine learning for smart grids: from foundational paradigms to emerging technologies with digital twin and large language mo…
+
+====================================================================================================
+RECORD 36 | journal | 2026 | coded stance: enabling
+TITLE: AI-supported digital twin platform for urban power grid monitoring based on a digital substation test bed
+ABSTRACT (crossref-full): The increasing complexity of modern urban power systems, combined with growing requirements for reliability, resilience, and situational awareness, necessitates the development of advanced monitoring and decision-support technologies. Digital twin technology has emerged as a promising approach for creating synchronized virtual representations of physical infrastructure capable of supporting real-time analysis, prediction, and operational management. This work presents an AI-supported digital twin platform for urban power grid monitoring developed on the basis of a digital substation testbed co…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=15 "wer grid, digital substation, artificial intelligence, machine learning, predictive monitoring. INTRODUCTI…
+   ML anomaly_detection=3 "nment. Machine learning algorithms can be employed for anomaly detection, state estimation, equipment cond…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   (no broad-scan family fired)
+
+====================================================================================================
+RECORD 38 | journal | 2026 | coded stance: enabling
+TITLE: Digital Twin-Based Simulation of Electric VehicleInteraction within Smart City Energy Networks
+ABSTRACT (crossref-full): The integration of electric vehicles (EVs) in smart city energy networks creates substantial challenges for managingenergy, stabilizing the grid, and optimizing infrastructure. For this reason, this paper studies both AI and IoT (in conjunctionwith digital twins) to manage wireless charging and Vehicle-to-Grid (V2G). We consider AI optimization methods that cansupport predictive energy management and real-time decision making, such as reinforcement learning, genetic algorithms, anddeep learning. The recommended framework includes edge-computing architecture, federated learning techniques, andM…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=3 "times of peak electricity demand or during blackouts). Machine learning has become an effective method for …
+   ML deep_learning=1 "[5]. By utilizing AI (i.e., reinforcement learning and deep learning) in conjunction with this information, bo…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   (no broad-scan family fired)
+
+====================================================================================================
+RECORD 39 | journal | 2026 | coded stance: defensive
+TITLE: A cyber–physical digital twin for secure and optimal operation of smart energy grids under deep uncertainty
+ABSTRACT (stored): Smart energy networks, as critical cyber-physical infrastructures, face simultaneous challenges such as conflicting operational objectives, data uncertainty, and increasing cyber threats. Decision-making in such environments requires frameworks that can manage system dynamics, information ambiguity, and security risks in an integrated manner. In this study, an innovative decision-making framework ...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML reinforcement=1 "D. A framework for autonomous crowd management through reinforcement learning and digital twins. Human-smart c…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [integrity-attack] x1: ...ted with DT[26]. Recent reviews also show that a significant portion of DT security challenges arise from the interaction between data integrity, c…
+
+====================================================================================================
+RECORD 41 | journal | 2026 | coded stance: review
+TITLE: Next-Generation Modulation and Control of Power Electronic Systems: AI-Enabled Control, Digital Twins, Fault-Tolerant Operation, and Cyber-Physical Security
+ABSTRACT (crossref-full): Power electronic systems are evolving from conventional fixed-function converters toward intelligent, adaptive, and cyber-physical energy-conversion platforms in which modulation, predictive control, artificial intelligence (AI), digital twins (DTs), fault diagnosis, and cybersecurity increasingly interact within a unified closed-loop architecture. This paper presents an integrated review and mathematical framework for next-generation modulation and control of power electronic systems, with an emphasis on advanced modulation, predictive control, AI-assisted adaptation, converter-oriented digit…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=2 "ended the concept to fault diagnosis and resistance to poisoned data, showing that DT fidelity and cybersecurity cannot be sep"
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=3 "dinated with soft-switching behavior in high-frequency GaN conversion [21]. Pulse-position-based controlsignal synthesis fu"
+   THREAT poisoning=2 "ended the concept to fault diagnosis and resistance to poisoned data, showing that DT fidelity and cybersecurity cannot be sep"
+   ML machine_learning=2 "of the literature. Recent AI-focused reviews classify machine-learning and neural-network methods for open-…
+   ML neural=4 "l dynamics of converters and intelligent control. NARX-neural-network-based DT feedback control has been demonstrated…
+
+====================================================================================================
+RECORD 43 | journal | 2026 | coded stance: review
+TITLE: AI-Enabled Smart Grid: Integrating Electrical Power Systems, Computer Intelligence, and Wireless Communication Technologies
+ABSTRACT (stored): The transition of conventional electrical networks into smart, flexible, and reliable energy systems requires more than digitalizing individual grid elements. Modern power systems comprise renewable energy sources, distributed resources, electric vehicles, smart meters, storage systems, smart substations, and controllable consumers. These grid assets produce vast amounts of heterogeneous data that...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=2 "llers, spoofing, command and control, model poisoning, adversarial machine learning, and privacy attacks. Cyber-security is exce"
+   AITHRT poison=1 "DER) controllers, spoofing, command and control, model poisoning, adversarial machine learning, and privacy attacks. Cyber-sec"
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=1 "dies emphasize that federated learning, digital twins, generative AI, and artificial-intelligence-of-things solutions can be int"
+   THREAT poisoning=1 "DER) controllers, spoofing, command and control, model poisoning, adversarial machine learning, and privacy attacks. Cyber-sec"
+   ML machine_learning=16 "International Journal of Artificial Intelligence and Machine Learning International Journal of Artificial …
+   ML deep_learning=2 "The role of AI algorithms, including machine learning, deep learning, reinforcement learning, federated learni…
+
+====================================================================================================
+RECORD 44 | journal | 2026 | coded stance: review
+TITLE: Advancements in Power System Automation: The Critical Role of SCADA and Wireless Technologies in Modern Substation Operations - A Review
+ABSTRACT (stored): This review critically evaluates wireless communication technologies such as 5G, LTE, and Wi-Fi for SCADA-based substation automation in the evolving energy landscape. As power systems transition toward decentralized and renewable sources, substations require scalable, low-latency, and secure communication frameworks to support real-time monitoring, fault detection, and adaptive control. Wireless ...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=2 "roduces predictive intelligence into SCADA operations. Machine learning algorithms can analyze real-time da…
+   ML deep_learning=2 "d optimize control strategies [58]. Techniques such as deep learning, transfer learning, and ensemble models h…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [model-compromise] x3: ...ended into wireless and cloud environments, become susceptible to: • Spoofing and Data Manipulation: Malicious devices may inject falsified data in…
+   [integrity-attack] x2: ...smatches, and cybersecurity vulnerabilities [45], as discussed in Sections 3.5 and 3.6. These vulnerabilities not only compromise data integrity bu…
+   [adversar*] x1: 
+   [stealthy] x1: ...ital certificates, rogue nodes can infiltrate control loops, inject corrupt data, or trigger false alarms. This form of attack is stealthy and chal…
+   [unseen-attack] x1: ...ust evolve from a peripheral concern to a design pillar. Future threats such as AI-driven reconnaissance, firmware tampering, and zero-day exploits…
+
+====================================================================================================
+RECORD 45 | journal | 2026 | coded stance: review
+TITLE: Intelligent Risk Governance Framework for Critical Energy Logistics Integrating Cybersecurity, Physical Security, and Operational Decision Intelligence
+ABSTRACT (crossref-full): Critical energy logistics in the United States face a converging risk environment in which cyber intrusions, physical attacks, and natural-hazard disruptions propagate across previously siloed operational domains. The Colonial Pipeline ransomware event, the Moore County substation attack, and the cascading effects of Winter Storm Uri each demonstrated the inadequacy of single-domain governance architectures. Each incident exposed a common failure: domain-allocated governance cannot produce the integrated situational awareness that compound risk demands. This paper proposes the Intelligent Risk…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=1 "regulatory and incident report corpora, and the use of large language models in operational decision support. The integration of"
+   AITHRT agentic=1 "tics manager, emergency coordinator, contractor) as an autonomous agent with bounded-rational decision rules. Scenario ensembles"
+   AITHRT generative=0
+   ML machine_learning=3 "ISSN: 2769-545X Literature Review Advances in Machine Learning & Artificial Intelligence Intelligent Risk G…
+   ML ensemble=1 "s agent with bounded-rational decision rules. Scenario ensembles drawn from the Phase 1 cases are replayed within t…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [adversar*] x1: 
+   [llm] x1: ...t work has also explored the application of natural language processing to regulatory and incident report corpora, and the use of large language mo…
+
+====================================================================================================
+RECORD 46 | journal | 2025 | coded stance: review
+TITLE: Transforming the electrical grid: the role of AI in advancing smart, sustainable, and secure energy systems
+ABSTRACT (stored): The evolution of the electrical grid from its early centralized structure to today’s advanced “smart grid” reflects significant technological progress. Early grids, designed for simple power delivery from large plants to consumers, faced challenges in efficiency, reliability, and scalability. Over time, the grid has transformed into a decentralized network driven by innovative technologies, partic...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=16 "entists at Argonne National Laboratory about utilizing machine learning and artificial intelligence for ri…
+   ML neural=5 "time-series analysis, regression analysis, Artificial Neural Networks (ANN), machine learning algorithms, hybrid mode…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [poison/backdoor] x1: ...ant underscore the potential severity of these threats [173]. Moreover, the Ukrainian blackout was attributed to the Black Energy trojan, while Hav…
+   [integrity-attack] x1: ...ebbased infrastructures. This approach mitigates risks such as IoT-targeted cyberattacks and addresses vulnerabilities related to data integrity [2…
+
+====================================================================================================
+RECORD 47 | journal | 2025 | coded stance: review
+TITLE: AI-DRIVEN FAULT DETECTION AND PREDICTIVE MAINTENANCE IN ELECTRICAL POWER SYSTEMS: A SYSTEMATIC REVIEW OF DATA-DRIVEN APPROACHES, DIGITAL TWINS, AND SELF-HEALING GRIDS
+ABSTRACT (crossref-full): The increasing complexity of electrical power systems necessitates advanced fault detection and predictive maintenance strategies to enhance operational efficiency and grid reliability. Traditional maintenance approaches, such as reactive and preventive maintenance, have proven insufficient in mitigating unplanned outages and optimizing asset utilization. Recent advancements in artificial intelligence (AI) have introduced data-driven solutions that significantly improve fault classification, failure prediction, and automated recovery processes. This study conducts a systematic review of 180 hi…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=1 "s AI-powered grid management systems are vulnerable to adversarial attacks that can compromise data integrity and operational re"
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=26 "at AI-driven predictive maintenance methods, including machine learning, deep learning, digital twin techn…
+   ML deep_learning=45 "ctive maintenance methods, including machine learning, deep learning, digital twin technology, IoT-enabled se…
+
+====================================================================================================
+RECORD 48 | journal | 2025 | coded stance: review
+TITLE: Transforming nano grids to smart grid 3.0: AI, digital twins, blockchain, and the metaverse revolutionizing the energy ecosystem
+ABSTRACT (stored): This review explores the transformative architecture of Smart Grid 3.0 by integrating cutting-edge technologies. It presents novel architectural frameworks to transform nanogrid, microgrid, and VPP topologies to their Grid 3.0 counterparts. This study systematically analyzes the application of advanced algorithms and technologies across all hierarchical subsystems—nanogrid 3.0, microgrid 3.0, VPP ...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=9 "ehensive analysis of Metaverse, Blockchain, DT, AI and machine learning, covering their foundational concep…
+   ML deep_learning=4 "al role in managing supply and demand. Techniques like deep learning [219], machine learning (ML), and reinfor…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [integrity-attack] x4: ...ding energy generation, transmission, distribution, communication, and storage. Challenges such as interoperability, scalability, data integrity, a…
+   [model-manip] x1: ...ks: These coordinated attacks target both control signals and measurements. Control signal attacks cause physical disruptions and manipulated measu…
+
+====================================================================================================
+RECORD 49 | journal | 2025 | coded stance: bridge
+TITLE: Digital Twin-Driven Intrusion Detection for Industrial SCADA: A Cyber-Physical Case Study
+ABSTRACT (crossref-full): The convergence of operational technology (OT) and information technology (IT) in industrial environments, such as water treatment plants, has significantly increased the attack surface of Supervisory Control and Data Acquisition (SCADA) systems. Traditional intrusion detection systems (IDS), which focus solely on network traffic, often fail to detect stealthy, process-level attacks. This paper proposes a Digital Twin-driven Intrusion Detection (DT-ID) framework that integrates high-fidelity process simulation, real-time sensor modeling, adversarial attack injection, and hybrid anomaly detecti…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=7 "idelity process simulation, real-time sensor modeling, adversarial attack injection, and hybrid anomaly detection using both phy"
+   AITHRT poison=0
+   AITHRT evasion=2 "threat signatures but also on adaptive, statistically evasive threats that challenge anomaly-based systems. In addition to can"
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=5 "eswell et al. [19] and related studies have shown that GAN-based attacks can generate process-consistent yet malicious sens"
+   THREAT evasion=2 "threat signatures but also on adaptive, statistically evasive threats that challenge anomaly-based systems. In addition to can"
+   ML machine_learning=11 "id anomaly detection using both physical residuals and machine learning. We evaluate the DT-ID framework u…
+   ML deep_learning=8 "o gained momentum. Pan et al. [16] introduced a hybrid deep learning and physics-guided DT architecture for de…
+
+====================================================================================================
+RECORD 50 | journal | 2025 | coded stance: review
+TITLE: Artificial intelligence and machine learning for smart grids: from foundational paradigms to emerging technologies with digital twin and large language model-driven intelligence
+ABSTRACT (stored): • Comprehensive review of AI/ML applications in smart grids and power systems. • Bibliometric analysis of 123 studies maps forecasting, control, and security clusters. • Examines frontier paradigms: Digital Twins, Federated Learning, LLMs, and GenAI. • Identifies gaps in interoperability, privacy, scalability, and adversarial robustness. • Proposes hybrid DT–LLM frameworks for resilient, sustainab...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=14 "roperability, data privacy, computational scalability, adversarial robustness, and ethical constraints. By synthesizing these in"
+   AITHRT poison=5 "Negative transfer; mismatch of distributions Byzantine/backdoor threats; heterogeneity Synthetic scenarios via SDPAS + real log"
+   AITHRT evasion=2 "versarial robustness & security (FDI, model poisoning, evasion) High Near State estimation, IDS, theft detection Datasets,"
+   AITHRT llm=39 "radigms to emerging technologies with digital twin and large language model-driven intelligence Yaser M. Banad * , Sarah S. Shar"
+   AITHRT agentic=6 "grids; adaptive demand response Digital Twins, AIoT & Agentic DT [48,49,59,60,63,114–121] Large Language Models & Generative"
+   AITHRT generative=20 "ine learning Smart grids Renewable energy Digital twin Generative AI Large language models Energy management The evolution of mo"
+   THREAT poisoning=5 "Negative transfer; mismatch of distributions Byzantine/backdoor threats; heterogeneity Synthetic scenarios via SDPAS + real log"
+   THREAT evasion=2 "versarial robustness & security (FDI, model poisoning, evasion) High Near State estimation, IDS, theft detection Datasets,"
+   ML machine_learning=76 "nversion-and-management-x Artificial intelligence and machine learning for smart grids: from foundational …
+   ML deep_learning=38 "nergy” “artificial intelligence”, “machine learning”, “deep learning”, “reinforcement learning”, “federated l…
+
+====================================================================================================
+RECORD 51 | journal | 2025 | coded stance: review
+TITLE: Next-Generation Smart Grid Cybersecurity: A Systematic Review of OT Cyber Threats, AI-Driven Defense, Cyber Deception Techniques, and Emerging Security Strategies
+ABSTRACT (stored): The swift modernization of conventional power grids into smart grids has substantially increased their attack surface, making them vulnerable to advanced cyber threats. These cyberattacks can jeopardize the seamless operation of a smart grid, leading to significant economic losses and potential malicious control. Securing these infrastructures is now of paramount importance to ensure their resilie...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=1 "to escalate their efforts, employing more advanced and evasive techniques to disrupt network operations [104]. To counter these"
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=1 "Machine Learning, Neural Networks, Deep Learning, and Generative AI. These layers are not isolated but build on one another, and"
+   THREAT evasion=1 "to escalate their efforts, employing more advanced and evasive techniques to disrupt network operations [104]. To counter these"
+   ML machine_learning=16 "gital Twin simulations, and the integration of Quantum Machine Learning for sophisticated threat analysis.…
+   ML deep_learning=2 "use of AI technologies, including machine learning and deep learning, to improve threat detection, behavioral …
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [adversar*] x14: 
+   [model-compromise] x2: ...ontinued.) Types of cyberattacks on smart grids. FIGURE 10. Timeline of major power grid cyberattacks. Stealthy FDI attacks under corrupted measure…
+   [integrity-attack] x2: ...nhances network flexibility and scalability, while Zero Trust and Blockchain provide secure, decentralized frameworks and enhance data integrity. M…
+   [generative] x2: ...rastructure. Advanced Persistent Threats. Beyond 5G. Building Area Networks. Cybersecurity Capability Maturity Model. Conditional Generative Advers…
+   [poison/backdoor] x1: ...ing their integrity, confidentiality, or availability. Also known as malicious code or malicious logic, malware includes viruses, Trojan horses, wo…
+   [evasion] x1: ...’s deception tactics to the adversary. This awareness can prompt attackers to escalate their efforts, employing more advanced and evasive technique…
+   [stealthy] x1: ...stematic Review TABLE 3. (Continued.) Types of cyberattacks on smart grids. FIGURE 10. Timeline of major power grid cyberattacks. Stealthy FDI atta…
+
+====================================================================================================
+RECORD 52 | journal | 2025 | coded stance: review
+TITLE: Advances in Energy Storage, AI Optimisation, and Cybersecurity for Electric Vehicle Grid Integration
+ABSTRACT (crossref-full): The integration of electric vehicles (EVs) into smart grids (SGs) is reshaping both energy systems and mobility infrastructures. This review presents a comprehensive and cross-disciplinary synthesis of current technologies, methodologies, and challenges associated with EV–SG interaction. Unlike prior reviews that address these aspects in isolation, this work uniquely connects three critical pillars: (i) the evolution of energy storage technologies, including lithium-ion, second-life, and hybrid systems; (ii) optimisation and predictive control techniques using artificial intelligence (AI) for …
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=1 "hen bandwidth is constrained. FL is also vulnerable to poisoning attacks, where compromised nodes inject malicious updates, de"
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   THREAT poisoning=1 "hen bandwidth is constrained. FL is also vulnerable to poisoning attacks, where compromised nodes inject malicious updates, de"
+   ML machine_learning=2 "ing supercapacitors. Analyse the role of AI, including machine learning (ML) and predictive analytics, in e…
+   ML deep_learning=1 "Battery management system Hybrid energy storage system Deep learning Internet-of-thing Long short-term memory …
+
+====================================================================================================
+RECORD 54 | journal | 2025 | coded stance: defensive
+TITLE: Deceptive Cyber-Resilience in PV Grids: Digital Twin-Assisted Optimization Against Cyber-Physical Attacks
+ABSTRACT (crossref-full): The increasing integration of photovoltaic (PV) systems into smart grids introduces new cybersecurity vulnerabilities, particularly against cyber-physical attacks that can manipulate grid operations and disrupt renewable energy generation. This paper proposes a multi-layered cyber-resilient PV optimization framework, leveraging digital twin-based deception, reinforcement learning-driven cyber defense, and blockchain authentication to enhance grid security and operational efficiency. A deceptive cyber-defense mechanism is developed using digital twin technology to mislead adversaries, dynamical…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=6 "-based detection systems, but these models suffer from adversarial training vulnerabilities, where attackers can deliberately ma"
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=2 "ck detection, encryption-based security solutions, and machine learning-driven anomaly detection [3,4]. Alt…
+   ML deep_learning=1 "patterns to evade detection. Other approaches, such as deep learning-based anomaly detection frameworks propos…
+
+====================================================================================================
+RECORD 55 | journal | 2025 | coded stance: defensive
+TITLE: Towards Intelligent Cybersecurity in SCADA and DCS Environments: Anomaly Detection Using Multimodal Deep Learning and Explainable AI
+ABSTRACT (crossref-full): Industrial Control Systems (ICS), including Supervisory Control and Data Acquisition (SCADA) and Distributed Control Systems (DCS), are increasingly becoming targets of sophisticated cyber threats. This heightened vulnerability is primarily driven by the convergence of Information Technology (IT) and Operational Technology (OT), as well as the rapid adoption of Industry 4. 4.0 technologies. Traditional intrusion detection systems (IDS) often fall short in addressing the unique characteristics of ICS environments, which include strict real- time operational constraints, the use of legacy system…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=6 "alistic attack data to augment sparse datasets and for adversarial attack simulation to test the robustness of detection models "
+   AITHRT poison=0
+   AITHRT evasion=1 "urbations to input data can cause misclassification or evasion of detection. Developing robust and resilient deep learning mode"
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   THREAT evasion=1 "urbations to input data can cause misclassification or evasion of detection. Developing robust and resilient deep learning mode"
+   ML machine_learning=5 "n (Oise & Konyeha, 2024). Deep learning, a subfield of machine learning inspired by the hierarchical struct…
+   ML deep_learning=35 "d DCS Environments: Anomaly Detection Using Multimodal Deep Learning and Explainable AI 1 Oyedotun, Samuel A.…
+
+====================================================================================================
+RECORD 56 | journal | 2025 | coded stance: enabling
+TITLE: AI-Powered Digital Twin Co-Simulation Framework for Climate-Adaptive Renewable Energy Grids
+ABSTRACT (crossref-full): Climate change is accelerating the frequency and intensity of extreme weather events, posing a critical threat to the stability, efficiency, and resilience of modern renewable energy grids. In this study, we propose a modular, AI-integrated digital twin co-simulation framework that enables climate adaptive control of distributed energy resources (DERs) and storage assets in distribution networks. The framework leverages deep reinforcement learning (DDPG) agents trained within a high-fidelity co-simulation environment that couples physical grid dynamics, weather disturbances, and cyber-physical…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=1 "the control pipeline against spoofing, tampering, and adversarial attacks. Socio-Technical Metrics: Incorporating equity, vulner"
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML neural=3 "entially modeled using Gaussian processes or recurrent neural networks (RNNs); ξ t ∼ N (0, Σ) represents a zero-mean …
+   ML reinforcement=18 "in distribution networks. The framework leverages deep reinforcement learning (DDPG) agents trained within a …
+
+====================================================================================================
+RECORD 57 | journal | 2025 | coded stance: review
+TITLE: Digital Twin-Driven Cybersecurity for 5G/6G-Enabled Electric Vehicle Charging Infrastructure: A Review
+ABSTRACT (crossref-full): The increasing adoption of electric vehicles (EVs) and the integration of 5G/6G networks are driving the demand for secure, intelligent, and interoperable charging infrastructure within the Internet of Vehicles (IoV) ecosystem. Electric Vehicle Charging Stations (EVCS) face growing cyber–physical threats, including spoofing, data injection, and firmware tampering, risking user privacy, grid stability, and EVCS reliability. While artificial intelligence (AI), blockchain, and cryptography have been applied in cybersecurity, comprehensive solutions tailored to EVCS challenges, such as real-time t…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=1 "ut the need for human intervention. The development of adversarial training techniques specifically tailored for robust anomaly "
+   AITHRT poison=6 ", which includes actions such as false data injection, backdoor insertion, and update interception, poses a substantial risk of"
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=14 "ry load attacks with mitigation Tanyildiz et al. [7] GAN-GRU, GAN-LSTM, GAN-CNN Cyber-attacks (Via RUL prediction) GAN-"
+   THREAT poisoning=6 ", which includes actions such as false data injection, backdoor insertion, and update interception, poses a substantial risk of"
+   ML machine_learning=5 "egrates tools for decision-making that are grounded in machine learning and artificial intelligence, wherea…
+   ML deep_learning=5 "on/Novelty Basnet & Ali [69] DNN, LSTM DoS attacks Deep Learning-based IDS for EVCS ElKashlan et al. [70] Supe…
+
+====================================================================================================
+RECORD 58 | journal | 2025 | coded stance: defensive
+TITLE: Cyber threat intelligence for smart grids using knowledge graphs, digital twins, and hybrid machine learning in SCADA networks
+ABSTRACT (crossref-full): In the SCADA (Supervisory Control and Data Acquisition) network of a smart grid, the network switch is connected to multiple Intelligent Electronic Devices (IEDs) that are based on protective relays. False-Data Injection Attacks (FDIA), Remote-Tripping Command Injection (RTCI), and System Reconfiguration Attacks (SRA) are three types of cyber-attacks on SCADA networks, resulting in single-line-to-ground (SLG) fault, IED-relay failure, and circuit-breaker open issues occur. The existing cyber threat intelligence (CTI) approaches of grids are unable to provide visualization of cyber-attacking gr…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=40 "rids using knowledge graphs, digital twins, and hybrid machine learning in SCADA networks International Jo…
+   ML deep_learning=1 "researchers proposed an LSTM (Long Short-Term Memory) deep learning-based cyber-attack model for a renewable e…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   (no broad-scan family fired)
+
+====================================================================================================
+RECORD 59 | journal | 2025 | coded stance: review
+TITLE: Threat Modeling and Attacks on Digital Twins of Vehicles: A Systematic Literature Review
+ABSTRACT (crossref-full): This systematic literature review pioneers the synthesis of cybersecurity challenges for automotive digital twins (DTs), a critical yet underexplored frontier in connected vehicle security. The notion of digital twins, which act as simulated counterparts to real-world systems, is revolutionizing secure system design within the automotive sector. As contemporary vehicles become more dependent on interconnected electronic systems, the likelihood of cyber threats is escalating. This comprehensive literature review seeks to analyze existing research on threat modeling and security testing in autom…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=5 "threat scenarios, but introduces risks related to data poisoning and interpretability. Hybrid digital twins, which integrate b"
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   THREAT poisoning=5 "threat scenarios, but introduces risks related to data poisoning and interpretability. Hybrid digital twins, which integrate b"
+   ML machine_learning=5 "ensors and other data sources using data analytics and machine learning methods. They can be applied to pro…
+   ML deep_learning=1 "ponse capabilities [116] .Recent studies have proposed deep learning for ECU behavior modeling [117], reinforc…
+
+====================================================================================================
+RECORD 62 | journal | 2025 | coded stance: defensive
+TITLE: Cybersecurity Enhancement in Digital Substations: Hidden Markov Model-Based Smart Cyber Switching and Threat Response
+ABSTRACT (stored): The rising incidence of cyber-attacks on critical infrastructure and power grids poses significant threats to the stability and reliability of electrical substations, with potentially devastating consequences such as extended blackouts. This paper introduces an advanced cybersecurity framework aimed at safeguarding IEC 61850-based substations through the integration of software-defined networking ...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=1 "of the SCS IDS architecture, potentially incorporating machine learning or AI-driven approaches, will furth…
+   ML reinforcement=1 "and AI-driven intrusion detection (e.g., [22]) explore reinforcement learning, VOLUME 13, 2025 M. Girdhar et a…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [adversar*] x2: 
+   [model-manip] x1: ...use maloperation of the associated power system equipment. On the other hand, if an attacker gains control over an MU, they could manipulate the da…
+
+====================================================================================================
+RECORD 63 | preprint | 2025 | coded stance: review
+TITLE: Multi-Domain Moving Target Defense for Resilient Security in Power Cyber-Physical Systems: A Review
+ABSTRACT (crossref-full): The increasing complexity and digitalization of Power Cyber-Physical Systems (Power CPS) have amplified their exposure to persistent and adaptive cyber-physical threats. Static configurations across cyber, physical, and market layers offer adversaries stable attack surfaces for reconnaissance, manipulation, and disruption. In response, this review introduces Moving Target Defense (MTD) as a proactive and dynamic paradigm for enhancing Power CPS security. The paper systematically analyzes multi-domain MTD strategies—including IP randomization, topology reconfiguration, market rule variability, …
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=1 "ite advancements in intrusion detection systems (IDS), machine learning-based anomaly detection, and perime…
+   ML reinforcement=1 "gies Employing sophisticated AI methodologies, such as reinforcement learning (RL) and multiobjective optimiza…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [adversar*] x29: 
+   [stealthy] x1: ...acks can bypass perimeter defenses. Advanced Persistent Threats: Attackers often penetrate static defenses and maintain long-term stealthy presence…
+
+====================================================================================================
+RECORD 64 | conference | 2025 | coded stance: review
+TITLE: Resilience and Vulnerability in Electrical Power Systems
+ABSTRACT (stored): The very fast digitalization of electrical systems has brought remarkable opportunities and significant risks. Infrastructures that were once largely isolated are now significantly interconnected, relying on Supervisory Control and Data Acquisition (SCADA) platforms, Industrial Internet of Things (IIoT) devices, and cloud-based services. Considering this transformation has improved efficiency and ...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=1 "software, which may be subject to tampering or hidden backdoors. The 2020 SolarWinds compromise demonstrated how attackers coul"
+   AITHRT evasion=1 "sting AI-driven Attacks Use of AI for reconnaissance/evasion AI+SIEM anomaly detection, automated response Hybrid Warfare"
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   THREAT poisoning=1 "software, which may be subject to tampering or hidden backdoors. The 2020 SolarWinds compromise demonstrated how attackers coul"
+   THREAT evasion=1 "sting AI-driven Attacks Use of AI for reconnaissance/evasion AI+SIEM anomaly detection, automated response Hybrid Warfare"
+   ML machine_learning=1 "the fusion of statistical • • • • anomaly detection, machine learning, and expert-driven rules for faster a…
+   ML anomaly_detection=3 "ders are integrating AI with SIEM platforms to enhance anomaly detection. This “AI arms race” is likely to…
+
+====================================================================================================
+RECORD 65 | journal | 2025 | coded stance: review
+TITLE: Smart grid security: Safeguarding sustainable energy systems from cyber threats
+ABSTRACT (crossref-full): The rapid advancement and integration of smart grid technologies have revolutionized energy systems by enabling real-time monitoring, enhanced efficiency, decentralized energy generation, and renewable energy integration. However, this increased digitization and connectivity have simultaneously exposed critical infrastructures to a growing array of sophisticated cyber threats. As smart grids evolve into complex, data-driven ecosystems, ensuring their cybersecurity becomes paramount to achieving sustainable and resilient energy systems. This paper explores the intersection of cybersecurity and …
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=8 "eat detection through artificial intelligence (AI) and machine learning (ML), blockchain-enabled data valid…
+   ML reinforcement=1 "T and IEC. Feedback mechanisms were incorporated using reinforcement learning to continuously update system de…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [integrity-attack] x3: ...eal-world incidents and simulated attack scenarios to highlight the potential consequences of cyber intrusions on grid stability, data integrity, a…
+   [adversar*] x1: 
+   [model-manip] x1: ...itM) attacks represent another covert and damaging cyber threat; by intercepting communications between devices, such attacks can manipulate data s…
+
+====================================================================================================
+RECORD 66 | conference | 2025 | coded stance: defensive
+TITLE: A Hybrid ML-Digital Twin Framework for Differentiating Cyberattacks from Legitimate Price Fluctuations in Electricity Markets
+ABSTRACT (stored): The increasing digitization of electricity markets has made them vulnerable to cyberattacks that can manipulate market prices and disrupt grid operations. Traditional methods struggle to differentiate between real market price and cyberinduced anomalies, leading to inaccurate responses and financial instability. This paper proposes a hybrid detection framework that integrates a support vector mach...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=2 "ck scenarios, including stealthy false data injection, evasion attacks, and persistent low-rate anomalies. These extensions wil"
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   THREAT evasion=2 "ck scenarios, including stealthy false data injection, evasion attacks, and persistent low-rate anomalies. These extensions wil"
+   ML machine_learning=11 "ork integrates real-time digital twin simulations with machine learning-based classification to differenti…
+   ML deep_learning=1 "h as Random Forest and XGBoost, as well as lightweight deep learning models (e.g., LSTM or GRU-based classifie…
+
+====================================================================================================
+RECORD 67 | conference | 2025 | coded stance: defensive
+TITLE: Enhancing Fault and Cyberattack Detection in Power Systems Using Digital Twin and SVM
+ABSTRACT (stored): Detecting cyberattacks in power systems is critical to preventing disruptions, ensuring grid stability, and protecting against malicious manipulations that could lead to cascading failures, financial losses, and threats to national security. This paper presents a digital twin (DT) and support vector machine (SVM)-based framework for enhanced fault detection and cyberattack mitigation in power syst...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=1 "a privacy-preserving machine learning scheme to detect poisoning attacks with a multidimensional homomorphic encryption method"
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=1 "ions. Mikołajewska et al. [11] highlighted the role of generative AI models in strengthening DT-based fault diagnosis and predic"
+   THREAT poisoning=1 "a privacy-preserving machine learning scheme to detect poisoning attacks with a multidimensional homomorphic encryption method"
+   ML machine_learning=8 "mulation. Support vector machine (SVM) is a supervised machine learning technique widely used for classific…
+   ML deep_learning=1 "grid topologies and comparing the DT-SVM with advanced deep learning techniques to further improve the classif…
+
+====================================================================================================
+RECORD 68 | conference | 2025 | coded stance: bridge
+TITLE: Cyber Digital Twin to improve Security Education: the RedTeam Knife approach
+ABSTRACT (stored): Digital Twins (DTs) are emerging as powerful tools in cybersecurity, enabling real-time monitoring, analysis, and simulation of cyber-physical environments.By replicating IT (Information Technology), OT (Operational Technology), and IoT (Internet of Things) infrastructures, DTs enhance cyber-attack detection, incident response, and security resilience.This research explores how DTs, integrated wit...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=1 "al. [7] simulated a man-in-the-middle attack using ARP poisoning in their digital twin of an industrial control system, and de"
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   THREAT poisoning=1 "al. [7] simulated a man-in-the-middle attack using ARP poisoning in their digital twin of an industrial control system, and de"
+   ML anomaly_detection=1 "g advanced technologies such as federated learning for anomaly detection and blockchain for secure data ex…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [poison/backdoor] x1: ...a constant/random value within the operating range of the system. Dietz et al. [7] simulated a man-in-the-middle attack using ARP poisoning in thei…
+
+====================================================================================================
+RECORD 69 | journal | 2025 | coded stance: bridge
+TITLE: Modeling Adaptive Cyber Fraud Patterns Using Causal Inference and Digital Twin Simulations in Critical Infrastructure Protection Systems.
+ABSTRACT (stored): The increasing complexity of cyber fraud in critical infrastructure such as energy grids, transportation systems, and water treatment facilities demands advanced methodologies that move beyond reactive defense models.Traditional rule-based security systems often fall short in detecting adaptive fraud patterns, which evolve dynamically to exploit system-specific vulnerabilities.This study introduce...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=1 "/10.30574/ijsra.2021.3.2.0099 Hong Y, Wu J, Morello R. LLM-Twin: mini-giant model-driven beyond 5G digital twin networking"
+   AITHRT agentic=0
+   AITHRT generative=6 "ity of adversaries who thrive on operational flux. 4.3 Generative Models and Attack Pattern Synthesis As cyber attackers increas"
+   ML machine_learning=10 "nts. Importantly, causal graphs can be integrated into machine learning workflows, serving as structural p…
+   ML deep_learning=2 "ecution. Generative models particularly those based on deep learning architectures such as Generative Adversar…
+
+====================================================================================================
+RECORD 70 | report | 2025 | coded stance: review
+TITLE: Security and resilience in cyber-physical systems for smart grids
+ABSTRACT (stored): This research delves into the vital integration of Cyber-Physical Systems (CPS) within smart grids, aiming to confront the pressing challenges posed by cyberattacks and physical faults. The intricate nature of CPS, characterized by the close interdependence of physical and cyber components, reveals vulnerabilities that can jeopardize the reliability and security of critical infrastructures, partic...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   (no broad-scan family fired)
+
+====================================================================================================
+RECORD 71 | journal | 2025 | coded stance: enabling
+TITLE: Digital Twin-Based Fault Diagnosis and Resilience Monitoring for Smart Grid Transformer Systems
+ABSTRACT (crossref-full): Smart grid transformer systems are critical nodes in national power infrastructure whose failure can cascade into widespread outages, economic losses, and public safety risks. Traditional condition monitoring approaches rely on periodic offline inspections and threshold-based alarms that are ill-suited to the dynamic, real-time nature of modern grid operations. This paper proposes a comprehensive digital twin (DT) framework for fault diagnosis and resilience monitoring of high-voltage power transformers. The architecture integrates physics-based electromagnetic and thermal models, IoT sensor d…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=1 "the second layer of defense against spoofing and data poisoning attacks by adversaries. VII. CONCLUSION P a g e | 50 EuroVa"
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   THREAT poisoning=1 "the second layer of defense against spoofing and data poisoning attacks by adversaries. VII. CONCLUSION P a g e | 50 EuroVa"
+   ML machine_learning=8 "l models, the sensor data stream from IoT devices, and machine learningbased classification techniques in a…
+   ML neural=2 "ctor machines (SVM), random forests, and convolutional neural networks (CNN) have each demonstrated fault classificat…
+
+====================================================================================================
+RECORD 73 | conference | 2025 | coded stance: defensive
+TITLE: Digital Twin-Enhanced Adaptive Control for Robust Power System Stability and Security
+ABSTRACT (stored): The modern power grid is enhanced by increased renewable generation and cyber-physical technologies to provide decentralized green energy solutions. These communication technologies become one of the vulnerabilities to false data injection (FDI) attacks that threaded the cyber-security of power grid. The cyber-security compromise when coupled with load variations and renewable intermittent that fu...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=3 "framework to multiarea power systems and incorporating machine learning for advanced FDI detection. II. S Y…
+   ML anomaly_detection=3 "win, a real time virtual model of the power grids. The anomaly detection is done by comparing predicted st…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [stealthy] x3: ..., such that the controller receives: ωmeasured = ω + δFDI (2) The FDI attack is designed as a sinusoidal perturbation to simulate stealthy attacks …
+   [adversar*] x1: 
+   [model-compromise] x1: ...deviations up to ±0.08 rad/s during the FDI attack period, with stabilization times of 80–100 s, reflecting its vulnerability to compromised measur…
+
+====================================================================================================
+RECORD 74 | thesis | 2025 | coded stance: defensive
+TITLE: Advanced Cybersecurity Strategies for Cyber-Physical Systems: Case Studies in EV Charging Stations, Connected & Automated Vehicles, and Digital Substations
+ABSTRACT (stored): The rapid advancement of electric mobility, smart transportation, and digital infrastructures highlights the pressing need for robust cybersecurity mechanisms to protect cyber-physical systems (CPSs) from emerging threats. This dissertation presents a comprehensive study on enhancing cybersecurity measures across three critical applications: electric vehicle (EV) charging stations, connected and a...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=2 "(DoS) attack. The severe implications incurred by the adversarial attacks have triggered a broad interest of white-hat hackers a"
+   AITHRT poison=4 "The entire XFCS could also be compromised due to data poisoning. It includes brute force attack, where the attacker gets acce"
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   THREAT poisoning=4 "The entire XFCS could also be compromised due to data poisoning. It includes brute force attack, where the attacker gets acce"
+   ML machine_learning=5 "ligent Transportation System MITM Man-in-the-Middle ML Machine Learning xiii MMS Manufacturing Message Spec…
+   ML neural=1 "(static or mobile). Similarly, [111] proposes the deep neural network (DNN) and long short-term memory (LSTM) based I…
+
+====================================================================================================
+RECORD 75 | journal | 2025 | coded stance: review
+TITLE: APPLICATIONS OF IOT AND DIGITAL TWIN IN ELECTRICAL POWER SYSTEMS
+ABSTRACT (crossref-full): This paper presents a comprehensive survey on the application of Internet of Things (IoT) technologies and Digital Twins (DT) in electrical power systems. IoT enables continuous data collection and analysis from sensors and devices, providing real-time monitoring, energy management, and process automation. Digital Twins, in turn, create virtual representations of physical assets and systems, allowing simulation of different scenarios, prediction of potential failures, and optimization of infrastructure operation. The survey covers major application areas, including energy management in smart h…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML cnn=4 "я использовалась одномерная сверточная нейронная сеть (CNN). Наконец, результат диагностики визуализировался через панел…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   (no broad-scan family fired)
+
+====================================================================================================
+RECORD 76 | journal | 2025 | coded stance: review
+TITLE: Advances in Digital Twin Deployment for Real-Time Asset Monitoring and Optimization in Power Transmission Systems
+ABSTRACT (crossref-full): The integration of digital twin technology into power transmission systems marks a significant evolution in the way grid assets are monitored and optimized. This paper explores recent advances in the deployment of digital twins, emphasizing their role in enabling real-time, data-driven decision-making and enhancing operational resilience. Beginning with a discussion on the structural architecture of digital twins, the study outlines their core components—virtual models, sensor networks, and cyber-physical synchronization—and how they interoperate with existing infrastructure through standardiz…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=3 "st evolve toward predictive engineering knowledge and machine learning models. and prescriptive strategies.…
+   ML anomaly_detection=2 "enable users to monitor asset conditions, compare 3.2 Anomaly Detection and Fault Localization historical …
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   (no broad-scan family fired)
+
+====================================================================================================
+RECORD 77 | journal | 2024 | coded stance: review
+TITLE: Advancements in digital twin technology and machine learning for energy systems: A comprehensive review of applications in smart grids, renewable energy, and electric vehicle optimisation
+ABSTRACT (stored): • Digital Twin tech boosts Power Systems and Smart Grids with real-time data management. • Integration of Machine Learning in DTs enhances performance in next-gen energy systems. • Study explores DT’s role in Renewable Energy and EVs within Smart Grids for sustainability. • Comprehensive review identifies key DT challenges and proposes future research directions. The growing interest in Digital Tw...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=57 "agement-x Advancements in digital twin technology and machine learning for energy systems: A comprehensive…
+   ML deep_learning=5 "Neural Network (CNN) is a fundamental architecture in Deep Learning (DL), especially prevalent in Computer Vis…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [integrity-attack] x1: ...nt cyber-attack [94]. In [95], a cutting-edge technique called iForest-based unsupervised scheme is proposed for detecting covert data integrity at…
+
+====================================================================================================
+RECORD 79 | journal | 2024 | coded stance: defensive
+TITLE: DiGraph-Enabled Digital Twin and Label-Encoding Machine Learning for SCADA Network's Cyber Attack Analysis in Industry 5.0
+ABSTRACT (stored): False-Data Injection Attack (FDIA), Remote-Tripping Command Injection (RTCI), and System Reconfiguration Attack (SRA) on SCADA (Supervisory Control and Data Acquisition) networks impact industry 5.0 enabled smart grid components such as intelligent-electronic-device (IED), circuit-breaker, network-switch, and power transmission lines. Since the SCADA-network-based cyber-attacking flow is not in di...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=36 "02544 DiGraph-Enabled Digital Twin and Label-Encoding Machine Learning for SCADA Network’s Cyber Attack An…
+   ML deep_learning=3 "lished work presented an LSTM (long short-term memory) deep learning-based cyber-attack model for the renewabl…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   (no broad-scan family fired)
+
+====================================================================================================
+RECORD 80 | conference | 2024 | coded stance: bridge
+TITLE: Digital Twin for Resilient Power Distribution Systems
+ABSTRACT (stored): Heightened awareness of the impact of climate change has led to the rapidly increasing penetration of renewable energy resources in electric energy distribution systems. Those distributed energy resources (DERs), mostly inverter-based, can act as resilience sources for the grid but also introduce new control, stability, and cybersecurity challenges. This work proposes a digital twin (DT) that comb...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=3 "novel control and cybersecurity strategies, including machine learning-based anomaly detection. Simulations…
+   ML neural=1 "uthors updated ANGEL with a deeplearning convolutional neural network module to detect This work was supported by the…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [adversar*] x1: 
+
+====================================================================================================
+RECORD 81 | conference | 2024 | coded stance: defensive
+TITLE: A Protocol-Agnostic DER Intrusion Detection System using an IEEE 1547-Enabled Digital Twin
+ABSTRACT (stored): The U.S. power grid has undergone a significant transformation in recent years to incorporate more renewable energy systems and expand SCADA communication networks with modern digital components. The byproduct of these grid modernization efforts is an expanded cyber-physical attack surface that exposes several systems that could disrupt normal grid operation. To protect these systems, energy aware...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=1 "]. Furthermore, there are approaches that are based on Machine Learning and provide threat detection capabi…
+   ML neural=2 "ue in [15], where the authors use an autoencoder-based neural network to detect FDIAs on the physical layer within th…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [adversar*] x6: 
+   [stealthy] x6: ...evaluation regarding the operation of the digital twin is provided; the protocol-agnostic digital twin is capable of identifying stealthy cyber-phy…
+   [model-compromise] x1: ...e U.S. electric grid [8]. Among these considerations are risks to CPSs, such as upstream communications to and from the DERMS, or compromised data …
+
+====================================================================================================
+RECORD 82 | conference | 2024 | coded stance: defensive
+TITLE: Deploying a Generic Threat Model for Detecting Anomalies in a Power Grid Digital Twin
+ABSTRACT (stored): Monitoring power grid infrastructures typically generates a massive amount of power consumption data related to different components or communication channels. This is typically employed for power optimization, but does not suffice for conducting other key tasks for guaranteeing desirable properties as reliability, safety and security. In these cases, the grid should be monitored for detecting ano...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=2 "olve classification problems by designing and training Machine Learning (ML) algorithms that are able to de…
+   ML lstm=2 "xplicitly targets the detection of FDI attacks using a long short-term memory (LSTM) network, which is applied to a cus…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   (no broad-scan family fired)
+
+====================================================================================================
+RECORD 83 | conference | 2024 | coded stance: defensive
+TITLE: Real-Time Cyber Attack Detection and Response Using Digital Twins in Protection Relays
+ABSTRACT (stored): The transition from electromechanical relays to digital relays has potential to resolve many integration issues, particularly with protection schemes, especially after the adoption of International Electrotechnical Commission (IEC) 61850. However, IEC 61850 remains vulnerable to cyberattacks due to the time constraints involved in implementing integrity and authentication algorithms. This paper ex...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML neural=1 "n and lost packet forecasting system using time series neural networks for IEC 61850 sampled measured values,” 2017 I…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [model-compromise] x1: ...from IEEE Xplore. Restrictions apply. lication involves intruders injecting unauthorized data packets into the network, which can corrupt the data …
+   [integrity-attack] x1: ...: 10.1109/TII.2019.2956734. [6] M. Bahrami, M. Fotuhi-Firuzabad and H. Farzin, ”Reliability Evaluation of Power Grids Considering Integrity Attacks…
+
+====================================================================================================
+RECORD 84 | conference | 2024 | coded stance: defensive
+TITLE: Enhancing the Cybersecurity of Battery Digital Twins to Ensure the Resilient Supply for Next-Generation Telecommunication Networks
+ABSTRACT (stored): Ensuring the resilience of energy supply is critical for the next generation of telecommunication networks, such as 5G and 6G, which demand high reliability and seamless functionality. This paper addresses the cyber-security challenges of digital twins (DT) used for battery management in telecommunications energy systems. Batteries are pivotal in maintaining the power continuity of telecommunicati...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=1 "i, Q. Huang, and A. Q. Huang, “A 400w, 99.3% efficient gan buck-boost converter,” in 2023 IEEE Applied Power Electronics Co"
+   ML machine_learning=1 "sing techniques powered by artificial intelligence and machine learning (ML), and IoT-driven two-way data c…
+   ML neural=17 "at the sensor level, where sensors are equipped with a neural network estimator (NNE) to prevent data manipulation. …
+
+====================================================================================================
+RECORD 85 | journal | 2023 | coded stance: defensive
+TITLE: Digital twin-driven SDN for smart grid: A deep learning integrated blockchain for cybersecurity
+ABSTRACT (stored): Internet of Things (IoT)-enabled Smart Grid (SG) network is envisioned as the next-generation network for intelligent and efficient electric power transmission. In SG environment, the Smart Meters (SMs) mostly exchange services and data from Service Providers (SPs) via insecure public channel. This makes the entire SG ecosystem vulnerable to various security threats. Motivated from the aforementio...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=2 "s, fault detection, safety and security. Specifically, machine learning and deep learning have sparked inte…
+   ML deep_learning=14 "ate/solener Digital twin-driven SDN for smart grid: A deep learning integrated blockchain for cybersecurity P…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [adversar*] x1: 
+   [model-manip] x1: ...hout the need for a centralized authority. Blockchain transactions are immutable and traceable, therefor any attempt to change or manipulate data w…
+   [integrity-attack] x1: ...ansactions are immutable and traceable, therefor any attempt to change or manipulate data will be detected [21]. In addition, the data integrity an…
+
+====================================================================================================
+RECORD 86 | journal | 2023 | coded stance: defensive
+TITLE: A Smart Digital Twin Enabled Security Framework for Vehicle-to-Grid Cyber-Physical Systems
+ABSTRACT (stored): The rapid growth of electric vehicle (EV) penetration has led to more flexible and reliable vehicle-to-grid-enabled cyber-physical systems (V2G-CPSs). However, the increasing system complexity also makes them more vulnerable to cyber-physical threats. Coordinated cyber attacks (CCAs) have emerged as a major concern, requiring effective detection and mitigation strategies within V2G-CPSs. Digital t...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=1 "s in the V2G-CPS as [1] Y. Liu, H. Xin, Z. Qu, and D. Gan, “An attack-resilient cooperative control strategy of multiple d"
+   ML machine_learning=3 "15. [47] N. Sahani, R. Zhu, J.-H. Cho, and C.-C. Liu, “Machine learning-based intrusion detection for smart…
+   ML deep_learning=1 "ta injection attacks in smart grids: A semi-supervised deep learning approach,” IEEE Trans. Smart Grid, vol. 1…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [adversar*] x26: 
+   [model-compromise] x4: ...lligently created false data injection attacks (FDIAs) could bypass the current bad data detection models. In FDIA, the adversary tampers the data …
+   [generative] x1: ...and the load distribution is disturbed. As a result, N − K contingency occurs in the V2G-CPS as [1] Y. Liu, H. Xin, Z. Qu, and D. Gan, “An attack-r…
+
+====================================================================================================
+RECORD 87 | journal | 2023 | coded stance: review
+TITLE: Digital Transformation of Microgrids: A Review of Design, Operation, Optimization, and Cybersecurity
+ABSTRACT (crossref-full): This paper provides a comprehensive review of the future digitalization of microgrids to meet the increasing energy demand. It begins with an overview of the background of microgrids, including their components and configurations, control and management strategies, and optimization techniques. It then discusses the key digital technologies that can be used to improve the performance of microgrids, including distributed energy resources management systems, the Internet of Things, big data analytics, blockchain technology, artificial intelligence, digital twin technology, cloud computing, and au…
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=3 "ct values, leading to device crashes or malfunctions. Backdoor or malware loaded onto command-and-control network Malware/back"
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   THREAT poisoning=3 "ct values, leading to device crashes or malfunctions. Backdoor or malware loaded onto command-and-control network Malware/back"
+   ML machine_learning=5 "s. Reinforcement Learning: Reinforcement learning is a machine learning technique used to optimize the oper…
+   ML deep_learning=1 "pply. AI techniques, such as machine learning (ML) and deep learning (DL), have shown promising results in pre…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [poison/backdoor] x5: ...ckers. Attackers can overwrite memory sections of field devices with incorrect values, leading to device crashes or malfunctions. Backdoor or malwa…
+   [unseen-attack] x5: ...o gain control of the system, modify power flow, or even shut down the microgrid entirely [245]. Energies 2023, 16, 4590 43 of 58 Zero-day Attacks:…
+   [model-manip] x3: ...ation between devices in the network. Attackers can exploit the weak points in the communication algorithms of network devices by manipulating data…
+   [integrity-attack] x2: ...of traditional power usage, preventing control over communication, compuof attacks. tation, and information systems, endangering data integrity, an…
+   [stealthy] x1: ...rconnected nature and the increased use of digital technologies in microgrid management systems [112]. APTs are sophisticated and stealthy cyberatt…
+
+====================================================================================================
+RECORD 88 | conference | 2023 | coded stance: bridge
+TITLE: Digital Twin for Evaluating Detective Countermeasures in Smart Grid Cybersecurity
+ABSTRACT (stored): As the integration of digital technologies and communication systems continues within distribution grids, new avenues emerge to tackle energy transition challenges. Nevertheless, this deeper technological immersion amplifies the necessity for resilience against threats, encompassing both systemic outages and targeted cyberattacks. To ensure the robustness and safeguarding of vital infrastructure, ...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=2 "ity can also be utilized to generate training data for machine learning-based IDS. V. C ONCLUSION In this p…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [adversar*] x1: 
+
+====================================================================================================
+RECORD 89 | journal | 2023 | coded stance: enabling
+TITLE: A Digital Twin-Based System to Manage the Energy Hub and Enhance the Electrical Grid Resiliency
+ABSTRACT (crossref-full): This article addresses a digital twin-based real-time analysis (DTRA) to meditate the power system vulnerability whenever cascading failures and blackouts occur for any reason, and thus, to improve the resiliency. In addition to this, a water-power package is proposed to enhance the vulnerable percentage of the system by promptly syringing energy to the grid under line/generator outage contingencies. To this end, in the first place, we will develop a digital twin model along with a cloud platform derived from the Amazon Cloud Service (ACS) into the Amazon Web in order to scrutinize the online …
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   (no broad-scan family fired)
+
+====================================================================================================
+RECORD 90 | journal | 2023 | coded stance: review
+TITLE: Cyber Physical Security of Distributed Energy Resources
+ABSTRACT (crossref-full): Huge amounts of data are coming from the electrical grid, through smart meters, smart inverters, and Supervisory Control and Data Acquisition (SCADA) protocols. This makes emerging power systems, and especially distribution grids, heavily dependent on real-time data from the field, as well as on the IT infrastructure for observation and control of field devices. As a consequence, emerging electrical systems are becoming fully digitized, cyber-physical systems with all the accompanying advantages and challenges. Such a power system is called a “Smart Grid”. As all cyber-physical systems, Smart …
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=1 "S.%20Electric%20Grid.pdf [pristupljeno 15.05.2023] [7] Gan, H., Zhang, J., Wang, J., Hou, D., Jiang, Y., Gao, D.W. Cyber Ph"
+   ML machine_learning=1 "Grand challenge: applying artificial intelligence and machine learning to cybersecurity, Computer, Vol. 52,…
+   ML anomaly_detection=1 "t of the state brought from PT to DT and at the DT for anomaly detection, is another direction of our futu…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [model-compromise] x3: ...enter and large-scale DERs (Case 2), and gaining access to a DER’s RTU (Case 3). The authors propose two solutions for mitigating compromised data …
+   [generative] x1: ...%20Considerations%20for%20Distributed%20Energy%20 Resources%20on%20the%20U.S.%20Electric%20Grid.pdf [pristupljeno 15.05.2023] [7] Gan, H., Zhang, J…
+   [unseen-attack] x1: ...d on detecting known attacks and it is known as signature-based, while the second one relies on capturing deviation and detecting unknown attacks. …
+
+====================================================================================================
+RECORD 93 | journal | 2022 | coded stance: review
+TITLE: Towards electric digital twin grid: Technology and framework review
+ABSTRACT (stored): The major hindrances in the energy system are ecological consciousness, lack of clean and sustainable energy management, insufficient energy distribution–transmission–optimization, expensive power transfer costs, and increased customer knowledge of energy charges. Thus why, universal access to the grid with high cybersecurity, and reliability is needed to solve all these challenges. The digital tw...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=5 "gent data analysis, computer modeling, simulation, and machine learning to aid users in boosting traditiona…
+   ML deep_learning=1 "tested using IoT, big data analysis, machine learning, deep learning, blockchain, PLC, MATLAB, artificial neur…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [adversar*] x1: 
+   [poison/backdoor] x1: ...net assault, leaving a destructed grid infrastructure [76]. It is a prime example of a cyber weapon that was the most lethal. The trojan Black Ener…
+   [integrity-attack] x1: ...and numerical systems since DT must bring up-to-date the status of physical stuff in real-time through web infrastructures. In a data integrity att…
+
+====================================================================================================
+RECORD 94 | preprint | 2022 | coded stance: review
+TITLE: Smart Grid: Cyber Attacks, Critical Defense Approaches, and Digital Twin
+ABSTRACT (stored): As a national critical infrastructure, the smart grid has attracted widespread attention for its cybersecurity issues. The development towards an intelligent, digital, and Internet-connected smart grid has attracted external adversaries for malicious activities. It is necessary to enhance its cybersecurity by both improving the existing defense approaches and introducing novel developed technologi...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=2 "e the robustness 22 of their proposed model against adversarial samples, where attackers make small changes on the inputs to mis"
+   AITHRT poison=6 "faces, hardware design flaws, unpatched software bugs, backdoor, and default login password will all make them vulnerable to mal"
+   AITHRT evasion=1 "by model inversion [56], data poisoning [145] or model evasion attacks [146]. Adversarial examples [147] can be artificially ge"
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=2 "xecution are often used to guide fuzzers. For example, Gan et al. [112] presented a taint-guided fuzzing method named GREYO"
+   THREAT poisoning=6 "faces, hardware design flaws, unpatched software bugs, backdoor, and default login password will all make them vulnerable to mal"
+   THREAT evasion=1 "by model inversion [56], data poisoning [145] or model evasion attacks [146]. Adversarial examples [147] can be artificially ge"
+   ML machine_learning=3 "eries data. It is used for training a first difference machine learning (ML) model to detect time synchroni…
+   ML deep_learning=9 "utes. Then the authors presented a multi-view wide and deep learning (MvWDL) algorithm for device identificati…
+
+====================================================================================================
+RECORD 96 | conference | 2021 | coded stance: defensive
+TITLE: Real-Time Digital Twin of Residential Energy Storage System for Cyber-Security Study
+ABSTRACT (stored): Modern Residential Energy Storage Systems (RESSs) are monitored and controlled using Cloud based Energy Management System (CEMS). Analyzing the cyber-security of such RESSs controlled by CEMS is critical for developing appropriate Intrusion Detection Systems against cyber attacks targeting such RESSs. However, it is impractical and expensive to modify, scale and replicate the physical RESS as per ...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=1 "d out on the actual physical system. 2) Will develop a machine-learning based physical layer security for t…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   (no broad-scan family fired)
+
+====================================================================================================
+RECORD 97 | conference | 2021 | coded stance: defensive
+TITLE: Cyber Security Risk Analysis of Physical Protection Systems of Nuclear Power Plants and Research on the Cyber Security Test Platform Using Digital Twin Technology
+ABSTRACT (stored): As an important barrier to prevent adversaries from destroying nuclear facilities or transferring nuclear materials, the cyber security of physical protection systems in nuclear power plants are receiving increasing attention under the current digital, networked and intelligent development trend in the world. In this paper, the authors analyze the cyber security risks faced by the physical protect...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=1 "control are  The system or software exists bugs or backdoors  Lack of boundary protection measures  Susceptible infect"
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   THREAT poisoning=1 "control are  The system or software exists bugs or backdoors  Lack of boundary protection measures  Susceptible infect"
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [adversar*] x4: 
+   [poison/backdoor] x1: ...ansmission mode based on wireless, there is a risk of eavesdropping redundant control are  The system or software exists bugs or backdoors  Lack …
+
+====================================================================================================
+RECORD 98 | preprint | 2021 | coded stance: bridge
+TITLE: EPICTWIN: An Electric Power Digital Twin for Cyber Security Testing, Research and Education
+ABSTRACT (stored): Cyber-Physical Systems (CPS) rely on advanced communication and control technologies to efficiently manage devices and the flow of information in the system. However, a wide variety of potential security challenges has emerged due to the evolution of critical infrastructures (CI) from siloed sub-systems into connected and integrated networks. This is also the case for CI such as a smart grid. Smar...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=0
+   ML machine_learning=1 "chanisms. E.g., security researchers with expertise in machine learning working on grid anomaly detection. …
+   ML anomaly_detection=1 "ers with expertise in machine learning working on grid anomaly detection. The rest of the paper is organiz…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [model-compromise] x1: ...ppear that a higher current is still being drawn by the load despite appearing to be turned off. To correct it, the attacker also spoofs the measur…
+
+====================================================================================================
+RECORD 100 | journal | 2020 | coded stance: defensive
+TITLE: On the Implementation of IoT-Based Digital Twin for Networked Microgrids Resiliency Against Cyber Attacks
+ABSTRACT (stored): The increased rate of cyber-attacks on the power system necessitates the need for innovative solutions to ensure its resiliency. This work builds on the advancement in the IoT to provide a practical framework that is able to respond to multiple attacks on a network of interconnected microgrids. This paper provides an IoT-based digital twin (DT) of the cyber-physical system that interacts with the ...
+AI-RELEVANT FULL-TEXT WINDOWS (from digest.txt):
+   AITHRT adversarial=0
+   AITHRT poison=0
+   AITHRT evasion=0
+   AITHRT llm=0
+   AITHRT agentic=0
+   AITHRT generative=1 "attacks. R EFERENCES [1] Y. Liu, H. Xin, Z. Qu, and D. Gan, “An attack-resilient cooperative control strategy of multiple d"
+   ML machine_learning=1 "ted control and optimization, cyber-physical security, machine learning, internet of things and digital twi…
+   ML deep_learning=1 "ture research of this work will consider the fusion of deep learning and LO to enhance the speed, accuracy and…
+BROAD-SCAN AUDIT WINDOWS (negatives only, from broadscan.txt):
+   [adversar*] x2: 
+   [integrity-attack] x2: ...em synchronization under sensor/actuator attacks. In [17], a reputation-based neighbourhood watches method was used to detect the data integrity at…
+   [generative] x1: ...p learning and LO to enhance the speed, accuracy and predictability of the attacks. R EFERENCES [1] Y. Liu, H. Xin, Z. Qu, and D. Gan, “An attack-r…

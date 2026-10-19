@@ -1,0 +1,101 @@
+id,doi,title,fulltext,match,core_queries,probe_queries,best_core_rank,best_probe_rank,membership
+1,10.3390/app16020981,"Cybersecurity and Resilience of Smart Grids: A Review of Threat Landscape, Incidents, and Emerging Solutions",yes,,,,,,not_matched
+2,10.1016/j.egyr.2026.109218,Digital twin applications and case studies in modern power grid management,yes,doi,core-01;core-02;core-03;core-04;core-07;core-10,probe-02,44,42,both
+3,10.1016/j.rser.2026.116947,Digital twins for hazard-resilient power grids: A systematic review and roadmap,yes,,,,,,not_matched
+4,10.1109/access.2026.3674387,"Digital Twins Beyond Monitoring: A Survey on Predictive Control, Cybersecurity, and Storage Integration in PV-Enabled Sm",yes,,,,,,not_matched
+5,10.3390/electronics15091894,Quantum-Accelerated Digital Twins for Cyber-Resilient Smart Power Systems Against False Data Injection Cyberattacks Usin,yes,,,,,,not_matched
+6,10.4018/979-8-3373-4159-0.ch009,Data Privacy and Cybersecurity in Wind Power Systems,no,,,,,,not_matched
+7,10.1016/j.gloei.2026.01.002,"Empowering the grid: A comprehensive review of vehicle-to-grid technology, digital twins, and intelligent energy systems",yes,,,,,,not_matched
+8,10.1109/jsen.2026.3675872,Federated Learning meets Electronic Digital Twins for Privacy-Preserving Hardware Trojan Detection in Smart Meter Infras,no,,,,,,not_matched
+9,10.1109/access.2026.3659724,Fault Detection and Localization in LV Distribution Networks Using Anomaly Detection in Smart Meter Data and Distributio,yes,doi,core-06,,675,,core_only
+10,10.60097/acig/221493,A Cybersecurity Digital Twin Architecture for Modelling Threats in Interconnected Systems,yes,doi,core-01;core-04;core-07;core-10,,11,,core_only
+11,10.1007/s43926-026-00386-8,Digital twin based sustainable cyber defense framework against advanced persistent threat for wind renewable power plant,yes,doi,core-02;core-08,,191,,core_only
+12,10.34190/iccws.21.1.4467,Cyber-Security in Cyber-Physical Systems and Critical Infrastructure: A Self-Healing Federated Learning Intrusion Detect,yes,,,,,,not_matched
+13,10.1007/s10207-026-01274-6,Explainable digital twin–driven ensemble anomaly detection framework for cyber-physical infrastructure security,yes,doi,core-11,,918,,core_only
+14,10.33411/ijist/1995,"Review Article: Quantum-AI Convergence for Smart Grid Cybersecurity: A Systematic Review of Emerging Technologies, Threa",yes,,,,,,not_matched
+15,10.3390/electricity7030085,From Physical Grids to Cyber-Energy Digital Twins: Modeling Power System Components for Cyberattack Assessment,yes,doi,core-08;core-11,,409,,core_only
+16,10.3390/en19153643,Artificial Intelligence in Smart Grids and Power-Electronic- Interfaced Microgrids: A Systematic Literature Review of En,yes,,,,,,not_matched
+17,10.1016/j.seta.2026.105246,A data-driven resilience framework for renewable telecom microgrids under cyber–physical attacks,yes,,,,,,not_matched
+18,10.63544/qcr0y085,AI-Powered Cybersecurity: Graph-Based Anomaly Detection in Network Traffic,yes,,,,,,not_matched
+19,10.1016/j.ecmx.2026.102107,"Balancing cybersecurity, wireless charging, and safety: Digital twin-driven techno-economic analysis of electric vehicle",yes,doi,core-10,,205,,core_only
+20,10.5281/zenodo.22763194,Neural Cyber-Resilience: Deep Learning for Threat Detection and Critical Infrastructure Defense by Aravind Kumar Karpoor,yes,,,,,,not_matched
+21,10.3390/systems14101271,A Multi-Agent-Driven Hybrid Digital Twin Framework for Adaptive Cybersecurity Vulnerability Verification in Power Cyber-,yes,doi,core-01;core-02;core-07;core-08;core-10,,32,,core_only
+22,10.15622/ia.25.3.8,Using a Digital Twin for Cyber Threat Detection in Intelligent Power Grid Control Systems,yes,doi,core-01;core-02;core-03;core-08,probe-02,101,425,both
+23,10.3390/app16157655,SCADA Digital Twin and Cryptographic AMI Cyber-Twin for Smart Grid Security,yes,doi,core-01;core-02;core-03;core-04;core-05;core-06;core-08;core-11,probe-01;probe-02;probe-04,11,90,both
+24,10.3390/electronics15204701,"Cyber-Resilient Digital Twin Architectures for Smart Grids: A Review of Attack Modeling, Detection, Mitigation, and Secu",yes,doi,core-02;core-05;core-06;core-08;core-11,,29,,core_only
+25,10.32362/2500-316x-2026-14-5-41-54,Adaptive analysis of information security threats on a cyber-physical testbed using a digital twin of an energy facility,yes,doi,core-11,,234,,core_only
+26,10.33915/etd.13429,Bridging AI and Cyber-Physical Power Grids for Enhanced Resiliency,no,,,,,,not_matched
+27,10.1109/parc68365.2026.11453523,Integrating Digital Twin and Machine Learning for Cybersecurity in Power Electronics-Dominated Grids,no,doi,core-01;core-07;core-10,,20,,core_only
+28,10.35940/ijitee.k1309.15111026,"AI-Enabled Digital Twins for Smart Grids: RealTime Monitoring, Predictive Control, Cybersecurity and Future Research Dir",yes,,,,,,not_matched
+29,,"Digitalization, electrification, and cybersecurity of urban energy services: smart grid optimization and fleet managemen",no,,,,,,not_matched
+30,10.5281/zenodo.19999925,Digital Twin Technology for Real-Time Cybersecurity Monitoring in Smart Grid Infrastructure,yes,,,,,,not_matched
+31,10.3390/su18178724,A Digital-Twin-Enabled Resilience Framework (DTERF) for Machine-Learning-Based Anomaly Detection in High-PV Cyber–Physic,yes,doi,core-05,probe-01,862,320,both
+32,10.5281/zenodo.19666287,DiGraph-Enabled Digital Twin with Machine Learning for SCADA Cyber-Attack Flow Analysis in Industry 5.0 Smart Grids,yes,,,,,,not_matched
+33,10.20944/preprints202601.0392.v1,Graph Neural Network-Infused Digital Twin Platform with Transfer Learning and Quantum-Safe Protocols for Resilient Power,yes,doi,core-07;core-08;core-09,probe-03,178,165,both
+34,10.3389/fmech.2026.1926649,A unified unsupervised deep learning and stride threat modeling framework for multi-domain cyber-physical security in nu,yes,,,,,,not_matched
+35,10.21474/ijar01/24257,DIGITAL TWIN-BASED SMART GRID MANAGEMENT FRAMEWORK FOR SUSTAINABLE POWER INFRASTRUCTURE DEVELOPMENT IN SAUDI ARABIA,yes,doi,core-01;core-02;core-03;core-04;core-05;core-06,probe-01;probe-02;probe-04,84,78,both
+36,10.33042/2079-424x.2026.65.1.06,AI-supported digital twin platform for urban power grid monitoring based on a digital substation test bed,yes,doi,core-01;core-02;core-03;core-07,probe-02;probe-03,46,44,both
+37,,AI-Enabled Secure Digital Twin for Simulated Real-Time Stability Monitoring and Attack Detection in Smart Grid Infrastru,no,,,,,,not_matched
+38,10.20508/rrhh1109,Digital Twin-Based Simulation of Electric VehicleInteraction within Smart City Energy Networks,yes,,,,,,not_matched
+39,10.1016/j.rcns.2026.09.003,A cyber–physical digital twin for secure and optimal operation of smart energy grids under deep uncertainty,yes,doi,core-05;core-11,,280,,core_only
+40,10.1002/9781394474325.ch14,Protecting Smart Grid Digital Twins from Dark Intelligence Using Firewalls and Intrusion Detection Systems,no,doi,core-03;core-05;core-06,,78,,core_only
+41,10.3390/electronics15194522,"Next-Generation Modulation and Control of Power Electronic Systems: AI-Enabled Control, Digital Twins, Fault-Tolerant Op",yes,,,,,,not_matched
+42,10.65102/is2026854,A Data-Driven Digital Twin-Based Framework for Attack Chain Modeling and Defense in Networked Microgrids,no,doi,core-01;core-02;core-03;core-05;core-08,probe-02,15,22,both
+43,10.51483/ijaiml.6.9s.2026.1975-1984,"AI-Enabled Smart Grid: Integrating Electrical Power Systems, Computer Intelligence, and Wireless Communication Technolog",yes,,,,,,not_matched
+44,,Advancements in Power System Automation: The Critical Role of SCADA and Wireless Technologies in Modern Substation Opera,yes,,,,,,not_matched
+45,10.33140/amlai.07.03.03,"Intelligent Risk Governance Framework for Critical Energy Logistics Integrating Cybersecurity, Physical Security, and Op",yes,,,,,,not_matched
+46,10.1186/s42162-024-00461-w,"Transforming the electrical grid: the role of AI in advancing smart, sustainable, and secure energy systems",yes,,,,,,not_matched
+47,10.63125/4p25x993,AI-DRIVEN FAULT DETECTION AND PREDICTIVE MAINTENANCE IN ELECTRICAL POWER SYSTEMS: A SYSTEMATIC REVIEW OF DATA-DRIVEN APP,yes,,,,,,not_matched
+48,10.1016/j.rineng.2025.105850,"Transforming nano grids to smart grid 3.0: AI, digital twins, blockchain, and the metaverse revolutionizing the energy e",yes,,,,,,not_matched
+49,10.3390/s25164963,Digital Twin-Driven Intrusion Detection for Industrial SCADA: A Cyber-Physical Case Study,yes,doi,core-02;core-03;core-06;core-08;core-09;core-11;core-12,,9,,core_only
+50,10.1016/j.ecmx.2025.101329,Artificial intelligence and machine learning for smart grids: from foundational paradigms to emerging technologies with ,yes,doi,,probe-01;probe-04,,72,probe_only
+51,10.1109/access.2025.3623834,"Next-Generation Smart Grid Cybersecurity: A Systematic Review of OT Cyber Threats, AI-Driven Defense, Cyber Deception Te",yes,,,,,,not_matched
+52,10.3390/en18174599,"Advances in Energy Storage, AI Optimisation, and Cybersecurity for Electric Vehicle Grid Integration",yes,,,,,,not_matched
+53,10.1016/j.enconman.2025.120728,A hybrid data-driven and physics-informed energy management model for electrical grids with spatio-temporal cyberattack ,no,doi,core-12,,345,,core_only
+54,10.3390/en18123145,Deceptive Cyber-Resilience in PV Grids: Digital Twin-Assisted Optimization Against Cyber-Physical Attacks,yes,doi,core-02;core-08;core-11,,372,,core_only
+55,10.70882/josrar.2025.v2i3.76,Towards Intelligent Cybersecurity in SCADA and DCS Environments: Anomaly Detection Using Multimodal Deep Learning and Ex,yes,,,,,,not_matched
+56,10.3390/en18215593,AI-Powered Digital Twin Co-Simulation Framework for Climate-Adaptive Renewable Energy Grids,yes,title,core-10,,739,,core_only
+57,10.3390/en18226048,Digital Twin-Driven Cybersecurity for 5G/6G-Enabled Electric Vehicle Charging Infrastructure: A Review,yes,doi,core-01;core-04;core-07;core-10,,165,,core_only
+58,10.1177/18479790251328183,"Cyber threat intelligence for smart grids using knowledge graphs, digital twins, and hybrid machine learning in SCADA ne",yes,,,,,,not_matched
+59,10.3390/smartcities8050142,Threat Modeling and Attacks on Digital Twins of Vehicles: A Systematic Literature Review,yes,,,,,,not_matched
+60,10.1201/9781003500391-7,Security and Privacy Issues in AI-Blockchain Enabled Digital Twin–Based Smart Grid,no,doi,core-01;core-03;core-04;core-05;core-06,probe-01;probe-02;probe-04,64,79,both
+61,10.33693/2313-223x-2025-12-4-116-123,Development of a digital twin prototype for an automated smart grid control system for cybersecurity threat analysis,no,doi,core-01;core-03;core-04;core-05;core-06;core-07;core-10,probe-01;probe-02;probe-04,21,221,both
+62,10.1109/access.2025.3648339,Cybersecurity Enhancement in Digital Substations: Hidden Markov Model-Based Smart Cyber Switching and Threat Response,yes,,,,,,not_matched
+63,10.20944/preprints202506.0030.v1,Multi-Domain Moving Target Defense for Resilient Security in Power Cyber-Physical Systems: A Review,yes,,,,,,not_matched
+64,10.1109/atee66006.2025.11299884,Resilience and Vulnerability in Electrical Power Systems,yes,,,,,,not_matched
+65,10.30574/wjarr.2025.26.3.2233,Smart grid security: Safeguarding sustainable energy systems from cyber threats,yes,,,,,,not_matched
+66,10.1109/gpecom65896.2025.11061955,A Hybrid ML-Digital Twin Framework for Differentiating Cyberattacks from Legitimate Price Fluctuations in Electricity Ma,yes,,,,,,not_matched
+67,10.1109/eit64391.2025.11103680,Enhancing Fault and Cyberattack Detection in Power Systems Using Digital Twin and SVM,yes,doi,core-03;core-09,,275,,core_only
+68,10.1145/3750069.3750102,Cyber Digital Twin to improve Security Education: the RedTeam Knife approach,yes,,,,,,not_matched
+69,10.56726/irjmets81350,Modeling Adaptive Cyber Fraud Patterns Using Causal Inference and Digital Twin Simulations in Critical Infrastructure Pr,yes,doi,core-11,,973,,core_only
+70,10.82417/cc0h-fz32,Security and resilience in cyber-physical systems for smart grids,yes,,,,,,not_matched
+71,10.65923/avg24p53,Digital Twin-Based Fault Diagnosis and Resilience Monitoring for Smart Grid Transformer Systems,yes,doi,core-01;core-02;core-03;core-04;core-05;core-06,probe-01;probe-02;probe-04,76,93,both
+72,10.1109/ictaacs69003.2025.11399437,Integrating Intrusion Detection Systems into Smart Grid Co-Simulation for Enhanced Cybersecurity,no,doi,core-03;core-06,,338,,core_only
+73,10.1109/icecce67514.2025.11258064,Digital Twin-Enhanced Adaptive Control for Robust Power System Stability and Security,yes,doi,core-01;core-07;core-08;core-09,probe-03,105,91,both
+74,10.7302/25171,"Advanced Cybersecurity Strategies for Cyber-Physical Systems: Case Studies in EV Charging Stations, Connected & Automate",yes,,,,,,not_matched
+75,10.52578/2305-9397-2025-3-5-328-336,APPLICATIONS OF IOT AND DIGITAL TWIN IN ELECTRICAL POWER SYSTEMS,yes,,,,,,not_matched
+76,10.32628/cseit251234,Advances in Digital Twin Deployment for Real-Time Asset Monitoring and Optimization in Power Transmission Systems,yes,,,,,,not_matched
+77,10.1016/j.ecmx.2024.100715,Advancements in digital twin technology and machine learning for energy systems: A comprehensive review of applications ,yes,,,,,,not_matched
+78,10.1109/mpe.2023.3325196,Digital Twins Serving Cybersecurity: More Than a Model: Cybersecurity as a Future Benefit of Digital Twins 2,no,doi,core-01;core-07;core-10,,272,,core_only
+79,10.1109/ojcoms.2024.3502544,DiGraph-Enabled Digital Twin and Label-Encoding Machine Learning for SCADA Network's Cyber Attack Analysis in Industry 5,yes,doi,core-02;core-08;core-11,,294,,core_only
+80,10.1109/isap63260.2024.10744374,Digital Twin for Resilient Power Distribution Systems,yes,doi,core-01;core-03;core-07;core-09,probe-02;probe-03,435,438,both
+81,10.1109/rws62797.2024.10799445,A Protocol-Agnostic DER Intrusion Detection System using an IEEE 1547-Enabled Digital Twin,yes,doi,core-03;core-06;core-09;core-12,,5,,core_only
+82,10.1109/prdc63035.2024.00039,Deploying a Generic Threat Model for Detecting Anomalies in a Power Grid Digital Twin,yes,doi,core-01;core-02;core-03,probe-02;probe-04,216,197,both
+83,10.1109/iecon55916.2024.10905313,Real-Time Cyber Attack Detection and Response Using Digital Twins in Protection Relays,yes,,,,,,not_matched
+84,10.1109/oncon62778.2024.10931409,Enhancing the Cybersecurity of Battery Digital Twins to Ensure the Resilient Supply for Next-Generation Telecommunicatio,yes,,,,,,not_matched
+85,10.1016/j.solener.2023.111921,Digital twin-driven SDN for smart grid: A deep learning integrated blockchain for cybersecurity,yes,doi,core-01;core-04;core-05;core-06;core-07;core-10,probe-01;probe-04,22,168,both
+86,10.1109/tifs.2023.3305916,A Smart Digital Twin Enabled Security Framework for Vehicle-to-Grid Cyber-Physical Systems,yes,doi,core-02;core-04;core-05,probe-04,193,877,both
+87,10.3390/en16124590,"Digital Transformation of Microgrids: A Review of Design, Operation, Optimization, and Cybersecurity",yes,,,,,,not_matched
+88,10.1109/smartgridcomm57358.2023.10333871,Digital Twin for Evaluating Detective Countermeasures in Smart Grid Cybersecurity,yes,doi,core-01;core-03;core-04;core-05;core-06;core-07;core-10,probe-01;probe-02;probe-04,4,100,both
+89,10.3390/machines11030392,A Digital Twin-Based System to Manage the Energy Hub and Enhance the Electrical Grid Resiliency,yes,doi,core-01;core-03;core-10;core-11;core-12,probe-02,212,426,both
+90,10.46793/eee23-4.01s,Cyber Physical Security of Distributed Energy Resources,yes,,,,,,not_matched
+91,10.2172/2337610,Attack Surface Analysis of the Digital Twins interface with Advanced Sensor and Instrumentation Interfaces: Cyber Threat,no,doi,core-02;core-08;core-11,,382,,core_only
+92,10.2172/2331253,Protecting and Defending against Autonomous Control Systems and Digital Twin Cyber Attacks: Response Strategy for Hyperp,no,doi,core-01;core-02;core-07;core-08;core-11,probe-02;probe-03,124,906,both
+93,10.1016/j.egyai.2022.100213,Towards electric digital twin grid: Technology and framework review,yes,,,,,,not_matched
+94,10.48550/arxiv.2205.11783,"Smart Grid: Cyber Attacks, Critical Defense Approaches, and Digital Twin",yes,,,,,,not_matched
+95,10.1109/naps50074.2021.9449682,Smart Grid Anomaly Detection using a Deep Learning Digital Twin,no,doi,core-01;core-02;core-03;core-04;core-05;core-06;core-09,probe-01;probe-02;probe-04,10,50,both
+96,10.1109/stpec52385.2021.9718616,Real-Time Digital Twin of Residential Energy Storage System for Cyber-Security Study,yes,doi,core-02;core-08;core-10;core-11,,55,,core_only
+97,10.1109/powercon53785.2021.9697764,Cyber Security Risk Analysis of Physical Protection Systems of Nuclear Power Plants and Research on the Cyber Security T,yes,doi,core-02;core-07;core-08;core-09;core-11,probe-03,9,246,both
+98,10.48550/arxiv.2105.04260,"EPICTWIN: An Electric Power Digital Twin for Cyber Security Testing, Research and Education",yes,title-approx,core-02;core-08,,266,,core_only
+99,10.25148/etd.fidc009671,Digital Twin-Based Cooperative Control Techniques for Secure and Intelligent Operation of Distributed Microgrids,no,,,,,,not_matched
+100,10.1109/tsg.2020.3000958,On the Implementation of IoT-Based Digital Twin for Networked Microgrids Resiliency Against Cyber Attacks,yes,doi,core-01;core-02;core-03;core-04;core-05;core-06,probe-01;probe-02;probe-04,21,99,both

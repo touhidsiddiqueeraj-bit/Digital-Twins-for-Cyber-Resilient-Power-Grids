@@ -1,0 +1,84 @@
+id,coder1_ai_threat_overall,round8_ai_threat_overall,round8_direction,round8_flag,round8_basis
+1,1,1,on,,"data poisoning can subtly bias predictive models (poison windows, own voice)"
+2,1,1,with,,deepfake DTs listed as a detection target in a solutions table
+3,0,0,,,no AI-threat windows; classical integrity prose only
+4,0,0,,,AI windows are acronym lists; model-compromise windows are classical spoofing
+5,1,1,on,,ML-based detectors rendered ineffective via adversarial perturbations or covariate-shift attacks
+7,0,0,,,no AI-threat windows
+9,0,0,,,generative windows are twin-synthesised training data (defensive)
+10,0,0,,,"LLMs named as enabling prediction modules, not framed as threats"
+11,0,0,,borderline,GAN-IDS in related work + future GAN-synthesis plan; RL windows are defensive APT-IDS
+12,1,1,on,,weak CPS resilience to adversarial attacks; adversarial training of IDS; model-poisoning susceptibility (gradient compression)
+13,0,0,,,no AI-threat windows
+14,1,1,on,peripheral,quantum-enhanced adversarial machine learning among convergence topics
+15,0,0,,,"electrical evasion targets protection relays, not an ML detector; attacks classical"
+16,2,2,on,,insufficient adversarial robustness of AI-enabled defense systems; data-poisoning robustness; LLM hallucination/prompt injection/biased recommendations
+17,2,2,on,,"system subjected to highly intelligent, stealthy data poisoning feeding contradictory semantic data into the controller"
+18,0,0,,,no AI-threat windows
+19,0,0,,,GAN occurs in acronym lists only
+20,1,1,both,,"topics include adversarial ML, poisoning and evasion attacks, model manipulation, deepfake detection (front-matter topic listing)"
+21,0,0,,borderline,red-team RL agents serve a defensive training loop; no AI-threat acknowledgment outside it
+22,2,2,both,,adversarial ML + game theory to generate synthetic attack data; model-poisoning susceptibility acknowledged
+23,1,1,on,,adversarial attacks target data confidentiality and model computation
+24,2,2,on,,AI introduces vulnerabilities through adversarial attacks (crafted perturbations manipulate detection); FL poisoning concerns; generative-AI threats
+25,0,0,,,synthetic-data generation by the twin itself (defensive)
+28,1,1,on,,vulnerability to poisoning attacks remains an open problem requiring new algorithms
+30,1,1,on,,recurring related-work treatment of robustness of security models against adversarial attacks (10 windows)
+31,1,1,on,,"ML models themselves may become targets of adversarial attacks, data poisoning, model inversion"
+32,1,0,on,disagreement,"adversarial robustness testing listed as a future enhancement (plan, not a treatment)"
+33,1,1,unclear,peripheral,sophisticated adversarial attacks listed among cascading-failure risks
+34,0,0,,,Xenon-135 poisoning is reactor physics; generative hit is the journal AI-disclosure statement
+35,0,0,,,LLM hit cites enabling work; compromised-twin statement is classical compromise
+36,0,0,,,no AI-threat windows
+38,0,0,,,no AI-threat windows
+39,0,0,,,no AI-threat windows
+41,1,1,on,,related work extended to fault diagnosis and resistance to poisoned data
+43,1,1,on,,"threat list includes model poisoning, adversarial machine learning, privacy attacks"
+44,0,1,,disagreement,future threats such as AI-driven reconnaissance (one-line own-voice mention)
+45,0,0,,,LLMs and autonomous agents are enabling components of the framework
+46,0,0,,,BlackEnergy/Havex windows are classical malware history
+47,1,1,on,,AI-powered grid management systems are vulnerable to adversarial attacks compromising data integrity
+48,0,0,,,classical CCA/integrity prose; the twin-as-object one-liner has no AI component
+49,2,2,with,,adversarial attack injection part of the framework; GAN-based attacks generate process-consistent yet malicious sensor readings
+50,2,2,on,,"adversarial robustness & security (FDI, model poisoning, evasion); Byzantine/backdoor threats; LLM-driven intelligence treated throughout"
+51,0,0,,,adversary prose and a CGAN acronym list; evasive techniques are classical tradecraft
+52,1,1,on,,federated learning vulnerable to poisoning attacks where compromised nodes inject malicious updates
+54,2,2,on,,detection models suffer adversarial-training vulnerabilities; attackers deliberately manipulate inputs to evade detection
+55,1,2,on,window-limited,adversarial attack simulation used to test robustness of detection models; perturbations cause misclassification or evasion
+56,1,1,unclear,peripheral,"securing the control pipeline against spoofing, tampering, and adversarial attacks (design-metric listing)"
+57,2,2,with,,GAN-GRU / GAN-LSTM / GAN-CNN tabulated as cyber-attack generation; backdoor insertion and update interception as supply-chain risks
+58,0,0,,,no AI-threat windows
+59,1,1,on,,data-driven digital twins introduce risks related to data poisoning and interpretability
+62,0,0,,,classical MU data-manipulation prose
+63,0,0,,,"adversary prose (MTD review), no AI component"
+64,1,1,with,,AI-driven attacks: use of AI for reconnaissance/evasion (Table 4)
+65,0,0,,,classical cyber prose only
+66,1,0,on,disagreement,"stealthy FDI, evasion attacks, low-rate anomalies listed as future extensions (plan, not a treatment)"
+67,1,1,on,,prior privacy-preserving scheme detects poisoning attacks (prose mention in own text)
+68,0,0,,,"ARP poisoning is a network attack, not ML poisoning"
+69,2,2,with,,Section 4.3 Generative Models and Attack Pattern Synthesis: GANs and VAEs for simulating credential abuse and adaptive attack patterns
+70,0,0,,,no AI-threat windows
+71,1,1,on,,second layer of defence against spoofing and data poisoning attacks by adversaries
+73,0,0,,,classical FDI prose
+74,2,2,on,,the entire XFCS could be compromised due to data poisoning (recurring case-study treatment)
+75,0,0,,,no AI-threat windows
+76,0,0,,,no AI-threat windows
+77,0,0,,,ML windows are technique surveys only
+79,0,0,,,no AI-threat windows
+80,0,0,,,no AI-threat windows
+81,0,0,,,adversary prose; classical stealthy cyber-physical attacks
+82,0,0,,,no AI-threat windows
+83,0,0,,,classical packet injection
+84,1,1,with,,reinforcement-learning-generated attack proved very effective against the estimator
+85,0,0,,,classical blockchain integrity prose
+86,0,0,,,"FDIA bypasses classical bad-data detection, not an ML detector; Gan is an author surname"
+87,0,0,,,"backdoor/malware on command-and-control networks, not ML poisoning"
+88,0,0,,,no AI-threat windows
+89,0,0,,,no AI-threat windows
+90,0,0,,,Gan is an author surname in a reference
+93,0,0,,,"BlackEnergy trojan incident history, classical"
+94,2,2,on,,"model inversion, data poisoning or model evasion attacks; adversarial examples can be artificially generated; robustness against adversarial samples"
+96,0,0,,,no AI-threat windows
+97,0,0,,,"software bugs and backdoors, classical supply-chain"
+98,0,0,,,classical measurement spoofing
+100,0,1,,disagreement,"attackers can use deep learning to enhance the speed, accuracy and predictability of the attacks"

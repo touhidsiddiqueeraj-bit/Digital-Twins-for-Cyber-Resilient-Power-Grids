@@ -1,0 +1,193 @@
+doi,title,year,cited_by,type,has_abstract,eligible,best_rank,cut_rank,in_retained_corpus
+10.1109/tsg.2024.3487049,Digital Twin-Based Cyber-Attack Detection and Mitigation for DC Microgrids,2025,13,journal-article,no,yes,1,1,no
+10.1109/icsmartgrid61824.2024.10578257,Enhancing Cybersecurity of a Hydroelectric Power Plant Using Its Digital Twin Model,2024,7,proceedings-article,no,yes,1,2,no
+10.1109/globecom52923.2024.10901067,Digital twin-based Intrusion Detection in Smart Grid : A Multi-kernel Knowledge Replay Approach,2024,1,proceedings-article,no,yes,1,3,no
+10.1109/smartgridcomm57358.2023.10333871,Digital Twin for Evaluating Detective Countermeasures in Smart Grid Cybersecurity,2023,11,proceedings-article,no,yes,4,4,yes
+10.1109/gpecom65896.2025.11061855,Digital Twin-Enabled Resilient Network Reconfiguration for Cybersecurity of Decarbonized Power Distribution Systems,2025,4,proceedings-article,no,yes,5,5,no
+10.36227/techrxiv.170475326.65758197/v1,Enhancing Network Intrusion Detection: An AutoML Pipeline with Efficient Digital Twin Synchronization,2024,4,posted-content,yes,yes,6,6,no
+10.1109/powercon53785.2021.9697764,Cyber Security Risk Analysis of Physical Protection Systems of Nuclear Power Plants and Research on the Cyber Security Test Platform Using Digital Twin Technology,2021,10,proceedings-article,no,yes,9,7,yes
+10.1109/access.2025.3547672,Enhancing Cybersecurity of a Hydroelectric Power Plant Through Digital Twin Modeling and Explainable AI,2025,20,journal-article,no,yes,10,8,no
+10.1109/etfg61999.2025.11401813,Detection of Cyber Attack in a Digital Twin-Enabled Grid-Connected Microgrid,2025,0,proceedings-article,no,yes,10,9,no
+10.60097/acig/221493,A Cybersecurity Digital Twin Architecture for Modelling Threats in Interconnected Systems,2026,1,journal-article,yes,yes,11,10,yes
+10.23919/pdpcps00030.2026.00049,Digital Twin of an Industrial Control System in the Power Grid: A Platform for Cybersecurity Threat Modeling and Assessment,2026,0,proceedings-article,no,yes,11,11,no
+10.3390/app16157655,SCADA Digital Twin and Cryptographic AMI Cyber-Twin for Smart Grid Security,2026,0,journal-article,yes,yes,11,12,yes
+10.21203/rs.3.rs-4373158/v1,Analysis Sensitivity Digital Twin Model of  Energy Community PV system,2024,0,posted-content,yes,yes,14,13,no
+10.1007/978-3-030-95120-7_6,Digital Twin of Building Heating Substation: An Example of a Digital Twin of a Cyber-Physical System,2022,3,book-chapter,no,yes,15,14,no
+10.65102/is2026854,A Data-Driven Digital Twin-Based Framework for Attack Chain Modeling and Defense in Networked Microgrids,2026,0,journal-article,yes,yes,15,15,yes
+10.1109/isgtasia54193.2022.10003563,Hybrid Digital Twin Architecture for Power System Cyber Security Analysis,2022,13,proceedings-article,no,yes,16,16,no
+10.1109/parc68365.2026.11453523,Integrating Digital Twin and Machine Learning for Cybersecurity in Power Electronics-Dominated Grids,2026,0,proceedings-article,no,yes,20,17,yes
+10.1109/tsg.2020.3000958,On the Implementation of IoT-Based Digital Twin for Networked Microgrids Resiliency Against Cyber Attacks,2020,233,journal-article,no,yes,21,18,yes
+10.33693/2313-223x-2025-12-4-116-123,Development of a digital twin prototype for an automated smart grid control system for cybersecurity threat analysis,2025,2,journal-article,yes,yes,21,19,yes
+10.1016/j.solener.2023.111921,Digital twin-driven SDN for smart grid: A deep learning integrated blockchain for cybersecurity,2023,98,journal-article,no,yes,22,20,yes
+10.1109/ticps.2026.3733857,Data-Driven Digital Twin for Degradation-Aware Condition Monitoring and Health Assessment of Photovoltaic Cyber Physical Energy System,2026,0,journal-article,no,yes,22,21,no
+10.1016/j.egyr.2026.109702,Federated deep learning and digital-twin optimization for cyber-resilient smart nano grid energy management,2026,0,journal-article,no,yes,26,22,no
+10.3390/computers14090365,"Governance Framework for Intelligent Digital Twin Systems in Battery Storage: Aligning Standards, Market Incentives, and Cybersecurity for Decision Support of Digital Twin in BESS",2025,13,journal-article,yes,yes,29,23,no
+10.3390/electronics15204701,"Cyber-Resilient Digital Twin Architectures for Smart Grids: A Review of Attack Modeling, Detection, Mitigation, and Secure Control Strategies",2026,0,journal-article,yes,yes,29,24,yes
+10.3390/systems14101271,A Multi-Agent-Driven Hybrid Digital Twin Framework for Adaptive Cybersecurity Vulnerability Verification in Power Cyber-Physical Systems,2026,0,journal-article,yes,yes,32,25,yes
+10.1016/j.scs.2024.105336,Augmenting cybersecurity in smart urban energy systems through IoT and blockchain technology within the Digital Twin framework,2024,45,journal-article,no,yes,33,26,no
+10.1109/mscpes.2019.8738792,A Digital Twin for Cyber-Physical Energy Systems,2019,44,proceedings-article,no,yes,33,27,no
+10.46647/icetetas025,"Hybrid Deep Learning–Based Network Intrusion Detection Using ConvLSTM, Spiking Neural Networks and Digital Twin Architecture",2026,0,journal-article,yes,yes,34,28,no
+10.21203/rs.3.rs-9656540/v1,Carbon-Aware Self-Healing Smart Grid Using Digital Twin and Swarm Artificial Intelligence for Sustainable Power System Resilience,2026,0,posted-content,yes,yes,36,29,no
+10.21203/rs.3.rs-9904010/v1,LLM-Guided Digital Twin Agents for Autonomous Threat Detection and Response in Cyber-Physical Energy Systems,2026,0,posted-content,yes,yes,39,30,no
+10.1109/smartgridcomm65349.2025.11204643,Fed-AttentionGrid: Digital Twin-Assisted Attention-based Federated Learning for Intrusion Detection in Smart Grids,2025,0,proceedings-article,no,yes,39,31,no
+10.2139/ssrn.6293656,A Digital-Twin-Assisted Multi-Level Framework for EV scheduling in a Coupled power -transportation system,2026,0,posted-content,yes,yes,42,32,no
+10.2139/ssrn.6620290,A Digital-Twin-Assisted Multi-Level Framework for EV scheduling in a Coupled power-transportation system,2026,0,posted-content,yes,yes,44,33,no
+10.33042/2079-424x.2026.65.1.06,AI-supported digital twin platform for urban power grid monitoring based on a digital substation test bed,2026,0,journal-article,yes,yes,46,34,yes
+10.3390/en13184762,IoT-Based Digital Twin for Energy Cyber-Physical Systems: Design and Implementation,2020,133,journal-article,yes,yes,54,35,no
+10.1109/stpec52385.2021.9718616,Real-Time Digital Twin of Residential Energy Storage System for Cyber-Security Study,2021,12,proceedings-article,no,yes,55,36,yes
+10.1109/ticps.2026.3682679,Predictive ConvFormer-LSTM Digital Twin for Intelligent Cyber-Physical Operation of Grid-Connected Photovoltaic Systems,2026,0,journal-article,no,yes,57,37,no
+10.3390/electronics15040821,Digital Twin-Driven Dynamic Reactive Power and Voltage Optimization for Large Grid-Connected PV Stations,2026,0,journal-article,yes,yes,59,38,no
+10.36227/techrxiv.174742729.99297491/v1,The Neuromorphic Cyber-Twin: A Conceptual Architecture for Cognitive Defense in Digital Twin Ecosystems,2025,0,posted-content,yes,yes,60,39,no
+10.1109/icps48405.2020.9274723,A Hybrid Cyber Physical Digital Twin Approach for Smart Grid Fault Prediction,2020,48,proceedings-article,no,yes,63,40,no
+10.1109/ojies.2024.3454010,Real-Time Cyber-Physical Digital Twin for Low Earth Orbit Satellite Constellation Network Enhanced Wide-Area Power Grid,2024,12,journal-article,no,yes,64,41,no
+10.1201/9781003500391-7,Security and Privacy Issues in AI-Blockchain Enabled Digital Twin–Based Smart Grid,2025,3,book-chapter,no,yes,64,42,yes
+10.1007/978-3-031-52670-1_31,Attack-Resilient Cyber-Physical System State Estimation for Smart Grid Digital Twin Design,2024,2,book-chapter,no,yes,74,43,no
+10.31436/ijpcc.v11i1.530,Digital Twin-Based Evaluation of Vehicular Controller Area Network Intrusion Detection Systems,2025,2,journal-article,yes,yes,75,44,no
+10.12694/scpe.v26i2.4048,Asset Management of Smart Grid using Digital Twin Technology and Machine Learning Algorithms,2025,0,journal-article,yes,yes,75,45,no
+10.65923/avg24p53,Digital Twin-Based Fault Diagnosis and Resilience Monitoring for Smart Grid Transformer Systems,2025,0,journal-article,yes,yes,76,46,yes
+10.3390/en14082338,Cyber-Physical Systems Improving Building Energy Management: Digital Twin and Artificial Intelligence,2021,271,journal-article,yes,yes,78,47,no
+10.1002/9781394474325.ch14,Protecting Smart Grid Digital Twins from Dark Intelligence Using Firewalls and Intrusion Detection Systems,2026,0,other,no,yes,78,48,yes
+10.1002/9781394394807.ch11,Cybersecure Digital Twin Architectures and Quantum‐augmented Analytics for Intelligent Cyber‐physical Energy Systems in Deep Decarbonization,2026,0,other,no,yes,80,49,no
+10.1049/stg2.70026,"Digital Twin Technology for Renewable Energy, Smart Grids, Energy Storage and Vehicle‐to‐Grid Integration: Advancements, Applications, Key Players, Challenges and Future Perspectives in Modernising Su",2025,116,journal-article,yes,yes,84,50,no
+10.21474/ijar01/24257,DIGITAL TWIN-BASED SMART GRID MANAGEMENT FRAMEWORK FOR SUSTAINABLE POWER INFRASTRUCTURE DEVELOPMENT IN SAUDI ARABIA,2026,0,journal-article,yes,yes,84,51,yes
+10.70094/qkra2934,Digital Twin Concept and its Application to Power Grid - Remote Accessing and Maintenanec of Protection Systems Scada SAS and Telecom Systems in Power Enterprises,2022,0,journal-article,no,yes,86,52,no
+10.1109/access.2025.3622468,Unified Digital Twin Approach for Energy Grid Condition and Cybersecurity Monitoring,2025,3,journal-article,no,yes,89,53,no
+10.1016/j.epsr.2026.113546,Toward a cyber-physical digital twin for operator training: Real-time co-simulation of the French grid,2027,0,journal-article,no,yes,94,54,no
+10.1049/icp.2023.0710,Towards a control system simulator based on a digital twin for cyber-physical power systems,2023,2,journal-article,no,yes,99,55,no
+10.3390/en19020390,Innovative Cyber-Physical/Electronic AI-Assisted Digital Twin Model of Small Energy Harvesting Cantilever Power Generators,2026,1,journal-article,yes,yes,99,56,no
+10.64751/ajaccm.2024.v4.n3.pp30-34,DIGITAL TWIN–DRIVEN 6G CAMPUS NETWORKS: INTELLIGENT FAULT RECOVERY AND ENERGY OPTIMIZATION,2024,0,journal-article,yes,yes,100,57,no
+10.15622/ia.25.3.8,Using a Digital Twin for Cyber Threat Detection in Intelligent Power Grid Control Systems,2026,0,journal-article,yes,yes,101,58,yes
+10.1109/icecce67514.2025.11258064,Digital Twin-Enhanced Adaptive Control for Robust Power System Stability and Security,2025,0,proceedings-article,no,yes,105,59,yes
+10.1109/gpecom61896.2024.10582670,Enhancing Grid Resilience: Islanding Control in a Digital Twin of Real Electrical Distribution System,2024,4,proceedings-article,no,yes,114,60,no
+10.1109/usbereit70063.2026.11580958,Digital Twin-Based Cyber Threat Detection in Digital Power Systems with Multidimensional Telemetry,2026,0,proceedings-article,no,yes,115,61,no
+10.1109/pesgm51994.2024.10688497,Optimizing Resilience with Digital Twin in Three-Phase Grid-Connected Systems,2024,2,proceedings-article,no,yes,124,62,no
+10.2172/2331253,Protecting and Defending against Autonomous Control Systems and Digital Twin Cyber Attacks: Response Strategy for Hyperparameter attacks of Digital Twin Machine Learning Models in Nuclear Power Plants,2023,1,report,no,yes,124,63,yes
+10.1063/5.0306617,Digital twin system for collaborative optimization of reactive power and voltage of new energy grid-connected distribution based on quantum computing enhancement,2026,3,journal-article,yes,yes,127,64,no
+10.4018/979-8-2600-0106-6.ch005,AI-Digital Twin Synergy for Smart and Autonomous Wind Energy Systems,2026,1,book-chapter,yes,yes,127,65,no
+10.3390/en19030703,Development of Programmable Digital Twin via IEC-61850 Communication for Smart Grid,2026,4,journal-article,yes,yes,128,66,no
+10.1016/j.ecmx.2025.101406,Cyber-physical security for microgrids through Digital Twin technologies: A review and research outlook,2025,6,journal-article,no,yes,129,67,no
+10.1145/3600160.3605043,Exploiting Digital Twin technology for Cybersecurity Monitoring in Smart Grids,2023,34,proceedings-article,no,yes,134,68,no
+10.1109/isgtasia63446.2025.11431274,A Hardware-in-the-Loop-Based Digital Twin Cyber-Physical System for Microgrids,2025,0,proceedings-article,no,yes,135,69,no
+10.9734/jenrr/2025/v17i7434,"Digital Twin-based Energy Infrastructure Powered by AI: Real-Time Simulation, Anomaly Detection, and Intervention",2025,0,journal-article,yes,yes,137,70,no
+10.1109/npsc61626.2024.10987002,Grid Resilience Through Digital Twin and PMU Integration: A System Identification Approach,2024,2,proceedings-article,no,yes,147,71,no
+10.1109/gpecom52585.2021.9587869,Digital twin technology for virtual testing of power system relay protection,2021,8,proceedings-article,no,yes,148,72,no
+10.1109/sieds69358.2026.11540287,Holding the Line: A Digital Twin Framework Supporting Policy Design for U.S. Power Grid Resilience,2026,0,proceedings-article,no,yes,153,73,no
+10.62311/nesx/rb-69sep-978-81-17475-31-7,Quantum-AI Infrastructure Risk Digital Twin System,2026,0,reference-book,yes,yes,154,74,no
+10.22399/ijcesen.494,Assessment of Cybersecurity Risks in Digital Twin Deployments  in Smart Cities,2024,11,journal-article,yes,yes,155,75,no
+10.1049/stg2.70068,"Digital Transformation of Energy Systems: Technologies, Data, Governance and Cyber Security",2026,4,journal-article,yes,yes,155,76,no
+10.3390/en19081982,Performance Evaluation of a Cloud-Native Open-Source Power System Digital Twin for Real-Time Simulation,2026,0,journal-article,yes,yes,156,77,no
+10.20944/preprints202607.0790.v1,From Physical Grids to Cyber-Energy Digital Twins: Modeling Power System Components for Cyberattack Assessment,2026,0,posted-content,yes,yes,161,78,no
+10.3390/en18226048,Digital Twin-Driven Cybersecurity for 5G/6G-Enabled Electric Vehicle Charging Infrastructure: A Review,2025,11,journal-article,yes,yes,165,79,yes
+10.4108/ew.12059,A Unified Digital Twin Architecture for Integrated Power Grid and Infrastructure Management,2026,0,journal-article,yes,yes,169,80,no
+10.46254/na11.20260208,GridGuardian: A National-Scale Digital Twin Utilizing Multi-Head Self-Attention Bi-LSTMs and Physics-Based Simulations for Power Grid Resiliency,2026,0,proceedings-article,no,yes,172,81,no
+10.20944/preprints202601.0392.v1,Graph Neural Network-Infused Digital Twin Platform with Transfer Learning and Quantum-Safe Protocols for Resilient Power System Control and Markets,2026,0,posted-content,yes,yes,178,82,yes
+10.3390/electronics15163529,DT-Grid: A Digital Twin Framework for Real-Time State Awareness and Operational Optimization of Renewable-Dominated Power Systems,2026,0,journal-article,yes,yes,182,83,no
+10.22541/au.175138833.33586068/v1,"Securing the Future Smart Grid 3.0 through Leveraging the Models of Blockchain, Digital Twin, Edge Computing and Metaverse Synergies",2025,0,posted-content,yes,yes,182,84,no
+10.30574/ijsra.2026.19.1.0857,CyberTwine: A comprehensive cybersecurity resilience framework for digital twin systems in smart cities and critical infrastructure,2026,0,journal-article,yes,yes,183,85,no
+10.3390/math10162886,Digital Twin Formation Method for Distributed Generation Plants of Cyber–Physical Power Supply Systems,2022,17,journal-article,yes,yes,187,86,no
+10.1007/s43926-026-00386-8,Digital twin based sustainable cyber defense framework against advanced persistent threat for wind renewable power plants,2026,1,journal-article,no,yes,191,87,yes
+10.1109/tifs.2023.3305916,A Smart Digital Twin Enabled Security Framework for Vehicle-to-Grid Cyber-Physical Systems,2023,97,journal-article,no,yes,193,88,yes
+10.1109/tensymp68909.2026.11703994,Cyber-Physical Digital Twin for Cascading Failure Analysis in Power Grids,2026,0,proceedings-article,no,yes,193,89,no
+10.1109/ainit54228.2021.00122,Research on Security Management and Control of Power Grid Digital Twin Based on Edge Computing,2021,4,proceedings-article,no,yes,194,90,no
+10.3389/fdata.2025.1659757,Towards the neuromorphic Cyber-Twin: an architecture for cognitive defense in digital twin ecosystems,2025,2,journal-article,yes,yes,206,91,no
+10.3390/machines11030392,A Digital Twin-Based System to Manage the Energy Hub and Enhance the Electrical Grid Resiliency,2023,13,journal-article,yes,yes,212,92,yes
+10.12688/digitaltwin.17913.1,Digital twin method and application practice of spacecraft system driven by mechanism data,2024,6,journal-article,yes,yes,213,93,no
+10.1109/prdc63035.2024.00039,Deploying a Generic Threat Model for Detecting Anomalies in a Power Grid Digital Twin,2024,3,proceedings-article,no,yes,216,94,yes
+10.2139/ssrn.6956978,Hybrid Digital Twins as Cognitive Control Environments: An Empirical Investigation of Digital Twin Fidelity and Reinforcement Learning Performance in Cyber-Physical Systems,2026,0,posted-content,yes,yes,227,95,no
+10.21203/rs.3.rs-10227456/v1,Ampere: A Digital Twin-Enabled Cyber-Physical IoT Node for Environmental Health Monitoring in IoMT Systems,2026,0,posted-content,yes,yes,232,96,no
+10.32362/2500-316x-2026-14-5-41-54,Adaptive analysis of information security threats on a cyber-physical testbed using a digital twin of an energy facility automated process control system,2026,0,journal-article,yes,yes,234,97,yes
+10.1109/sefet65155.2025.11255467,Cyber Physical Digital Twin for Energy Monitoring and Control using Intelligent Smart Meter Network,2025,0,proceedings-article,no,yes,235,98,no
+10.1109/dsn-w65791.2025.00055,A Digital Twin Network for Proactive Security: The Smart Grid Use-Case,2025,4,proceedings-article,no,yes,239,99,no
+10.1109/tpel.2026.3708594,Field Validation of an FPGA-Based Embedded Digital Twin for Firmware Security in a Grid-Connected ANPC Solar Inverter,2026,0,journal-article,no,yes,244,100,no
+10.1109/apap59666.2023.10348444,Digital Twin Application for the Evaluation of Protection Performance in IEC-61850-Based Digital Substations,2023,11,proceedings-article,no,yes,247,101,no
+10.1109/educon67543.2026.11574393,AI-Enhanced Cybersecurity Education for Smart Microgrids Using a Cyber-Physical System Testbed with Digital Twin Features,2026,0,proceedings-article,no,yes,250,102,no
+10.4018/979-8-2600-1669-5.ch005,Resilient Smart Buildings Using Adaptive Digital Twin Frameworks,2026,0,book-chapter,yes,yes,254,103,no
+10.1016/j.compeleceng.2022.108061,"An electric power digital twin for cyber security testing, research and education",2022,80,journal-article,no,yes,266,104,no
+10.2139/ssrn.6712678,Primary Energy Supply Digital Twin Chaos Engineering (PES-DTCE): A Deterministic Framework for Evaluating Disruptions Within the Primary Energy Supply and Impacts on the Electric Power System,2026,0,posted-content,yes,yes,271,105,no
+10.1109/eit64391.2025.11103680,Enhancing Fault and Cyberattack Detection in Power Systems Using Digital Twin and SVM,2025,1,proceedings-article,no,yes,275,106,yes
+10.1016/j.epsr.2025.112423,Reinforcement-led digital twin optimization for secure operation in cyber-physical grids,2026,2,journal-article,no,yes,276,107,no
+10.1016/j.rcns.2026.09.003,A cyber–physical digital twin for secure and optimal operation of smart energy grids under deep uncertainty,2026,1,journal-article,no,yes,280,108,yes
+10.1109/smartgridcomm52983.2022.9961012,A Digital Twin Integrated Cyber-physical Systems for Community Energy Trading,2022,2,proceedings-article,no,yes,282,109,no
+10.1109/iecon58223.2025.11221042,Cyber-Secured Battery Digital Twin for the Reliable Power Supply of Modern Telecommunication Networks,2025,0,proceedings-article,no,yes,307,110,no
+10.3389/fenrg.2024.1397748,"Digital twin technology for enhanced smart grid performance: integrating sustainability, security, and efficiency",2024,22,journal-article,yes,yes,321,111,no
+10.2139/ssrn.6823704,A Predictive Digital Twin Framework for Energy-Efficient Circular Production Networks&amp;nbsp;,2026,0,posted-content,yes,yes,321,112,no
+10.2139/ssrn.6265292,EVSE Cyber-Physical Security: A Perspective and Framework on a Digital-Twin Architecture,2026,0,posted-content,yes,yes,322,113,no
+10.2139/ssrn.5583031,Cyber-Physical Security for Microgrids through Digital Twin Technologies: A Review and Research Outlook,2025,0,posted-content,no,yes,323,114,no
+10.20944/preprints202506.1885.v1,Redefining Adversarial Dynamics: Co-Evolution of Attack and Defense Strategies in AI-Enabled Power Cyber-Physical Systems,2025,0,posted-content,yes,yes,333,115,no
+10.1016/j.enconman.2025.120728,A hybrid data-driven and physics-informed energy management model for electrical grids with spatio-temporal cyberattack detection-reconstruction using digital twin,2026,18,journal-article,no,yes,345,116,yes
+10.3390/en18123145,Deceptive Cyber-Resilience in PV Grids: Digital Twin-Assisted Optimization Against Cyber-Physical Attacks,2025,16,journal-article,yes,yes,372,117,yes
+10.3389/fenrg.2024.1339836,Advanced manufacturing and digital twin technology for nuclear energy*,2024,40,journal-article,yes,yes,397,118,no
+10.1007/s42452-026-08720-z,Recent updates in digital twin driven smart energy systems for intelligent grid integration,2026,0,journal-article,yes,yes,400,119,no
+10.20944/preprints202403.1443.v1,A Cyber-Physical System Based on Digital Twin and 3D SCADA for Real-Time Monitoring of Olive Oil Mills.,2024,9,posted-content,yes,yes,405,120,no
+10.3390/electricity7030085,From Physical Grids to Cyber-Energy Digital Twins: Modeling Power System Components for Cyberattack Assessment,2026,0,journal-article,yes,yes,409,121,yes
+10.1093/ce/zkag057,Solar Photovoltaic system design with Digital-Twin approach and its challenges with possible mitigations: A comprehensive review,2026,0,journal-article,yes,yes,412,122,no
+10.21203/rs.3.rs-8860486/v1,A Digital Twin-Integrated Framework for Dual Insider and External Cyber Threat Detection in Critical Infrastructure,2026,2,posted-content,yes,yes,426,123,no
+10.13052/dgaej2156-3306.4121,Digital Twin-Enabled Smart Energy Management for Mega Sports Events,2026,0,journal-article,yes,yes,431,124,no
+10.1109/isap63260.2024.10744374,Digital Twin for Resilient Power Distribution Systems,2024,7,proceedings-article,no,yes,435,125,yes
+10.1049/icp.2025.1043,Revolutionizing power system protection: closed-loop testing with digital twin technology,2025,1,journal-article,no,yes,437,126,no
+10.70917/ijcisim-2026-1012,A Digital Twin and Diffusion Model Integrated Method for Power System Operational State Generation and Risk Assessment,2026,0,journal-article,yes,yes,439,127,no
+10.62311/nesx/97806,Revolutionizing Industries with Digital Twin Technology,2024,4,book-chapter,yes,yes,442,128,no
+10.1109/pimrc56721.2023.10293929,Physical Layer Security Against Passive Eavesdropper in Digital Twin-Enabler Power Grid: An IRS-Assisted Approach,2023,3,proceedings-article,no,yes,447,129,no
+10.3390/en19163855,Dynamic Resource Allocation and Collaborative Scheduling Strategies for the Timeliness of Smart-Grid Sensing Digital-Twin Data,2026,0,journal-article,yes,yes,456,130,no
+10.1016/j.rser.2026.117389,"Intelligent and secure digital grids: A review of artificial intelligence, digital twins, and cyber-physical security for grid-forming inverters in 100% renewable power systems",2027,0,journal-article,no,yes,462,131,no
+10.1080/07366981.2023.2263214,The power of digital twins in the cybersecurity mesh,2023,4,journal-article,no,yes,465,132,no
+10.70675/eb5fcd6fz445dz43baza871z6118f6836a50,A digital twin-driven approach for multi-modal individual comfort and energy optimization in multi-occupant environments,,0,dissertation,yes,yes,466,133,no
+10.55041/ijsrem38489,Cyber Physical Echoes - Harnessing Digital Twin Intelligence for Real Time System Optimization,2024,2,journal-article,yes,yes,467,134,no
+10.13052/spee1048-5236.45212,Real-time Evaluation of Relay Protection System Status for Smart Grid: A Fusion Model of Digital Twin and Deep Transfer Learning,2026,0,journal-article,yes,yes,469,135,no
+10.1109/icrteect67512.2025.11448880,Digital Twin–Enabled Context-Aware Networks: Enhancing Smart Grid Resilience through Predictive Intelligence,2025,31,proceedings-article,no,yes,470,136,no
+10.1016/j.gloei.2024.06.005,Optimal decision-making method for equipment maintenance to enhance the resilience of power digital twin system under extreme disaster,2024,8,journal-article,no,yes,478,137,no
+10.2139/ssrn.7349982,"Digital Twin-Assisted Robust Reinforcement Learning for Detection, Intelligent Congestion Control, and Autonomous Recovery from GOOSE Flooding Attacks in IEC 61850-Based Smart Substations",2026,0,posted-content,yes,yes,492,138,no
+10.30857/2786-5371.2025.3.6,Integration of a solar power plant and a heat pump into a hot water supply system based on a digital twin,2025,0,journal-article,yes,yes,501,139,no
+10.58532/nbennur3439c4,QUANTUM-ENHANCED FEDERATED CONTINUAL LEARNING FOR PRIVACY-PRESERVING ELECTRICITY DEMAND FORECASTING IN 6G-ENABLED DIGITAL TWIN NETWORKS,2026,0,book-chapter,yes,yes,523,140,no
+10.2139/ssrn.6568379,A novel approach to digital twin-based energy efficiency monitoring and failure analysis in industrial applications,2026,0,posted-content,yes,yes,537,141,no
+10.3390/en18225960,Cyber-Physical Power System Digital Twins—A Study on the State of the Art,2025,17,journal-article,yes,yes,541,142,no
+10.5194/egusphere-egu24-22348,A Digital Twin for Energy Consumption Prediction and Thermal Comfort Monitoring in Residential Buildings,2025,1,posted-content,yes,yes,541,143,no
+10.2139/ssrn.7044785,Digital Twin-Assisted Real-Time Optimization of Integrated Multi-Energy Systems with High Penetration of Hydrogen,2026,0,posted-content,yes,yes,545,144,no
+10.1109/mic.2021.3063674,Towards Cybersecurity of the Smart Grid Using Digital Twins,2022,53,journal-article,no,yes,548,145,no
+10.3390/en18184804,Multiple Stability Margin Indexes-Oriented Online Risk Evaluation and Adjustment of Power System Based on Digital Twin,2025,0,journal-article,yes,yes,567,146,no
+10.2139/ssrn.6297919,Digital Twin Modeling and Optimization of Robotic Rubber Vulcanization Systems in Smart Manufacturing Environments,2026,0,posted-content,yes,yes,579,147,no
+10.1117/12.3123415,Intelligent management and resilience assessment of integrated energy system in industrial park based on digital twin and deep reinforcement learning,2026,0,proceedings-article,yes,yes,580,148,no
+10.64229/q5g7dh32,Neuromorphic Computing-Enabled Digital Twin Framework for Sustainable IT Supply Chain Integration in Smart Urban Ecosystems,2025,1,journal-article,yes,yes,586,149,no
+10.21203/rs.3.rs-10684525/v1,AI-Enabled Digital Twins and Power System Asset Management for Long-Term Grid Investment Planning,2026,0,posted-content,yes,yes,616,150,no
+10.2139/ssrn.7169797,Adoption of Digital Twin Technology in China's Commercial Building Energy Sector: An IoT-Extended Technology Acceptance Model,2026,0,posted-content,yes,yes,620,151,no
+10.2118/232069-ms,Innovation in Energy Transition: Lessons from Digital Twin and Industry 4.0 Deployments,2026,0,proceedings-article,yes,yes,622,152,no
+10.1115/omae2026-174888,Digital Twin Development for Ocean-Based Offshore Floating Solar Systems,2026,0,proceedings-article,yes,yes,629,153,no
+10.21203/rs.3.rs-9105998/v1,AI–IoT–Digital Twin Framework for Predictive Maintenance in Smart Manufacturing,2026,0,posted-content,yes,yes,633,154,no
+10.1049/icp.2023.0614,A cyber-physical digital twin approach to replicating realistic multi-stage cyberattacks on smart grids,2023,8,journal-article,no,yes,634,155,no
+10.1071/ep26480,Engineering Visual Presentation E03: Interoperable digital twin ecosystems: enhancing risk management in distributed energy systems,2026,0,journal-article,yes,yes,635,156,no
+10.2139/ssrn.6835728,Stability-Constrained Power Dispatch for Renewable Energy Systems Using Digital Twin Technology,2026,0,posted-content,yes,yes,637,157,no
+10.2139/ssrn.6908726,Dual-Layer Trust and Cyber-Resilient Framework for IoT Computation Offloading in Digital Twin Environments,2026,0,posted-content,yes,yes,640,158,no
+10.1109/tii.2026.3699131,Digital Twin for Multitimescale Economic Dispatch in Cyber-Physical Energy Systems,2026,3,journal-article,no,yes,649,159,no
+10.1109/naps46351.2019.9000371,ANGEL: An Intelligent Digital Twin Framework for Microgrid Security,2019,105,proceedings-article,no,yes,650,160,no
+10.3390/app15126475,"Digital Twin of the European Electricity Grid: A Review of Regulatory Barriers, Technological Challenges, and Economic Opportunities",2025,34,journal-article,yes,yes,652,161,no
+10.62762/jgee.2026.334943,Digital Twin-Enabled Environmentally Resilient Recovery of Geo-Energy Infrastructure after Disasters,2026,0,journal-article,yes,yes,656,162,no
+10.1109/isgteurope64741.2025.11305315,A Mathematical Framework for Digital Twins of Cyber-Physical Energy Systems,2025,0,proceedings-article,no,yes,691,163,no
+10.36227/techrxiv.21710897.v1,Digital Twin-Assisted OWC: Towards Smart and Autonomous Networks,2022,0,posted-content,yes,yes,706,164,no
+10.3390/smartcities8020070,Unleashing the Potential of 5G for Smart Cities: A Focus on Real-Time Digital Twin Integration,2025,43,journal-article,yes,yes,707,165,no
+10.1108/imds-11-2020-0634,Cyber-physical spatial temporal analytics for digital twin-enabled smart contact tracing,2021,17,journal-article,yes,yes,714,166,no
+10.2139/ssrn.7544127,"A Digital-Twin-Coupled Deep Reinforcement Learning Method for Vehicle-to-Home and Vehicle-to-Grid Coordination Toward Resilient, Low-Cost Energy Flexibility",2026,0,posted-content,yes,yes,714,167,no
+10.30525/978-9934-26-254-8-2,Simulation modeling and digital twinning of energy cyber-physical systems (cyber-energy systems),2022,0,book-chapter,no,yes,737,168,no
+10.20944/preprints202508.0708.v1,AI-Powered Digital Twin Co-Simulation Framework for Climate-Adaptive Renewable Energy Grids,2025,4,posted-content,yes,yes,739,169,no
+10.26782/jmcms.2026.09.00002,DIGITAL TWIN-DRIVEN POST-QUANTUM CRYPTOGRAPHIC MIGRATION FOR SMART GRID CRITICAL INFRASTRUCTURE: A SIMULATION-BASED PROOF-OF-CONCEPT FRAMEWORK,2026,0,journal-article,yes,yes,747,170,no
+10.31224/7916,Intelligent Smart Water Quality Monitoring and Autonomous Protection System Using Differential Evolution and EPANET Digital Twin,2026,0,posted-content,yes,yes,755,171,no
+10.28925/2663-4023.2026.32.1149,RISKS AND VULNERABILITIES OF DIGITAL TWINS IN MANUFACTURING SYSTEMS DURING ENERGY CONSUMPTION OPTIMIZATION,2026,0,journal-article,yes,yes,761,172,no
+10.36227/techrxiv.21710897.v2,Digital Twin-Assisted OWC: Towards Smart and Autonomous 6G Networks,2023,0,posted-content,yes,yes,781,173,no
+10.31224/7160,Safety Assurance of AI-Enabled Power Cyber-Physical Systems: A Power-System-Centric Critical Review,2026,0,posted-content,yes,yes,786,174,no
+10.36227/techrxiv.21710897,Digital Twin-Assisted OWC: Towards Smart and Autonomous 6G Networks,2023,1,posted-content,yes,yes,788,175,no
+10.2139/ssrn.4801458,"Smart Grid 3.0: Navigating the Future - Unleashing the Power of Metaverse, Blockchain, and Digital Twins in the Evolution of Smart Grids",2024,10,posted-content,yes,yes,795,176,no
+10.1109/etfg55873.2023.10408446,Securing the Smart Grid: A Review on Digital Twins for Cyber Resilience,2023,2,proceedings-article,no,yes,799,177,no
+10.2172/2564031,Digital Twins in Nuclear Power: Cybersecurity Implications,2024,0,proceedings-article,no,yes,848,178,no
+10.3390/su15032310,Vertical Greenery System (VGS) Renovation for Sustainable Arcade-Housing: Building Energy Efficiency Analysis Based on Digital Twin,2023,43,journal-article,yes,yes,852,179,no
+10.3390/su18178724,A Digital-Twin-Enabled Resilience Framework (DTERF) for Machine-Learning-Based Anomaly Detection in High-PV Cyber–Physical Smart Grids,2026,0,journal-article,yes,yes,862,180,yes
+10.14445/23488387/ijcse-v13i5p102,Cyber Resilient Cloud and Edge Digital Platforms for Data Intensive and Digital Twin Enabled Information Systems,2026,0,journal-article,yes,yes,863,181,no
+10.2139/ssrn.6368285,Community Energy Resilience Through Peer-to-Peer Trading and Vehicle-to-Home Integration: A Digital Twin Approach,2026,0,posted-content,yes,yes,864,182,no
+10.22541/au.172087237.72377134/v1,The Applications of Artificial Intelligence and Digital Twin in Power Systems: An In-Depth Review,2024,0,posted-content,yes,yes,869,183,no
+10.3390/software5030031,A Verifiable Service-Oriented Industrial Cyber–Physical Systems Framework for Energy-Aware Autonomous Navigation Using a High-Fidelity Cyber–Physical Twin,2026,0,journal-article,yes,yes,881,184,no
+10.2172/2565180,Digital Twins in Nuclear Power: Cybersecurity Implications,2024,0,proceedings-article,no,yes,888,185,no
+10.1007/s10207-026-01274-6,Explainable digital twin–driven ensemble anomaly detection framework for cyber-physical infrastructure security,2026,1,journal-article,yes,yes,918,186,yes
+10.47118/somatbd.1836379,DIGITAL TWIN TECHNOLOGY FOR SMART URBAN WASTE MANAGEMENT,2025,2,journal-article,yes,yes,925,187,no
+10.22266/ijies2026.0630.22,An Intelligent Cross-layer Digital Twin Framework for Energy-reliability Optimization in Low-power Cyber-physical based Greenhouse IoT Systems,2026,0,journal-article,no,yes,947,188,no
+10.1109/isctis58954.2023.10213171,Information Interaction Security Identification of 3D Grid Data Based on Digital Twin,2023,0,proceedings-article,no,yes,955,189,no
+10.31224/3628,Resilient Operations in Space with Digital Twin Integration for Solar PV and Energy Storage,2024,2,posted-content,yes,yes,978,190,no
+10.62762/cjif.2025.690291,A Digital-Twin-Driven Cyber–Physical Framework for Real-Time Energy Management and Secure Operation of Renewable Energy Systems,2026,0,journal-article,yes,yes,982,191,no
+10.20944/preprints202412.1903.v1,ANCHOR-Grid: Authenticating Smart Grid Digital Twins Using Real World Anchors,2024,1,posted-content,yes,yes,984,192,no
