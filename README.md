@@ -29,24 +29,24 @@ by the coding instrument.
 | Engage **any** AI-enabled threat | 35 / 83 (42.2%); strict grid scope 33/79; a majority in the core subsets (16/29, 30/55) — the corpus was retrieved with defensive vocabulary and the round-8 reconstruction shows the probe channel contributed at most one record (R50), so rates describe the core-vocabulary, defensively-framed literature only |
 | Engage an AI threat **substantively** | 11 / 83 (13.3%; strict scope 10/79) — on the weakest coder collapse (κ = 0.14) and a threshold that partly proxies document length (0/14 conference papers; 9/62 journals, so minority within the dominant format too): **depth is not reliably measured by this instrument**; the misclassification interval 21–51 of 83 spans minority and majority readings |
 | Direction of engagement (round-8 coded field) | 25 of the 35 engaged records acknowledge attacks **on** AI components; 6 wield AI **with** hostile intent (R2, R49, R57, R64, R69, R84); 2 both; 2 unclear — engagement is mostly defender-framed vulnerability acknowledgment |
-| Twin as the adversary's **objective** (strict) | **0 grid studies** — a domain-scoped descriptive observation: 1 non-grid vehicle record; 56/83 name interface or model threats in a defender frame (tool is the near-constant default, 75/83); and the two read nuclear-domain records (R91, R92 — `analysis/R7_READBACK.md`) do attack twin interfaces and twin ML models, so the unqualified claim is gone |
+| Twin as the adversary's **objective** (strict) | **0 grid studies** — a domain-scoped descriptive observation: 1 non-grid vehicle record; 56/83 name interface or model threats in a defender frame (tool is the near-constant default, 75/83); and the two read nuclear-domain records (R91, R92 — `analysis/AUTHOR_READBACK.md`) do attack twin interfaces and twin ML models, so the unqualified claim is gone |
 | Research concentrated at **operation** stage | 66 / 83 (lifecycle κ = 0.32, AC1 0.54 — descriptive only; the single design-phase record is out-of-domain) |
-| Studies from **2025–2026** | 76% — a recency-heavy corpus profile (IDs 1–45 all 2026, 40/100 zero-citation; per-record counts in Appendix A's Cit. column). The ranking manifest (`analysis/search_snapshot_2026-10-19/round8/retained100_ranking_manifest.csv`) verifies the display-order claim; the dated Crossref reconstruction shows the eligible pool is itself 66.7% 2025+, so the cut amplified but did not manufacture the recency profile |
+| Studies from **2025–2026** | 76% — a recency-heavy corpus profile (IDs 1–45 all 2026, 40/100 zero-citation; per-record counts in Appendix A's Cit. column). The ranking manifest (`analysis/search_snapshot_2026-10-19/reconstruction/retained100_ranking_manifest.csv`) verifies the display-order claim; the dated Crossref reconstruction shows the eligible pool is itself 66.7% 2025+, so the cut amplified but did not manufacture the recency profile |
 
 AI-threat engagement by vector (score ≥1): adversarial ML 24, poisoning 19, evasion 9,
 LLM 4, agentic 2. The previously quoted abstract-level figure (24/469) was an
 unreproducible working number from an unpreserved scan and has been deleted from the
 manuscript. Round-7 readbacks (15 weak audit firings inspected; seeded 12-record sample
 of the 48 negatives re-read; R91/R92 obtained and read) are documented in
-`analysis/R7_READBACK.md`; no substantive false negative was found. **Round 8 adds an
+`analysis/AUTHOR_READBACK.md`; no substantive false negative was found. **Round 8 adds an
 independent automated (LLM) readback of all 83 full-text records**
-(`analysis/reliability/round8_ai_readback_codes.csv`): any-collapse agreement with
+(`analysis/reliability/readback_ai_codes.csv`): any-collapse agreement with
 coder 1 79/83 (κ = 0.90), five informative disagreements (R32/R66 plan-only; R44/R100
 one-liners; R55 suspected-substantive), and a negatives census whose miss-rate is 2/48
 = 4.2% (Wilson 95% CI 1.2–14.0%) — the readback upper bound for any-level engagement
 remains 37/83 (44.6%). The commissioned human protocol (non-author coder, ≥50 enriched,
 third-party adjudicator, full-text negatives re-read) is pre-specified in
-`analysis/reliability_protocol_round8.md`, staffing pending.
+`analysis/reliability_protocol.md`, staffing pending.
 
 Two coders (both authors of the review) coded a blind sample of 20 of the 83 full-text
 records (24%): κ = 0.60 (bootstrap 95% CI 0.20–0.90) for "any engagement", κ = 0.14
@@ -82,14 +82,14 @@ analysis/
   reliability/                   agreement stats, coder sheets, disagreement log,
                                  round-8 independent readback codes + joined comparison
   evidence/                      extracted evidence digests
-  R7_READBACK.md                 round-7 readbacks: 15 weak firings, negatives sample, R91/R92 coding
+  AUTHOR_READBACK.md                 round-7 readbacks: 15 weak firings, negatives sample, R91/R92 coding
   round7_stats.py                round-7 sensitivities (cited/uncited, venue-length, overlaps)
-  reliability_protocol_round8.md pre-specified human reliability protocol (staffing pending)
-  quality_appraisal_round8.csv   round-8 light quality signals (peer venue, cited, eval, repro)
+  reliability_protocol.md pre-specified human reliability protocol (staffing pending)
+  quality_appraisal.csv   round-8 light quality signals (peer venue, cited, eval, repro)
   round8_*.py                    round-8 computations: provenance, retrievability, term
                                  breakdown, evidence dump, reliability, stats (items 1,3-9)
   search_snapshot_2026-10-19/
-    round8/                      dated Crossref reconstruction (README inside): per-record
+    reconstruction/                      dated Crossref reconstruction (README inside): per-record
                                  query provenance, probe-only finding, probe-added screening,
                                  ranking manifest, eligible-export re-execution, term breakdown
 downloads_manifest.csv           retrieval manifest (query set, run dates, outcomes)

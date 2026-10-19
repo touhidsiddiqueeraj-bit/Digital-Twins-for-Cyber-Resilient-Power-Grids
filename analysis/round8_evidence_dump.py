@@ -12,20 +12,20 @@ For each of the 83 full-text-coded records this writes one block containing:
     window for defensive context, plus -- for records coded 0 -- every
     broad-scan audit family window.
 
-The dump is the reading basis for analysis/reliability/round8_ai_readback_codes.csv
+The dump is the reading basis for analysis/reliability/readback_ai_codes.csv
 and is released so that each judgement in that file can be checked against
 the same evidence.
 
-Output: analysis/reliability/round8_evidence_dump.txt
+Output: analysis/reliability/readback_evidence_dump.txt
 """
 import csv
 import os
 import re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SNAPR8 = os.path.join(ROOT, "analysis", "search_snapshot_2026-10-19", "round8")
+SNAPR8 = os.path.join(ROOT, "analysis", "search_snapshot_2026-10-19", "reconstruction")
 OUT = os.path.join(ROOT, "analysis", "reliability",
-                   "round8_evidence_dump.txt")
+                   "readback_evidence_dump.txt")
 
 digest = open(os.path.join(ROOT, "analysis", "evidence", "digest.txt"),
               encoding="utf-8").read()

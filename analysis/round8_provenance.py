@@ -21,7 +21,7 @@ script builds:
   4. Re-run of the review headline fields on the probe-only subset of the
      83 full-text-coded records (from the existing coded matrix).
 
-Everything is written under analysis/search_snapshot_2026-10-19/round8/ with a
+Everything is written under analysis/search_snapshot_2026-10-19/reconstruction/ with a
 README stating what each artifact is and is not (a dated Crossref
 reconstruction, NOT the original OpenAlex provenance, which was not retained).
 

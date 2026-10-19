@@ -264,13 +264,13 @@ Reproduce with `python3 analysis/reliability_round4.py`.
 ## Round-7 additions (2026-10-19)
 
 - **Readback of the 15 weak audit firings** (author, post hoc, windows+abstracts;
-  `analysis/R7_READBACK.md`): 13 cleared, 2 borderline score-1 candidates (R21 red-team
+  `analysis/AUTHOR_READBACK.md`): 13 cleared, 2 borderline score-1 candidates (R21 red-team
   RL agents; R100 closing sentence on DL-enhanced attacks). Upper bound if both
   re-scored: 37/83 (44.6%) any. No substantive false negative.
 - **Seeded sample of the 48 negatives** (seed 7; n=12: R9, R10, R13, R19, R48, R62,
   R65, R79, R81, R85, R89, R93): 12/12 confirmed at zero. Two generic twin-as-object
   one-liners found (R48, R88) — undeveloped, non-AI, set aside by the strict rule.
-- **R91/R92 read and post-hoc coded** (`analysis/R7_READBACK.md`): both *both*-role,
+- **R91/R92 read and post-hoc coded** (`analysis/AUTHOR_READBACK.md`): both *both*-role,
   nuclear domain; R91 attacks the twin itself (SSRF -> exfiltration -> offline twin
   replica -> deception of twin control; 5G jamming); R92 constructs multi-rate
   hyperparameter attacks on the twin's ML models. Not merged into the frozen matrix.

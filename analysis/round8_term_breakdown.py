@@ -15,7 +15,7 @@ descending, citations descending within year). The manifest makes the
 realised corpus's ranking components inspectable even though the composite
 weights of the original top-100 cut cannot be recovered.
 
-Outputs (analysis/search_snapshot_2026-10-19/round8/):
+Outputs (analysis/search_snapshot_2026-10-19/reconstruction/):
   probe_added_term_breakdown.csv  -- per-record dt/grid/security term flags
   retained100_ranking_manifest.csv
 """
@@ -25,7 +25,7 @@ import re
 from collections import Counter
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT = os.path.join(ROOT, "analysis", "search_snapshot_2026-10-19", "round8")
+OUT = os.path.join(ROOT, "analysis", "search_snapshot_2026-10-19", "reconstruction")
 
 DT_RE = re.compile(r"digital[\s-]*twins?")
 GRID_RE = re.compile(r"grid|power|energy")

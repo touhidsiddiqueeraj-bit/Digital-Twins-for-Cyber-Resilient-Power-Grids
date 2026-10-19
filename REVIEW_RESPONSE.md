@@ -637,7 +637,7 @@ repetition, formatting).
 * **The 15 weak audit firings were read.** All 15 weak-only firings of the broad net
   (ids 3, 7, 10, 11, 13, 18, 21, 25, 39, 45, 63, 77, 80, 88, 100) were inspected from the
   released audit windows plus stored abstracts (author-conducted, post hoc,
-  single-reader; per-record adjudication in `analysis/R7_READBACK.md`). 13 cleared
+  single-reader; per-record adjudication in `analysis/AUTHOR_READBACK.md`). 13 cleared
   (acronyms, classical adversary prose, defensive claims, related-work mentions,
   twin-synthesised training data, one future-work GAN plan). 2 borderline score-1
   candidates flagged, not re-scored: R21 (red-team RL agents) and R100 (closing sentence
@@ -775,15 +775,15 @@ edits.
 A third OpenAlex re-run was attempted on 2026-10-19 and blocked again by the shared-IP
 budget. The sixteen reconstructed query strings were therefore re-executed against
 Crossref to a depth of 1,000 results per query (16 calls, archived per query in
-`analysis/search_snapshot_2026-10-19/round8/top1000/`), and per-record query provenance
+`analysis/search_snapshot_2026-10-19/reconstruction/top1000/`), and per-record query provenance
 was rebuilt two ways:
 
 * **List match:** each retained record matched against the sixteen top-1,000 lists
-  (`round8/provenance_retained100.csv`). 49 of 100 records match at least one list; only
+  (`reconstruction/provenance_retained100.csv`). 49 of 100 records match at least one list; only
   **R50** is probe-only.
 * **Text-level re-execution:** each query's phrase components re-run against each
   record's own title, abstract, and released full-text keyword windows
-  (`round8/retrievability_textlevel.csv`, variants A and B). Variant A (title+abstract):
+  (`reconstruction/retrievability_textlevel.csv`, variants A and B). Variant A (title+abstract):
   only R50 is probe-only; variant B (with windows): none is.
 
 **Both reconstructions agree: at most one retained record (R50) is probe-only, so the
@@ -794,8 +794,8 @@ conditioning: the corpus is a core-vocabulary corpus, and the attack-side rate r
 conditional on that retrieval design.
 
 **The screening status of the probe-added channel is now established on the same dated
-reconstruction** (`round8/probe_added_screening.csv`,
-`round8/probe_added_term_breakdown.csv`): 1,484 probe-added candidates, 304 with
+reconstruction** (`reconstruction/probe_added_screening.csv`,
+`reconstruction/probe_added_term_breakdown.csv`): 1,484 probe-added candidates, 304 with
 abstracts; **14 pass the three-term eligibility rule, and none of the 14 carries
 adversarial-AI vocabulary**. The 396 probe-added records that do carry such vocabulary
 fail eligibility in title/abstract — only 59 name a digital twin at all, only 4 name a
@@ -823,7 +823,7 @@ and one-liner-set-aside qualifiers. The abstract stays within the 250-word limit
 
 The original 492-record export is unrecoverable, so the fix is executed as a three-part
 released substitute (Section 4.3 rewritten; all under
-`analysis/search_snapshot_2026-10-19/round8/`):
+`analysis/search_snapshot_2026-10-19/reconstruction/`):
 
 1. **`retained100_ranking_manifest.csv`** — per retained record: OpenAlex relevance score
    and citation count as retrieved, plus year. It mechanically verifies the display-order
@@ -845,7 +845,7 @@ original 492.
 ### Item 4 — independent reliability check: executed to the extent a non-human instrument allows, and the human protocol pre-specified
 
 * **The paper's own stated fix is now pre-specified as a releasable protocol**
-  (`analysis/reliability_protocol_round8.md`): independent non-author coder, n = 60
+  (`analysis/reliability_protocol.md`): independent non-author coder, n = 60
   enriched (all 35 engaged + 25 seeded negatives), third-party adjudicator without a
   default tie-break, and an independent full-text re-read of a seeded 20-record sample
   of the 48 negatives with a Wilson miss-rate interval propagated to 35/83 — with
@@ -856,8 +856,8 @@ original 492.
   census, hence ≥50 and enriched by construction) from a released evidence dump (title +
   abstract + the same full-text keyword windows), record by record, before joining to
   coder 1's values. Per-record codes and quoted bases:
-  `analysis/reliability/round8_ai_readback_codes.csv`; joined comparison:
-  `round8_readback_joined.csv`.
+  `analysis/reliability/readback_ai_codes.csv`; joined comparison:
+  `readback_joined.csv`.
 * **Results (Section 5.7 new block, Section 5.8 updated):** any-collapse agreement
   79/83 (95.2%, κ = 0.90, PABAK 0.90); three-level 78/83 (κ = 0.89); the five
   disagreements are the informative content — R32/R66 (engagement is a declared future
@@ -888,7 +888,7 @@ re-scoring as the available adjustment.
 
 The notes-based split (4 with / 5 on / 2 both, substantive only) is replaced as the
 primary reporting by a **coded direction field over all 35 engaged records**
-(`analysis/reliability/round8_ai_readback_codes.csv`, column `my_direction`, with
+(`analysis/reliability/readback_ai_codes.csv`, column `my_direction`, with
 per-record basis quotes): **25 on-component, 6 AI-wielded (R2, R49, R57, R64, R69, R84),
 2 both (R20, R22), 2 unclear (R33, R56)**; among the 11 substantive: 7 on / 3 with
 (R49, R57, R69) / 1 both (R22). Per-vector direction cross-tabs are reported in Section
@@ -929,7 +929,7 @@ caption now also carries them.
 Section 5.6 gains a declared four-signal appraisal over the 49 primary (non-review,
 full-text) studies — peer-review venue flag, cited, comparative evaluation, code-or-data
 released — built only from already-coded fields and released as
-`analysis/quality_appraisal_round8.csv` (per-record signals; `analysis/round8_stats_all.py`
+`analysis/quality_appraisal.csv` (per-record signals; `analysis/round8_stats_all.py`
 recomputes it). Distribution {0: 1, 1: 3, 2: 15, 3: 23, 4: 7}. Engagement by tier: the
 30 studies with ≥3 signals engage 37% any / 7% substantive; the 4 studies with ≤1 signal
 engage 75% / 25%, and their substantive case is R69 (the flagged IRJMETS record). RQ4

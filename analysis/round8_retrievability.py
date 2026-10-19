@@ -22,7 +22,7 @@ Classification per variant:
 The headline fields (any/substantive engagement, ML use) are then re-run on the
 probe-only subset of the 83 full-text records.
 
-Output: analysis/search_snapshot_2026-10-19/round8/retrievability_textlevel.csv
+Output: analysis/search_snapshot_2026-10-19/reconstruction/retrievability_textlevel.csv
 """
 import csv
 import json

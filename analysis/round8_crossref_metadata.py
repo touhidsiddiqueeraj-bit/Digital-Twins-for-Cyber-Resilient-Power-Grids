@@ -6,7 +6,7 @@ truncated (~250 chars); the text-level retrievability reconstruction of
 round8_retrievability.py needs full title+abstract text, so this script
 fetches authoritative Crossref metadata one DOI at a time and caches it.
 
-Output: analysis/search_snapshot_2026-10-19/round8/retained100_crossref_metadata.csv
+Output: analysis/search_snapshot_2026-10-19/reconstruction/retained100_crossref_metadata.csv
 Columns: id, doi, crossref_doi, title, abstract, is-referenced-by-count,
 container, type, year, http_status (ok | no-doi | not-found | error)
 """
@@ -19,7 +19,7 @@ import urllib.parse
 import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT = os.path.join(ROOT, "analysis", "search_snapshot_2026-10-19", "round8")
+OUT = os.path.join(ROOT, "analysis", "search_snapshot_2026-10-19", "reconstruction")
 os.makedirs(OUT, exist_ok=True)
 DEST = os.path.join(OUT, "retained100_crossref_metadata.csv")
 

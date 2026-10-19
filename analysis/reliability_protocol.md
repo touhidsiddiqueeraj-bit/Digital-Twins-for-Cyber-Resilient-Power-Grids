@@ -10,8 +10,8 @@ its execution is a matter of staffing rather than design. What was executable
 without human coders — an independent automated (LLM-instrument) readback at
 abstract-plus-window level over all 83 full-text records — was carried out and
 is reported in the manuscript (Sections 4.8, 5.7, 5.8) and released as
-`analysis/reliability/round8_ai_readback_codes.csv` (per-record codes and
-quoted bases) and `analysis/reliability/round8_readback_joined.csv` (joined
+`analysis/reliability/readback_ai_codes.csv` (per-record codes and
+quoted bases) and `analysis/reliability/readback_joined.csv` (joined
 against coder 1). The automated readback substitutes a reader, not the
 evidence base: it reads released keyword windows and stored/fetched abstracts,
 so it cannot catch misses that window selection would not contain, and it does

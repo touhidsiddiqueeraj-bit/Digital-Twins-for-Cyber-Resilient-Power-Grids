@@ -32,7 +32,7 @@ Last updated: 2026-10-19
 > score-1 candidates, upper bound 37/83), a seeded 12-record sample of the 48 negatives
 > was re-read (12/12 confirmed), and R91/R92 were obtained and read (R91 in full text
 > from the INL library, R92 from its extended OSTI abstract; both read as *both*-role,
-> released as `analysis/R7_READBACK.md`). The headline was restated to what the
+> released as `analysis/AUTHOR_READBACK.md`). The headline was restated to what the
 > instrument supports (any-level engagement common; depth not reliably measured — the
 > substantive threshold partly proxies document length, 0/14 conference papers clear
 > it); the original asymmetry hypothesis is stated plainly as not supported and the

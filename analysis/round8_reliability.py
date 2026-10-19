@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Round-8: independent (AI-instrument) reliability readback statistics.
 
-Consumes analysis/reliability/round8_ai_readback_codes.csv (a full census of
+Consumes analysis/reliability/readback_ai_codes.csv (a full census of
 the 83 full-text records, coded by a non-author automated reader from the
 released evidence dump) and computes:
 
@@ -67,7 +67,7 @@ def main():
     matrix = {r["id"]: r for r in csv.DictReader(
         open(os.path.join(AN, "extraction_matrix.csv"), encoding="utf-8"))}
     mine = {r["id"]: r for r in csv.DictReader(
-        open(os.path.join(AN, "reliability", "round8_ai_readback_codes.csv"),
+        open(os.path.join(AN, "reliability", "readback_ai_codes.csv"),
              encoding="utf-8"))}
     full_ids = sorted([rid for rid, r in matrix.items()
                        if r["fulltext"] == "yes"], key=int)
@@ -160,12 +160,12 @@ def main():
             "round8_flag": y["flag"],
             "round8_basis": y["basis"],
         })
-    with open(os.path.join(AN, "reliability", "round8_readback_joined.csv"),
+    with open(os.path.join(AN, "reliability", "readback_joined.csv"),
               "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=list(out[0].keys()))
         w.writeheader()
         w.writerows(out)
-    print("\nwrote analysis/reliability/round8_readback_joined.csv")
+    print("\nwrote analysis/reliability/readback_joined.csv")
 
 
 if __name__ == "__main__":

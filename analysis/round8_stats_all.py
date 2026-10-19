@@ -3,7 +3,7 @@
 equivalents (Item 7), light quality appraisal (Item 9).
 
 Outputs:
-  analysis/quality_appraisal_round8.csv  -- per-record quality signals
+  analysis/quality_appraisal.csv  -- per-record quality signals
   console tables quoted in the manuscript revision
 """
 import csv
@@ -156,7 +156,7 @@ def main():
             "primary_study_score_0_4": primary_score,
             "ai_threat_overall": r["ai_threat_overall"],
         })
-    with open(os.path.join(AN, "quality_appraisal_round8.csv"), "w",
+    with open(os.path.join(AN, "quality_appraisal.csv"), "w",
               newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=list(out_rows[0].keys()))
         w.writeheader()
