@@ -13,7 +13,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 
-ROOT = "/mnt/drive2/newpaper"
+ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 OUT = os.path.join(ROOT, "figures")
 os.makedirs(OUT, exist_ok=True)
 
@@ -34,15 +34,15 @@ def save(fig, name):
 
 
 def fig1_prisma():
-    fig, ax = plt.subplots(figsize=(7.4, 6.2))
+    fig, ax = plt.subplots(figsize=(7.4, 6.6))
     ax.axis("off")
     W, H = 3.1, 0.62
     boxes = [
-        (2.6, 5.55, "Identification", "1,287 unique works\n(12 OpenAlex queries;\n2,000 incl. adversarial-AI probes)", NAVY),
-        (2.6, 4.35, "Screening", "795 excluded — no digital-twin\nterm or no grid domain\n492 eligible", TEAL),
-        (2.6, 3.15, "Eligibility", "392 excluded by relevance,\ncitation and recency ranking\n100 retained", AMBER),
-        (1.1, 1.75, "Included — fully read", "83 records\n(full text coded in full)", "#3E6B3E"),
-        (4.35, 1.75, "Included — abstract only", "17 records\n(full text not obtained)\nDOIs listed for access", RED),
+        (2.6, 5.75, "Identification", "1,287 unique works from\n12 core OpenAlex queries\n(screened set)", NAVY),
+        (2.6, 4.55, "Screening", "795 excluded — no digital-twin,\ngrid or security term\n492 eligible", TEAL),
+        (2.6, 3.35, "Selection (non-probabilistic)", "392 not retained — top-100 cut\nby relevance, citations, recency\n(a selection step, not eligibility)", AMBER),
+        (1.1, 1.95, "Included — fully read", "83 records\n(full text coded in full)", "#3E6B3E"),
+        (4.35, 1.95, "Included — abstract only", "17 records\n(full text not obtained)\nDOIs listed in appendix", RED),
     ]
     for x, y, title, body, col in boxes:
         ax.add_patch(FancyBboxPatch((x, y), W, H, boxstyle="round,pad=0.06,rounding_size=0.08",
@@ -50,16 +50,28 @@ def fig1_prisma():
                                     facecolor=col, alpha=0.12, zorder=2))
         ax.text(x + W / 2, y + H - 0.16, title, ha="center", va="center",
                 fontweight="bold", color=col, zorder=3)
-        ax.text(x + W / 2, y + H / 2 - 0.16, body, ha="center", va="center", fontsize=7.4, zorder=3)
-    for y0, y1 in ((5.55, 5.03), (4.35, 3.83), (3.15, 2.63)):
+        ax.text(x + W / 2, y + H / 2 - 0.16, body, ha="center", va="center", fontsize=7.2, zorder=3)
+    for y0, y1 in ((5.75, 5.23), (4.55, 4.03), (3.35, 2.63)):
         ax.add_patch(FancyArrowPatch((2.6 + W / 2, y0), (2.6 + W / 2, y1),
                                      arrowstyle="-|>", mutation_scale=12, color="#333333"))
-    ax.add_patch(FancyArrowPatch((2.6 + W / 2, 3.15), (1.1 + W / 2, 2.43),
+    ax.add_patch(FancyArrowPatch((2.6 + W / 2, 3.35), (1.1 + W / 2, 2.63),
                                  arrowstyle="-|>", mutation_scale=12, color="#333333"))
-    ax.add_patch(FancyArrowPatch((2.6 + W / 2, 3.15), (4.35 + W / 2, 2.43),
+    ax.add_patch(FancyArrowPatch((2.6 + W / 2, 3.35), (4.35 + W / 2, 2.63),
                                  arrowstyle="-|>", mutation_scale=12, color="#333333"))
-    ax.set_xlim(0.6, 7.9)
-    ax.set_ylim(1.4, 6.5)
+    # Probes annotation (unresolved provenance)
+    ax.add_patch(FancyBboxPatch((0.55, 5.75), 1.55, 0.62, boxstyle="round,pad=0.06,rounding_size=0.08",
+                                linewidth=1.0, edgecolor=GREY, facecolor=GREY, alpha=0.10, zorder=2))
+    ax.text(1.32, 6.28, "Adversarial-AI probes", ha="center", va="center",
+            fontweight="bold", color="#666666", fontsize=8, zorder=3)
+    ax.text(1.32, 6.00, "4 queries, ≈700 more\nrecords — screening\nstatus not established\n(released record)", ha="center",
+            va="center", fontsize=6.4, color="#444444", zorder=3)
+    ax.add_patch(FancyArrowPatch((2.10, 6.06), (2.58, 6.06),
+                                 arrowstyle="-|>", mutation_scale=9, color=GREY,
+                                 linestyle="dashed"))
+    ax.text(3.9, 5.32, "probes' contribution to the\nretained 100 is unknown", ha="center",
+            va="center", fontsize=6.2, color="#777777", style="italic")
+    ax.set_xlim(0.4, 7.9)
+    ax.set_ylim(1.55, 6.65)
     save(fig, "fig1_prisma")
 
 

@@ -17,7 +17,7 @@ import os
 import re
 import subprocess
 
-ROOT = "/mnt/drive2/newpaper"
+ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 AN = os.path.join(ROOT, "analysis")
 
 # Each family is a broad indication that the AI/ML/DT component itself is under attack.

@@ -1,17 +1,20 @@
 # Digital Twins for Cyber-Resilient Power Grids
 
-**A Systematic Review and a Research Agenda for the AI-Powered Era**
+**A Structured Corpus Review of Defensive and Attack-Side AI, with a Research Agenda**
 
-Code, data, and manuscript for a PRISMA-2020-style systematic review examining whether
-grid digital-twin security research treats AI as a defensive tool faster than it models
-AI-enabled threats — or the twin itself — as an attack target.
+Code, data, and manuscript for a structured literature review (PRISMA-flow reporting on a
+ranked corpus — not a PRISMA systematic review) examining whether grid digital-twin
+security research uses AI as a defensive tool more often than it engages AI-enabled
+threats — or the twin itself — as an attack target.
 
-- **Type:** systematic literature review + research agenda (not an empirical study)
+- **Type:** structured literature review + research agenda (not an empirical study; not a
+  registered systematic review — one database, ranked top-100 subset)
 - **Target venue:** *International Journal of Critical Infrastructure Protection* (Elsevier)
-- **Corpus:** 100 studies (2020–2026), screened from 1,287 unique OpenAlex records;
+- **Corpus:** 100 studies (2020–2026), a declared non-probabilistic top-100 ranking of 492
+  eligible records screened from 1,287 unique OpenAlex core-query records;
   83 coded at full text, 17 at abstract level
-- **Status:** manuscript drafted (`manuscript.pdf`); author list is a placeholder pending
-  finalisation
+- **Status:** revised after a third review round (see `REVIEW_RESPONSE.md`); author list is
+  a placeholder pending finalisation
 
 ---
 
@@ -19,21 +22,23 @@ AI-enabled threats — or the twin itself — as an attack target.
 
 | Finding | Number |
 |---|---|
-| AI used **defensively** (full text) | 70 / 83 |
-| Engage **any** AI-enabled threat | 35 / 83 (42.2%) |
-| Engage an AI threat **substantively** | 11 / 83 (13.3%) |
-| Treat the twin itself as an **attack target** | 1 / 83 |
-| Research concentrated at **operation** stage | 66 / 83 |
-| Studies from **2025–2026** | 76% |
+| ML used (full text) | 70 / 83 — **for detection in 55** (forecasting 12, control 3 are not security functions) |
+| Engage **any** AI-enabled threat | 35 / 83 (42.2%); within the 29 security-primary, non-review, detection-ML studies: 16 (55%) |
+| Engage an AI threat **substantively** | 11 / 83 (13.3%; fragile, κ = 0.14) |
+| Twin as the adversary's **objective** (strict) | **0 grid studies** (1 non-grid vehicle record); 56/83 name an attack channel on the twin's data path or models |
+| Research concentrated at **operation** stage | 66 / 83 (field agreement κ = 0.32 — descriptive only) |
+| Studies from **2025–2026** | 76% (partly a selection artefact of the recency-weighted ranking) |
 
 AI-threat engagement by vector (score ≥1): adversarial ML 24, poisoning 19, evasion 9,
-LLM 4, agentic 2. The abstract-only screening figure (5.1%) under-counted engagement by
-roughly a factor of eight relative to full-text coding — reported in the paper as a
-methodological validity finding.
+LLM 4, agentic 2. The abstract-only screening figure (5.1%) is quoted in the paper only as
+an illustration of screening loss, not a correction factor.
 
-Two coders coded a stratified 20% blind sample: κ = 0.60 for "any engagement",
-κ = 0.14 for "substantive" engagement (results are stated as bounds, not population
-estimates). Full per-field agreement statistics: [`analysis/reliability/AGREEMENT.md`](analysis/reliability/AGREEMENT.md).
+Two coders (both authors of the review) coded a blind sample of 20 of the 83 full-text
+records (24%): κ = 0.60 (bootstrap 95% CI 0.20–0.90) for "any engagement", κ = 0.14
+(−0.23–0.64) for "substantive"; PABAK and bias indices are reported per field. A
+misclassification sensitivity anchored on the second coder puts the headline at 36/83
+(95% CI 21–51). Full per-field agreement statistics:
+[`analysis/reliability/AGREEMENT.md`](analysis/reliability/AGREEMENT.md).
 
 ---
 
@@ -43,6 +48,7 @@ estimates). Full per-field agreement statistics: [`analysis/reliability/AGREEMEN
 PAPER_PLAN.md                    paper plan: research questions, contributions, timeline, traps
 manuscript.tex                   LaTeX source (elsarticle, IJCIP)
 manuscript.pdf                   compiled manuscript
+appendix_corpus.tex              Appendix A: all 100 included studies (auto-generated)
 included.bib                     bibliography (101 entries)
 highlights.txt                   Elsevier highlights
 figures/                         5 figures (PDF + PNG, 300 dpi) and make_figures.py
@@ -61,6 +67,8 @@ downloads_manifest.csv           retrieval manifest (query set, run dates, outco
 digital_twin_grid_cybersecurity_papers.csv   screened corpus with abstracts
 doi_verification.csv             DOI verification log
 venue_index.csv / prisma_flow.txt            PRISMA flow inputs
+SEARCH_PROVENANCE.md             search-provenance gap manifest (required artifacts)
+REVIEW_RESPONSE.md               round-3 review response: every point → action taken
 *_proposal.pdf/.pptx             research proposal
 Peer_Review_Report*.pdf, peerreview*.docx    peer review materials
 gen_bib.py                       bibliography helper
@@ -72,10 +80,10 @@ gen_bib.py                       bibliography helper
 ## Reproducing the analysis
 
 All scripts are plain Python 3 with no CLI arguments; most depend only on the standard
-library (`figures/make_figures.py` additionally needs `matplotlib`).
-
-> **Note:** scripts hard-code `ROOT = "/mnt/drive2/newpaper"`. Run them from that path
-> or edit the `ROOT` constant at the top of each script.
+library (`figures/make_figures.py` additionally needs `matplotlib`). Scripts resolve the
+repository root relative to their own location, so they can be run from a fresh clone.
+(`analysis/audit_false_negatives.py` additionally needs the local `papers/` full texts,
+which are not redistributable.)
 
 ```bash
 # 1. Verify every DOI against Crossref, then DataCite
@@ -100,13 +108,17 @@ Every number in the manuscript tables is derived from `analysis/extraction_matri
 
 ## Building the manuscript
 
-Requires a LaTeX distribution with `elsarticle` (TeX Live / MiKTeX).
+Requires a LaTeX distribution with `elsarticle` (TeX Live / MiKTeX), or `tectonic`
+(one-pass, fetches packages itself).
 
 ```bash
 pdflatex manuscript.tex
-bibtex manuscript          # optional: manuscript.bbl is committed
+bibtex manuscript          # required: manuscript.bbl is no longer committed
 pdflatex manuscript.tex
 pdflatex manuscript.tex
+
+# or, with tectonic (handles bibtex internally):
+tectonic manuscript.tex
 ```
 
 Figures live in `figures/` and are found via `\graphicspath`.
@@ -115,25 +127,38 @@ Figures live in `figures/` and are found via `\graphicspath`.
 
 ## Method summary
 
-Following PRISMA 2020 style: an OpenAlex query set (including explicit adversarial-AI
-probes) yielded 1,287 unique records; title/abstract screening, full-text retrieval, and
-DOI verification reduced these to 100 studies that both name a *digital twin* and a
-*security term* in a power-grid context. Full texts (83) were coded across 46 fields by
-computer-assisted human reading, with a stratified 20% double-coded sample for
-reliability. Adversarial-ML grid work that does not mention a twin is out of scope.
+A structured review with PRISMA-2020 flow reporting: twelve OpenAlex core queries
+(digital-twin × grid × security terms) yielded 1,287 unique records; title/abstract
+screening against the three-term rule left 492 eligible; a declared non-probabilistic
+ranking (relevance, citations, recency) retained the top 100. Full texts (83) were coded
+across 46 fields by computer-assisted human reading, with a 20-record blind sample
+(24% of full-text records) double-coded for reliability (κ, bootstrap CIs, PABAK, bias
+indices). Four adversarial-AI probe queries widened the candidate pool to ≈2,000 but
+their contribution to the corpus is not established in the released record — declared in
+the paper and tracked in `SEARCH_PROVENANCE.md`. Adversarial-ML grid work that does not
+mention a twin is out of scope.
 
-**Positioning:** the review is a theory-testing complement to Habeeb, Weli & Almaliki's
-(2026) PRISMA review of "Dual-Role Digital Twins", which operationalises only the defence
-axis. See [`analysis/COMPETING_REVIEWS.md`](analysis/COMPETING_REVIEWS.md).
+**Positioning:** the review is a narrow grid-side measurement (strict twin-as-objective
+count, plus looser tiers) complementing Habeeb, Weli & Almaliki's (2026) review of
+"Dual-Role Digital Twins". See
+[`analysis/COMPETING_REVIEWS.md`](analysis/COMPETING_REVIEWS.md).
 
 ## Known caveats
 
+- **This is not a systematic review.** One database, no registered protocol, and a ranked
+  (non-random) top-100 subset of 492 eligible records. Prevalence figures describe the
+  corpus, not the literature. The title and methods say so.
+- **Probe provenance is unresolved.** The four adversarial-AI probe queries widened the
+  candidate pool but cannot be shown to have contributed to the retained 100; the claim
+  that they make the result robust to retrieval bias is withdrawn. See
+  [`SEARCH_PROVENANCE.md`](SEARCH_PROVENANCE.md) for the gap and the required artifacts.
 - Full-text claims rest on **83/100** records (17 are abstract-only) — never cite "100"
-  for full-text numbers.
-- **76% of the corpus is 2025–26**; treat it as a dated snapshot with a stated search
-  cutoff.
-- Inter-rater κ must be read alongside prevalence; where a category is near-constant,
-  percentage agreement is reported instead (see `AGREEMENT.md`).
+  for full-text numbers. The 17% is an access limitation of the authors, not a
+  reproducibility finding.
+- **76% of the corpus is 2025–26**, partly an artefact of the recency-weighted ranking.
+- Inter-rater κ must be read alongside prevalence; PABAK and bias indices are reported
+  alongside κ, and the threat-vocabulary fields are the least reliable data in the
+  package (exact-set agreement 5%, Jaccard 0.43).
 - Manuscript author list and corresponding author are **placeholders** (the
   Research4Life waiver route constrains the corresponding-author affiliation).
 

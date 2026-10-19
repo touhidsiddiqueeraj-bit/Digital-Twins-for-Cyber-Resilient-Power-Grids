@@ -17,7 +17,7 @@ import os
 import random
 from collections import Counter, defaultdict
 
-ROOT = "/mnt/drive2/newpaper"
+ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 AN = os.path.join(ROOT, "analysis")
 REL = os.path.join(AN, "reliability")
 SEED = 20261016

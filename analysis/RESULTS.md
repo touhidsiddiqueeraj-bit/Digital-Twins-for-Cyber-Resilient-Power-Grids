@@ -128,3 +128,88 @@ Operation-only share: **79.5%**; design or commissioning addressed at all: **1**
 - transmission: 5
 - unclear: 7
 
+
+---
+
+## Round-3 revision additions (2026-10-19)
+
+### Matched denominators (Flaw 3 fix)
+
+| Subset (full text) | n | any AI-threat | substantive |
+|---|---|---|---|
+| all full-text | 83 | 35 (42.2%) | 11 (13.3%) |
+| non-review | 49 | 20 (40.8%) | 6 (12.2%) |
+| security-primary, non-review | 41 | 16 (39.0%) | 6 (14.6%) |
+| security-primary, non-review, ML-detection | 29 | 16 (55.2%) | 6 (20.7%) |
+| journal-only | 62 | 26 (41.9%) | 9 (14.5%) |
+
+- ML role split: detection 55, forecasting 12, control 3, none 13. Forecasting/control are
+  not security functions → security-relevant defensive ML = 55/83 (66.3%), not 70/83.
+- 30/55 detection-ML studies engage an AI threat.
+
+### Year-wise profile (full text, n=83) — descriptive only (ranked, recency-weighted corpus)
+
+| year | n | ML | any | subst |
+|---|---|---|---|---|
+| 2020 | 1 | 0 | 0 | 0 |
+| 2021 | 3 | 0 | 0 | 0 |
+| 2022 | 2 | 2 | 1 | 1 |
+| 2023 | 6 | 4 | 0 | 0 |
+| 2024 | 7 | 6 | 1 | 0 |
+| 2025 | 27 | 23 | 15 | 6 |
+| 2026 | 37 | 35 | 18 | 4 |
+
+### Tiered twin counts (Flaw 4 fix, full text n=83)
+
+| Tier | Records |
+|---|---|
+| Twin as adversary's objective (strict target) | 1 (id 59, vehicle domain → 0 grid) |
+| Names ≥1 interface threat (mitm/replay/reverse_pathway/false_command) | 44 |
+| Names ≥1 model threat (poisoning/evasion/prompt) | 27 |
+| Names ≥1 of either (attack channel) | 56 (overlap 15) |
+| Twin as protected asset (tool) | 75 (51 also name an attack channel) |
+| attack_surface_named = yes | 55 (66.3%; κ = 0.14, PABAK 0.20) |
+
+### Strict-grid-scope sensitivity (Flaw 9 fix)
+
+- Tier A exclusions (outside power-grid on strict reading): ids 18, 59, 69, 97 → n=79:
+  ML 67, detection 52, any 33 (41.8%), substantive 10 (12.7%), strict target 0.
+- Tier A+B exclusions (also 34 nuclear DT, 68 security education, 84 battery-telecom):
+  n=76: ML 65, detection 50, any 32 (42.1%), substantive 10 (13.2%), strict target 0.
+- Direction of the asymmetry robust to scope; magnitude moves ≤1.5 points.
+
+### Reliability additions (Flaw 6 fix)
+
+PABAK and bias index (max between-coder marginal difference) computed from the frozen
+coder sheets; bootstrap 95% CIs (10k resamples):
+
+| Field | %agree | κ | bootstrap 95% CI | PABAK | bias |
+|---|---|---|---|---|---|
+| ai_threat_overall (3-class) | 65 | 0.41 | [0.08, 0.72] | 0.48 | 0.05 |
+| ai_threat_overall (any-vs-none) | 80 | 0.60 | [0.20, 0.90] | 0.60 | 0.00 |
+| ai_threat_overall (subst-vs-not) | 75 | 0.14 | [−0.23, 0.64] | 0.50 | 0.05 |
+| twin_role | 95 | 0.77 | [0.00, 1.00] | 0.93 | 0.05 |
+| attack_surface_named | 60 | 0.14 | [−0.19, 0.49] | 0.20 | 0.30 |
+| lifecycle_stage | 65 | 0.32 | [−0.07, 0.67] | 0.59 | 0.25 |
+
+Sample frame: 20 of the 83 full-text records (24%), not 20% of 100.
+
+### Misclassification sensitivity (Flaw 7 fix, replaces Wilson intervals)
+
+Coder-2-as-gold-standard propagation: P(C2 engaged|C1 engaged)=7/9, P(C2 engaged|C1
+zero)=2/11 → expected 35×7/9 + 48×2/11 ≈ **36 of 83 (43.3%)**, bootstrap 95% CI
+**[21, 51]** (25.6%–61.4%). Coder 2 is a co-author: consistency check, not independent
+validation.
+
+### AI-wielded vs AI-attacked (construct split, substantive studies)
+
+- AI-wielded attack generation: ids 22, 49, 57, 69
+- Attacks on learned components: ids 16, 17, 24, 54, 74
+- Both/mixed: ids 50, 94
+- The any-engagement count (35) does not separate the two directions.
+
+### Substantive-vector concentration
+
+- ai_evasion=2: only id 50. ai_agentic=2: only id 50. ai_llm=2: ids 16, 50.
+  → one review (id 50) supplies every substantive evasion and agentic case and half the
+  substantive LLM cases.

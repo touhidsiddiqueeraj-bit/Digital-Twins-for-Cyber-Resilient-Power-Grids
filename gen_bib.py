@@ -2,14 +2,32 @@
 """Generate included.bib from extraction_matrix.csv (keys ref<id>)."""
 import csv
 import os
+import unicodedata
 
-ROOT = "/mnt/drive2/newpaper"
+ROOT = os.path.dirname(os.path.abspath(__file__))
 rows = list(csv.DictReader(open(os.path.join(ROOT, "analysis", "extraction_matrix.csv"), encoding="utf-8")))
 
 SPECIAL = {"&": r"\&", "%": r"\%", "#": r"\#", "_": r"\_"}
 
+# Characters that T1 (EC fonts) cannot render, mapped to safe equivalents.
+DASHES = {"\u2010": "-", "\u2011": "-", "\u2012": "-", "\u2013": "--",
+          "\u2014": "---", "\u2015": "--", "\u2212": "-"}
+
+
+def normalize(s):
+    """Transliterate to LaTeX-safe, T1-renderable text."""
+    for src, dst in DASHES.items():
+        s = s.replace(src, dst)
+    # NFKD + strip combining marks handles ă, ş, İ, č, etc.
+    s = unicodedata.normalize("NFKD", s)
+    s = "".join(ch for ch in s if not unicodedata.combining(ch))
+    # any remaining non-Latin-1 char: drop to ASCII via latin-1 round trip
+    s = s.encode("latin-1", "replace").decode("latin-1")
+    return s.replace("\ufffd", "")
+
 
 def esc(s):
+    s = normalize(s)
     for k, v in SPECIAL.items():
         s = s.replace(k, v)
     return s
@@ -19,7 +37,7 @@ def author(r):
     ORG = ("labs", "university", "inc", "corp", "institute", "technologist", "college")
     parts = []
     for a in r["authors"].split(";"):
-        a = " ".join(a.split()).replace(",", " ")
+        a = normalize(" ".join(a.split()).replace(",", " "))
         if not a or len(a.split()) > 5 or any(w in a.lower() for w in ORG):
             continue
         parts.append(a)
@@ -47,7 +65,9 @@ for r in rows:
         venue = "  booktitle = {" + esc(r["venue"]) + "},"
     else:
         typ = "@misc{"
-        venue = "  howpublished = {" + esc(r["venue"]) + " (" + r["venue_type"] + ")}, "
+        # venue_type contains underscores (book_chapter): use a printable label
+        vtype = r["venue_type"].replace("_", " ")
+        venue = "  howpublished = {" + esc(r["venue"]) + " (" + vtype + ")}, "
     entry = [f"{typ}{key},",
              f"  author = {{{a}}},",
              f"  title = {{{esc(r['title'])}}},",

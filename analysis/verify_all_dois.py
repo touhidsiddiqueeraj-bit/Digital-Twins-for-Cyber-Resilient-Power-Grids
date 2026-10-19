@@ -14,7 +14,7 @@ import urllib.parse
 import urllib.request
 from difflib import SequenceMatcher
 
-ROOT = "/mnt/drive2/newpaper"
+ROOT = os.path.normpath(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "analysis", "doi_verification_all.csv")
 UA = "dtreview-doi-verifier/1.0 (mailto:research@example.org)"
 

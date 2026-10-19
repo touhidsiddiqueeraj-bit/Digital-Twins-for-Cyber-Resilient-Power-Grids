@@ -3,6 +3,15 @@
 Status: execution started. Corpus frozen at 100 records.
 Last updated: 2026-10-16
 
+> **Round-3 revision note (2026-10-19).** This plan predates the third review round and
+> still describes the paper as a "systematic review" with an "AI-Powered Era" framing.
+> Both were withdrawn in the round-3 revision: the paper is now a *structured corpus
+> review* (ranked top-100 subset, PRISMA-flow reporting only), and the claims were
+> re-derived with matched denominators, tiered twin counts, strict-scope sensitivity
+> analysis, PABAK/bias reliability statistics, and a misclassification sensitivity in
+> place of Wilson intervals. See `REVIEW_RESPONSE.md` for the point-by-point changes.
+> This file is kept as the historical planning record.
+
 ---
 
 ## 1. What the paper is

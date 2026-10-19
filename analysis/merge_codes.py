@@ -12,7 +12,7 @@ import csv
 import glob
 import os
 
-ROOT = "/mnt/drive2/newpaper"
+ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 AN = os.path.join(ROOT, "analysis")
 
 FIELDS = ["id", "stance", "stance_confidence", "security_primary", "dt_type",
