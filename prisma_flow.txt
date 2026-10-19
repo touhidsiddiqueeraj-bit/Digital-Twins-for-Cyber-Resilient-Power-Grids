@@ -1,0 +1,18 @@
+PRISMA-STYLE FLOW
+=================
+IDENTIFICATION     OpenAlex 12 queries -> 1287 unique (2000 with adversarial-AI probes)
+SCREENING          795 excluded (no digital-twin term / no grid domain)
+                  492 eligible (DT + grid + security)
+ELIGIBILITY        100 retained (relevance + citations + recency)
+INCLUDED
+  Papers in final corpus............................... 100
+  FULL TEXT ON DISK (validated PDF).................... 83
+  Not obtained -> DOI list (paywalled_dois.csv)........ 17
+  Still free-but-blocked (free_blocked_download_links).. 4
+ORGANISATION  papers/<bucket>/<venue>/<file>.pdf
+  journals............................................. 62
+  conferences / proceedings............................ 14
+  other (reports, theses, chapters, repositories)...... 7
+  distinct venues (downloaded)......................... 67
+EXTRA
+  papers/_duplicates  duplicate downloads (safe to delete)

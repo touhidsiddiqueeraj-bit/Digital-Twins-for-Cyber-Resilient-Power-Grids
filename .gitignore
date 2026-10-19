@@ -1,0 +1,20 @@
+# Large downloaded PDFs — not committed
+papers/
+
+# Unrelated project
+crypto-trader/
+
+# Browser automation artifacts
+.playwright-mcp/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.blg
+*.spl
+*.out
+*.synctex.gz
+
+# Python
+__pycache__/
+*.pyc

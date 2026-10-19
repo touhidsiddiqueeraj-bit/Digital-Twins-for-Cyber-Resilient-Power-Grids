@@ -1,0 +1,203 @@
+
+## stance  (8 disagreements)
+   id   2: C1='enabling'     C2='review'
+   id  13: C1='defensive'    C2='bridge'
+   id  22: C1='defensive'    C2='bridge'
+   id  49: C1='defensive'    C2='bridge'
+   id  62: C1='defensive'    C2='bridge'
+   id  68: C1='bridge'       C2='adversarial'
+   id  74: C1='defensive'    C2='bridge'
+   id  96: C1='defensive'    C2='enabling'
+
+## stance_confidence  (6 disagreements)
+   id  13: C1='high'         C2='medium'
+   id  22: C1='high'         C2='medium'
+   id  30: C1='high'         C2='medium'
+   id  35: C1='medium'       C2='high'
+   id  68: C1='high'         C2='medium'
+   id  74: C1='high'         C2='medium'
+
+## security_primary  (3 disagreements)
+   id  16: C1='yes'          C2='no'
+   id  43: C1='yes'          C2='no'
+   id  96: C1='yes'          C2='no'
+
+## dt_type  (5 disagreements)
+   id   1: C1='unclear'      C2='system'
+   id   2: C1='system'       C2='mixed'
+   id  13: C1='system'       C2='asset'
+   id  49: C1='system'       C2='process'
+   id  68: C1='system'       C2='mixed'
+
+## grid_domain  (7 disagreements)
+   id   3: C1='multi'        C2='microgrid'
+   id  13: C1='multi'        C2='transmission'
+   id  16: C1='microgrid'    C2='multi'
+   id  62: C1='transmission' C2='substation'
+   id  68: C1='multi'        C2='unclear'
+   id  88: C1='multi'        C2='distribution'
+   id  96: C1='distribution' C2='der'
+
+## twin_role  (1 disagreements)
+   id  87: C1='tool'         C2='unclear'
+
+## attack_surface_named  (8 disagreements)
+   id   2: C1='no'           C2='yes'
+   id   3: C1='no'           C2='yes'
+   id  13: C1='no'           C2='yes'
+   id  22: C1='no'           C2='yes'
+   id  35: C1='no'           C2='yes'
+   id  55: C1='yes'          C2='no'
+   id  93: C1='no'           C2='yes'
+   id  96: C1='no'           C2='yes'
+
+## lifecycle_stage  (7 disagreements)
+   id   2: C1='operation'    C2='multi'
+   id   3: C1='operation'    C2='multi'
+   id  35: C1='operation'    C2='multi'
+   id  43: C1='operation'    C2='unclear'
+   id  68: C1='operation'    C2='unclear'
+   id  74: C1='multi'        C2='operation'
+   id  96: C1='operation'    C2='unclear'
+
+## threat_models_named  (19 disagreements)
+   id   1: C1='fdi;replay;dos;mitm;false_command;supply_chain;physical;insider;malware;poisoning' C2='fdi;replay;dos;mitm;false_command;supply_chain;physical;insider;malware;poisoning;evasion;other'
+   id   2: C1='fdi'          C2='fdi;other'
+   id   3: C1='fdi'          C2='fdi;other'
+   id  13: C1=''             C2='other'
+   id  16: C1='fdi;poisoning;evasion;prompt' C2='fdi;evasion;poisoning;prompt;other'
+   id  18: C1='dos;insider;malware' C2='dos;insider;malware;other'
+   id  21: C1='replay;false_command;physical;insider;reverse_pathway' C2='false_command;insider;other'
+   id  22: C1='poisoning'    C2='fdi;false_command;poisoning'
+   id  30: C1='mitm;insider' C2='fdi;false_command;evasion'
+   id  43: C1='fdi;dos;poisoning;other' C2='fdi;dos;malware;poisoning;evasion;other'
+   id  49: C1='fdi;replay;dos;false_command;physical;evasion;reverse_pathway' C2='fdi;dos;false_command;other'
+   id  55: C1='fdi;false_command;insider;malware;evasion' C2='fdi;other'
+   id  62: C1='dos;false_command;other' C2='fdi;dos;false_command'
+   id  68: C1='fdi;dos;mitm;supply_chain;malware;poisoning' C2='other'
+   id  74: C1='fdi;dos;mitm;false_command;physical;insider;malware;poisoning;reverse_pathway' C2='dos;false_command;other'
+   id  87: C1='fdi;replay;dos;mitm;false_command;supply_chain;physical;insider;malware;poisoning' C2='fdi;dos;mitm;false_command;replay;malware;insider;other'
+   id  88: C1='dos;mitm'     C2='dos;mitm;other'
+   id  93: C1='dos;malware'  C2='fdi;malware;other'
+   id  96: C1='physical'     C2=''
+
+## adversary_adaptive  (4 disagreements)
+   id   1: C1='yes'          C2='no'
+   id  21: C1='no'           C2='yes'
+   id  30: C1='yes'          C2='no'
+   id  49: C1='yes'          C2='no'
+
+## threat_model_explicit  (2 disagreements)
+   id  30: C1='yes'          C2='no'
+   id  49: C1='yes'          C2='no'
+
+## ml_used  (3 disagreements)
+   id  35: C1='yes'          C2='no'
+   id  43: C1='yes'          C2='no'
+   id  62: C1='no'           C2='yes'
+
+## ml_role  (6 disagreements)
+   id  16: C1='detection'    C2='forecasting'
+   id  21: C1='control'      C2='other'
+   id  35: C1='forecasting'  C2='none'
+   id  43: C1='forecasting'  C2='none'
+   id  62: C1='none'         C2='detection'
+   id  93: C1='forecasting'  C2='detection'
+
+## ml_family  (16 disagreements)
+   id   1: C1='supervised;unsupervised;reinforcement' C2='supervised;unsupervised;RL'
+   id   2: C1='LSTM;CNN;RNN;RF;XGBoost;RL' C2='RNN;LSTM;CNN;DRL;RL;XGBoost;RF;federated learning'
+   id   3: C1='CNN;GNN;transformer;RL;DL' C2='GNN;Transformer;PINN;RL;CNN;federated learning'
+   id  13: C1='ensemble;autoencoder;LSTM;one-class-SVM;isolation-forest' C2='IF;EE;OC-SVM;LOF;AE;LSTM-AE'
+   id  16: C1='DL;RL;ensemble;SVM;federated' C2='DL;RL;ensemble;GNN;GAN;federated learning'
+   id  21: C1='RL;PPO;SAC'   C2='RL (PPO/SAC)'
+   id  22: C1='LSTM;CNN;GRU;RNN' C2='Isolation Forest'
+   id  30: C1='autoencoder;VAE;ensemble;RL' C2='ensemble deep learning; autoencoder'
+   id  35: C1='RL;ML'        C2=''
+   id  43: C1='ANN;CNN;LSTM;GRU;autoencoder;RL;ensemble' C2=''
+   id  49: C1='LSTM;one-class-SVM;autoencoder;DNN' C2='LSTM, one-class SVM'
+   id  55: C1='CNN;LSTM;autoencoder;DL' C2='CNN, LSTM, autoencoder'
+   id  62: C1=''             C2='HMM'
+   id  74: C1='DNN;LSTM;kNN;RF;DL' C2='Hidden Markov Model (HMM)'
+   id  87: C1='RL;ML;DL;NN'  C2='machine learning, deep learning'
+   id  93: C1='ML;DL;NN'     C2='machine learning general, artificial neural networks'
+
+## ai_threat_overall  (7 disagreements)
+   id   2: C1='1'            C2='0'
+   id  16: C1='2'            C2='1'
+   id  21: C1='0'            C2='2'
+   id  22: C1='2'            C2='1'
+   id  30: C1='1'            C2='2'
+   id  35: C1='0'            C2='1'
+   id  74: C1='2'            C2='0'
+
+## ai_adv_ml  (6 disagreements)
+   id   1: C1='0'            C2='1'
+   id  16: C1='2'            C2='1'
+   id  22: C1='2'            C2='1'
+   id  30: C1='1'            C2='2'
+   id  35: C1='0'            C2='1'
+   id  74: C1='1'            C2='0'
+
+## ai_evasion  (5 disagreements)
+   id   1: C1='0'            C2='1'
+   id  30: C1='0'            C2='2'
+   id  35: C1='0'            C2='1'
+   id  43: C1='0'            C2='1'
+   id  49: C1='1'            C2='2'
+
+## ai_poisoning  (2 disagreements)
+   id  16: C1='2'            C2='1'
+   id  74: C1='2'            C2='0'
+
+## ai_llm  (2 disagreements)
+   id  16: C1='2'            C2='1'
+   id  21: C1='0'            C2='1'
+
+## ai_agentic  (1 disagreements)
+   id  21: C1='0'            C2='2'
+
+## eval_method  (10 disagreements)
+   id   2: C1='mixed'        C2='qualitative'
+   id  35: C1='qualitative'  C2='conceptual'
+   id  43: C1='qualitative'  C2='conceptual'
+   id  55: C1='testbed'      C2='simulation'
+   id  62: C1='testbed'      C2='mixed'
+   id  68: C1='conceptual'   C2='qualitative'
+   id  74: C1='testbed'      C2='mixed'
+   id  87: C1='qualitative'  C2='conceptual'
+   id  88: C1='testbed'      C2='mixed'
+   id  93: C1='qualitative'  C2='conceptual'
+
+## metrics_reported  (3 disagreements)
+   id   3: C1='no'           C2='yes'
+   id  16: C1='no'           C2='yes'
+   id  96: C1='yes'          C2='no'
+
+## baseline_compared  (1 disagreements)
+   id  55: C1='yes'          C2='no'
+
+## maturity  (8 disagreements)
+   id   2: C1='validated'    C2='concept'
+   id  13: C1='prototype'    C2='validated'
+   id  21: C1='prototype'    C2='validated'
+   id  49: C1='prototype'    C2='validated'
+   id  55: C1='prototype'    C2='validated'
+   id  62: C1='prototype'    C2='validated'
+   id  74: C1='prototype'    C2='validated'
+   id  88: C1='prototype'    C2='validated'
+
+## limitations_stated  (6 disagreements)
+   id  13: C1='yes'          C2='no'
+   id  18: C1='no'           C2='yes'
+   id  22: C1='no'           C2='yes'
+   id  68: C1='yes'          C2='no'
+   id  87: C1='yes'          C2='no'
+   id  93: C1='yes'          C2='no'
+
+## data_available  (3 disagreements)
+   id  13: C1='no'           C2='partial'
+   id  18: C1='yes'          C2='no'
+   id  93: C1='yes'          C2='no'
+
+TOTAL field-level disagreements: 149
