@@ -1,9 +1,9 @@
-# Review responses — rounds 3 and 4
+# Review responses — rounds 3 to 6
 
-This file answers both review rounds in order: round 3 (reject in current form, nine fatal
-flaws) then round 4 (major revision, seven concerns and thirteen internal
-inconsistencies). Each section states the reviewer's requirement, what was done, and what
-the revision does not fix. A round-5 housecleaning pass is recorded at the end.
+This file answers each review round in order: round 3 (reject in current form, nine fatal
+flaws), round 4 (major revision, seven concerns and thirteen internal inconsistencies),
+round 5 (housecleaning) and round 6 (consistency review). Each section states the
+reviewer's requirement, what was done, and what the revision does not fix.
 
 ---
 
@@ -362,7 +362,9 @@ rank; archive query strings; add a second database; code the 492.
   rule is **recency-dominant with citations as a tie-breaker**, so foundational 2020–2023
   work is under-represented; the earlier draft's "favours established, cited work" is
   retracted as contradicted by the corpus's own composition. Appendix A's caption and
-  intro disclose the ID-order semantics.
+  intro disclose the ID-order semantics. *(Superseded in round 6: the ID=rank inference
+  made here was withdrawn — IDs are a display order and carry no information about the
+  selection rule; see the Round-6 section.)*
 - **Strings archived, second database added:** `analysis/search_snapshot_2026-10-19/`
   contains 16 *reconstructed* query strings (12 core + 4 probes, clearly marked as
   reconstructions because the originals were not preserved), a dated Crossref
@@ -539,3 +541,78 @@ codes, or claims were changed; every statistic in the manuscript is untouched.
 
 Files changed: `manuscript.tex`, `README.md`, `REVIEW_RESPONSE.md`, `PAPER_PLAN.md`,
 `SEARCH_PROVENANCE.md`, plus the five renames (git mv).
+
+---
+
+# Round 6 — response (consistency review)
+
+**Required:** withdraw the ID=rank inference (IDs are a display order; the clean test is
+the 492-vs-100 year distribution); add a citations column to Table 10; fix six
+cross-section conflicts (§6.4's 24/469, §6.5's "independent vocabulary", §8.4's "no
+stated search date", stale Figure 2b, the 86% slip, §5.5's "every matched denominator");
+replace [18, 19] with R55/R62; cut the abstract; enforce the IJCIP highlights limit.
+
+**Done.**
+
+- **ID=rank inference withdrawn (§4.3, §8.5, Appendix A, README, RESULTS.md).** The
+  argument "the realised corpus shows which component won" is gone. §4.3 now states the
+  IDs are best read as a display order (year descending, citations descending within
+  year), compatible with a composite rule followed by that sort and with a year-first
+  rule only if the 492 contained at most 76 records from 2025–26; the clean test is the
+  year distribution of the 492 eligible records against the retained 100, which requires
+  the unreleased 492-record export (listed in the provenance manifest). §4.3 reports
+  only the corpus profile (40/100 zero-citation, 76% 2025–26, 24/100 from 2020–2024) and
+  makes no claim about which component produced it. §8.5 restates this and keeps only
+  the 16/100-from-2020–2023 under-representation reading. The residual
+  "recency-weighted" shorthand (§1, §5.2, Figure 2's caption, the year-wise caption,
+  §6.1) was replaced with "ranked, non-random".
+- **Citations column added to Table 10 (Appendix A).** The longtable now carries a Cit.
+  column (cited\_by at retrieval), so "citations descend within each year block" is
+  verifiable from the paper. The generator is committed as `gen_appendix.py` and
+  self-checks the ordering claims (IDs 1–45 all 2026; citations non-increasing within
+  year blocks; 40/100 zero-citation), exiting non-zero on any violation.
+- **§6.4 no longer treats 24/469 as an illustration of screening loss.** It now states
+  the figure is itself an unreproducible working number, so it cannot be read as an
+  illustration of screening loss, still less as an 8× correction factor; the cross-
+  reference was corrected from §5.8 to §5.5, where the withdrawal lives. §5.5 and §8.2
+  were already consistent and are unchanged.
+- **§6.5 "our independent vocabulary" → "our closed vocabulary",** matching the §3.2
+  withdrawal (vocabulary designed before reading their review, per the dated codebook;
+  no stronger independence claim than that).
+- **§8.4 "no stated search date" corrected.** It now says the original run dates were
+  not preserved and the only dated search artifact is the 2026-10-19 reconstructed-
+  string snapshot of §4.2 — the limitation is preserved without contradicting §4.2.
+- **Figure 2b regenerated.** The R40 reclassification (report → book chapter, round 4)
+  had not been propagated to the figure; `make_figures.py` was re-run, and panel (b) now
+  shows 3 reports / 4 book chapters, matching Table 3, §5.2, §8.7 and the matrix.
+- **Statistical slip fixed.** "ML use is 86% or better from 2024 onward" → 85% or better
+  with the per-year counts (6/7, 23/27, 35/37); the substantive-engagement ceiling is
+  stated exactly (never exceeds 22.2%, 6 of 27 in 2025).
+- **§5.5 majority claim scoped.** "On every matched denominator" → majority any-level
+  engagement holds on the two core denominators only (16/29, 30/55); on the wider
+  denominators it is minority (35/83 42%, 20/49 41%, 16/41 39%); substantive engagement
+  is minority on every denominator.
+- **[18, 19] → R55, R62.** The two HIL studies are now referenced by record ID in §5.6
+  and §5.9 (elsarticle-num renumbers at build time, so the bracketed forms were
+  actively misleading: R18 is the Zaidi network-traffic paper). The §5.9 adjudication
+  record (R22, R49, R62) uses the same notation throughout.
+- **Abstract cut from ~400 to 249 words.** Four paragraphs (question, corpus, findings,
+  twin-position); the κ/AC1/CI values and the misclassification interval now live only
+  in §5.7, with a single pointer from the abstract.
+- **Highlights brought under the IJCIP limit:** 5 bullets, each ≤85 characters
+  including spaces (81/80/75/79/74), mirrored verbatim in `highlights.txt`.
+
+## What this revision does not fix (and says so in the manuscript)
+
+- The 492-record export and the original query strings/run dates (the clean test for
+  the ranking rule and the retrieval-bias defence remain blocked on these).
+- An independent (non-author) coder, a larger enriched sample, and a third-party
+  adjudicator (§5.7 states these as preconditions).
+- R91/R92 full-text coding (retrieval attempted in round 4, timed out; they remain
+  abstract-only bounds).
+
+## Files changed this round
+
+`manuscript.tex`, `appendix_corpus.tex` (regenerated), `figures/*` (regenerated),
+`highlights.txt`, `README.md`, `PAPER_PLAN.md`, `REVIEW_RESPONSE.md` (this section),
+`analysis/RESULTS.md`; new `gen_appendix.py` (committed generator).

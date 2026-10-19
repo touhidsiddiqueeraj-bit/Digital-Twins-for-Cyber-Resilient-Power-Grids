@@ -1,7 +1,7 @@
 # Paper Plan — Digital Twins for Cyber-Resilient Power Grids
 
 Status: execution started. Corpus frozen at 100 records.
-Last updated: 2026-10-16
+Last updated: 2026-10-19
 
 > **Revision history.** This plan predates the review rounds and still describes the
 > paper as a "systematic review" with an "AI-Powered Era" framing; both were withdrawn in
@@ -19,6 +19,13 @@ Last updated: 2026-10-16
 > (n=58); R-notation (R<n>) separates corpus IDs from reference numbers; and a dated
 > search snapshot with reconstructed query strings is archived under
 > `analysis/search_snapshot_2026-10-19/`.
+>
+> The round-6 revision (2026-10-19) withdrew the ID=rank inference: record IDs are a
+> display order (year descending, citations descending within year) and carry no
+> information about the selection rule; the clean test requires the unreleased 492-record
+> export. Appendix A gained a per-record Cit. column (self-checked generator
+> `gen_appendix.py`); the abstract was cut to 249 words with reliability statistics moved
+> to §5.7; highlights now follow the IJCIP 85-character rule.
 >
 > This file is kept as the historical planning record; see `REVIEW_RESPONSE.md` for the
 > point-by-point changes.

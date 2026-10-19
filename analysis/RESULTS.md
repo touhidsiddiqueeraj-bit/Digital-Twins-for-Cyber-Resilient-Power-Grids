@@ -241,9 +241,13 @@ Reproduce with `python3 analysis/reliability_round4.py`.
   minus R30, R32 (Zenodo), R65 (GSC Online Press), R69 (IRJMETS) = 58 records —
   23/58 (39.7%) any, 8/58 (13.8%) substantive, 35/58 none, 55/58 tool, 1 target
   (R59, out-of-domain).
-- **ID = rank order, verified:** IDs 1-45 are all 2026; within every year block
-  cited_by descends with ID; 40/100 records have zero citations. The realised ranking
-  is recency-dominant with citations as a tie-breaker.
+- **ID order, verified:** IDs 1-45 are all 2026; within every year block cited_by
+  descends with ID (per-record citation counts now shown in Appendix A's Cit.
+  column); 40/100 records have zero citations. The IDs are a display order (year
+  descending, citations descending within year) and carry no information about the
+  selection rule; the clean test — year distribution of the 492 eligible records vs
+  the retained 100 — needs the unreleased 492-record export, so no claim is made
+  about which ranking component dominated.
 - **Abstract-level twin_role for the 17 abstract-only records:** 15 tool; R91 and R92
   (Spirito et al., OSTI/INL, nuclear domain) read as attack-side work on the twin's
   interface (R91) and the twin's ML models (R92).

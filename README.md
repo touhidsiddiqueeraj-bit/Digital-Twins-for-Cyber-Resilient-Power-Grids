@@ -27,7 +27,7 @@ threats — or the twin itself — as an attack target.
 | Engage an AI threat **substantively** | 11 / 83 (13.3%) — the load-bearing number, on the weakest collapse (κ = 0.14); misclassification interval 21–51 of 83 (≈25–61%) includes majority readings |
 | Twin as the adversary's **objective** (strict) | **0 grid studies** — a descriptive observation of the coding, not a field finding; 1 non-grid vehicle record; 56/83 name an attack channel (largely classical communication threats); two abstract-only nuclear-domain records (R91, R92, openly hosted on OSTI) do attack twin interfaces and twin ML models |
 | Research concentrated at **operation** stage | 66 / 83 (lifecycle κ = 0.32, AC1 0.54 — descriptive only; the single design-phase record is out-of-domain) |
-| Studies from **2025–2026** | 76% (the realised ranking is recency-dominant: record IDs 1–45 are all 2026, 40/100 records have zero citations) |
+| Studies from **2025–2026** | 76% — a recency-heavy corpus profile (IDs 1–45 all 2026, 40/100 zero-citation; per-record counts in Appendix A's Cit. column). Which ranking component dominated is not recoverable from the released record; the clean test needs the year distribution of the 492 eligible vs the retained 100 |
 
 AI-threat engagement by vector (score ≥1): adversarial ML 24, poisoning 19, evasion 9,
 LLM 4, agentic 2. The abstract-level screening figure (24/469, 5.1%) is an
@@ -52,7 +52,7 @@ misclassification sensitivity anchored on the second coder puts the headline at 
 PAPER_PLAN.md                    paper plan: research questions, contributions, timeline, traps
 manuscript.tex                   LaTeX source (elsarticle, IJCIP)
 manuscript.pdf                   compiled manuscript
-appendix_corpus.tex              Appendix A: all 100 included studies (auto-generated)
+appendix_corpus.tex              Appendix A: all 100 studies, with Cit. column (gen_appendix.py)
 included.bib                     bibliography (101 entries)
 highlights.txt                   Elsevier highlights
 figures/                         5 figures (PDF + PNG, 300 dpi) and make_figures.py
@@ -72,11 +72,12 @@ digital_twin_grid_cybersecurity_papers.csv   screened corpus with abstracts
 doi_verification.csv             DOI verification log
 venue_index.csv / prisma_flow.txt            PRISMA flow inputs
 SEARCH_PROVENANCE.md             search-provenance gap manifest (required artifacts)
-REVIEW_RESPONSE.md               point-by-point responses to the round-3 and round-4 reviews
+REVIEW_RESPONSE.md               point-by-point responses to the round-3–6 reviews
 *_proposal.pdf/.pptx             research proposal
 habeeb2026_dual_role_digital_twins.pdf      Habeeb et al. (2026), the closest prior review
 reviews/                         peer review materials (rounds 1–2, consistently named)
 gen_bib.py                       bibliography helper
+gen_appendix.py                  Appendix A generator; self-checks the ID-order claims
 ```
 
 **Not in this repository:** `papers/` (full-text PDFs, ~311 MB — not redistributable),
